@@ -1,35 +1,40 @@
-# Inicijalne upute za prijavu projekta iz Programskog inženjerstva
 
-Poštovane kolegice i kolege, 
 
-čestitamo vam jer ste uspješno prijavili svoj projektni tim na kolegiju Programsko inženjerstvo, te je za vas automatski kreiran repozitorij koji ćete koristiti za verzioniranje vašega koda, ali i za pisanje dokumentacije.
-
-Ovaj dokument (README.md) predstavlja **osobnu iskaznicu vašeg projekta**. Vaš prvi zadatak, ukoliko niste odabrali da želite raditi na projektu sa gospodarstvom je **prijaviti vlastiti projektni prijedlog** na način da ćete prijavu vašeg projekta, sukladno uputama danim u ovom tekstu, napisati upravo u ovaj dokument, umjesto ovoga teksta.
-
-Za upute o sintaksi koju možete koristiti u ovom dokumentu i kod pisanje vaše projektne dokumentacije pogledajte [ovaj link](https://guides.github.com/features/mastering-markdown/).
-
-Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra raditi na ovom projektu. A sada, vrijeme je da prijavite vaš projekt. Za prijavu vašeg projektnog prijedloga molimo vas koristite **predložak** koji je naveden u nastavku, a započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta :) 
-
-# Naziv projekta
-(u redak iznad navedite kratki proizvoljni naziv projekta prikladan akademskoj zajednici, a ovaj tekst obrišite)
-
+# e-Agro
 ## Projektni tim
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
-Ime i prezime | ... | ... | ...
+Sara Martinović| smartinov@foi.hr | 0016134684 | saramartinovic
+Karolina Kolak| kkolak@foi.hr | 0016131336 | kkolak
+Ivan Martinović | imartinov@foi.hr | 0016130092 | imartinov
 
 ## Opis domene
-Umjesto ovih uputa opišite domenu ili problem koji pokrivate vašim  projektom. Domena može biti proizvoljna, ali obratite pozornost da sukladno ishodima učenja, domena omogući primjenu zahtijevanih koncepata kako je to navedeno u sljedećem poglavlju. Priložite odgovarajuće skice gdje je to prikladno.
+Prema izvoru bliskom nama koji radi u tvrtci Agronom, znamo da sustavi za prodaju, izradu ponuda i skladištenje nisu previše razvijeni. Oni koriste zasebne programe za različite radnje te su ti programi zastarjeli. To nam je bio izvor ideje te smo odlučili ovom aplikacijom modernizirati njihov i spojiti sve funkcionalnosti u jednu aplikaciju. 
+Unutar aplikacije će postojati nekoliko uloga, a to su: admin, skladištar i prodajni referent. 
+Raspored funkcionalnosti prema ovim ulogama je idući:
+Admin - dodavanje korisnika, kreiranje skladišta i ureda, dodavanje zaposlenika u skladišta i urede,
+Skladištar - izrada i ispis otpremnice, izrada i ispis primke, kreiranje izvještaja,
+Prodajni referent - upravljanje katalogom strojeva, izrada i ispis ponude, slanje ponude e-mailom klijentu, dodavanje klijenata, kreiranje grafova. 
+Ovakvo softversko rješenje bi se moglo koristiti i u tvrtkama sličnim ovoj, koji se bave prodajom i skladištenjem poljoprivredne mehanizacije. 
 
 ## Specifikacija projekta
-Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda. Pobrojite osnovne funkcionalnosti i za svaku naznačite ime odgovornog člana tima. Opišite buduću arhitekturu programskog proizvoda. Obratite pozornost da bi arhitektura trebala biti višeslojna s odvojenom (dislociranom) bazom podatka. Također uzmite u obzir da bi svaki član tima treba biti odgovorana za otprilike 3 funkcionalnosti, te da bi opterećenje članova tima trebalo biti ujednačeno. Priložite odgovarajuće dijagrame i skice gdje je to prikladno. Funkcionalnosti sustava bobrojite u tablici ispod koristeći predložak koji slijedi:
+Aplikacija se dizajnira u programskom jeziku C# u obliku Windows forme koja će biti namijenjena za Windows operacijski sustav. Bazu podataka kreirat ćemo u MS SQL Serveru te ćemo s podacima iz baze raditi u aplikaciji. Izradom ove aplikacije olakšat ćemo proces kreiranja ponuda, prodaje i skladištenja strojeva. 
 
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
-F01 | Login | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F02 | Pregled dnevnika | .... | ...
+F01 | Dodavanje korisnika | Kako bi korisnici imalipristup aplikaciji, potrebno ih je dodati te im dodijeliti pripadajuću ulogu. | Ivan Martinović
+F02 | Prijava u sustav | Za pristup aplikaciji korisnici će imati mogućnost login-a, ti podaci će im biti dodijeljeni nakon što ih admin doda u sustav. | Ivan Martinović 
+F03 | Kreiranje skladišta i ureda | U aplikaciji će postojati popis zaposlenika te popis strojeva na skladištu te su nam zato potrebni uredi i skladišta. | Karolina Kolak
+F04 | Dodavanje zaposlenika u skladište i urede | Nakon što su kreirani uredi i skladišta, potrebno je zaposlenike raspodijeliti prema skladištima i uredima na kojima su oni zaposleni. | Karolina Kolak
+F05 | Upravljanje katalogom strojeva | Za izradu ponuda klijentima potreban nam je popis svih strojeva u katalogu te mogućnost dodavanja ili brisanja strojeva. | Sara Martinović
+F06 | Izrada i ispis ponude | Prema popisu strojeva iz kataloga, oni će se dodavati u ponudu prema zahtjevima kupaca danim prodajnom referentu. Prije slanja ponude, potreban nam je ispis kako bi imali uvid u samu ponudu radi provjere. | Ivan Martinović
+F07 | Slanje ponude e-mailom klijentu | Nakon što je ponuda kreirana, potrebno ju je poslati klijentu. Najbrži način da ponuda stigne do klijenta je putem e-maila. | Ivan Martinović
+F08 | Izrada i ispis otpremnice | Prilikom prodaje stroja, skladištar sastavlja otpremnicu prema kojoj se obavlja smanjenje stroja na skladištu. | Sara Martinović
+F09 | Izrada i ispis primke | Kada klijent pristane na ponudu, prodajni referent naručuje stroj i kada stroj stigne na skladište, pojavljuje se dokument naziva primka. Prema primki se povećava stanje stroja na skladištu. | Karolina Kolak
+F10 | Dodavanje klijenata | Unutar aplikacije bi se vršila evidencija klijenata prema prodajnim referentima i kupljenim strojevima. | Sara Martinović
+F11 | Kreiranje izvještaja | Radi evidencije, potrebna je izrada izvještaja. U izvještajima bi bilo vidljivo koji su strojevi u skladištima te u kojim skladištima. | Karolina Kolak
+F12 | Kreiranje grafova | Kako bi prodajni referent pratio svoje uspjehe, ali kako bi i tvrtka mogla nagraditi najuspješnije radnike, pomoću grafova je vidljivo koliki je profit ostvario koji radnik te koju vrstu stroja je najviše prodao. | Sara Martinović
 
 ## Tehnologije i oprema
-Umjesto ovih uputa jasno popišite sve tehnologije, alate i opremu koju ćete koristiti pri implementaciji vašeg rješenja. Ne zaboravite planirati korištenje tehnologija u aktivnostima kao što su projektni menadžment ili priprema dokumentacije. Tehnologije koje ćete koristiti bi trebale biti javno dostupne, a ako ih ne budemo obrađivali na vježbama u vašoj dokumentaciji ćete morati navesti način preuzimanja, instaliranja i korištenja onih tehnologija koje su neopbodne kako bi se vaš programski proizvod preveo i pokrenuo. Pazite da svi alati koje ćete koristiti moraju imati odgovarajuću licencu.
+MS Visual Studio, MS SQL Server, MS Office, MS Project, programski jezik C#, framework .NET, GitHub, Differ..
