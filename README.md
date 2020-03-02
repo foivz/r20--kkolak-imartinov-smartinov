@@ -13,11 +13,7 @@ Ivan Martinović | imartinov@foi.hr | 0016130092 | imartinov
 Prema izvoru bliskom nama koji radi u tvrtci Agronom, znamo da sustavi za prodaju, izradu ponuda i skladištenje nisu previše razvijeni. Oni koriste zasebne programe za različite radnje te su ti programi zastarjeli. To nam je bio izvor ideje te smo odlučili ovom aplikacijom modernizirati njihov i spojiti sve funkcionalnosti u jednu aplikaciju. 
 Unutar aplikacije će postojati nekoliko uloga, a to su: admin, skladištar i prodajni referent. 
 Raspored funkcionalnosti prema ovim ulogama je idući:
-Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
-------------  | ------------------- | ----- | ---------------------
-Sara Martinović| smartinov@foi.hr | 0016134684 | saramartinovic
-Karolina Kolak| kkolak@foi.hr | 0016131336 | kkolak
-Ivan Martinović | imartinov@foi.hr | 0016130092 | imartinov
+
 
 Naziv uloge | Funkcionalnosti
 ----------- | ---------------
