@@ -13,9 +13,12 @@ Ivan Martinović | imartinov@foi.hr | 0016130092 | imartinov
 Prema izvoru bliskom nama koji radi u tvrtci Agronom, znamo da sustavi za prodaju, izradu ponuda i skladištenje nisu previše razvijeni. Oni koriste zasebne programe za različite radnje te su ti programi zastarjeli. To nam je bio izvor ideje te smo odlučili ovom aplikacijom modernizirati njihov i spojiti sve funkcionalnosti u jednu aplikaciju. 
 Unutar aplikacije će postojati nekoliko uloga, a to su: admin, skladištar i prodajni referent. 
 Raspored funkcionalnosti prema ovim ulogama je idući:
-Admin - dodavanje korisnika, kreiranje skladišta i ureda, dodavanje zaposlenika u skladišta i urede,
-Skladištar - izrada i ispis otpremnice, izrada i ispis primke, kreiranje izvještaja,
-Prodajni referent - upravljanje katalogom strojeva, izrada i ispis ponude, slanje ponude e-mailom klijentu, dodavanje klijenata, kreiranje grafova. 
+Naziv uloge | Funkcionalnosti
+----------- | ---------------
+Admin | dodavanje korisnika, kreiranje skladišta i ureda, dodavanje zaposlenika u skladišta i urede
+Skladištar | izrada i ispis otpremnice, izrada i ispis primke, kreiranje izvještaja
+Prodajni referent | upravljanje katalogom strojeva, izrada i ispis ponude, slanje ponude e-mailom klijentu, dodavanje klijenata, kreiranje grafova
+
 Ovakvo softversko rješenje bi se moglo koristiti i u tvrtkama sličnim ovoj, koji se bave prodajom i skladištenjem poljoprivredne mehanizacije. 
 
 ## Specifikacija projekta
