@@ -8,6 +8,7 @@ Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 Sara Martinović| smartinov@foi.hr | 0016134684 | saramartinovic
 Karolina Kolak| kkolak@foi.hr | 0016131336 | kkolak
 Ivan Martinović | imartinov@foi.hr | 0016130092 | imartinov
+Alen Furjan | afurjan@foi.hr | 0016130087 | afurjan
 
 ## Opis domene
 Prema izvoru bliskom nama koji radi u tvrtci Agronom, znamo da sustavi za prodaju, izradu ponuda i skladištenje nisu previše razvijeni. Oni koriste zasebne programe za različite radnje te su ti programi zastarjeli. To nam je bio izvor ideje te smo odlučili ovom aplikacijom modernizirati njihov i spojiti sve funkcionalnosti u jednu aplikaciju. 
@@ -19,7 +20,7 @@ Naziv uloge | Funkcionalnosti
 ----------- | ---------------
 Admin | dodavanje korisnika, kreiranje skladišta i ureda, dodavanje zaposlenika u skladišta i urede
 Skladištar | izrada i ispis otpremnice, izrada i ispis primke, kreiranje izvještaja
-Prodajni referent | upravljanje katalogom strojeva, izrada i ispis ponude, slanje ponude e-mailom klijentu, dodavanje klijenata, kreiranje grafova
+Prodajni referent | upravljanje katalogom strojeva, izrada i ispis ponude, slanje ponude e-mailom klijentu, dodavanje klijenata, kreiranje grafova, naručivanje stroja, dodavanje dobavljača, kreiranje izvještaja
 
 Ovakvo softversko rješenje bi se moglo koristiti i u tvrtkama sličnim ovoj, koji se bave prodajom i skladištenjem poljoprivredne mehanizacije. 
 
@@ -40,6 +41,10 @@ F09 | Izrada i ispis primke | Kada klijent pristane na ponudu, prodajni referent
 F10 | Dodavanje klijenata | Unutar aplikacije bi se vršila evidencija klijenata prema prodajnim referentima i kupljenim strojevima. | Sara Martinović
 F11 | Kreiranje izvještaja | Radi evidencije, potrebna je izrada izvještaja. U izvještajima bi bilo vidljivo koji su strojevi u skladištima te u kojim skladištima. | Karolina Kolak
 F12 | Kreiranje grafova | Kako bi prodajni referent pratio svoje uspjehe, ali kako bi i tvrtka mogla nagraditi najuspješnije radnike, pomoću grafova je vidljivo koliki je profit ostvario koji radnik te koju vrstu stroja je najviše prodao. | Sara Martinović
+F13 | Naručivanje stroja | Prije kreiranja primke i dolaska stroja, potrebno je stroj naručiti od dobavljača. | Alen Furjan
+F14 | Dodavanje dobavljača | U aplikaciji će se voditi evidencija dobavljača kako bi znali koje strojeve naručujemo od kojih dobavljača. | Alen Furjan
+F15 | Kreiranje izvještaja | Izvještaj će služiti kao uvid u dobavljače i sve njihove strojeve nakon što smo ih dodali u aplikaciju. | Alen Furjan
+F16 | Kreiranje grafova | Na grafu će biti prikazano od kojih dobavljača naručujemo najviše i grafovi s prikazom svih dobavljača za određenu vrstu stroja. | Alen Furjan
 
 ## Tehnologije i oprema
 MS Visual Studio, MS SQL Server, MS Office, MS Project, programski jezik C#, framework .NET, GitHub, Differ..
