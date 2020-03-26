@@ -1,6 +1,7 @@
 
 
-# e-Agro
+# PI20-024 e-Agro
+## Mentor: Marko Mijač
 ## Projektni tim
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
