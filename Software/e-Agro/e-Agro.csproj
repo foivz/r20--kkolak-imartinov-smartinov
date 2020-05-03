@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CFA39E3-86F8-4EC9-9E88-ADDBBB49734A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>e_Agro</RootNamespace>
+    <AssemblyName>e-Agro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dobavljaci.cs" />
+    <Compile Include="frmDodavanjeDobavljaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeDobavljaca.Designer.cs">
+      <DependentUpon>frmDodavanjeDobavljaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeKlijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeKlijenta.Designer.cs">
+      <DependentUpon>frmDodavanjeKlijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeKorisnika.Designer.cs">
+      <DependentUpon>frmDodavanjeKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeNarudzbi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeNarudzbi.Designer.cs">
+      <DependentUpon>frmDodavanjeNarudzbi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeOtpremnice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeOtpremnice.Designer.cs">
+      <DependentUpon>frmDodavanjeOtpremnice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjePonude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjePonude.Designer.cs">
+      <DependentUpon>frmDodavanjePonude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjePrimke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjePrimke.Designer.cs">
+      <DependentUpon>frmDodavanjePrimke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeSkladista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeSkladista.Designer.cs">
+      <DependentUpon>frmDodavanjeSkladista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeStroja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeStroja.Designer.cs">
+      <DependentUpon>frmDodavanjeStroja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeUreda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeUreda.Designer.cs">
+      <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeZaposlenika.Designer.cs">
+      <DependentUpon>frmDodavanjeZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisDobavljaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisDobavljaca.Designer.cs">
+      <DependentUpon>frmPopisDobavljaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisKlijenata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisKlijenata.Designer.cs">
+      <DependentUpon>frmPopisKlijenata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisKorisnika.Designer.cs">
+      <DependentUpon>frmPopisKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisNarudzbi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisNarudzbi.Designer.cs">
+      <DependentUpon>frmPopisNarudzbi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisPonuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisPonuda.Designer.cs">
+      <DependentUpon>frmPopisPonuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrijava.Designer.cs">
+      <DependentUpon>frmPrijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKatalogStrojeva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKatalogStrojeva.Designer.cs">
+      <DependentUpon>frmKatalogStrojeva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisOtpremnica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisOtpremnica.Designer.cs">
+      <DependentUpon>frmPopisOtpremnica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisSkladista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisSkladista.Designer.cs">
+      <DependentUpon>frmPopisSkladista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisUreda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisUreda.Designer.cs">
+      <DependentUpon>frmPopisUreda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisZaposlenika.Designer.cs">
+      <DependentUpon>frmPopisZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisPrimki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisPrimki.Designer.cs">
+      <DependentUpon>frmPopisPrimki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdajniReferent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdajniReferent.Designer.cs">
+      <DependentUpon>frmProdajniReferent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdajniReferentGraf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdajniReferentGraf.Designer.cs">
+      <DependentUpon>frmProdajniReferentGraf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdajniReferentIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdajniReferentIzvjestaj.Designer.cs">
+      <DependentUpon>frmProdajniReferentIzvjestaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSkladistar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSkladistar.Designer.cs">
+      <DependentUpon>frmSkladistar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klijenti.cs" />
+    <Compile Include="Korisnici.cs" />
+    <Compile Include="Narudzbe.cs" />
+    <Compile Include="Otpremnice.cs" />
+    <Compile Include="Ponude.cs" />
+    <Compile Include="Primke.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvjeraPrijave.cs" />
+    <Compile Include="RadnaMjesta.cs" />
+    <Compile Include="Skladista.cs" />
+    <Compile Include="Strojevi.cs" />
+    <Compile Include="TipoviKorisnika.cs" />
+    <Compile Include="Uredi.cs" />
+    <Compile Include="Zaposlenici.cs" />
+    <EmbeddedResource Include="frmDodavanjeDobavljaca.resx">
+      <DependentUpon>frmDodavanjeDobavljaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeKlijenta.resx">
+      <DependentUpon>frmDodavanjeKlijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeKorisnika.resx">
+      <DependentUpon>frmDodavanjeKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeNarudzbi.resx">
+      <DependentUpon>frmDodavanjeNarudzbi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeOtpremnice.resx">
+      <DependentUpon>frmDodavanjeOtpremnice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjePonude.resx">
+      <DependentUpon>frmDodavanjePonude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjePrimke.resx">
+      <DependentUpon>frmDodavanjePrimke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeSkladista.resx">
+      <DependentUpon>frmDodavanjeSkladista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeStroja.resx">
+      <DependentUpon>frmDodavanjeStroja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeUreda.resx">
+      <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeZaposlenika.resx">
+      <DependentUpon>frmDodavanjeZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKatalogStrojeva.resx">
+      <DependentUpon>frmKatalogStrojeva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisDobavljaca.resx">
+      <DependentUpon>frmPopisDobavljaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisKlijenata.resx">
+      <DependentUpon>frmPopisKlijenata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisKorisnika.resx">
+      <DependentUpon>frmPopisKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisNarudzbi.resx">
+      <DependentUpon>frmPopisNarudzbi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisPonuda.resx">
+      <DependentUpon>frmPopisPonuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrijava.resx">
+      <DependentUpon>frmPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisOtpremnica.resx">
+      <DependentUpon>frmPopisOtpremnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisSkladista.resx">
+      <DependentUpon>frmPopisSkladista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisUreda.resx">
+      <DependentUpon>frmPopisUreda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisZaposlenika.resx">
+      <DependentUpon>frmPopisZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisPrimki.resx">
+      <DependentUpon>frmPopisPrimki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdajniReferent.resx">
+      <DependentUpon>frmProdajniReferent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdajniReferentGraf.resx">
+      <DependentUpon>frmProdajniReferentGraf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdajniReferentIzvjestaj.resx">
+      <DependentUpon>frmProdajniReferentIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSkladistar.resx">
+      <DependentUpon>frmSkladistar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

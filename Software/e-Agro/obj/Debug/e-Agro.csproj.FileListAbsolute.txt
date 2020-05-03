@@ -1,0 +1,11 @@
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\e-Agro.exe.config
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\e-Agro.exe
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\e-Agro.pdb
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csprojAssemblyReference.cache
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrijava.resources
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.Properties.Resources.resources
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csproj.GenerateResource.cache
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csproj.CoreCompileInputs.cache
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.exe
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.pdb
+C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmAdmin.resources
