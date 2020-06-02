@@ -16,7 +16,7 @@ namespace e_Agro
         TipoviKorisnika tipKorisnika;
         Korisnici korisnici;
 
-        korisnik odabraniKorisnik;
+        private korisnik odabraniKorisnik;
         public frmDodavanjeKorisnika(korisnik korisnik)
         {
             radnoMjesto = new RadnaMjesta();
