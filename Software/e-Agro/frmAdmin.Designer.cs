@@ -52,6 +52,7 @@
             this.btnZaposlenik.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnZaposlenik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnZaposlenik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZaposlenik.ForeColor = System.Drawing.Color.White;
             this.btnZaposlenik.Image = ((System.Drawing.Image)(resources.GetObject("btnZaposlenik.Image")));
             this.btnZaposlenik.Location = new System.Drawing.Point(0, 0);
             this.btnZaposlenik.Name = "btnZaposlenik";
@@ -68,6 +69,7 @@
             this.btnKorisnik.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnKorisnik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnKorisnik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKorisnik.ForeColor = System.Drawing.Color.White;
             this.btnKorisnik.Image = ((System.Drawing.Image)(resources.GetObject("btnKorisnik.Image")));
             this.btnKorisnik.Location = new System.Drawing.Point(0, 0);
             this.btnKorisnik.Name = "btnKorisnik";
@@ -131,6 +133,7 @@
             this.btnUred.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUred.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUred.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUred.ForeColor = System.Drawing.Color.White;
             this.btnUred.Image = ((System.Drawing.Image)(resources.GetObject("btnUred.Image")));
             this.btnUred.Location = new System.Drawing.Point(0, 0);
             this.btnUred.Name = "btnUred";
@@ -156,6 +159,7 @@
             this.btnSkladiste.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnSkladiste.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSkladiste.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSkladiste.ForeColor = System.Drawing.Color.White;
             this.btnSkladiste.Image = ((System.Drawing.Image)(resources.GetObject("btnSkladiste.Image")));
             this.btnSkladiste.Location = new System.Drawing.Point(0, 0);
             this.btnSkladiste.Name = "btnSkladiste";
@@ -173,7 +177,6 @@
             this.ClientSize = new System.Drawing.Size(434, 211);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
