@@ -21,6 +21,8 @@ namespace e_Agro
 
         private void btnKorisnik_Click(object sender, EventArgs e)
         {
+            int broj = 12; //Proba
+            Console.WriteLine(broj);
             Hide();
             using (var forma = new frmPopisKorisnika())
             {
