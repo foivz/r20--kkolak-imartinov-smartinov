@@ -16,7 +16,7 @@ namespace e_Agro
         TipoviKorisnika tipKorisnika;
         Korisnici korisnici;
 
-        korisnik odabraniKorisnik;
+        private korisnik odabraniKorisnik;
         public frmDodavanjeKorisnika(korisnik korisnik)
         {
             radnoMjesto = new RadnaMjesta();
@@ -69,30 +69,22 @@ namespace e_Agro
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
-            if(odabraniKorisnik != null)
+            string email = txtEmail.Text;
+            string korisnickoIme = txtKorisnickoIme.Text;
+            string lozinka = txtLozinka.Text;
+            tip_korisnika tipKorisnika = cmbTipKorisnika.SelectedItem as tip_korisnika;
+            string ime = txtIme.Text;
+            string prezime = txtPrezime.Text;
+            string tekuciRacun = txtTekuciRacun.Text;
+            string adresa = txtAdresa.Text;
+            radno_mjesto radnoMjesto = cmbRadnoMjesto.SelectedItem as radno_mjesto;
+            if (odabraniKorisnik != null)
             {
-                string email = txtEmail.Text;
-                string korisnickoIme = txtKorisnickoIme.Text;
-                string lozinka = txtLozinka.Text;
-                tip_korisnika tipKorisnika = cmbTipKorisnika.SelectedItem as tip_korisnika;
-                string ime = txtIme.Text;
-                string prezime = txtPrezime.Text;
-                string tekuciRacun = txtTekuciRacun.Text;
-                string adresa = txtAdresa.Text;
-                radno_mjesto radnoMjesto = cmbRadnoMjesto.SelectedItem as radno_mjesto;
+              
                 korisnici.AzurirajKorisnika(odabraniKorisnik, email, korisnickoIme, lozinka, tipKorisnika, ime, prezime, tekuciRacun, adresa, radnoMjesto);
             }
             else
             {
-                string email = txtEmail.Text;
-                string korisnickoIme = txtKorisnickoIme.Text;
-                string lozinka = txtLozinka.Text;
-                tip_korisnika tipKorisnika = cmbTipKorisnika.SelectedItem as tip_korisnika;
-                string ime = txtIme.Text;
-                string prezime = txtPrezime.Text;
-                string tekuciRacun = txtTekuciRacun.Text;
-                string adresa = txtAdresa.Text;
-                radno_mjesto radnoMjesto = cmbRadnoMjesto.SelectedItem as radno_mjesto;
                 korisnici.DodajKorisnika(email, korisnickoIme, lozinka, tipKorisnika, ime, prezime, tekuciRacun, adresa, radnoMjesto);
             }
             Close();

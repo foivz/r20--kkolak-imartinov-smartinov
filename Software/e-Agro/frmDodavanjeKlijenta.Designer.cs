@@ -38,6 +38,8 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.txtAdresa = new System.Windows.Forms.TextBox();
             this.lblAdresa = new System.Windows.Forms.Label();
+            this.txtTekuciRacun = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -90,7 +92,7 @@
             // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(188, 177);
+            this.btnOdustani.Location = new System.Drawing.Point(195, 243);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 23);
             this.btnOdustani.TabIndex = 33;
@@ -100,12 +102,13 @@
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(12, 171);
+            this.btnDodaj.Location = new System.Drawing.Point(12, 237);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(75, 34);
             this.btnDodaj.TabIndex = 32;
             this.btnDodaj.Text = "Dodaj klijenta";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // txtAdresa
             // 
@@ -123,11 +126,29 @@
             this.lblAdresa.TabIndex = 34;
             this.lblAdresa.Text = "Adresa:";
             // 
+            // txtTekuciRacun
+            // 
+            this.txtTekuciRacun.Location = new System.Drawing.Point(106, 181);
+            this.txtTekuciRacun.Name = "txtTekuciRacun";
+            this.txtTekuciRacun.Size = new System.Drawing.Size(100, 20);
+            this.txtTekuciRacun.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 185);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Tekući račun:";
+            // 
             // frmDodavanjeKlijenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 230);
+            this.ClientSize = new System.Drawing.Size(282, 283);
+            this.Controls.Add(this.txtTekuciRacun);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAdresa);
             this.Controls.Add(this.lblAdresa);
             this.Controls.Add(this.txtEmail);
@@ -140,6 +161,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjeKlijenta";
             this.Text = "Dodavanje klijenta";
+            this.Load += new System.EventHandler(this.frmDodavanjeKlijenta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +179,7 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.Label lblAdresa;
+        private System.Windows.Forms.TextBox txtTekuciRacun;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -39,5 +39,27 @@ namespace e_Agro
             klijenti.ObrisiKlijenta(DohvatiOdabranog());
             OsvjeziTablicu(); 
         }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeKlijenta())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeKlijenta(DohvatiOdabranog()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
     }
 }
