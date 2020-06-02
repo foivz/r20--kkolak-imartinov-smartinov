@@ -140,6 +140,31 @@
             this.btnUred.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnUred.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnUred.UseVisualStyleBackColor = false;
+            this.btnUred.Click += new System.EventHandler(this.btnUred_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnSkladiste);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(217, 100);
+            this.panel4.TabIndex = 0;
+            // 
+            // btnSkladiste
+            // 
+            this.btnSkladiste.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnSkladiste.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSkladiste.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSkladiste.Image = ((System.Drawing.Image)(resources.GetObject("btnSkladiste.Image")));
+            this.btnSkladiste.Location = new System.Drawing.Point(0, 0);
+            this.btnSkladiste.Name = "btnSkladiste";
+            this.btnSkladiste.Size = new System.Drawing.Size(217, 100);
+            this.btnSkladiste.TabIndex = 0;
+            this.btnSkladiste.Text = "Skladište";
+            this.btnSkladiste.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnSkladiste.UseVisualStyleBackColor = false;
+            this.btnSkladiste.Click += new System.EventHandler(this.btnSkladiste_Click);
             // 
             // panel4
             // 
