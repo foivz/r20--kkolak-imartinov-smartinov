@@ -49,7 +49,7 @@
             // 
             // btnZaposlenik
             // 
-            this.btnZaposlenik.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnZaposlenik.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnZaposlenik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnZaposlenik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZaposlenik.Image = ((System.Drawing.Image)(resources.GetObject("btnZaposlenik.Image")));
@@ -65,7 +65,7 @@
             // 
             // btnKorisnik
             // 
-            this.btnKorisnik.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnKorisnik.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnKorisnik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnKorisnik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKorisnik.Image = ((System.Drawing.Image)(resources.GetObject("btnKorisnik.Image")));
@@ -128,7 +128,7 @@
             // 
             // btnUred
             // 
-            this.btnUred.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnUred.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUred.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUred.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUred.Image = ((System.Drawing.Image)(resources.GetObject("btnUred.Image")));
@@ -153,31 +153,7 @@
             // 
             // btnSkladiste
             // 
-            this.btnSkladiste.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnSkladiste.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSkladiste.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSkladiste.Image = ((System.Drawing.Image)(resources.GetObject("btnSkladiste.Image")));
-            this.btnSkladiste.Location = new System.Drawing.Point(0, 0);
-            this.btnSkladiste.Name = "btnSkladiste";
-            this.btnSkladiste.Size = new System.Drawing.Size(217, 100);
-            this.btnSkladiste.TabIndex = 0;
-            this.btnSkladiste.Text = "Skladište";
-            this.btnSkladiste.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnSkladiste.UseVisualStyleBackColor = false;
-            this.btnSkladiste.Click += new System.EventHandler(this.btnSkladiste_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnSkladiste);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(217, 100);
-            this.panel4.TabIndex = 0;
-            // 
-            // btnSkladiste
-            // 
-            this.btnSkladiste.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnSkladiste.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnSkladiste.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSkladiste.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSkladiste.Image = ((System.Drawing.Image)(resources.GetObject("btnSkladiste.Image")));
@@ -189,6 +165,7 @@
             this.btnSkladiste.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSkladiste.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSkladiste.UseVisualStyleBackColor = false;
+            this.btnSkladiste.Click += new System.EventHandler(this.btnSkladiste_Click);
             // 
             // frmAdmin
             // 

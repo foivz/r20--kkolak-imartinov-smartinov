@@ -67,5 +67,15 @@ namespace e_Agro
                 btnPrijava.PerformClick();
             }
         }
+
+        private void txtKorisnickoIme_Click(object sender, EventArgs e)
+        {
+            txtKorisnickoIme.Clear();
+        }
+
+        private void txtLozinka_Click(object sender, EventArgs e)
+        {
+            txtLozinka.Clear();
+        }
     }
 }
