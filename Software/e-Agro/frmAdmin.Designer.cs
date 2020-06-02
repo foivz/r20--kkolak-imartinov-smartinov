@@ -32,19 +32,19 @@
             this.btnZaposlenik = new System.Windows.Forms.Button();
             this.btnKorisnik = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelZaposlenik = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelZaposlenik = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnSkladiste = new System.Windows.Forms.Button();
             this.btnUred = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnSkladiste = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panelZaposlenik.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelZaposlenik.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnZaposlenik
@@ -87,15 +87,6 @@
             this.panel1.Size = new System.Drawing.Size(434, 125);
             this.panel1.TabIndex = 4;
             // 
-            // panelZaposlenik
-            // 
-            this.panelZaposlenik.Controls.Add(this.btnZaposlenik);
-            this.panelZaposlenik.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelZaposlenik.Location = new System.Drawing.Point(0, 0);
-            this.panelZaposlenik.Name = "panelZaposlenik";
-            this.panelZaposlenik.Size = new System.Drawing.Size(217, 125);
-            this.panelZaposlenik.TabIndex = 0;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnKorisnik);
@@ -104,6 +95,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(217, 125);
             this.panel2.TabIndex = 1;
+            // 
+            // panelZaposlenik
+            // 
+            this.panelZaposlenik.Controls.Add(this.btnZaposlenik);
+            this.panelZaposlenik.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelZaposlenik.Location = new System.Drawing.Point(0, 0);
+            this.panelZaposlenik.Name = "panelZaposlenik";
+            this.panelZaposlenik.Size = new System.Drawing.Size(217, 125);
+            this.panelZaposlenik.TabIndex = 0;
             // 
             // panel3
             // 
@@ -115,15 +115,6 @@
             this.panel3.Size = new System.Drawing.Size(434, 100);
             this.panel3.TabIndex = 5;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnSkladiste);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(217, 100);
-            this.panel4.TabIndex = 0;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.btnUred);
@@ -132,20 +123,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(217, 100);
             this.panel5.TabIndex = 1;
-            // 
-            // btnSkladiste
-            // 
-            this.btnSkladiste.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnSkladiste.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSkladiste.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSkladiste.Image = ((System.Drawing.Image)(resources.GetObject("btnSkladiste.Image")));
-            this.btnSkladiste.Location = new System.Drawing.Point(0, 0);
-            this.btnSkladiste.Name = "btnSkladiste";
-            this.btnSkladiste.Size = new System.Drawing.Size(217, 100);
-            this.btnSkladiste.TabIndex = 0;
-            this.btnSkladiste.Text = "Skladište";
-            this.btnSkladiste.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnSkladiste.UseVisualStyleBackColor = false;
             // 
             // btnUred
             // 
@@ -160,6 +137,31 @@
             this.btnUred.Text = "Ured";
             this.btnUred.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnUred.UseVisualStyleBackColor = false;
+            this.btnUred.Click += new System.EventHandler(this.btnUred_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnSkladiste);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(217, 100);
+            this.panel4.TabIndex = 0;
+            // 
+            // btnSkladiste
+            // 
+            this.btnSkladiste.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnSkladiste.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSkladiste.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSkladiste.Image = ((System.Drawing.Image)(resources.GetObject("btnSkladiste.Image")));
+            this.btnSkladiste.Location = new System.Drawing.Point(0, 0);
+            this.btnSkladiste.Name = "btnSkladiste";
+            this.btnSkladiste.Size = new System.Drawing.Size(217, 100);
+            this.btnSkladiste.TabIndex = 0;
+            this.btnSkladiste.Text = "Skladište";
+            this.btnSkladiste.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnSkladiste.UseVisualStyleBackColor = false;
+            this.btnSkladiste.Click += new System.EventHandler(this.btnSkladiste_Click);
             // 
             // frmAdmin
             // 
@@ -167,15 +169,15 @@
             this.ClientSize = new System.Drawing.Size(434, 211);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAdmin";
             this.Text = "Admin";
             this.panel1.ResumeLayout(false);
-            this.panelZaposlenik.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panelZaposlenik.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

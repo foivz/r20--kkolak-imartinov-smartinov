@@ -39,20 +39,20 @@ namespace e_Agro
             Show();
         }
 
-        private void btnSkladiste_Click(object sender, EventArgs e)
+        private void btnUred_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma = new frmPopisSkladista())
+            using (var forma = new frmPopisUreda())
             {
                 forma.ShowDialog();
             }
             Show();
         }
 
-        private void btnUred_Click(object sender, EventArgs e)
+        private void btnSkladiste_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma = new frmPopisUreda())
+            using (var forma = new frmPopisSkladista())
             {
                 forma.ShowDialog();
             }
