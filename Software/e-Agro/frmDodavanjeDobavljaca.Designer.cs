@@ -104,6 +104,7 @@
             this.btnDodaj.TabIndex = 42;
             this.btnDodaj.Text = "Dodaj dobavljača";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // frmDodavanjeDobavljaca
             // 
@@ -120,6 +121,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjeDobavljaca";
             this.Text = "Dodavanje dobavljača";
+            this.Load += new System.EventHandler(this.frmDodavanjeDobavljaca_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
