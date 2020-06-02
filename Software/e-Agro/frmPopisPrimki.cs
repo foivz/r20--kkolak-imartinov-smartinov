@@ -37,5 +37,25 @@ namespace e_Agro
             primke.ObrisiPrimku(DohvatiOdabranu());
             OsvjeziTablicu();
         }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma=new frmDodavanjePrimke())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjePrimke(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }
