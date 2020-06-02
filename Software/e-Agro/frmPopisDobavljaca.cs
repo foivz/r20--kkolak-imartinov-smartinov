@@ -41,5 +41,26 @@ namespace e_Agro
             dobavljaci.ObrisiDobavljaca(DohvatiOdabranog());
             OsvjeziTablicu();
         }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma =new frmDodavanjeDobavljaca())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeDobavljaca(DohvatiOdabranog()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+
+        }
     }
 }
