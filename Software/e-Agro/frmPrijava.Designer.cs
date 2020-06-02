@@ -93,20 +93,22 @@
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.Size = new System.Drawing.Size(100, 20);
             this.txtLozinka.TabIndex = 4;
+            this.txtLozinka.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLozinka_KeyDown);
             // 
             // btnPrijava
             // 
-            this.btnPrijava.Location = new System.Drawing.Point(159, 225);
+            this.btnPrijava.Location = new System.Drawing.Point(169, 224);
             this.btnPrijava.Name = "btnPrijava";
             this.btnPrijava.Size = new System.Drawing.Size(75, 23);
             this.btnPrijava.TabIndex = 6;
             this.btnPrijava.Text = "Prijavi se";
             this.btnPrijava.UseVisualStyleBackColor = true;
+            this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
             // 
             // lblRegistracija
             // 
             this.lblRegistracija.AutoSize = true;
-            this.lblRegistracija.Location = new System.Drawing.Point(132, 261);
+            this.lblRegistracija.Location = new System.Drawing.Point(145, 259);
             this.lblRegistracija.Name = "lblRegistracija";
             this.lblRegistracija.Size = new System.Drawing.Size(127, 13);
             this.lblRegistracija.TabIndex = 7;

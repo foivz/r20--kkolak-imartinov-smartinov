@@ -12,9 +12,23 @@ namespace e_Agro
 {
     public partial class frmSkladistar : Form
     {
-        public frmSkladistar()
+        private korisnik prijavljeniKorisnik;
+        public frmSkladistar(korisnik korisnik)
         {
             InitializeComponent();
+            prijavljeniKorisnik = korisnik;
+        }
+
+        private void btnOtpremnica_Click(object sender, EventArgs e)
+        {
+            var popisOtpremnica = new frmPopisOtpremnica();
+            popisOtpremnica.ShowDialog();
+        }
+
+        private void btnPrimka_Click(object sender, EventArgs e)
+        {
+            var popisPrimki = new frmPopisPrimki();
+            popisPrimki.ShowDialog();
         }
     }
 }

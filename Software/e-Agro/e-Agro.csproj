@@ -33,9 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,6 +57,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgroModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgroModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AgroModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AgroModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgroModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="dobavljac.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Dobavljaci.cs" />
     <Compile Include="frmDodavanjeDobavljaca.cs">
       <SubType>Form</SubType>
@@ -217,19 +244,69 @@
     <Compile Include="frmSkladistar.Designer.cs">
       <DependentUpon>frmSkladistar.cs</DependentUpon>
     </Compile>
+    <Compile Include="katalog_strojeva.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="klijent.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Klijenti.cs" />
     <Compile Include="Korisnici.cs" />
+    <Compile Include="korisnik.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="narudzba.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Narudzbe.cs" />
+    <Compile Include="otpremnica.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Otpremnice.cs" />
+    <Compile Include="ponuda.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Ponude.cs" />
+    <Compile Include="primka.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Primke.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProvjeraPrijave.cs" />
     <Compile Include="RadnaMjesta.cs" />
+    <Compile Include="radno_mjesto.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="radno_mjesto.Ext.cs" />
     <Compile Include="Skladista.cs" />
+    <Compile Include="skladiste.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stavke_na_narudzbi.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stavke_na_otpremnici.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stavke_na_ponudi.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stavke_na_primci.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Strojevi.cs" />
+    <Compile Include="stroj_na_skladistu.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="TipoviKorisnika.cs" />
+    <Compile Include="tip_korisnika.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tip_korisnika.Ext.cs" />
+    <Compile Include="ured.cs">
+      <DependentUpon>AgroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Uredi.cs" />
     <Compile Include="Zaposlenici.cs" />
     <EmbeddedResource Include="frmDodavanjeDobavljaca.resx">
@@ -326,6 +403,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EntityDeploy Include="AgroModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AgroModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AgroModel.edmx.diagram">
+      <DependentUpon>AgroModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -344,6 +429,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AgroModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AgroModel.edmx</DependentUpon>
+      <LastGenOutput>AgroModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AgroModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AgroModel.edmx</DependentUpon>
+      <LastGenOutput>AgroModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

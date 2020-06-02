@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 25;
             this.btnObrisi.Text = "Obriši dobavljača";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.dgvDobavljaci);
             this.Name = "frmPopisDobavljaca";
             this.Text = "frmPopisDobavljaca";
+            this.Load += new System.EventHandler(this.frmPopisDobavljaca_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDobavljaci)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

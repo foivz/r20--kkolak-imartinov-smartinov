@@ -34,8 +34,8 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.dgvNarudžbe = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNarudžbe)).BeginInit();
+            this.dgvNarudzbe = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNarudzbe)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNaslov
@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 25;
             this.btnObrisi.Text = "Obriši narudžbu";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -90,13 +91,13 @@
             this.txtSearch.Size = new System.Drawing.Size(100, 20);
             this.txtSearch.TabIndex = 22;
             // 
-            // dgvNarudžbe
+            // dgvNarudzbe
             // 
-            this.dgvNarudžbe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNarudžbe.Location = new System.Drawing.Point(12, 102);
-            this.dgvNarudžbe.Name = "dgvNarudžbe";
-            this.dgvNarudžbe.Size = new System.Drawing.Size(776, 258);
-            this.dgvNarudžbe.TabIndex = 21;
+            this.dgvNarudzbe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNarudzbe.Location = new System.Drawing.Point(12, 102);
+            this.dgvNarudzbe.Name = "dgvNarudzbe";
+            this.dgvNarudzbe.Size = new System.Drawing.Size(776, 258);
+            this.dgvNarudzbe.TabIndex = 21;
             // 
             // frmPopisNarudzbi
             // 
@@ -109,10 +110,11 @@
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.dgvNarudžbe);
+            this.Controls.Add(this.dgvNarudzbe);
             this.Name = "frmPopisNarudzbi";
             this.Text = "frmPopisNarudzbi";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNarudžbe)).EndInit();
+            this.Load += new System.EventHandler(this.frmPopisNarudzbi_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNarudzbe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +128,6 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.DataGridView dgvNarudžbe;
+        private System.Windows.Forms.DataGridView dgvNarudzbe;
     }
 }

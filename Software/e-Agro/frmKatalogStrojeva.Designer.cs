@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 18;
             this.btnObrisi.Text = "Obriši stroj";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -73,6 +74,7 @@
             this.btnDodaj.TabIndex = 17;
             this.btnDodaj.Text = "Dodaj stroj";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // lblSearch
             // 
@@ -112,6 +114,7 @@
             this.Controls.Add(this.dgvStrojevi);
             this.Name = "frmKatalogStrojeva";
             this.Text = "frmKatalogStrojeva";
+            this.Load += new System.EventHandler(this.frmKatalogStrojeva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStrojevi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 18;
             this.btnObrisi.Text = "Obriši ponudu";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.dgvPonude);
             this.Name = "frmPopisPonuda";
             this.Text = "frmPopisPonuda";
+            this.Load += new System.EventHandler(this.frmPopisPonuda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPonude)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

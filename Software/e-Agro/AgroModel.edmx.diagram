@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a87813c36281474a9b0be9df9891de7d" Name="Diagram1">
+        <EntityTypeShape EntityType="PI20_024_DBModel.dobavljac" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.katalog_strojeva" Width="1.875" PointX="2.625" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.klijent" Width="1.5" PointX="3.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.korisnik" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.narudzba" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.otpremnica" Width="1.5" PointX="3" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.ponuda" Width="1.5" PointX="6" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.primka" Width="1.5" PointX="6" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.radno_mjesto" Width="1.5" PointX="1.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.skladiste" Width="1.5" PointX="1.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.stavke_na_narudzbi" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.stavke_na_otpremnici" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.stavke_na_ponudi" Width="1.5" PointX="8.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.stavke_na_primci" Width="1.5" PointX="8.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.stroj_na_skladistu" Width="1.5" PointX="8.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.tip_korisnika" Width="1.5" PointX="1.5" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_024_DBModel.ured" Width="1.5" PointX="1.5" PointY="16.375" IsExpanded="true" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_dobavljac_katalog_strojeva" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_dobavljac_narudzba" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_stroj_stavke_na_narudzbi" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_stroj_stavke_na_otpremnici" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_stroj_stavke_na_ponudi" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_stroj_stavke_na_primci" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_stroj_stroj_na_skladistu" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_klijent_ponuda" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_korisnik_otpremnica" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_korisnik_ponuda" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_korisnik_primka" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_radno_mjesto_korisnik" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_tip_korisnika_korisnik" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_narudzba_stavke_na_narudzbi" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_primka_stavke_na_otpremnici" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_ponuda_stavke_na_ponudi" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_primka_stavke_na_primci" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_skladiste_radno_mjesto" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_ured_radno_mjesto" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_skladiste_stroj_na_skladistu" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

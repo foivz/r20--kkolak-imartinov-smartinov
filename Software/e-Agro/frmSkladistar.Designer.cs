@@ -41,6 +41,7 @@
             this.btnOtpremnica.TabIndex = 0;
             this.btnOtpremnica.Text = "Otpremnica";
             this.btnOtpremnica.UseVisualStyleBackColor = true;
+            this.btnOtpremnica.Click += new System.EventHandler(this.btnOtpremnica_Click);
             // 
             // btnPrimka
             // 
@@ -50,6 +51,7 @@
             this.btnPrimka.TabIndex = 1;
             this.btnPrimka.Text = "Primka";
             this.btnPrimka.UseVisualStyleBackColor = true;
+            this.btnPrimka.Click += new System.EventHandler(this.btnPrimka_Click);
             // 
             // btnIzvjestaj
             // 

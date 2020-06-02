@@ -12,9 +12,53 @@ namespace e_Agro
 {
     public partial class frmProdajniReferent : Form
     {
-        public frmProdajniReferent()
+        private korisnik prijavljeniKorisnik;
+        public frmProdajniReferent(korisnik korisnik)
         {
             InitializeComponent();
+            prijavljeniKorisnik = korisnik;
+        }
+
+        private void btnStrojevi_Click(object sender, EventArgs e)
+        {
+            var katalogStrojeva = new frmKatalogStrojeva();
+            katalogStrojeva.ShowDialog();
+        }
+
+        private void btnNarudzba_Click(object sender, EventArgs e)
+        {
+            var popisNarudzbi = new frmPopisNarudzbi();
+            popisNarudzbi.ShowDialog();
+        }
+
+        private void btnPonuda_Click(object sender, EventArgs e)
+        {
+            var popisPonuda = new frmPopisPonuda();
+            popisPonuda.ShowDialog();
+        }
+
+        private void btnIzvjestja_Click(object sender, EventArgs e)
+        {
+            var izvjestaj = new frmProdajniReferentIzvjestaj();
+            izvjestaj.ShowDialog();
+        }
+
+        private void btnDobavljac_Click(object sender, EventArgs e)
+        {
+            var popisDobavljaca = new frmPopisDobavljaca();
+            popisDobavljaca.ShowDialog();
+        }
+
+        private void btnKlijent_Click(object sender, EventArgs e)
+        {
+            var popisKlijenata = new frmPopisKlijenata();
+            popisKlijenata.ShowDialog();
+        }
+
+        private void btnGraf_Click(object sender, EventArgs e)
+        {
+            var graf = new frmProdajniReferentGraf();
+            graf.ShowDialog();
         }
     }
 }

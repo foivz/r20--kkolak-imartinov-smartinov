@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 32;
             this.btnObrisi.Text = "Obriši klijenta";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.dgvKlijenti);
             this.Name = "frmPopisKlijenata";
             this.Text = "frmPopisKlijenata";
+            this.Load += new System.EventHandler(this.frmPopisKlijenata_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKlijenti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

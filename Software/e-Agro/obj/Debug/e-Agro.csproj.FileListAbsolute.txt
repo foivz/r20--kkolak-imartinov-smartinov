@@ -9,3 +9,45 @@ C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\
 C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.exe
 C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.pdb
 C:\Users\AtomicMan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmAdmin.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\e-Agro.exe.config
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\e-Agro.exe
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\e-Agro.pdb
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\EntityFramework.dll
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\EntityFramework.SqlServer.dll
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\EntityFramework.xml
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\EntityFramework.SqlServer.xml
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csprojAssemblyReference.cache
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeDobavljaca.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeKlijenta.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeKorisnika.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeNarudzbi.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeOtpremnice.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjePonude.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjePrimke.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeSkladista.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeStroja.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeUreda.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeZaposlenika.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmKatalogStrojeva.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisDobavljaca.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisKlijenata.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisKorisnika.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisNarudzbi.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisPonuda.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrijava.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmAdmin.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisOtpremnica.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisSkladista.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisUreda.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisZaposlenika.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisPrimki.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferent.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferentGraf.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferentIzvjestaj.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmSkladistar.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.Properties.Resources.resources
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csproj.GenerateResource.cache
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csproj.CoreCompileInputs.cache
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csproj.CopyComplete
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.exe
+D:\FOI\3. godina\PI\Projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.pdb

@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 18;
             this.btnObrisi.Text = "Obriši ured";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.dgvUredi);
             this.Name = "frmPopisUreda";
             this.Text = "frmPopisUreda";
+            this.Load += new System.EventHandler(this.frmPopisUreda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUredi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

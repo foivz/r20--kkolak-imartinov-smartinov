@@ -42,6 +42,7 @@
             this.btnZaposlenik.TabIndex = 0;
             this.btnZaposlenik.Text = "Zaposlenik";
             this.btnZaposlenik.UseVisualStyleBackColor = true;
+            this.btnZaposlenik.Click += new System.EventHandler(this.btnZaposlenik_Click);
             // 
             // btnSkladiste
             // 
@@ -51,6 +52,7 @@
             this.btnSkladiste.TabIndex = 1;
             this.btnSkladiste.Text = "Skladište";
             this.btnSkladiste.UseVisualStyleBackColor = true;
+            this.btnSkladiste.Click += new System.EventHandler(this.btnSkladiste_Click);
             // 
             // btnUred
             // 
@@ -60,6 +62,7 @@
             this.btnUred.TabIndex = 2;
             this.btnUred.Text = "Ured";
             this.btnUred.UseVisualStyleBackColor = true;
+            this.btnUred.Click += new System.EventHandler(this.btnUred_Click);
             // 
             // btnKorisnik
             // 
@@ -69,6 +72,7 @@
             this.btnKorisnik.TabIndex = 3;
             this.btnKorisnik.Text = "Korisnik";
             this.btnKorisnik.UseVisualStyleBackColor = true;
+            this.btnKorisnik.Click += new System.EventHandler(this.btnKorisnik_Click);
             // 
             // frmAdmin
             // 

@@ -41,7 +41,7 @@
             // lblNaslov
             // 
             this.lblNaslov.AutoSize = true;
-            this.lblNaslov.Location = new System.Drawing.Point(342, 9);
+            this.lblNaslov.Location = new System.Drawing.Point(397, 9);
             this.lblNaslov.Name = "lblNaslov";
             this.lblNaslov.Size = new System.Drawing.Size(84, 13);
             this.lblNaslov.TabIndex = 41;
@@ -49,35 +49,38 @@
             // 
             // btnAzuriraj
             // 
-            this.btnAzuriraj.Location = new System.Drawing.Point(464, 405);
+            this.btnAzuriraj.Location = new System.Drawing.Point(558, 401);
             this.btnAzuriraj.Name = "btnAzuriraj";
             this.btnAzuriraj.Size = new System.Drawing.Size(75, 37);
             this.btnAzuriraj.TabIndex = 40;
             this.btnAzuriraj.Text = "Ažuriraj korisnika";
             this.btnAzuriraj.UseVisualStyleBackColor = true;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click);
             // 
             // btnObrisi
             // 
-            this.btnObrisi.Location = new System.Drawing.Point(345, 405);
+            this.btnObrisi.Location = new System.Drawing.Point(439, 401);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(75, 37);
             this.btnObrisi.TabIndex = 39;
             this.btnObrisi.Text = "Obriši korisnika";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(227, 405);
+            this.btnDodaj.Location = new System.Drawing.Point(321, 401);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(75, 37);
             this.btnDodaj.TabIndex = 38;
             this.btnDodaj.Text = "Dodaj korisnika";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(637, 79);
+            this.lblSearch.Location = new System.Drawing.Point(773, 79);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(41, 13);
             this.lblSearch.TabIndex = 37;
@@ -85,7 +88,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(688, 76);
+            this.txtSearch.Location = new System.Drawing.Point(824, 76);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(100, 20);
             this.txtSearch.TabIndex = 36;
@@ -95,14 +98,14 @@
             this.dgvKorisnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKorisnici.Location = new System.Drawing.Point(12, 102);
             this.dgvKorisnici.Name = "dgvKorisnici";
-            this.dgvKorisnici.Size = new System.Drawing.Size(776, 258);
+            this.dgvKorisnici.Size = new System.Drawing.Size(912, 258);
             this.dgvKorisnici.TabIndex = 35;
             // 
             // frmPopisKorisnika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(936, 450);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);
@@ -112,6 +115,7 @@
             this.Controls.Add(this.dgvKorisnici);
             this.Name = "frmPopisKorisnika";
             this.Text = "frmPopisKorisnika";
+            this.Load += new System.EventHandler(this.frmPopisKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

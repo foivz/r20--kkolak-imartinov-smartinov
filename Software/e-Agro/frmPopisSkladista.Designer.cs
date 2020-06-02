@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 11;
             this.btnObrisi.Text = "Obriši skladište";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.dgvSkladista);
             this.Name = "frmPopisSkladista";
             this.Text = "frmPopisSkladista";
+            this.Load += new System.EventHandler(this.frmPopisSkladista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkladista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

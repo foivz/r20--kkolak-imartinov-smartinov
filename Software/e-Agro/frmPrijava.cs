@@ -12,9 +12,60 @@ namespace e_Agro
 {
     public partial class frmPrijava : Form
     {
+        private korisnik prijavljeniKorisnik;
         public frmPrijava()
         {
             InitializeComponent();
+        }
+
+        private void btnPrijava_Click(object sender, EventArgs e)
+        {
+            var provjera = new ProvjeraPrijave();
+            prijavljeniKorisnik = provjera.ProvjeraPodataka(txtKorisnickoIme.Text, txtLozinka.Text);
+
+            txtKorisnickoIme.Clear();
+            txtLozinka.Clear();
+
+            if(prijavljeniKorisnik != null)
+            {
+                if (prijavljeniKorisnik.tip_id == 3)
+                {
+                    Hide();
+                    using (var forma = new frmAdmin(prijavljeniKorisnik))
+                    {
+                        forma.ShowDialog();
+                    }
+                    Show();
+                }
+                else if (prijavljeniKorisnik.tip_id == 2)
+                {
+                    Hide();
+                    using (var forma = new frmSkladistar(prijavljeniKorisnik))
+                    {
+                        forma.ShowDialog();
+                    }
+                    Show();
+                }
+                else if (prijavljeniKorisnik.tip_id == 1)
+                {
+                    Hide();
+                    using (var forma = new frmProdajniReferent(prijavljeniKorisnik))
+                    {
+                        forma.ShowDialog();
+                    }
+                    Show();
+                }
+            }
+            else
+                MessageBox.Show("Ne postoji korisnik za unesene podatke!");
+        }
+
+        private void txtLozinka_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnPrijava.PerformClick();
+            }
         }
     }
 }

@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 25;
             this.btnObrisi.Text = "Obriši otpremnicu";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -95,7 +96,7 @@
             this.dgvOtpremnice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOtpremnice.Location = new System.Drawing.Point(12, 102);
             this.dgvOtpremnice.Name = "dgvOtpremnice";
-            this.dgvOtpremnice.Size = new System.Drawing.Size(776, 258);
+            this.dgvOtpremnice.Size = new System.Drawing.Size(776, 267);
             this.dgvOtpremnice.TabIndex = 21;
             // 
             // frmPopisOtpremnica
@@ -112,6 +113,7 @@
             this.Controls.Add(this.dgvOtpremnice);
             this.Name = "frmPopisOtpremnica";
             this.Text = "frmOtpremnica";
+            this.Load += new System.EventHandler(this.frmPopisOtpremnica_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOtpremnice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

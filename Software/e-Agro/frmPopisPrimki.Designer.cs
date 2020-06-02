@@ -64,6 +64,7 @@
             this.btnObrisi.TabIndex = 25;
             this.btnObrisi.Text = "Obriši primku";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnDodaj
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.dgvPrimke);
             this.Name = "frmPopisPrimki";
             this.Text = "frmPrimka";
+            this.Load += new System.EventHandler(this.frmPopisPrimki_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrimke)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

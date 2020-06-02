@@ -16,5 +16,10 @@ namespace e_Agro
         {
             InitializeComponent();
         }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

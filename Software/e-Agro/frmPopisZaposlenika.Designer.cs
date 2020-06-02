@@ -79,6 +79,7 @@
             this.btnObrisi.TabIndex = 4;
             this.btnObrisi.Text = "Obriši zaposlenika";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnAzuriraj
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.dgvZaposlenici);
             this.Name = "frmPopisZaposlenika";
             this.Text = "frmPopisZaposlenika";
+            this.Load += new System.EventHandler(this.frmPopisZaposlenika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

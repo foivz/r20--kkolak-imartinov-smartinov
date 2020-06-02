@@ -45,6 +45,7 @@
             this.btnStrojevi.TabIndex = 0;
             this.btnStrojevi.Text = "Katalog strojeva";
             this.btnStrojevi.UseVisualStyleBackColor = true;
+            this.btnStrojevi.Click += new System.EventHandler(this.btnStrojevi_Click);
             // 
             // btnPonuda
             // 
@@ -54,6 +55,7 @@
             this.btnPonuda.TabIndex = 1;
             this.btnPonuda.Text = "Ponuda";
             this.btnPonuda.UseVisualStyleBackColor = true;
+            this.btnPonuda.Click += new System.EventHandler(this.btnPonuda_Click);
             // 
             // btnKlijent
             // 
@@ -63,6 +65,7 @@
             this.btnKlijent.TabIndex = 2;
             this.btnKlijent.Text = "Klijent";
             this.btnKlijent.UseVisualStyleBackColor = true;
+            this.btnKlijent.Click += new System.EventHandler(this.btnKlijent_Click);
             // 
             // btnGraf
             // 
@@ -72,6 +75,7 @@
             this.btnGraf.TabIndex = 3;
             this.btnGraf.Text = "Graf";
             this.btnGraf.UseVisualStyleBackColor = true;
+            this.btnGraf.Click += new System.EventHandler(this.btnGraf_Click);
             // 
             // btnDobavljac
             // 
@@ -81,6 +85,7 @@
             this.btnDobavljac.TabIndex = 4;
             this.btnDobavljac.Text = "Dobavljač";
             this.btnDobavljac.UseVisualStyleBackColor = true;
+            this.btnDobavljac.Click += new System.EventHandler(this.btnDobavljac_Click);
             // 
             // btnIzvjestja
             // 
@@ -90,6 +95,7 @@
             this.btnIzvjestja.TabIndex = 5;
             this.btnIzvjestja.Text = "Izvještaj dobavljača";
             this.btnIzvjestja.UseVisualStyleBackColor = true;
+            this.btnIzvjestja.Click += new System.EventHandler(this.btnIzvjestja_Click);
             // 
             // btnNarudzba
             // 
@@ -99,6 +105,7 @@
             this.btnNarudzba.TabIndex = 6;
             this.btnNarudzba.Text = "Narudžba";
             this.btnNarudzba.UseVisualStyleBackColor = true;
+            this.btnNarudzba.Click += new System.EventHandler(this.btnNarudzba_Click);
             // 
             // frmProdajniReferent
             // 
