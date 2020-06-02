@@ -136,12 +136,6 @@
     <Compile Include="frmDodavanjeUreda.Designer.cs">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDodavanjeZaposlenika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDodavanjeZaposlenika.Designer.cs">
-      <DependentUpon>frmDodavanjeZaposlenika.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmPopisDobavljaca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,12 +201,6 @@
     </Compile>
     <Compile Include="frmPopisUreda.Designer.cs">
       <DependentUpon>frmPopisUreda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPopisZaposlenika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPopisZaposlenika.Designer.cs">
-      <DependentUpon>frmPopisZaposlenika.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPopisPrimki.cs">
       <SubType>Form</SubType>
@@ -309,7 +297,6 @@
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Uredi.cs" />
-    <Compile Include="Zaposlenici.cs" />
     <EmbeddedResource Include="frmDodavanjeDobavljaca.resx">
       <DependentUpon>frmDodavanjeDobavljaca.cs</DependentUpon>
     </EmbeddedResource>
@@ -339,9 +326,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDodavanjeUreda.resx">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDodavanjeZaposlenika.resx">
-      <DependentUpon>frmDodavanjeZaposlenika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKatalogStrojeva.resx">
       <DependentUpon>frmKatalogStrojeva.cs</DependentUpon>
@@ -375,9 +359,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPopisUreda.resx">
       <DependentUpon>frmPopisUreda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPopisZaposlenika.resx">
-      <DependentUpon>frmPopisZaposlenika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPopisPrimki.resx">
       <DependentUpon>frmPopisPrimki.cs</DependentUpon>
