@@ -16,12 +16,13 @@ namespace e_Agro
         private klijent odabraniKlijent;
         public frmDodavanjeKlijenta()
         {
- 
+            klijenti = new Klijenti();
             InitializeComponent();
         }
 
         public frmDodavanjeKlijenta(klijent klijent)
         {
+            klijenti = new Klijenti();
             odabraniKlijent = klijent;
             InitializeComponent();
         }
