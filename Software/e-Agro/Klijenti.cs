@@ -23,6 +23,23 @@ namespace e_Agro
             }
         }
 
+        public void DodajKlijenta(string ime, string prezime, string email, string adresa, string tekuciRacun)
+        {
+            using(var context = new PI20_024_DBEntities())
+            {
+                klijent noviKlijent = new klijent
+                {
+                    ime = ime,
+                    prezime = prezime,
+                    email = email,
+                    adresa = adresa,
+                    tekuci_racun = tekuciRacun
+                };
+                context.klijents.Add(noviKlijent);
+                context.SaveChanges();
+            }
+        }
+
         public void ObrisiKlijenta(klijent klijent)
         {
             using (var context = new PI20_024_DBEntities())
