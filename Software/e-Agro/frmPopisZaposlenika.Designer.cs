@@ -30,7 +30,6 @@
         {
             this.dgvZaposlenici = new System.Windows.Forms.DataGridView();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.lblSearch = new System.Windows.Forms.Label();
             this.btnDodaj = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
             this.btnAzuriraj = new System.Windows.Forms.Button();
@@ -41,41 +40,38 @@
             // dgvZaposlenici
             // 
             this.dgvZaposlenici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvZaposlenici.Location = new System.Drawing.Point(36, 103);
+            this.dgvZaposlenici.Location = new System.Drawing.Point(12, 103);
             this.dgvZaposlenici.Name = "dgvZaposlenici";
-            this.dgvZaposlenici.Size = new System.Drawing.Size(776, 258);
+            this.dgvZaposlenici.Size = new System.Drawing.Size(1250, 258);
             this.dgvZaposlenici.TabIndex = 0;
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(712, 77);
+            this.txtSearch.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(1090, 74);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtSearch.Size = new System.Drawing.Size(172, 21);
             this.txtSearch.TabIndex = 1;
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(661, 80);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(41, 13);
-            this.lblSearch.TabIndex = 2;
-            this.lblSearch.Text = "Search";
+            this.txtSearch.Text = "Unesite riječ za pretragu...";
+            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(251, 406);
+            this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodaj.Location = new System.Drawing.Point(818, 367);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(75, 37);
+            this.btnDodaj.Size = new System.Drawing.Size(144, 37);
             this.btnDodaj.TabIndex = 3;
             this.btnDodaj.Text = "Dodaj zaposlenika";
             this.btnDodaj.UseVisualStyleBackColor = true;
             // 
             // btnObrisi
             // 
-            this.btnObrisi.Location = new System.Drawing.Point(369, 406);
+            this.btnObrisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnObrisi.Location = new System.Drawing.Point(968, 367);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(75, 37);
+            this.btnObrisi.Size = new System.Drawing.Size(144, 37);
             this.btnObrisi.TabIndex = 4;
             this.btnObrisi.Text = "Obriši zaposlenika";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -83,9 +79,10 @@
             // 
             // btnAzuriraj
             // 
-            this.btnAzuriraj.Location = new System.Drawing.Point(488, 406);
+            this.btnAzuriraj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAzuriraj.Location = new System.Drawing.Point(1118, 367);
             this.btnAzuriraj.Name = "btnAzuriraj";
-            this.btnAzuriraj.Size = new System.Drawing.Size(75, 37);
+            this.btnAzuriraj.Size = new System.Drawing.Size(144, 37);
             this.btnAzuriraj.TabIndex = 5;
             this.btnAzuriraj.Text = "Ažuriraj zaposlenika";
             this.btnAzuriraj.UseVisualStyleBackColor = true;
@@ -93,9 +90,11 @@
             // lblNaslov
             // 
             this.lblNaslov.AutoSize = true;
-            this.lblNaslov.Location = new System.Drawing.Point(366, 9);
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(587, 9);
             this.lblNaslov.Name = "lblNaslov";
-            this.lblNaslov.Size = new System.Drawing.Size(61, 13);
+            this.lblNaslov.Size = new System.Drawing.Size(116, 23);
             this.lblNaslov.TabIndex = 6;
             this.lblNaslov.Text = "Zaposlenici";
             // 
@@ -103,12 +102,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 457);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ClientSize = new System.Drawing.Size(1274, 457);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnDodaj);
-            this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvZaposlenici);
             this.Name = "frmPopisZaposlenika";
@@ -124,7 +123,6 @@
 
         private System.Windows.Forms.DataGridView dgvZaposlenici;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.Button btnObrisi;
         private System.Windows.Forms.Button btnAzuriraj;

@@ -40,5 +40,10 @@ namespace e_Agro
             zaposlenici.ObrisiZaposlenika(DohvatiOdabranog());
             OsvjeziTablicu();
         }
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Clear();
+        }
     }
 }

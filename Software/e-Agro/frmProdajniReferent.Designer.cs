@@ -39,7 +39,7 @@
             // 
             // btnStrojevi
             // 
-            this.btnStrojevi.Location = new System.Drawing.Point(12, 12);
+            this.btnStrojevi.Location = new System.Drawing.Point(1, 4);
             this.btnStrojevi.Name = "btnStrojevi";
             this.btnStrojevi.Size = new System.Drawing.Size(75, 40);
             this.btnStrojevi.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // btnPonuda
             // 
-            this.btnPonuda.Location = new System.Drawing.Point(180, 21);
+            this.btnPonuda.Location = new System.Drawing.Point(1, 64);
             this.btnPonuda.Name = "btnPonuda";
             this.btnPonuda.Size = new System.Drawing.Size(75, 23);
             this.btnPonuda.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // btnKlijent
             // 
-            this.btnKlijent.Location = new System.Drawing.Point(326, 21);
+            this.btnKlijent.Location = new System.Drawing.Point(312, 4);
             this.btnKlijent.Name = "btnKlijent";
             this.btnKlijent.Size = new System.Drawing.Size(68, 23);
             this.btnKlijent.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // btnGraf
             // 
-            this.btnGraf.Location = new System.Drawing.Point(326, 128);
+            this.btnGraf.Location = new System.Drawing.Point(305, 64);
             this.btnGraf.Name = "btnGraf";
             this.btnGraf.Size = new System.Drawing.Size(75, 23);
             this.btnGraf.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             // btnDobavljac
             // 
-            this.btnDobavljac.Location = new System.Drawing.Point(180, 128);
+            this.btnDobavljac.Location = new System.Drawing.Point(153, 64);
             this.btnDobavljac.Name = "btnDobavljac";
             this.btnDobavljac.Size = new System.Drawing.Size(75, 23);
             this.btnDobavljac.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             // btnIzvjestja
             // 
-            this.btnIzvjestja.Location = new System.Drawing.Point(180, 64);
+            this.btnIzvjestja.Location = new System.Drawing.Point(153, 4);
             this.btnIzvjestja.Name = "btnIzvjestja";
             this.btnIzvjestja.Size = new System.Drawing.Size(75, 37);
             this.btnIzvjestja.TabIndex = 5;
@@ -99,7 +99,7 @@
             // 
             // btnNarudzba
             // 
-            this.btnNarudzba.Location = new System.Drawing.Point(12, 128);
+            this.btnNarudzba.Location = new System.Drawing.Point(1, 119);
             this.btnNarudzba.Name = "btnNarudzba";
             this.btnNarudzba.Size = new System.Drawing.Size(75, 23);
             this.btnNarudzba.TabIndex = 6;

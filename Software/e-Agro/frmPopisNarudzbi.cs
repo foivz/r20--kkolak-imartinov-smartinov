@@ -38,5 +38,10 @@ namespace e_Agro
             narudzbe.ObrisiNarudzbu(DohvatiOdabranu());
             OsvjeziTablicu();
         }
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Clear();
+        }
     }
 }
