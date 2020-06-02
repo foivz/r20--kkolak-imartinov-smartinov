@@ -255,6 +255,7 @@
     <Compile Include="korisnik.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="korisnik.Ext.cs" />
     <Compile Include="narudzba.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
