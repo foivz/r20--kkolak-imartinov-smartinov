@@ -55,6 +55,7 @@
             this.btnAzuriraj.TabIndex = 26;
             this.btnAzuriraj.Text = "Ažuriraj primku";
             this.btnAzuriraj.UseVisualStyleBackColor = true;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click);
             // 
             // btnObrisi
             // 
@@ -74,6 +75,7 @@
             this.btnDodaj.TabIndex = 24;
             this.btnDodaj.Text = "Dodaj primku";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // lblSearch
             // 

@@ -35,7 +35,7 @@
             this.lblKreirao = new System.Windows.Forms.Label();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
-            this.cbKreirao = new System.Windows.Forms.ComboBox();
+            this.cmbKreirao = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtCijena
@@ -97,21 +97,22 @@
             this.btnDodaj.TabIndex = 42;
             this.btnDodaj.Text = "Dodaj primku";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
-            // cbKreirao
+            // cmbKreirao
             // 
-            this.cbKreirao.FormattingEnabled = true;
-            this.cbKreirao.Location = new System.Drawing.Point(92, 23);
-            this.cbKreirao.Name = "cbKreirao";
-            this.cbKreirao.Size = new System.Drawing.Size(121, 21);
-            this.cbKreirao.TabIndex = 48;
+            this.cmbKreirao.FormattingEnabled = true;
+            this.cmbKreirao.Location = new System.Drawing.Point(92, 23);
+            this.cmbKreirao.Name = "cmbKreirao";
+            this.cmbKreirao.Size = new System.Drawing.Size(121, 21);
+            this.cmbKreirao.TabIndex = 48;
             // 
             // frmDodavanjePrimke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 169);
-            this.Controls.Add(this.cbKreirao);
+            this.Controls.Add(this.cmbKreirao);
             this.Controls.Add(this.txtCijena);
             this.Controls.Add(this.lblCijena);
             this.Controls.Add(this.txtKolicina);
@@ -121,6 +122,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjePrimke";
             this.Text = "Dodavanje primke";
+            this.Load += new System.EventHandler(this.frmDodavanjePrimke_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,6 +136,6 @@
         private System.Windows.Forms.Label lblKreirao;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.ComboBox cbKreirao;
+        private System.Windows.Forms.ComboBox cmbKreirao;
     }
 }
