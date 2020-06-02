@@ -92,7 +92,7 @@
             // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(195, 219);
+            this.btnOdustani.Location = new System.Drawing.Point(195, 243);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 23);
             this.btnOdustani.TabIndex = 33;
@@ -102,7 +102,7 @@
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(12, 213);
+            this.btnDodaj.Location = new System.Drawing.Point(12, 237);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(75, 34);
             this.btnDodaj.TabIndex = 32;
@@ -128,7 +128,7 @@
             // 
             // txtTekuciRacun
             // 
-            this.txtTekuciRacun.Location = new System.Drawing.Point(106, 175);
+            this.txtTekuciRacun.Location = new System.Drawing.Point(106, 181);
             this.txtTekuciRacun.Name = "txtTekuciRacun";
             this.txtTekuciRacun.Size = new System.Drawing.Size(100, 20);
             this.txtTekuciRacun.TabIndex = 37;
@@ -136,7 +136,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 179);
+            this.label1.Location = new System.Drawing.Point(27, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 36;
@@ -146,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 255);
+            this.ClientSize = new System.Drawing.Size(282, 283);
             this.Controls.Add(this.txtTekuciRacun);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAdresa);
