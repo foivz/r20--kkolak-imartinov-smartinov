@@ -37,17 +37,20 @@
             // lblNaslov
             // 
             this.lblNaslov.AutoSize = true;
-            this.lblNaslov.Location = new System.Drawing.Point(82, 9);
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(37, 9);
             this.lblNaslov.Name = "lblNaslov";
-            this.lblNaslov.Size = new System.Drawing.Size(230, 13);
+            this.lblNaslov.Size = new System.Drawing.Size(447, 22);
             this.lblNaslov.TabIndex = 11;
             this.lblNaslov.Text = "Prikaz strojeva koje smo nabavili od dobavljača";
             // 
             // btnPrikaz
             // 
-            this.btnPrikaz.Location = new System.Drawing.Point(143, 119);
+            this.btnPrikaz.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrikaz.Location = new System.Drawing.Point(41, 135);
             this.btnPrikaz.Name = "btnPrikaz";
-            this.btnPrikaz.Size = new System.Drawing.Size(97, 30);
+            this.btnPrikaz.Size = new System.Drawing.Size(120, 34);
             this.btnPrikaz.TabIndex = 10;
             this.btnPrikaz.Text = "Prikaz izvještaja";
             this.btnPrikaz.UseVisualStyleBackColor = true;
@@ -55,16 +58,18 @@
             // lblDobavljac
             // 
             this.lblDobavljac.AutoSize = true;
-            this.lblDobavljac.Location = new System.Drawing.Point(11, 69);
+            this.lblDobavljac.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDobavljac.ForeColor = System.Drawing.Color.White;
+            this.lblDobavljac.Location = new System.Drawing.Point(38, 65);
             this.lblDobavljac.Name = "lblDobavljac";
-            this.lblDobavljac.Size = new System.Drawing.Size(88, 13);
+            this.lblDobavljac.Size = new System.Drawing.Size(123, 17);
             this.lblDobavljac.TabIndex = 9;
             this.lblDobavljac.Text = "Izbor dobavljača:";
             // 
             // cbDobavljac
             // 
             this.cbDobavljac.FormattingEnabled = true;
-            this.cbDobavljac.Location = new System.Drawing.Point(105, 66);
+            this.cbDobavljac.Location = new System.Drawing.Point(41, 85);
             this.cbDobavljac.Name = "cbDobavljac";
             this.cbDobavljac.Size = new System.Drawing.Size(121, 21);
             this.cbDobavljac.TabIndex = 8;
@@ -73,7 +78,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 171);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ClientSize = new System.Drawing.Size(610, 196);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnPrikaz);
             this.Controls.Add(this.lblDobavljac);

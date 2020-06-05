@@ -34,6 +34,7 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvDobavljaci = new System.Windows.Forms.DataGridView();
+            this.btnIzvjestaj = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDobavljaci)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,9 +74,9 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(322, 366);
+            this.btnDodaj.Location = new System.Drawing.Point(12, 409);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(140, 37);
+            this.btnDodaj.Size = new System.Drawing.Size(158, 37);
             this.btnDodaj.TabIndex = 24;
             this.btnDodaj.Text = "Dodaj dobavljača";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -100,12 +101,24 @@
             this.dgvDobavljaci.Size = new System.Drawing.Size(450, 258);
             this.dgvDobavljaci.TabIndex = 21;
             // 
+            // btnIzvjestaj
+            // 
+            this.btnIzvjestaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIzvjestaj.Location = new System.Drawing.Point(176, 409);
+            this.btnIzvjestaj.Name = "btnIzvjestaj";
+            this.btnIzvjestaj.Size = new System.Drawing.Size(158, 37);
+            this.btnIzvjestaj.TabIndex = 28;
+            this.btnIzvjestaj.Text = "Prikaži izvještaj";
+            this.btnIzvjestaj.UseVisualStyleBackColor = true;
+            this.btnIzvjestaj.Click += new System.EventHandler(this.btnIzvjestaj_Click);
+            // 
             // frmPopisDobavljaca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(480, 421);
+            this.ClientSize = new System.Drawing.Size(504, 491);
+            this.Controls.Add(this.btnIzvjestaj);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);
@@ -129,5 +142,6 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvDobavljaci;
+        private System.Windows.Forms.Button btnIzvjestaj;
     }
 }

@@ -67,5 +67,11 @@ namespace e_Agro
         {
             txtSearch.Clear();
         }
+
+        private void btnIzvjestaj_Click(object sender, EventArgs e)
+        {
+            var izvjestaj = new frmProdajniReferentIzvjestaj();
+            izvjestaj.ShowDialog();
+        }
     }
 }
