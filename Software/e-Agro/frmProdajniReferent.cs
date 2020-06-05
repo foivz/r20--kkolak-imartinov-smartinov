@@ -37,12 +37,6 @@ namespace e_Agro
             popisPonuda.ShowDialog();
         }
 
-        private void btnIzvjestja_Click(object sender, EventArgs e)
-        {
-            var izvjestaj = new frmProdajniReferentIzvjestaj();
-            izvjestaj.ShowDialog();
-        }
-
         private void btnDobavljac_Click(object sender, EventArgs e)
         {
             var popisDobavljaca = new frmPopisDobavljaca();

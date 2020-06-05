@@ -40,7 +40,7 @@
             // lblNaslov
             // 
             this.lblNaslov.AutoSize = true;
-            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslov.ForeColor = System.Drawing.Color.White;
             this.lblNaslov.Location = new System.Drawing.Point(550, 9);
             this.lblNaslov.Name = "lblNaslov";
@@ -85,10 +85,10 @@
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(1073, 76);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(172, 23);
+            this.txtSearch.Size = new System.Drawing.Size(172, 21);
             this.txtSearch.TabIndex = 36;
             this.txtSearch.Text = "Unesite riječ za pretragu...";
             this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);

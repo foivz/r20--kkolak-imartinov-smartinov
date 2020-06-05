@@ -42,27 +42,30 @@
             this.lblKlijent = new System.Windows.Forms.Label();
             this.cbKlijent = new System.Windows.Forms.ComboBox();
             this.cbKreirao = new System.Windows.Forms.ComboBox();
+            this.lblNaslovPonuda = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblDatumKreiranja
             // 
             this.lblDatumKreiranja.AutoSize = true;
-            this.lblDatumKreiranja.Location = new System.Drawing.Point(19, 164);
+            this.lblDatumKreiranja.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatumKreiranja.ForeColor = System.Drawing.Color.White;
+            this.lblDatumKreiranja.Location = new System.Drawing.Point(37, 214);
             this.lblDatumKreiranja.Name = "lblDatumKreiranja";
-            this.lblDatumKreiranja.Size = new System.Drawing.Size(84, 13);
+            this.lblDatumKreiranja.Size = new System.Drawing.Size(116, 17);
             this.lblDatumKreiranja.TabIndex = 49;
             this.lblDatumKreiranja.Text = "Datum kreiranja:";
             // 
             // dtpDatumKreiranja
             // 
-            this.dtpDatumKreiranja.Location = new System.Drawing.Point(109, 160);
+            this.dtpDatumKreiranja.Location = new System.Drawing.Point(40, 234);
             this.dtpDatumKreiranja.Name = "dtpDatumKreiranja";
             this.dtpDatumKreiranja.Size = new System.Drawing.Size(200, 20);
             this.dtpDatumKreiranja.TabIndex = 48;
             // 
             // txtCijena
             // 
-            this.txtCijena.Location = new System.Drawing.Point(109, 124);
+            this.txtCijena.Location = new System.Drawing.Point(311, 163);
             this.txtCijena.Name = "txtCijena";
             this.txtCijena.Size = new System.Drawing.Size(121, 20);
             this.txtCijena.TabIndex = 47;
@@ -70,15 +73,17 @@
             // lblCijena
             // 
             this.lblCijena.AutoSize = true;
-            this.lblCijena.Location = new System.Drawing.Point(64, 127);
+            this.lblCijena.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCijena.ForeColor = System.Drawing.Color.White;
+            this.lblCijena.Location = new System.Drawing.Point(308, 143);
             this.lblCijena.Name = "lblCijena";
-            this.lblCijena.Size = new System.Drawing.Size(39, 13);
+            this.lblCijena.Size = new System.Drawing.Size(54, 17);
             this.lblCijena.TabIndex = 46;
             this.lblCijena.Text = "Cijena:";
             // 
             // txtKolicina
             // 
-            this.txtKolicina.Location = new System.Drawing.Point(109, 89);
+            this.txtKolicina.Location = new System.Drawing.Point(174, 163);
             this.txtKolicina.Name = "txtKolicina";
             this.txtKolicina.Size = new System.Drawing.Size(121, 20);
             this.txtKolicina.TabIndex = 45;
@@ -86,26 +91,31 @@
             // lblKolicina
             // 
             this.lblKolicina.AutoSize = true;
-            this.lblKolicina.Location = new System.Drawing.Point(56, 92);
+            this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKolicina.ForeColor = System.Drawing.Color.White;
+            this.lblKolicina.Location = new System.Drawing.Point(171, 143);
             this.lblKolicina.Name = "lblKolicina";
-            this.lblKolicina.Size = new System.Drawing.Size(47, 13);
+            this.lblKolicina.Size = new System.Drawing.Size(63, 17);
             this.lblKolicina.TabIndex = 44;
             this.lblKolicina.Text = "Količina:";
             // 
             // lblKreirao
             // 
             this.lblKreirao.AutoSize = true;
-            this.lblKreirao.Location = new System.Drawing.Point(60, 15);
+            this.lblKreirao.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKreirao.ForeColor = System.Drawing.Color.White;
+            this.lblKreirao.Location = new System.Drawing.Point(37, 73);
             this.lblKreirao.Name = "lblKreirao";
-            this.lblKreirao.Size = new System.Drawing.Size(43, 13);
+            this.lblKreirao.Size = new System.Drawing.Size(57, 17);
             this.lblKreirao.TabIndex = 38;
             this.lblKreirao.Text = "Kreirao:";
             // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(222, 240);
+            this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOdustani.Location = new System.Drawing.Point(174, 366);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(75, 23);
+            this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 43;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
@@ -113,16 +123,17 @@
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(59, 240);
+            this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodaj.Location = new System.Drawing.Point(40, 366);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(75, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(120, 34);
             this.btnDodaj.TabIndex = 42;
             this.btnDodaj.Text = "Dodaj ponudu";
             this.btnDodaj.UseVisualStyleBackColor = true;
             // 
             // txtNaziv
             // 
-            this.txtNaziv.Location = new System.Drawing.Point(109, 54);
+            this.txtNaziv.Location = new System.Drawing.Point(40, 163);
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.Size = new System.Drawing.Size(121, 20);
             this.txtNaziv.TabIndex = 51;
@@ -130,25 +141,29 @@
             // lblNaziv
             // 
             this.lblNaziv.AutoSize = true;
-            this.lblNaziv.Location = new System.Drawing.Point(66, 57);
+            this.lblNaziv.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaziv.ForeColor = System.Drawing.Color.White;
+            this.lblNaziv.Location = new System.Drawing.Point(37, 143);
             this.lblNaziv.Name = "lblNaziv";
-            this.lblNaziv.Size = new System.Drawing.Size(37, 13);
+            this.lblNaziv.Size = new System.Drawing.Size(48, 17);
             this.lblNaziv.TabIndex = 50;
             this.lblNaziv.Text = "Naziv:";
             // 
             // lblKlijent
             // 
             this.lblKlijent.AutoSize = true;
-            this.lblKlijent.Location = new System.Drawing.Point(65, 198);
+            this.lblKlijent.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKlijent.ForeColor = System.Drawing.Color.White;
+            this.lblKlijent.Location = new System.Drawing.Point(37, 291);
             this.lblKlijent.Name = "lblKlijent";
-            this.lblKlijent.Size = new System.Drawing.Size(38, 13);
+            this.lblKlijent.Size = new System.Drawing.Size(50, 17);
             this.lblKlijent.TabIndex = 52;
             this.lblKlijent.Text = "Klijent:";
             // 
             // cbKlijent
             // 
             this.cbKlijent.FormattingEnabled = true;
-            this.cbKlijent.Location = new System.Drawing.Point(109, 195);
+            this.cbKlijent.Location = new System.Drawing.Point(40, 311);
             this.cbKlijent.Name = "cbKlijent";
             this.cbKlijent.Size = new System.Drawing.Size(121, 21);
             this.cbKlijent.TabIndex = 53;
@@ -156,16 +171,29 @@
             // cbKreirao
             // 
             this.cbKreirao.FormattingEnabled = true;
-            this.cbKreirao.Location = new System.Drawing.Point(109, 12);
+            this.cbKreirao.Location = new System.Drawing.Point(40, 93);
             this.cbKreirao.Name = "cbKreirao";
             this.cbKreirao.Size = new System.Drawing.Size(121, 21);
             this.cbKreirao.TabIndex = 55;
+            // 
+            // lblNaslovPonuda
+            // 
+            this.lblNaslovPonuda.AutoSize = true;
+            this.lblNaslovPonuda.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslovPonuda.ForeColor = System.Drawing.Color.White;
+            this.lblNaslovPonuda.Location = new System.Drawing.Point(36, 23);
+            this.lblNaslovPonuda.Name = "lblNaslovPonuda";
+            this.lblNaslovPonuda.Size = new System.Drawing.Size(194, 22);
+            this.lblNaslovPonuda.TabIndex = 56;
+            this.lblNaslovPonuda.Text = "Dodaj novu ponudu";
             // 
             // frmDodavanjePonude
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 282);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ClientSize = new System.Drawing.Size(482, 428);
+            this.Controls.Add(this.lblNaslovPonuda);
             this.Controls.Add(this.cbKreirao);
             this.Controls.Add(this.cbKlijent);
             this.Controls.Add(this.lblKlijent);
@@ -203,5 +231,6 @@
         private System.Windows.Forms.Label lblKlijent;
         private System.Windows.Forms.ComboBox cbKlijent;
         private System.Windows.Forms.ComboBox cbKreirao;
+        private System.Windows.Forms.Label lblNaslovPonuda;
     }
 }
