@@ -13,9 +13,11 @@ namespace e_Agro
     public partial class frmPopisPonuda : Form
     {
         Ponude ponude;
+        StavkeNaPonudi stavkeNaPonudi;
         public frmPopisPonuda()
         {
             ponude = new Ponude();
+            stavkeNaPonudi = new StavkeNaPonudi();
             InitializeComponent();
         }
         private ponuda DohvatiOdabranu()
@@ -41,6 +43,22 @@ namespace e_Agro
         private void txtSearch_Click(object sender, EventArgs e)
         {
             txtSearch.Clear();
+        }
+
+        private void dgvPonude_SelectionChanged(object sender, EventArgs e)
+        {
+            dgvStavkeNaPonudi.DataSource = stavkeNaPonudi.DohvatiStavkeZaPonudu(DohvatiOdabranu());
+        }
+
+        private void btnDodajStroj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmDodavanjeStrojaNaPonuda(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
         }
     }
 }
