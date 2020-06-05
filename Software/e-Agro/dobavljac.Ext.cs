@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace e_Agro
 {
-    public partial class korisnik
+    public partial class dobavljac
     {
         public override string ToString()
         {
-            return ime + " " + prezime;
+            return naziv;
         }
     }
 }

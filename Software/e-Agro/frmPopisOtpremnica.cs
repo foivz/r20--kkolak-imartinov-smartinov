@@ -13,9 +13,11 @@ namespace e_Agro
     public partial class frmPopisOtpremnica : Form
     {
         Otpremnice otpremnice;
+        StavkeNaOtpremnici stavkeNaOtpremnici;
         public frmPopisOtpremnica()
         {
             otpremnice = new Otpremnice();
+            stavkeNaOtpremnici = new StavkeNaOtpremnici();
             InitializeComponent();
         }
         private otpremnica DohvatiOdabranu()
@@ -41,6 +43,22 @@ namespace e_Agro
         private void txtSearch_Click(object sender, EventArgs e)
         {
             txtSearch.Clear();
+        }
+
+        private void dgvOtpremnice_SelectionChanged(object sender, EventArgs e)
+        {
+            dgvStavkeNaOtpremnici.DataSource = stavkeNaOtpremnici.DohvatiStavkeZaOtpremnicu(DohvatiOdabranu());
+        }
+
+        private void btnDodajStroj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmDodavanjeStrojaNaOtpremnicu(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
         }
     }
 }

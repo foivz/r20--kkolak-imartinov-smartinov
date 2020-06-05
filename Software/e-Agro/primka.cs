@@ -26,7 +26,8 @@ namespace e_Agro
         public int korisnik_id { get; set; }
         [DisplayName("Cijena")]
         public int cijena { get; set; }
-    
+
+        [DisplayName("Korisnik")]
         public virtual korisnik korisnik { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stavke_na_primci> stavke_na_primci { get; set; }

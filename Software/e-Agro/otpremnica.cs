@@ -28,7 +28,8 @@ namespace e_Agro
         public double cijena { get; set; }
         [DisplayName("Datum isporuke")]
         public System.DateTime datum_isporuke { get; set; }
-    
+
+        [DisplayName("Korisnik")]
         public virtual korisnik korisnik { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stavke_na_otpremnici> stavke_na_otpremnici { get; set; }

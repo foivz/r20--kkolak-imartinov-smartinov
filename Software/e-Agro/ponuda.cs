@@ -32,8 +32,11 @@ namespace e_Agro
         public System.DateTime datum_kreiranja { get; set; }
         [DisplayName("ID klijenta")]
         public int klijent_id { get; set; }
-    
+
+        [DisplayName("Klijent")]
         public virtual klijent klijent { get; set; }
+
+        [DisplayName("Korisnik")]
         public virtual korisnik korisnik { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stavke_na_ponudi> stavke_na_ponudi { get; set; }

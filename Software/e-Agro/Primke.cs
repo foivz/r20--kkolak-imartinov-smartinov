@@ -18,7 +18,7 @@ namespace e_Agro
                 return query.ToList();
             }
         }
-        public void DodajPrimku(korisnik korisnik, int cijena) //promijenit u int
+        public void DodajPrimku(korisnik korisnik, int cijena) //promijenit u double
         {
             using(var context=new PI20_024_DBEntities())
             {
