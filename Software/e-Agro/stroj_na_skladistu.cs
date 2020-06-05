@@ -21,8 +21,11 @@ namespace e_Agro
         public int skladiste_id { get; set; }
         [DisplayName("Količina")]
         public int kolicina { get; set; }
-    
+
+        [DisplayName("Katalog strojeva")]
         public virtual katalog_strojeva katalog_strojeva { get; set; }
+
+        [DisplayName("Skladište")]
         public virtual skladiste skladiste { get; set; }
     }
 }

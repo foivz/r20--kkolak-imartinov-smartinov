@@ -31,7 +31,11 @@ namespace e_Agro
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<korisnik> korisniks { get; set; }
+
+        [DisplayName("Skladište")]
         public virtual skladiste skladiste { get; set; }
+
+        [DisplayName("Ured")]
         public virtual ured ured { get; set; }
     }
 }
