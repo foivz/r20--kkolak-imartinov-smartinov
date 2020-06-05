@@ -11,7 +11,8 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class otpremnica
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,10 +20,13 @@ namespace e_Agro
         {
             this.stavke_na_otpremnici = new HashSet<stavke_na_otpremnici>();
         }
-    
+        [DisplayName("ID otpremnice")]
         public int otpremnica_id { get; set; }
+        [DisplayName("ID korisnika")]
         public int korisnik_id { get; set; }
+        [DisplayName("Cijena")]
         public double cijena { get; set; }
+        [DisplayName("Datum isporuke")]
         public System.DateTime datum_isporuke { get; set; }
     
         public virtual korisnik korisnik { get; set; }
