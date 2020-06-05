@@ -13,9 +13,11 @@ namespace e_Agro
     public partial class frmPopisPrimki : Form
     {
         Primke primke;
+        StavkeNaPrimci stavkeNaPrimci;
         public frmPopisPrimki()
         {
             primke = new Primke();
+            stavkeNaPrimci = new StavkeNaPrimci();
             InitializeComponent();
         }
         private primka DohvatiOdabranu()
@@ -56,6 +58,22 @@ namespace e_Agro
                 forma.ShowDialog();
             }
             Show();
+        }
+
+        private void btnDodajStrojNaPrimku_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma=new frmDodavanjeStrojaNaPrimku(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void dgvPrimke_SelectionChanged(object sender, EventArgs e)
+        {
+            dgvStavkeNaPrimci.DataSource = stavkeNaPrimci.DohvatiStavkeZaPrimku(DohvatiOdabranu());
         }
     }
 }
