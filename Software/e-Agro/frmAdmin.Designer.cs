@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
-            this.btnZaposlenik = new System.Windows.Forms.Button();
             this.btnKorisnik = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -39,6 +38,7 @@
             this.btnUred = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnSkladiste = new System.Windows.Forms.Button();
+            this.btnZaposlenik = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelZaposlenik.SuspendLayout();
@@ -46,22 +46,6 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnZaposlenik
-            // 
-            this.btnZaposlenik.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnZaposlenik.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnZaposlenik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZaposlenik.ForeColor = System.Drawing.Color.White;
-            this.btnZaposlenik.Image = ((System.Drawing.Image)(resources.GetObject("btnZaposlenik.Image")));
-            this.btnZaposlenik.Location = new System.Drawing.Point(0, 0);
-            this.btnZaposlenik.Name = "btnZaposlenik";
-            this.btnZaposlenik.Size = new System.Drawing.Size(217, 125);
-            this.btnZaposlenik.TabIndex = 0;
-            this.btnZaposlenik.Text = "Zaposlenik";
-            this.btnZaposlenik.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnZaposlenik.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnZaposlenik.UseVisualStyleBackColor = false;
             // 
             // btnKorisnik
             // 
@@ -170,6 +154,23 @@
             this.btnSkladiste.UseVisualStyleBackColor = false;
             this.btnSkladiste.Click += new System.EventHandler(this.btnSkladiste_Click);
             // 
+            // btnZaposlenik
+            // 
+            this.btnZaposlenik.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnZaposlenik.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnZaposlenik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZaposlenik.ForeColor = System.Drawing.Color.White;
+            this.btnZaposlenik.Image = ((System.Drawing.Image)(resources.GetObject("btnZaposlenik.Image")));
+            this.btnZaposlenik.Location = new System.Drawing.Point(0, 0);
+            this.btnZaposlenik.Name = "btnZaposlenik";
+            this.btnZaposlenik.Size = new System.Drawing.Size(217, 125);
+            this.btnZaposlenik.TabIndex = 0;
+            this.btnZaposlenik.Text = "Zaposlenik";
+            this.btnZaposlenik.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnZaposlenik.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnZaposlenik.UseVisualStyleBackColor = false;
+            this.btnZaposlenik.Click += new System.EventHandler(this.btnZaposlenik_Click);
+            // 
             // frmAdmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -190,8 +191,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnZaposlenik;
         private System.Windows.Forms.Button btnKorisnik;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -201,5 +200,6 @@
         private System.Windows.Forms.Button btnUred;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnSkladiste;
+        private System.Windows.Forms.Button btnZaposlenik;
     }
 }
