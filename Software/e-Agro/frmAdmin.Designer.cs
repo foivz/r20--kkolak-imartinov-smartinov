@@ -62,7 +62,6 @@
             this.btnZaposlenik.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnZaposlenik.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnZaposlenik.UseVisualStyleBackColor = false;
-            this.btnZaposlenik.Click += new System.EventHandler(this.btnZaposlenik_Click);
             // 
             // btnKorisnik
             // 
