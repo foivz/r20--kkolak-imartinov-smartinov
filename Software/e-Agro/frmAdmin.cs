@@ -29,16 +29,6 @@ namespace e_Agro
             Show();
         }
 
-        private void btnZaposlenik_Click(object sender, EventArgs e)
-        {
-            Hide();
-            using (var forma = new frmPopisZaposlenika())
-            {
-                forma.ShowDialog();
-            }
-            Show();
-        }
-
         private void btnUred_Click(object sender, EventArgs e)
         {
             Hide();
