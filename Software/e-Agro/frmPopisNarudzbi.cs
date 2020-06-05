@@ -13,9 +13,11 @@ namespace e_Agro
     public partial class frmPopisNarudzbi : Form
     {
         Narudzbe narudzbe;
+        StavkeNaNarudzbi stavkeNaNarudzbi;
         public frmPopisNarudzbi()
         {
             narudzbe = new Narudzbe();
+            stavkeNaNarudzbi = new StavkeNaNarudzbi();
             InitializeComponent();
         }
         private narudzba DohvatiOdabranu()
@@ -42,6 +44,22 @@ namespace e_Agro
         private void txtSearch_Click(object sender, EventArgs e)
         {
             txtSearch.Clear();
+        }
+
+        private void dgvNarudzbe_SelectionChanged(object sender, EventArgs e)
+        {
+            dgvStavkeNaNarudzbi.DataSource = stavkeNaNarudzbi.DohvatiStavkeZaNarudzbu(DohvatiOdabranu());
+        }
+
+        private void btnDodajStroj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeStrojaNaNarudzbu(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
         }
     }
 }

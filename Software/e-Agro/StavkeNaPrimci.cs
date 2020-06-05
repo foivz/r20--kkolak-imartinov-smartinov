@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace e_Agro
 {
-    public class StavkeNaOtpremnici
+    public class StavkeNaPrimci
     {
-        public List<StavkeView> DohvatiStavkeZaOtpremnicu(otpremnica odabranaOtpremnica)
+        public List<StavkeView> DohvatiStavkeZaPrimku(primka odabranaPrimka)
         {
             List<StavkeView> listaStavki = new List<StavkeView>();
             using (var context = new PI20_024_DBEntities())
             {
-                var query = from s in context.stavke_na_otpremnici
-                            where s.otpremnica_id==odabranaOtpremnica.otpremnica_id
+                var query = from s in context.stavke_na_primci
+                            where s.primka_id == odabranaPrimka.primka_id
                             select s;
 
                 foreach (var stavka in query)
@@ -26,17 +26,17 @@ namespace e_Agro
             return listaStavki;
         }
 
-        public void DodajStrojNaOtpremnicu(katalog_strojeva stroj, int kolicina, otpremnica odabranaOtpremnica)
+        public void DodajStrojNaPrimku(katalog_strojeva stroj, int kolicina, primka odabranaPrimka)
         {
             using (var context = new PI20_024_DBEntities())
             {
-                stavke_na_otpremnici novaStavka = new stavke_na_otpremnici
+                stavke_na_primci novaStavka = new stavke_na_primci
                 {
                     stroj_id = stroj.stroj_id,
                     kolicina = kolicina,
-                    otpremnica_id = odabranaOtpremnica.otpremnica_id
+                    primka_id = odabranaPrimka.primka_id
                 };
-                context.stavke_na_otpremnici.Add(novaStavka);
+                context.stavke_na_primci.Add(novaStavka);
                 context.SaveChanges();
             }
         }

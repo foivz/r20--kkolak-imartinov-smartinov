@@ -77,6 +77,12 @@
     </Compile>
     <Compile Include="dobavljac.Ext.cs" />
     <Compile Include="Dobavljaci.cs" />
+    <Compile Include="frmDodavanjeStrojaNaNarudzbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeStrojaNaNarudzbu.Designer.cs">
+      <DependentUpon>frmDodavanjeStrojaNaNarudzbu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodavanjeStrojaNaOtpremnicu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     </Compile>
     <Compile Include="frmDodavanjeStroja.Designer.cs">
       <DependentUpon>frmDodavanjeStroja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodavanjeStrojaNaPrimku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeStrojaNaPrimku.Designer.cs">
+      <DependentUpon>frmDodavanjeStrojaNaPrimku.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDodavanjeUreda.cs">
       <SubType>Form</SubType>
@@ -280,7 +292,9 @@
     <Compile Include="skladiste.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="StavkeNaNarudzbi.cs" />
     <Compile Include="StavkeNaOtpremnici.cs" />
+    <Compile Include="StavkeNaPrimci.cs" />
     <Compile Include="StavkeView.cs" />
     <Compile Include="stavke_na_narudzbi.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
@@ -307,6 +321,9 @@
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Uredi.cs" />
+    <EmbeddedResource Include="frmDodavanjeStrojaNaNarudzbu.resx">
+      <DependentUpon>frmDodavanjeStrojaNaNarudzbu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodavanjeStrojaNaOtpremnicu.resx">
       <DependentUpon>frmDodavanjeStrojaNaOtpremnicu.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDodavanjeStroja.resx">
       <DependentUpon>frmDodavanjeStroja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeStrojaNaPrimku.resx">
+      <DependentUpon>frmDodavanjeStrojaNaPrimku.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDodavanjeUreda.resx">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
