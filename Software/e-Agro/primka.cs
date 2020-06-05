@@ -11,7 +11,8 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class primka
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,9 +20,11 @@ namespace e_Agro
         {
             this.stavke_na_primci = new HashSet<stavke_na_primci>();
         }
-    
+        [DisplayName("ID primke")]
         public int primka_id { get; set; }
+        [DisplayName("ID korisnika")]
         public int korisnik_id { get; set; }
+        [DisplayName("Cijena")]
         public int cijena { get; set; }
     
         public virtual korisnik korisnik { get; set; }
