@@ -111,7 +111,6 @@ C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeSkladista.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeStroja.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeUreda.resources
-C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeZaposlenika.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmKatalogStrojeva.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisDobavljaca.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisKlijenata.resources
@@ -123,7 +122,6 @@ C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisOtpremnica.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisSkladista.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisUreda.resources
-C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisZaposlenika.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisPrimki.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferent.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferentGraf.resources
@@ -153,7 +151,6 @@ C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeSkladista.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeStroja.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeUreda.resources
-C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeZaposlenika.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmKatalogStrojeva.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisDobavljaca.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisKlijenata.resources
@@ -165,7 +162,6 @@ C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisOtpremnica.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisSkladista.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisUreda.resources
-C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisZaposlenika.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisPrimki.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferent.resources
 C:\Users\Karolina\source\repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferentGraf.resources

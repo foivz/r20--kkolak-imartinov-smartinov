@@ -48,5 +48,10 @@ namespace e_Agro
             strojevi.ObrisiStroj(DohvatiOdabrani());
             OsvjeziTablicu();
         }
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Clear();
+        }
     }
 }

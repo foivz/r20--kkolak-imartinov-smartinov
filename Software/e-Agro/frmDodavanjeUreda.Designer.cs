@@ -36,43 +36,48 @@
             this.lblOdjel = new System.Windows.Forms.Label();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtZupanija
             // 
-            this.txtZupanija.Location = new System.Drawing.Point(110, 95);
+            this.txtZupanija.Location = new System.Drawing.Point(368, 122);
             this.txtZupanija.Name = "txtZupanija";
-            this.txtZupanija.Size = new System.Drawing.Size(100, 20);
+            this.txtZupanija.Size = new System.Drawing.Size(140, 20);
             this.txtZupanija.TabIndex = 18;
             // 
             // lblZupanija
             // 
             this.lblZupanija.AutoSize = true;
-            this.lblZupanija.Location = new System.Drawing.Point(53, 98);
+            this.lblZupanija.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZupanija.ForeColor = System.Drawing.Color.White;
+            this.lblZupanija.Location = new System.Drawing.Point(365, 103);
             this.lblZupanija.Name = "lblZupanija";
-            this.lblZupanija.Size = new System.Drawing.Size(51, 13);
+            this.lblZupanija.Size = new System.Drawing.Size(67, 16);
             this.lblZupanija.TabIndex = 17;
             this.lblZupanija.Text = "Županija:";
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Location = new System.Drawing.Point(110, 52);
+            this.txtAdresa.Location = new System.Drawing.Point(190, 122);
             this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.Size = new System.Drawing.Size(100, 20);
+            this.txtAdresa.Size = new System.Drawing.Size(160, 20);
             this.txtAdresa.TabIndex = 16;
             // 
             // lblAdresa
             // 
             this.lblAdresa.AutoSize = true;
-            this.lblAdresa.Location = new System.Drawing.Point(61, 55);
+            this.lblAdresa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdresa.ForeColor = System.Drawing.Color.White;
+            this.lblAdresa.Location = new System.Drawing.Point(187, 103);
             this.lblAdresa.Name = "lblAdresa";
-            this.lblAdresa.Size = new System.Drawing.Size(43, 13);
+            this.lblAdresa.Size = new System.Drawing.Size(57, 16);
             this.lblAdresa.TabIndex = 15;
             this.lblAdresa.Text = "Adresa:";
             // 
             // txtOdjel
             // 
-            this.txtOdjel.Location = new System.Drawing.Point(110, 12);
+            this.txtOdjel.Location = new System.Drawing.Point(74, 122);
             this.txtOdjel.Name = "txtOdjel";
             this.txtOdjel.Size = new System.Drawing.Size(100, 20);
             this.txtOdjel.TabIndex = 14;
@@ -80,17 +85,20 @@
             // lblOdjel
             // 
             this.lblOdjel.AutoSize = true;
-            this.lblOdjel.Location = new System.Drawing.Point(70, 15);
+            this.lblOdjel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOdjel.ForeColor = System.Drawing.Color.White;
+            this.lblOdjel.Location = new System.Drawing.Point(71, 103);
             this.lblOdjel.Name = "lblOdjel";
-            this.lblOdjel.Size = new System.Drawing.Size(34, 13);
+            this.lblOdjel.Size = new System.Drawing.Size(46, 16);
             this.lblOdjel.TabIndex = 13;
             this.lblOdjel.Text = "Odjel:";
             // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(231, 140);
+            this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOdustani.Location = new System.Drawing.Point(190, 201);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(75, 23);
+            this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 25;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
@@ -98,18 +106,32 @@
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(12, 134);
+            this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodaj.Location = new System.Drawing.Point(74, 201);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(75, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(110, 34);
             this.btnDodaj.TabIndex = 24;
             this.btnDodaj.Text = "Dodaj ured";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(70, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 22);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Dodaj novi ured";
             // 
             // frmDodavanjeUreda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 177);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ClientSize = new System.Drawing.Size(587, 285);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtZupanija);
             this.Controls.Add(this.lblZupanija);
             this.Controls.Add(this.txtAdresa);
@@ -134,5 +156,6 @@
         private System.Windows.Forms.Label lblOdjel;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;
+        private System.Windows.Forms.Label label1;
     }
 }

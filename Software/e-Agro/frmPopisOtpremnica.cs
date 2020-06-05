@@ -37,5 +37,10 @@ namespace e_Agro
             otpremnice.ObrisiOtpremnicu(DohvatiOdabranu());
             OsvjeziTablicu();
         }
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Clear();
+        }
     }
 }
