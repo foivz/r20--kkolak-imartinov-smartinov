@@ -14,11 +14,12 @@ namespace e_Agro
     {
         private otpremnica odabranaOtpremnica;
         StavkeNaOtpremnici stavkeNaOtpremnici;
-        Strojevi strojevi = new Strojevi();
+        Strojevi strojevi;
         public frmDodavanjeStrojaNaOtpremnicu(otpremnica otpremnica)
         {
             odabranaOtpremnica = otpremnica;
             stavkeNaOtpremnici = new StavkeNaOtpremnici();
+            strojevi = new Strojevi();
             InitializeComponent();
         }
 
