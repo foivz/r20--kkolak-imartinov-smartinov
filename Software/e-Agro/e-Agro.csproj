@@ -75,6 +75,7 @@
     <Compile Include="dobavljac.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="dobavljac.Ext.cs" />
     <Compile Include="Dobavljaci.cs" />
     <Compile Include="frmDodavanjeDobavljaca.cs">
       <SubType>Form</SubType>
@@ -272,6 +273,8 @@
     <Compile Include="skladiste.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="StavkeNaOtpremnici.cs" />
+    <Compile Include="StavkeView.cs" />
     <Compile Include="stavke_na_narudzbi.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>

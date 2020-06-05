@@ -69,7 +69,6 @@ C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeSkladista.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeStroja.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeUreda.resources
-C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeZaposlenika.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmKatalogStrojeva.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisDobavljaca.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisKlijenata.resources
@@ -81,7 +80,6 @@ C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisOtpremnica.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisSkladista.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisUreda.resources
-C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisZaposlenika.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisPrimki.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferent.resources
 C:\Users\Ivan\Desktop\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmProdajniReferentGraf.resources
