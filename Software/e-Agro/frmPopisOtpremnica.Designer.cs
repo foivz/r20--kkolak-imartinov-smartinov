@@ -98,15 +98,16 @@
             this.dgvOtpremnice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOtpremnice.Location = new System.Drawing.Point(12, 108);
             this.dgvOtpremnice.Name = "dgvOtpremnice";
-            this.dgvOtpremnice.Size = new System.Drawing.Size(776, 267);
+            this.dgvOtpremnice.Size = new System.Drawing.Size(679, 267);
             this.dgvOtpremnice.TabIndex = 21;
+            this.dgvOtpremnice.SelectionChanged += new System.EventHandler(this.dgvOtpremnice_SelectionChanged);
             // 
             // dgvStavkeNaOtpremnici
             // 
             this.dgvStavkeNaOtpremnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStavkeNaOtpremnici.Location = new System.Drawing.Point(12, 381);
             this.dgvStavkeNaOtpremnici.Name = "dgvStavkeNaOtpremnici";
-            this.dgvStavkeNaOtpremnici.Size = new System.Drawing.Size(776, 201);
+            this.dgvStavkeNaOtpremnici.Size = new System.Drawing.Size(679, 201);
             this.dgvStavkeNaOtpremnici.TabIndex = 28;
             // 
             // btnDodajStroj
@@ -118,6 +119,7 @@
             this.btnDodajStroj.TabIndex = 29;
             this.btnDodajStroj.Text = "Dodaj stroj na otpremnicu";
             this.btnDodajStroj.UseVisualStyleBackColor = true;
+            this.btnDodajStroj.Click += new System.EventHandler(this.btnDodajStroj_Click);
             // 
             // frmPopisOtpremnica
             // 

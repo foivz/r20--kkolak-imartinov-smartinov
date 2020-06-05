@@ -24,5 +24,20 @@ namespace e_Agro
             }
             return listaStavki;
         }
+
+        public void DodajStrojNaOtpremnicu(katalog_strojeva stroj, int kolicina, otpremnica odabranaOtpremnica)
+        {
+            using (var context = new PI20_024_DBEntities())
+            {
+                stavke_na_otpremnici novaStavka = new stavke_na_otpremnici
+                {
+                    stroj_id = stroj.stroj_id,
+                    kolicina = kolicina,
+                    otpremnica_id = odabranaOtpremnica.otpremnica_id
+                };
+                context.stavke_na_otpremnici.Add(novaStavka);
+                context.SaveChanges();
+            }
+        }
     }
 }

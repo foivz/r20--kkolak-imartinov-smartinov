@@ -28,8 +28,6 @@ namespace e_Agro
         {
             dgvOtpremnice.DataSource = otpremnice.DohvatiOtpremnice();
             dgvOtpremnice.Columns["stavke_na_otpremnici"].Visible = false;
-
-            dgvStavkeNaOtpremnici.DataSource = stavkeNaOtpremnici.DohvatiStavkeZaOtpremnicu(DohvatiOdabranu());
         }
         private void frmPopisOtpremnica_Load_1(object sender, EventArgs e)
         {
@@ -47,5 +45,20 @@ namespace e_Agro
             txtSearch.Clear();
         }
 
+        private void dgvOtpremnice_SelectionChanged(object sender, EventArgs e)
+        {
+            dgvStavkeNaOtpremnici.DataSource = stavkeNaOtpremnici.DohvatiStavkeZaOtpremnicu(DohvatiOdabranu());
+        }
+
+        private void btnDodajStroj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmDodavanjeStrojaNaOtpremnicu(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
     }
 }
