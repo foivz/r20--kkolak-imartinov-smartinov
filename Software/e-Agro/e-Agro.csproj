@@ -235,6 +235,7 @@
     <Compile Include="katalog_strojeva.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="katalog_strojeva.Ext.cs" />
     <Compile Include="klijent.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>

@@ -38,7 +38,8 @@ namespace e_Agro
         public double cijena { get; set; }
         [DisplayName("ID dobavljača")]
         public int dobavljac_id { get; set; }
-    
+
+        [DisplayName("Dobavljač")]
         public virtual dobavljac dobavljac { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stavke_na_narudzbi> stavke_na_narudzbi { get; set; }
