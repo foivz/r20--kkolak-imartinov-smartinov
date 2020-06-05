@@ -49,7 +49,10 @@ namespace e_Agro
         public virtual ICollection<ponuda> ponudas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<primka> primkas { get; set; }
+        [DisplayName("Radno mjesto")]
         public virtual radno_mjesto radno_mjesto { get; set; }
+        [DisplayName("Tip korisnika")]
         public virtual tip_korisnika tip_korisnika { get; set; }
+
     }
 }
