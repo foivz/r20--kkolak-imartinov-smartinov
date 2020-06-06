@@ -34,7 +34,10 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvPonude = new System.Windows.Forms.DataGridView();
+            this.dgvStavkeNaPonudi = new System.Windows.Forms.DataGridView();
+            this.btnDodajStroj = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPonude)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPonudi)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNaslov
@@ -51,7 +54,7 @@
             // btnAzuriraj
             // 
             this.btnAzuriraj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAzuriraj.Location = new System.Drawing.Point(715, 366);
+            this.btnAzuriraj.Location = new System.Drawing.Point(304, 59);
             this.btnAzuriraj.Name = "btnAzuriraj";
             this.btnAzuriraj.Size = new System.Drawing.Size(140, 37);
             this.btnAzuriraj.TabIndex = 19;
@@ -61,7 +64,7 @@
             // btnObrisi
             // 
             this.btnObrisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnObrisi.Location = new System.Drawing.Point(569, 366);
+            this.btnObrisi.Location = new System.Drawing.Point(158, 59);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(140, 37);
             this.btnObrisi.TabIndex = 18;
@@ -72,7 +75,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(423, 366);
+            this.btnDodaj.Location = new System.Drawing.Point(12, 59);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(140, 37);
             this.btnDodaj.TabIndex = 17;
@@ -97,13 +100,35 @@
             this.dgvPonude.Name = "dgvPonude";
             this.dgvPonude.Size = new System.Drawing.Size(843, 258);
             this.dgvPonude.TabIndex = 14;
+            this.dgvPonude.SelectionChanged += new System.EventHandler(this.dgvPonude_SelectionChanged);
+            // 
+            // dgvStavkeNaPonudi
+            // 
+            this.dgvStavkeNaPonudi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStavkeNaPonudi.Location = new System.Drawing.Point(12, 366);
+            this.dgvStavkeNaPonudi.Name = "dgvStavkeNaPonudi";
+            this.dgvStavkeNaPonudi.Size = new System.Drawing.Size(843, 258);
+            this.dgvStavkeNaPonudi.TabIndex = 21;
+            // 
+            // btnDodajStroj
+            // 
+            this.btnDodajStroj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodajStroj.Location = new System.Drawing.Point(12, 630);
+            this.btnDodajStroj.Name = "btnDodajStroj";
+            this.btnDodajStroj.Size = new System.Drawing.Size(140, 47);
+            this.btnDodajStroj.TabIndex = 22;
+            this.btnDodajStroj.Text = "Dodaj stroj na ponudu";
+            this.btnDodajStroj.UseVisualStyleBackColor = true;
+            this.btnDodajStroj.Click += new System.EventHandler(this.btnDodajStroj_Click);
             // 
             // frmPopisPonuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(864, 414);
+            this.ClientSize = new System.Drawing.Size(864, 682);
+            this.Controls.Add(this.btnDodajStroj);
+            this.Controls.Add(this.dgvStavkeNaPonudi);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);
@@ -114,6 +139,7 @@
             this.Text = "frmPopisPonuda";
             this.Load += new System.EventHandler(this.frmPopisPonuda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPonude)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPonudi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +153,7 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvPonude;
+        private System.Windows.Forms.DataGridView dgvStavkeNaPonudi;
+        private System.Windows.Forms.Button btnDodajStroj;
     }
 }

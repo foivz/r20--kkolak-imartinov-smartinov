@@ -143,6 +143,12 @@
     <Compile Include="frmDodavanjeStroja.Designer.cs">
       <DependentUpon>frmDodavanjeStroja.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDodavanjeStrojaNaPonuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeStrojaNaPonuda.Designer.cs">
+      <DependentUpon>frmDodavanjeStrojaNaPonuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodavanjeStrojaNaPrimku.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +264,7 @@
     <Compile Include="klijent.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="klijent.Ext.cs" />
     <Compile Include="Klijenti.cs" />
     <Compile Include="Korisnici.cs" />
     <Compile Include="korisnik.cs">
@@ -294,6 +301,7 @@
     </Compile>
     <Compile Include="StavkeNaNarudzbi.cs" />
     <Compile Include="StavkeNaOtpremnici.cs" />
+    <Compile Include="StavkeNaPonudi.cs" />
     <Compile Include="StavkeNaPrimci.cs" />
     <Compile Include="StavkeView.cs" />
     <Compile Include="stavke_na_narudzbi.cs">
@@ -353,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDodavanjeStroja.resx">
       <DependentUpon>frmDodavanjeStroja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeStrojaNaPonuda.resx">
+      <DependentUpon>frmDodavanjeStrojaNaPonuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDodavanjeStrojaNaPrimku.resx">
       <DependentUpon>frmDodavanjeStrojaNaPrimku.cs</DependentUpon>
