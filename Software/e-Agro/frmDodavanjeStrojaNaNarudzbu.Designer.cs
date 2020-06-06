@@ -34,48 +34,53 @@
             this.cmbStrojevi = new System.Windows.Forms.ComboBox();
             this.txtKolicina = new System.Windows.Forms.TextBox();
             this.btnOdustani = new System.Windows.Forms.Button();
+            this.lblNaslovStrojNarudzba = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblStroj
             // 
             this.lblStroj.AutoSize = true;
-            this.lblStroj.Location = new System.Drawing.Point(12, 24);
+            this.lblStroj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStroj.ForeColor = System.Drawing.Color.White;
+            this.lblStroj.Location = new System.Drawing.Point(27, 85);
             this.lblStroj.Name = "lblStroj";
-            this.lblStroj.Size = new System.Drawing.Size(31, 13);
+            this.lblStroj.Size = new System.Drawing.Size(39, 17);
             this.lblStroj.TabIndex = 0;
             this.lblStroj.Text = "Stroj:";
             // 
             // lblKolicina
             // 
             this.lblKolicina.AutoSize = true;
-            this.lblKolicina.Location = new System.Drawing.Point(209, 24);
+            this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKolicina.ForeColor = System.Drawing.Color.White;
+            this.lblKolicina.Location = new System.Drawing.Point(182, 85);
             this.lblKolicina.Name = "lblKolicina";
-            this.lblKolicina.Size = new System.Drawing.Size(47, 13);
+            this.lblKolicina.Size = new System.Drawing.Size(63, 17);
             this.lblKolicina.TabIndex = 1;
             this.lblKolicina.Text = "Količina:";
             // 
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(12, 96);
+            this.btnDodaj.Location = new System.Drawing.Point(30, 168);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(140, 48);
+            this.btnDodaj.Size = new System.Drawing.Size(120, 34);
             this.btnDodaj.TabIndex = 25;
-            this.btnDodaj.Text = "Dodaj stroj na narudžbu";
+            this.btnDodaj.Text = "Dodaj ";
             this.btnDodaj.UseVisualStyleBackColor = true;
             this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // cmbStrojevi
             // 
             this.cmbStrojevi.FormattingEnabled = true;
-            this.cmbStrojevi.Location = new System.Drawing.Point(49, 16);
+            this.cmbStrojevi.Location = new System.Drawing.Point(30, 105);
             this.cmbStrojevi.Name = "cmbStrojevi";
             this.cmbStrojevi.Size = new System.Drawing.Size(121, 21);
             this.cmbStrojevi.TabIndex = 26;
             // 
             // txtKolicina
             // 
-            this.txtKolicina.Location = new System.Drawing.Point(262, 17);
+            this.txtKolicina.Location = new System.Drawing.Point(185, 106);
             this.txtKolicina.Name = "txtKolicina";
             this.txtKolicina.Size = new System.Drawing.Size(100, 20);
             this.txtKolicina.TabIndex = 27;
@@ -83,19 +88,32 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(195, 96);
+            this.btnOdustani.Location = new System.Drawing.Point(185, 168);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(140, 48);
+            this.btnOdustani.Size = new System.Drawing.Size(120, 34);
             this.btnOdustani.TabIndex = 28;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
+            // lblNaslovStrojNarudzba
+            // 
+            this.lblNaslovStrojNarudzba.AutoSize = true;
+            this.lblNaslovStrojNarudzba.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslovStrojNarudzba.ForeColor = System.Drawing.Color.White;
+            this.lblNaslovStrojNarudzba.Location = new System.Drawing.Point(26, 23);
+            this.lblNaslovStrojNarudzba.Name = "lblNaslovStrojNarudzba";
+            this.lblNaslovStrojNarudzba.Size = new System.Drawing.Size(230, 22);
+            this.lblNaslovStrojNarudzba.TabIndex = 29;
+            this.lblNaslovStrojNarudzba.Text = "Dodaj stroj na narudžbu";
+            // 
             // frmDodavanjeStrojaNaNarudzbu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 161);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ClientSize = new System.Drawing.Size(343, 236);
+            this.Controls.Add(this.lblNaslovStrojNarudzba);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.txtKolicina);
             this.Controls.Add(this.cmbStrojevi);
@@ -118,5 +136,6 @@
         private System.Windows.Forms.ComboBox cmbStrojevi;
         private System.Windows.Forms.TextBox txtKolicina;
         private System.Windows.Forms.Button btnOdustani;
+        private System.Windows.Forms.Label lblNaslovStrojNarudzba;
     }
 }
