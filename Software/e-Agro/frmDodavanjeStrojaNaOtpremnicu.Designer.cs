@@ -121,6 +121,7 @@
             this.Controls.Add(this.cmbStrojevi);
             this.Controls.Add(this.label1);
             this.Name = "frmDodavanjeStrojaNaOtpremnicu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDodajStrojNaOtpremnicu";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaOtpremnicu_Load);
             this.ResumeLayout(false);

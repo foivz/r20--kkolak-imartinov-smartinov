@@ -136,6 +136,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvNarudzbe);
             this.Name = "frmPopisNarudzbi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPopisNarudzbi";
             this.Load += new System.EventHandler(this.frmPopisNarudzbi_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNarudzbe)).EndInit();

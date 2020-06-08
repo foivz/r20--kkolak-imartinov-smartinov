@@ -126,6 +126,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvDobavljaci);
             this.Name = "frmPopisDobavljaca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPopisDobavljaca";
             this.Load += new System.EventHandler(this.frmPopisDobavljaca_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDobavljaci)).EndInit();

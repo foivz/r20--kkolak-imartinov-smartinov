@@ -209,6 +209,7 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjePonude";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje ponude";
             this.ResumeLayout(false);
             this.PerformLayout();

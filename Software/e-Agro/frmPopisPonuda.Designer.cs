@@ -136,6 +136,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvPonude);
             this.Name = "frmPopisPonuda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPopisPonuda";
             this.Load += new System.EventHandler(this.frmPopisPonuda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPonude)).EndInit();

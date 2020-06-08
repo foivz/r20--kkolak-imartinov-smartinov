@@ -85,6 +85,7 @@
             this.Controls.Add(this.lblDobavljac);
             this.Controls.Add(this.cbDobavljac);
             this.Name = "frmProdajniReferentIzvjestaj";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProdajniReferentIzvjestaj";
             this.ResumeLayout(false);
             this.PerformLayout();

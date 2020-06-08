@@ -143,6 +143,7 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjePrimke";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje primke";
             this.Load += new System.EventHandler(this.frmDodavanjePrimke_Load);
             this.ResumeLayout(false);

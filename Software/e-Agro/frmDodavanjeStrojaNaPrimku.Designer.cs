@@ -121,6 +121,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmDodavanjeStrojaNaPrimku";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDodavanjeStrojaNaPrimku";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaPrimku_Load);
             this.ResumeLayout(false);

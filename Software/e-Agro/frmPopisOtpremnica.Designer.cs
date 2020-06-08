@@ -136,6 +136,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvOtpremnice);
             this.Name = "frmPopisOtpremnica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOtpremnica";
             this.Load += new System.EventHandler(this.frmPopisOtpremnica_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOtpremnice)).EndInit();

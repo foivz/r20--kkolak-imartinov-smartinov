@@ -111,6 +111,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvSkladista);
             this.Name = "frmPopisSkladista";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPopisSkladista";
             this.Load += new System.EventHandler(this.frmPopisSkladista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkladista)).EndInit();

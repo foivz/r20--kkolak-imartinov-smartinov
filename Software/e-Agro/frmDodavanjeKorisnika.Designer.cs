@@ -276,6 +276,7 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjeKorisnika";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje korisnika";
             this.Load += new System.EventHandler(this.frmDodavanjeKorisnika_Load);
             this.ResumeLayout(false);
