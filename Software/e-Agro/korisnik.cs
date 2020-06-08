@@ -22,25 +22,19 @@ namespace e_Agro
             this.ponudas = new HashSet<ponuda>();
             this.primkas = new HashSet<primka>();
         }
-        [DisplayName("ID korisnika")]
+    
+        [DisplayName("Korisnik ID")]
         public int korisnik_id { get; set; }
         [DisplayName("E-mail")]
         public string email { get; set; }
         [DisplayName("Korisničko ime")]
         public string korisnicko_ime { get; set; }
-        [DisplayName("Lozinka")]
         public string lozinka { get; set; }
-        [DisplayName("ID tipa korisnika")]
         public int tip_id { get; set; }
-        [DisplayName("Ime")]
         public string ime { get; set; }
-        [DisplayName("Prezime")]
         public string prezime { get; set; }
-        [DisplayName("Tekući račun")]
         public string tekuci_racun { get; set; }
-        [DisplayName("Adresa")]
         public string adresa { get; set; }
-        [DisplayName("ID radnog mjesta")]
         public int radno_mjesto_id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -49,10 +43,7 @@ namespace e_Agro
         public virtual ICollection<ponuda> ponudas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<primka> primkas { get; set; }
-        [DisplayName("Radno mjesto")]
         public virtual radno_mjesto radno_mjesto { get; set; }
-        [DisplayName("Tip korisnika")]
         public virtual tip_korisnika tip_korisnika { get; set; }
-
     }
 }

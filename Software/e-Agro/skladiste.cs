@@ -11,8 +11,7 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class skladiste
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,9 +20,8 @@ namespace e_Agro
             this.radno_mjesto = new HashSet<radno_mjesto>();
             this.stroj_na_skladistu = new HashSet<stroj_na_skladistu>();
         }
-        [DisplayName("ID skladišta")]
+    
         public int skladiste_id { get; set; }
-        [DisplayName("Naziv")]
         public string naziv { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

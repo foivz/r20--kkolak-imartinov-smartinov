@@ -18,6 +18,25 @@ namespace e_Agro
                 return query.ToList();
             }
         }
+
+        public void DodajStroj(string naziv, string vrsta, string model, string opis, double cijena, dobavljac dobavljac)
+        {
+            using (var context = new PI20_024_DBEntities())
+            {
+                katalog_strojeva noviStroj = new katalog_strojeva
+                {
+                    naziv = naziv,
+                    vrsta = vrsta,
+                    model = model,
+                    opis = opis,
+                    cijena = cijena,
+                    dobavljac_id = dobavljac.dobavljac_id
+                };
+                context.katalog_strojeva.Add(noviStroj);
+                context.SaveChanges();
+            }
+        }
+
         public void ObrisiStroj(katalog_strojeva stroj)
         {
             using (var context=new PI20_024_DBEntities())
