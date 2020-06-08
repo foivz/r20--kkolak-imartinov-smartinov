@@ -25,6 +25,8 @@ namespace e_Agro
         private void OsvjeziTablicu()
         {
             dgvStrojevi.DataSource = strojevi.DohvatiStrojeve();
+            dgvStrojevi.Columns["stroj_id"].Visible = false;
+            dgvStrojevi.Columns["dobavljac_id"].Visible = false;
             dgvStrojevi.Columns["stavke_na_narudzbi"].Visible = false;
             dgvStrojevi.Columns["stavke_na_otpremnici"].Visible = false;
             dgvStrojevi.Columns["stavke_na_ponudi"].Visible = false;

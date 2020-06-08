@@ -141,6 +141,7 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjeUreda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje ureda";
             this.ResumeLayout(false);
             this.PerformLayout();

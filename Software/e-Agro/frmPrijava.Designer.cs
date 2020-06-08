@@ -55,7 +55,6 @@
             this.txtKorisnickoIme.Name = "txtKorisnickoIme";
             this.txtKorisnickoIme.Size = new System.Drawing.Size(169, 16);
             this.txtKorisnickoIme.TabIndex = 0;
-            this.txtKorisnickoIme.TabStop = false;
             this.txtKorisnickoIme.Text = "Korisničko ime";
             this.txtKorisnickoIme.Click += new System.EventHandler(this.txtKorisnickoIme_Click);
             // 
@@ -88,7 +87,6 @@
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.Size = new System.Drawing.Size(169, 16);
             this.txtLozinka.TabIndex = 4;
-            this.txtLozinka.TabStop = false;
             this.txtLozinka.Text = "Lozinka";
             this.txtLozinka.UseSystemPasswordChar = true;
             this.txtLozinka.Click += new System.EventHandler(this.txtLozinka_Click);
@@ -112,7 +110,7 @@
             this.lblRegistracija.AutoSize = true;
             this.lblRegistracija.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegistracija.ForeColor = System.Drawing.Color.White;
-            this.lblRegistracija.Location = new System.Drawing.Point(148, 313);
+            this.lblRegistracija.Location = new System.Drawing.Point(148, 308);
             this.lblRegistracija.Name = "lblRegistracija";
             this.lblRegistracija.Size = new System.Drawing.Size(171, 17);
             this.lblRegistracija.TabIndex = 7;
@@ -181,6 +179,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtKorisnickoIme);
             this.Name = "frmPrijava";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava";
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

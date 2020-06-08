@@ -33,13 +33,13 @@
             this.btnPrimka = new System.Windows.Forms.Button();
             this.btnIzvjestaj = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOtpremnica
@@ -100,14 +100,14 @@
             this.panel1.Size = new System.Drawing.Size(597, 102);
             this.panel1.TabIndex = 3;
             // 
-            // panel2
+            // panel4
             // 
-            this.panel2.Controls.Add(this.btnOtpremnica);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 102);
-            this.panel2.TabIndex = 0;
+            this.panel4.Controls.Add(this.btnIzvjestaj);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(397, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 102);
+            this.panel4.TabIndex = 2;
             // 
             // panel3
             // 
@@ -118,14 +118,14 @@
             this.panel3.Size = new System.Drawing.Size(200, 102);
             this.panel3.TabIndex = 1;
             // 
-            // panel4
+            // panel2
             // 
-            this.panel4.Controls.Add(this.btnIzvjestaj);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(397, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 102);
-            this.panel4.TabIndex = 2;
+            this.panel2.Controls.Add(this.btnOtpremnica);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 102);
+            this.panel2.TabIndex = 0;
             // 
             // frmSkladistar
             // 
@@ -134,11 +134,12 @@
             this.ClientSize = new System.Drawing.Size(597, 103);
             this.Controls.Add(this.panel1);
             this.Name = "frmSkladistar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSkladistar";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

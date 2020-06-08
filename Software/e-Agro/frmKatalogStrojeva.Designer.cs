@@ -112,6 +112,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvStrojevi);
             this.Name = "frmKatalogStrojeva";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmKatalogStrojeva";
             this.Load += new System.EventHandler(this.frmKatalogStrojeva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStrojevi)).EndInit();

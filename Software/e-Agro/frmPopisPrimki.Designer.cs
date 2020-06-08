@@ -137,6 +137,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvPrimke);
             this.Name = "frmPopisPrimki";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrimka";
             this.Load += new System.EventHandler(this.frmPopisPrimki_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrimke)).EndInit();

@@ -11,8 +11,7 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class ured
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,11 +19,9 @@ namespace e_Agro
         {
             this.radno_mjesto = new HashSet<radno_mjesto>();
         }
-        [DisplayName("ID ureda")]
+    
         public int ured_id { get; set; }
-        [DisplayName("Odjel")]
         public string odjel { get; set; }
-        [DisplayName("Županija")]
         public string zupanija { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

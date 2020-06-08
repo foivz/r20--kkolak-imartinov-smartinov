@@ -11,8 +11,7 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class tip_korisnika
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,9 +19,8 @@ namespace e_Agro
         {
             this.korisniks = new HashSet<korisnik>();
         }
-        [DisplayName("ID tipa korisnika")]
+    
         public int tip_id { get; set; }
-        [DisplayName("Tip korisnika")]
         public string naziv { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

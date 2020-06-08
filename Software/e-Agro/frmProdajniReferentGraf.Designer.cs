@@ -85,6 +85,7 @@
             this.Controls.Add(this.btnPrikazi);
             this.Controls.Add(this.chartProdaja);
             this.Name = "frmProdajniReferentGraf";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prodajni referent graf";
             ((System.ComponentModel.ISupportInitialize)(this.chartProdaja)).EndInit();
             this.ResumeLayout(false);
