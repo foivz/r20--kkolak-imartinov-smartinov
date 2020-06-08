@@ -110,7 +110,7 @@
             this.lblRegistracija.AutoSize = true;
             this.lblRegistracija.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegistracija.ForeColor = System.Drawing.Color.White;
-            this.lblRegistracija.Location = new System.Drawing.Point(148, 313);
+            this.lblRegistracija.Location = new System.Drawing.Point(148, 308);
             this.lblRegistracija.Name = "lblRegistracija";
             this.lblRegistracija.Size = new System.Drawing.Size(171, 17);
             this.lblRegistracija.TabIndex = 7;
