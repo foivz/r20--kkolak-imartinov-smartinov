@@ -45,7 +45,7 @@ namespace e_Agro
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma =new frmDodavanjeDobavljaca())
+            using (var forma = new frmDodavanjeDobavljaca())
             {
                 forma.ShowDialog();
             }
@@ -70,8 +70,12 @@ namespace e_Agro
 
         private void btnIzvjestaj_Click(object sender, EventArgs e)
         {
-            var izvjestaj = new frmProdajniReferentIzvjestaj();
-            izvjestaj.ShowDialog();
+            Hide();
+            using (var forma = new frmProdajniReferentIzvjestaj())
+            {
+                forma.ShowDialog();
+            }
+            Show();
         }
     }
 }

@@ -35,13 +35,13 @@
             this.lblVrsta = new System.Windows.Forms.Label();
             this.txtNaziv = new System.Windows.Forms.TextBox();
             this.lblNaziv = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnOdustani = new System.Windows.Forms.Button();
+            this.btnDodaj = new System.Windows.Forms.Button();
             this.rtxtOpis = new System.Windows.Forms.RichTextBox();
             this.txtCijena = new System.Windows.Forms.TextBox();
             this.lblCijena = new System.Windows.Forms.Label();
             this.lblDobavljac = new System.Windows.Forms.Label();
-            this.cbDobavljac = new System.Windows.Forms.ComboBox();
+            this.cmbDobavljac = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -110,26 +110,27 @@
             this.lblNaziv.TabIndex = 38;
             this.lblNaziv.Text = "Naziv:";
             // 
-            // button2
+            // btnOdustani
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(218, 446);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 34);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "Odustani";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOdustani.Location = new System.Drawing.Point(218, 446);
+            this.btnOdustani.Name = "btnOdustani";
+            this.btnOdustani.Size = new System.Drawing.Size(75, 34);
+            this.btnOdustani.TabIndex = 43;
+            this.btnOdustani.Text = "Odustani";
+            this.btnOdustani.UseVisualStyleBackColor = true;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
-            // button1
+            // btnDodaj
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(79, 446);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 34);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "Dodaj stroj";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodaj.Location = new System.Drawing.Point(79, 446);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(100, 34);
+            this.btnDodaj.TabIndex = 42;
+            this.btnDodaj.Text = "Dodaj stroj";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // rtxtOpis
             // 
@@ -168,13 +169,13 @@
             this.lblDobavljac.TabIndex = 53;
             this.lblDobavljac.Text = "Dobavljač:";
             // 
-            // cbDobavljac
+            // cmbDobavljac
             // 
-            this.cbDobavljac.FormattingEnabled = true;
-            this.cbDobavljac.Location = new System.Drawing.Point(218, 373);
-            this.cbDobavljac.Name = "cbDobavljac";
-            this.cbDobavljac.Size = new System.Drawing.Size(121, 21);
-            this.cbDobavljac.TabIndex = 54;
+            this.cmbDobavljac.FormattingEnabled = true;
+            this.cmbDobavljac.Location = new System.Drawing.Point(218, 373);
+            this.cmbDobavljac.Name = "cmbDobavljac";
+            this.cmbDobavljac.Size = new System.Drawing.Size(121, 21);
+            this.cmbDobavljac.TabIndex = 54;
             // 
             // label1
             // 
@@ -194,7 +195,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(567, 519);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbDobavljac);
+            this.Controls.Add(this.cmbDobavljac);
             this.Controls.Add(this.lblDobavljac);
             this.Controls.Add(this.txtCijena);
             this.Controls.Add(this.lblCijena);
@@ -206,10 +207,12 @@
             this.Controls.Add(this.lblVrsta);
             this.Controls.Add(this.txtNaziv);
             this.Controls.Add(this.lblNaziv);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnOdustani);
+            this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjeStroja";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje stroja";
+            this.Load += new System.EventHandler(this.frmDodavanjeStroja_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,13 +226,13 @@
         private System.Windows.Forms.Label lblVrsta;
         private System.Windows.Forms.TextBox txtNaziv;
         private System.Windows.Forms.Label lblNaziv;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnOdustani;
+        private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.RichTextBox rtxtOpis;
         private System.Windows.Forms.TextBox txtCijena;
         private System.Windows.Forms.Label lblCijena;
         private System.Windows.Forms.Label lblDobavljac;
-        private System.Windows.Forms.ComboBox cbDobavljac;
+        private System.Windows.Forms.ComboBox cmbDobavljac;
         private System.Windows.Forms.Label label1;
     }
 }

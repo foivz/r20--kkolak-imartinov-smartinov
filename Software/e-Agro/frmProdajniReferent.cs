@@ -21,38 +21,62 @@ namespace e_Agro
 
         private void btnStrojevi_Click(object sender, EventArgs e)
         {
-            var katalogStrojeva = new frmKatalogStrojeva();
-            katalogStrojeva.ShowDialog();
+            Hide();
+            using (var forma = new frmKatalogStrojeva())
+            {
+                forma.ShowDialog();
+            }
+            Show();
         }
 
         private void btnNarudzba_Click(object sender, EventArgs e)
         {
-            var popisNarudzbi = new frmPopisNarudzbi();
-            popisNarudzbi.ShowDialog();
+            Hide();
+            using (var forma = new frmPopisNarudzbi())
+            {
+                forma.ShowDialog();
+            }
+            Show();
         }
 
         private void btnPonuda_Click(object sender, EventArgs e)
         {
-            var popisPonuda = new frmPopisPonuda();
-            popisPonuda.ShowDialog();
+            Hide();
+            using (var forma = new frmPopisPonuda())
+            {
+                forma.ShowDialog();
+            }
+            Show();
         }
 
         private void btnDobavljac_Click(object sender, EventArgs e)
         {
-            var popisDobavljaca = new frmPopisDobavljaca();
-            popisDobavljaca.ShowDialog();
+            Hide();
+            using (var forma = new frmPopisDobavljaca())
+            {
+                forma.ShowDialog();
+            }
+            Show();
         }
 
         private void btnKlijent_Click(object sender, EventArgs e)
         {
-            var popisKlijenata = new frmPopisKlijenata();
-            popisKlijenata.ShowDialog();
+            Hide();
+            using (var forma = new frmPopisKlijenata())
+            {
+                forma.ShowDialog();
+            }
+            Show();
         }
 
         private void btnGraf_Click(object sender, EventArgs e)
         {
-            var graf = new frmProdajniReferentGraf();
-            graf.ShowDialog();
+            Hide();
+            using (var forma = new frmProdajniReferentGraf())
+            {
+                forma.ShowDialog();
+            }
+            Show();
         }
     }
 }

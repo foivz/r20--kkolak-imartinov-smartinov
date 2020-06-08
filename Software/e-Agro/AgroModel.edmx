@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PI20_024_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="PI20_024_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="dobavljac">
           <Key>
             <PropertyRef Name="dobavljac_id" />
@@ -86,7 +86,7 @@
           </Key>
           <Property Name="primka_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="korisnik_id" Type="int" Nullable="false" />
-          <Property Name="cijena" Type="int" Nullable="false" />
+          <Property Name="cijena" Type="float" Nullable="false" />
         </EntityType>
         <EntityType Name="radno_mjesto">
           <Key>
@@ -248,18 +248,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_narudzba_stavke_na_narudzbi">
-          <End Role="narudzba" Type="Self.narudzba" Multiplicity="1" />
-          <End Role="stavke_na_narudzbi" Type="Self.stavke_na_narudzbi" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="narudzba">
-              <PropertyRef Name="narudzba_id" />
-            </Principal>
-            <Dependent Role="stavke_na_narudzbi">
-              <PropertyRef Name="narudzba_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_ponuda_stavke_na_ponudi">
           <End Role="ponuda" Type="Self.ponuda" Multiplicity="1" />
           <End Role="stavke_na_ponudi" Type="Self.stavke_na_ponudi" Multiplicity="*" />
@@ -333,18 +321,6 @@
             </Principal>
             <Dependent Role="stroj_na_skladistu">
               <PropertyRef Name="skladiste_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_stroj_stavke_na_narudzbi">
-          <End Role="katalog_strojeva" Type="Self.katalog_strojeva" Multiplicity="1" />
-          <End Role="stavke_na_narudzbi" Type="Self.stavke_na_narudzbi" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="katalog_strojeva">
-              <PropertyRef Name="stroj_id" />
-            </Principal>
-            <Dependent Role="stavke_na_narudzbi">
-              <PropertyRef Name="stroj_id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -466,10 +442,6 @@
             <End Role="korisnik" EntitySet="korisnik" />
             <End Role="primka" EntitySet="primka" />
           </AssociationSet>
-          <AssociationSet Name="FK_narudzba_stavke_na_narudzbi" Association="Self.FK_narudzba_stavke_na_narudzbi">
-            <End Role="narudzba" EntitySet="narudzba" />
-            <End Role="stavke_na_narudzbi" EntitySet="stavke_na_narudzbi" />
-          </AssociationSet>
           <AssociationSet Name="FK_ponuda_stavke_na_ponudi" Association="Self.FK_ponuda_stavke_na_ponudi">
             <End Role="ponuda" EntitySet="ponuda" />
             <End Role="stavke_na_ponudi" EntitySet="stavke_na_ponudi" />
@@ -493,10 +465,6 @@
           <AssociationSet Name="FK_skladiste_stroj_na_skladistu" Association="Self.FK_skladiste_stroj_na_skladistu">
             <End Role="skladiste" EntitySet="skladiste" />
             <End Role="stroj_na_skladistu" EntitySet="stroj_na_skladistu" />
-          </AssociationSet>
-          <AssociationSet Name="FK_stroj_stavke_na_narudzbi" Association="Self.FK_stroj_stavke_na_narudzbi">
-            <End Role="katalog_strojeva" EntitySet="katalog_strojeva" />
-            <End Role="stavke_na_narudzbi" EntitySet="stavke_na_narudzbi" />
           </AssociationSet>
           <AssociationSet Name="FK_stroj_stavke_na_otpremnici" Association="Self.FK_stroj_stavke_na_otpremnici">
             <End Role="katalog_strojeva" EntitySet="katalog_strojeva" />
@@ -523,8 +491,7 @@
             <End Role="radno_mjesto" EntitySet="radno_mjesto" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="PI20_024_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -630,7 +597,7 @@
           </Key>
           <Property Name="primka_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="korisnik_id" Type="Int32" Nullable="false" />
-          <Property Name="cijena" Type="Int32" Nullable="false" />
+          <Property Name="cijena" Type="Double" Nullable="false" />
           <NavigationProperty Name="korisnik" Relationship="Self.FK_korisnik_primka" FromRole="primka" ToRole="korisnik" />
           <NavigationProperty Name="stavke_na_primci" Relationship="Self.FK_primka_stavke_na_primci" FromRole="primka" ToRole="stavke_na_primci" />
         </EntityType>
