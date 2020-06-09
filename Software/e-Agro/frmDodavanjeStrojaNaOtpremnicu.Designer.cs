@@ -122,7 +122,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDodavanjeStrojaNaOtpremnicu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDodajStrojNaOtpremnicu";
+            this.Text = "Dodavanje stavke na otpremnicu";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaOtpremnicu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

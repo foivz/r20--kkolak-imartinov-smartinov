@@ -234,7 +234,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmProdajniReferent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmProdajniReferent";
+            this.Text = "Prodajni referent";
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

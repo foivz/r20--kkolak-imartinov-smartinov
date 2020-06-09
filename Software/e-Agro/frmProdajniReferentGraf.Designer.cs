@@ -28,41 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartProdaja = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.btnPrikazi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartProdaja)).BeginInit();
             this.SuspendLayout();
             // 
             // chartProdaja
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartProdaja.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartProdaja.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartProdaja.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartProdaja.Legends.Add(legend2);
             this.chartProdaja.Location = new System.Drawing.Point(16, 123);
             this.chartProdaja.Name = "chartProdaja";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartProdaja.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartProdaja.Series.Add(series2);
             this.chartProdaja.Size = new System.Drawing.Size(827, 300);
             this.chartProdaja.TabIndex = 0;
             this.chartProdaja.Text = "chart1";
-            this.chartProdaja.Visible = false;
-            // 
-            // btnPrikazi
-            // 
-            this.btnPrikazi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrikazi.Location = new System.Drawing.Point(16, 83);
-            this.btnPrikazi.Name = "btnPrikazi";
-            this.btnPrikazi.Size = new System.Drawing.Size(100, 34);
-            this.btnPrikazi.TabIndex = 1;
-            this.btnPrikazi.Text = "Prikaži graf";
-            this.btnPrikazi.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -82,11 +70,11 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(855, 454);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnPrikazi);
             this.Controls.Add(this.chartProdaja);
             this.Name = "frmProdajniReferentGraf";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Prodajni referent graf";
+            this.Text = "Graf profita i prodaje";
+            this.Load += new System.EventHandler(this.frmProdajniReferentGraf_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartProdaja)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -96,7 +84,6 @@
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chartProdaja;
-        private System.Windows.Forms.Button btnPrikazi;
         private System.Windows.Forms.Label label1;
     }
 }

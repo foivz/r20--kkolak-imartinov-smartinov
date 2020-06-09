@@ -115,7 +115,7 @@
             this.Controls.Add(this.dgvKorisnici);
             this.Name = "frmPopisKorisnika";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPopisKorisnika";
+            this.Text = "Popis korisnika";
             this.Load += new System.EventHandler(this.frmPopisKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).EndInit();
             this.ResumeLayout(false);

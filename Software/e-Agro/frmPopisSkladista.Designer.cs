@@ -112,7 +112,7 @@
             this.Controls.Add(this.dgvSkladista);
             this.Name = "frmPopisSkladista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPopisSkladista";
+            this.Text = "Popis skladišta";
             this.Load += new System.EventHandler(this.frmPopisSkladista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkladista)).EndInit();
             this.ResumeLayout(false);
