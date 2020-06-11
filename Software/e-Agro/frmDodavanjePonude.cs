@@ -49,6 +49,8 @@ namespace e_Agro
                 txtCijena.Text = odabranaPonuda.cijena.ToString();
                 dtpDatumKreiranja.Value = odabranaPonuda.datum_kreiranja;
                 cmbKlijent.SelectedItem = odabranaPonuda.klijent;
+                btnDodaj.Text = "Ažuriraj ponudu";
+                this.Text = "Ažuriranje ponude";
             }
             UcitajCombo();
         }
@@ -79,6 +81,7 @@ namespace e_Agro
             {
                 ponude.DodajPonudu(korisnik, naziv, cijena, datumKreiranja, klijent);
             }
+            Close();
         }
     }
 }
