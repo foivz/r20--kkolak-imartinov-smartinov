@@ -113,7 +113,7 @@
             this.Controls.Add(this.dgvKlijenti);
             this.Name = "frmPopisKlijenata";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPopisKlijenata";
+            this.Text = "Popis klijenata";
             this.Load += new System.EventHandler(this.frmPopisKlijenata_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKlijenti)).EndInit();
             this.ResumeLayout(false);

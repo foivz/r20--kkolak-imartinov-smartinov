@@ -112,7 +112,7 @@
             this.Controls.Add(this.dgvUredi);
             this.Name = "frmPopisUreda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPopisUreda";
+            this.Text = "Popis ureda";
             this.Load += new System.EventHandler(this.frmPopisUreda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUredi)).EndInit();
             this.ResumeLayout(false);

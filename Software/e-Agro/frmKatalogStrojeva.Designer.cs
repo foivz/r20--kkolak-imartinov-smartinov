@@ -113,7 +113,7 @@
             this.Controls.Add(this.dgvStrojevi);
             this.Name = "frmKatalogStrojeva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmKatalogStrojeva";
+            this.Text = "Katalog strojeva";
             this.Load += new System.EventHandler(this.frmKatalogStrojeva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStrojevi)).EndInit();
             this.ResumeLayout(false);

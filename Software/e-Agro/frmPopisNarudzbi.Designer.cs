@@ -36,6 +36,7 @@
             this.dgvNarudzbe = new System.Windows.Forms.DataGridView();
             this.dgvStavkeNaNarudzbi = new System.Windows.Forms.DataGridView();
             this.btnDodajStroj = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNarudzbe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaNarudzbi)).BeginInit();
             this.SuspendLayout();
@@ -105,7 +106,7 @@
             // dgvStavkeNaNarudzbi
             // 
             this.dgvStavkeNaNarudzbi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStavkeNaNarudzbi.Location = new System.Drawing.Point(12, 402);
+            this.dgvStavkeNaNarudzbi.Location = new System.Drawing.Point(12, 448);
             this.dgvStavkeNaNarudzbi.Name = "dgvStavkeNaNarudzbi";
             this.dgvStavkeNaNarudzbi.Size = new System.Drawing.Size(612, 258);
             this.dgvStavkeNaNarudzbi.TabIndex = 28;
@@ -113,7 +114,7 @@
             // btnDodajStroj
             // 
             this.btnDodajStroj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodajStroj.Location = new System.Drawing.Point(12, 666);
+            this.btnDodajStroj.Location = new System.Drawing.Point(12, 712);
             this.btnDodajStroj.Name = "btnDodajStroj";
             this.btnDodajStroj.Size = new System.Drawing.Size(140, 48);
             this.btnDodajStroj.TabIndex = 29;
@@ -121,12 +122,24 @@
             this.btnDodajStroj.UseVisualStyleBackColor = true;
             this.btnDodajStroj.Click += new System.EventHandler(this.btnDodajStroj_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(165, 422);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 23);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Stavke na narudžbi";
+            // 
             // frmPopisNarudzbi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(636, 717);
+            this.ClientSize = new System.Drawing.Size(636, 772);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDodajStroj);
             this.Controls.Add(this.dgvStavkeNaNarudzbi);
             this.Controls.Add(this.lblNaslov);
@@ -137,7 +150,7 @@
             this.Controls.Add(this.dgvNarudzbe);
             this.Name = "frmPopisNarudzbi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPopisNarudzbi";
+            this.Text = "Popis narudžbi";
             this.Load += new System.EventHandler(this.frmPopisNarudzbi_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNarudzbe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaNarudzbi)).EndInit();
@@ -156,5 +169,6 @@
         private System.Windows.Forms.DataGridView dgvNarudzbe;
         private System.Windows.Forms.DataGridView dgvStavkeNaNarudzbi;
         private System.Windows.Forms.Button btnDodajStroj;
+        private System.Windows.Forms.Label label1;
     }
 }

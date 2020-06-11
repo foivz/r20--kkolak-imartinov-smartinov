@@ -122,7 +122,7 @@
             this.Controls.Add(this.lblStroj);
             this.Name = "frmDodavanjeStrojaNaNarudzbu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDodavanjeStrojaNaNarudzbu";
+            this.Text = "Dodavanje stavke na narudžbu";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaNarudzbu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

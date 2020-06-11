@@ -36,6 +36,7 @@
             this.dgvPrimke = new System.Windows.Forms.DataGridView();
             this.dgvStavkeNaPrimci = new System.Windows.Forms.DataGridView();
             this.btnDodajStrojNaPrimku = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrimke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPrimci)).BeginInit();
             this.SuspendLayout();
@@ -106,7 +107,7 @@
             // dgvStavkeNaPrimci
             // 
             this.dgvStavkeNaPrimci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStavkeNaPrimci.Location = new System.Drawing.Point(12, 345);
+            this.dgvStavkeNaPrimci.Location = new System.Drawing.Point(12, 429);
             this.dgvStavkeNaPrimci.Name = "dgvStavkeNaPrimci";
             this.dgvStavkeNaPrimci.Size = new System.Drawing.Size(776, 258);
             this.dgvStavkeNaPrimci.TabIndex = 28;
@@ -114,7 +115,7 @@
             // btnDodajStrojNaPrimku
             // 
             this.btnDodajStrojNaPrimku.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodajStrojNaPrimku.Location = new System.Drawing.Point(12, 609);
+            this.btnDodajStrojNaPrimku.Location = new System.Drawing.Point(12, 693);
             this.btnDodajStrojNaPrimku.Name = "btnDodajStrojNaPrimku";
             this.btnDodajStrojNaPrimku.Size = new System.Drawing.Size(140, 54);
             this.btnDodajStrojNaPrimku.TabIndex = 29;
@@ -122,12 +123,24 @@
             this.btnDodajStrojNaPrimku.UseVisualStyleBackColor = true;
             this.btnDodajStrojNaPrimku.Click += new System.EventHandler(this.btnDodajStrojNaPrimku_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(291, 403);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 23);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Stavke na primci";
+            // 
             // frmPopisPrimki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(795, 670);
+            this.ClientSize = new System.Drawing.Size(795, 759);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDodajStrojNaPrimku);
             this.Controls.Add(this.dgvStavkeNaPrimci);
             this.Controls.Add(this.lblNaslov);
@@ -138,7 +151,7 @@
             this.Controls.Add(this.dgvPrimke);
             this.Name = "frmPopisPrimki";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPrimka";
+            this.Text = "Popis primki";
             this.Load += new System.EventHandler(this.frmPopisPrimki_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrimke)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPrimci)).EndInit();
@@ -157,5 +170,6 @@
         private System.Windows.Forms.DataGridView dgvPrimke;
         private System.Windows.Forms.DataGridView dgvStavkeNaPrimci;
         private System.Windows.Forms.Button btnDodajStrojNaPrimku;
+        private System.Windows.Forms.Label label1;
     }
 }

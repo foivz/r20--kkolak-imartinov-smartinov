@@ -72,7 +72,7 @@ namespace e_Agro
         private void btnGraf_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma = new frmProdajniReferentGraf())
+            using (var forma = new frmProdajniReferentGraf(prijavljeniKorisnik))
             {
                 forma.ShowDialog();
             }

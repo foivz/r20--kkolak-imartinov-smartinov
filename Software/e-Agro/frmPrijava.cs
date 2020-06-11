@@ -21,7 +21,7 @@ namespace e_Agro
         private void btnPrijava_Click(object sender, EventArgs e)
         {
             var provjera = new ProvjeraPrijave();
-            prijavljeniKorisnik = provjera.ProvjeraPodataka(txtKorisnickoIme.Text, txtLozinka.Text); //Provjera postoji li korisnik
+            prijavljeniKorisnik = provjera.ProvjeraPodataka(txtKorisnickoIme.Text, txtLozinka.Text);
 
             txtKorisnickoIme.Clear();
             txtLozinka.Clear();

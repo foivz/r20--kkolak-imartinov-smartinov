@@ -122,7 +122,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodavanjeStrojaNaPonuda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDodavanjeStrojaNaPonuda";
+            this.Text = "Dodavanje stavke na ponudu";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaPonuda_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
