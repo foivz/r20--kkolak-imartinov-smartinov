@@ -29,9 +29,9 @@ namespace e_Agro
             dgvPonude.DataSource = ponude.DohvatiPonude();
             dgvPonude.Columns["stavke_na_ponudi"].Visible = false;
         }
-        private void frmPopisPonuda_Load(object sender, EventArgs e) 
+        private void frmPopisPonuda_Load(object sender, EventArgs e)
         {
-            OsvjeziTablicu(); 
+            OsvjeziTablicu();
         }
 
         private void btnObrisi_Click(object sender, EventArgs e)
@@ -53,12 +53,32 @@ namespace e_Agro
         private void btnDodajStroj_Click(object sender, EventArgs e)
         {
             Hide();
-            using(var forma = new frmDodavanjeStrojaNaPonuda(DohvatiOdabranu()))
+            using (var forma = new frmDodavanjeStrojaNaPonuda(DohvatiOdabranu()))
             {
                 forma.ShowDialog();
             }
             Show();
             OsvjeziTablicu();
+        }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjePonude())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmDodavanjePonude(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
         }
     }
 }

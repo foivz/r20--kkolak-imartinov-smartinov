@@ -32,7 +32,7 @@ namespace e_Agro
             }
         }
 
-        public void AzurirajPrimku(primka odabranaPrimka, korisnik korisnik, int cijena)
+        public void AzurirajPrimku(primka odabranaPrimka, korisnik korisnik, double cijena)
         {
             using(var context=new PI20_024_DBEntities())
             {
