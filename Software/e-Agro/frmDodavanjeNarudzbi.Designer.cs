@@ -32,7 +32,7 @@
             this.lblKolicina = new System.Windows.Forms.Label();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
-            this.cbDobavljac = new System.Windows.Forms.ComboBox();
+            this.cmbDobavljac = new System.Windows.Forms.ComboBox();
             this.lblDobavljac = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -75,14 +75,15 @@
             this.btnDodaj.TabIndex = 50;
             this.btnDodaj.Text = "Dodaj narudžbu";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
-            // cbDobavljac
+            // cmbDobavljac
             // 
-            this.cbDobavljac.FormattingEnabled = true;
-            this.cbDobavljac.Location = new System.Drawing.Point(36, 98);
-            this.cbDobavljac.Name = "cbDobavljac";
-            this.cbDobavljac.Size = new System.Drawing.Size(121, 21);
-            this.cbDobavljac.TabIndex = 54;
+            this.cmbDobavljac.FormattingEnabled = true;
+            this.cmbDobavljac.Location = new System.Drawing.Point(36, 98);
+            this.cmbDobavljac.Name = "cmbDobavljac";
+            this.cmbDobavljac.Size = new System.Drawing.Size(121, 21);
+            this.cmbDobavljac.TabIndex = 54;
             // 
             // lblDobavljac
             // 
@@ -113,7 +114,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(311, 267);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbDobavljac);
+            this.Controls.Add(this.cmbDobavljac);
             this.Controls.Add(this.lblDobavljac);
             this.Controls.Add(this.txtCijena);
             this.Controls.Add(this.lblKolicina);
@@ -122,6 +123,7 @@
             this.Name = "frmDodavanjeNarudzbi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje narudžbi";
+            this.Load += new System.EventHandler(this.frmDodavanjeNarudzbi_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +135,7 @@
         private System.Windows.Forms.Label lblKolicina;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.ComboBox cbDobavljac;
+        private System.Windows.Forms.ComboBox cmbDobavljac;
         private System.Windows.Forms.Label lblDobavljac;
         private System.Windows.Forms.Label label1;
     }
