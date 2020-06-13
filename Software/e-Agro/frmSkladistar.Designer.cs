@@ -88,6 +88,7 @@
             this.btnIzvjestaj.Text = "Izvještaj stanja na skladištu";
             this.btnIzvjestaj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnIzvjestaj.UseVisualStyleBackColor = false;
+            this.btnIzvjestaj.Click += new System.EventHandler(this.btnIzvjestaj_Click);
             // 
             // panel1
             // 
