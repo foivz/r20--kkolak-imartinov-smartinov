@@ -33,6 +33,7 @@ namespace e_Agro
             katalog_strojeva odabraniStroj = cmbStrojevi.SelectedItem as katalog_strojeva;
             int kolicina = int.Parse(txtKolicina.Text);
             stavkeNaPonudi.DodajStrojNaPonudu(odabraniStroj, kolicina, odabranaPonuda);
+            Close();
         }
 
         private void frmDodavanjeStrojaNaPonuda_Load(object sender, EventArgs e)

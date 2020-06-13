@@ -113,6 +113,7 @@
             this.btnDodaj.TabIndex = 24;
             this.btnDodaj.Text = "Dodaj ured";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // label1
             // 
@@ -143,6 +144,7 @@
             this.Name = "frmDodavanjeUreda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje ureda";
+            this.Load += new System.EventHandler(this.frmDodavanjeUreda_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

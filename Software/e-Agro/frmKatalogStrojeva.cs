@@ -34,12 +34,6 @@ namespace e_Agro
             dgvStrojevi.Columns["stroj_na_skladistu"].Visible = false;
         }
 
-        private void btnDodaj_Click(object sender, EventArgs e)
-        {
-            var dodavanjeStroja = new frmDodavanjeStroja();
-            dodavanjeStroja.ShowDialog();
-        }
-
         private void frmKatalogStrojeva_Load(object sender, EventArgs e)
         {
             OsvjeziTablicu();
@@ -54,6 +48,28 @@ namespace e_Agro
         private void txtSearch_Click(object sender, EventArgs e)
         {
             txtSearch.Clear();
+        }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeStroja())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeStroja(DohvatiOdabrani()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
         }
     }
 }
