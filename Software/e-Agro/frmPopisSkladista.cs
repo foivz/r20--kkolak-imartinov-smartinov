@@ -44,5 +44,27 @@ namespace e_Agro
         {
             txtSearch.Clear();
         }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmDodavanjeSkladista())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeSkladista(DohvatiOdabrano()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
     }
 }

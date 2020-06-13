@@ -43,8 +43,8 @@ namespace e_Agro
             {
                 cmbKreirao.SelectedItem = odabranaPrimka.korisnik;
                 txtCijena.Text = odabranaPrimka.cijena.ToString();
-                btnDodaj.Text = "Ažuriraj korisnika";
-                this.Text = "Ažuriranje korisnika";
+                btnDodaj.Text = "Ažuriraj primku";
+                this.Text = "Ažuriranje primke";
             }
             UcitajCombo();
         }

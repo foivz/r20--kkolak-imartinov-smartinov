@@ -57,6 +57,7 @@
             this.btnAzuriraj.TabIndex = 12;
             this.btnAzuriraj.Text = "Ažuriraj skladište";
             this.btnAzuriraj.UseVisualStyleBackColor = true;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click);
             // 
             // btnObrisi
             // 
@@ -78,6 +79,7 @@
             this.btnDodaj.TabIndex = 10;
             this.btnDodaj.Text = "Dodaj skladište";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // txtSearch
             // 
