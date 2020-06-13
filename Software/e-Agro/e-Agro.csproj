@@ -251,6 +251,12 @@
     <Compile Include="frmPopisPrimki.Designer.cs">
       <DependentUpon>frmPopisPrimki.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrikazIzvjestajaProdajniRefrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaProdajniRefrent.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestajaProdajniRefrent.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProdajniReferent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -426,6 +432,9 @@
     <EmbeddedResource Include="frmPopisPrimki.resx">
       <DependentUpon>frmPopisPrimki.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestajaProdajniRefrent.resx">
+      <DependentUpon>frmPrikazIzvjestajaProdajniRefrent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProdajniReferent.resx">
       <DependentUpon>frmProdajniReferent.cs</DependentUpon>
     </EmbeddedResource>
@@ -448,6 +457,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rptDobavljaciStrojeva.rdlc" />
     <EntityDeploy Include="AgroModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AgroModel.Designer.cs</LastGenOutput>
@@ -456,7 +466,9 @@
       <DependentUpon>AgroModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\dobavljac.datasource" />
     <None Include="Properties\DataSources\frmPopisNarudzbi.datasource" />
+    <None Include="Properties\DataSources\katalog_strojeva.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

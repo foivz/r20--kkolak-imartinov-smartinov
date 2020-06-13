@@ -478,3 +478,6 @@ C:\Users\Sara\Source\Repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro
 C:\Users\Sara\Source\Repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csproj.CopyComplete
 C:\Users\Sara\Source\Repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.exe
 C:\Users\Sara\Source\Repos\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.pdb
+C:\Users\Ivan\Source\Repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrikazIzvjestajaProdajniRefrent.resources
+C:\Users\Ivan\Source\Repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\RdlCompile.cache
+C:\Users\Ivan\Source\Repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\RdlCompile.compiled
