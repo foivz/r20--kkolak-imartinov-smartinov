@@ -72,7 +72,6 @@ namespace e_Agro
                 primke.DodajPrimku(korisnik, cijena);
             }
             Close();
-
         }
     }
 }

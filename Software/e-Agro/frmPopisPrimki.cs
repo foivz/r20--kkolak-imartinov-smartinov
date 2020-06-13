@@ -48,6 +48,7 @@ namespace e_Agro
                 forma.ShowDialog();
             }
             Show();
+            OsvjeziTablicu();
         }
 
         private void btnAzuriraj_Click(object sender, EventArgs e)
@@ -58,6 +59,7 @@ namespace e_Agro
                 forma.ShowDialog();
             }
             Show();
+            OsvjeziTablicu();
         }
 
         private void btnDodajStrojNaPrimku_Click(object sender, EventArgs e)
