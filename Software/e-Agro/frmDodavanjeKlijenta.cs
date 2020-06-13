@@ -48,6 +48,7 @@ namespace e_Agro
             {
                 klijenti.DodajKlijenta(ime, prezime, email, adresa, tekuciRacun);
             }
+            Close();
         }
 
         private void frmDodavanjeKlijenta_Load(object sender, EventArgs e)

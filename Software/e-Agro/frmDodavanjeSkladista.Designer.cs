@@ -75,6 +75,7 @@
             this.btnDodaj.TabIndex = 24;
             this.btnDodaj.Text = "Dodaj skladište";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // lblAdresa
             // 
@@ -121,6 +122,7 @@
             this.Name = "frmDodavanjeSkladista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje skladišta";
+            this.Load += new System.EventHandler(this.frmDodavanjeSkladista_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

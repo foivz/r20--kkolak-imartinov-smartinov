@@ -46,6 +46,7 @@ namespace e_Agro
             {
                 dobavljaci.DodajDobavljaca(naziv, adresa, tekuciRacun);
             }
+            Close();
         }
 
         private void frmDodavanjeDobavljaca_Load(object sender, EventArgs e)

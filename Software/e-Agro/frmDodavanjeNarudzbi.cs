@@ -70,8 +70,6 @@ namespace e_Agro
                 narudzbe.DodajNarudzbu(dobavljac, cijena);
             }
             Close();
-
-
         }
     }
 }
