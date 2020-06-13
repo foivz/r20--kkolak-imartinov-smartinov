@@ -60,5 +60,26 @@ namespace e_Agro
             Show();
             OsvjeziTablicu();
         }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma= new frmDodavanjeOtpremnice())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeOtpremnice(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+
+        }
     }
 }

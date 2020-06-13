@@ -34,7 +34,7 @@ namespace e_Agro
             }
         }
 
-        public void AzurirajNarudzbu(otpremnica odabranaOtpremnica, korisnik korisnik, double cijena, DateTime datumIsporuke)
+        public void AzurirajOtpremnicu(otpremnica odabranaOtpremnica, korisnik korisnik, double cijena, DateTime datumIsporuke)
         {
             using (var context = new PI20_024_DBEntities())
             {

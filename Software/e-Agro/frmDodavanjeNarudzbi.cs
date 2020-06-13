@@ -60,7 +60,7 @@ namespace e_Agro
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             dobavljac dobavljac = cmbDobavljac.SelectedItem as dobavljac;
-            int cijena = int.Parse(txtCijena.Text);
+            double cijena = double.Parse(txtCijena.Text);
             if (odabranaNarudzba != null)
             {
                 narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, cijena);
