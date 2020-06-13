@@ -23,6 +23,7 @@ namespace e_Agro
 
         private void frmProdajniReferentGraf_Load(object sender, EventArgs e)
         {
+
             chartProdaja.Titles.Add("Prodaja po vrsti strojeva");
 
             var popisPonuda = new List<ponuda>();
@@ -44,10 +45,15 @@ namespace e_Agro
                 {
                     chartProdaja.Series[stavka.katalog_strojeva.vrsta].Points.AddXY(stavka.katalog_strojeva.cijena, stavka.katalog_strojeva.vrsta); //Ne radi
                 }
+
+
             }
 
 
 
         }
+
+
     }
 }
+
