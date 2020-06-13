@@ -55,6 +55,7 @@
             this.chartProdaja.Legends.Add(legend1);
             this.chartProdaja.Location = new System.Drawing.Point(12, 108);
             this.chartProdaja.Name = "chartProdaja";
+            this.chartProdaja.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Vrsta stroja";

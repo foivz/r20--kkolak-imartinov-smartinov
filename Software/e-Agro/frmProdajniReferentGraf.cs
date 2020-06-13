@@ -28,6 +28,7 @@ namespace e_Agro
 
             var popisPonuda = new List<ponuda>();
             var popisStavki = new List<stavke_na_ponudi>();
+ 
 
             using (var context = new PI20_024_DBEntities())
             {
@@ -43,10 +44,10 @@ namespace e_Agro
 
                 foreach (var stavka in popisStavki)
                 {
-                    chartProdaja.Series[stavka.katalog_strojeva.vrsta].Points.AddXY(stavka.katalog_strojeva.cijena, stavka.katalog_strojeva.vrsta); //Ne radi
+                    chartProdaja.Series[0].Points.AddXY(stavka.katalog_strojeva.vrsta, stavka.katalog_strojeva.cijena); 
                 }
 
-
+   
             }
 
 
