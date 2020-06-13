@@ -38,6 +38,7 @@ namespace e_Agro
             katalog_strojeva odabraniStroj = cmbStrojevi.SelectedItem as katalog_strojeva;
             int kolicina = int.Parse(txtKolicina.Text);
             stavkeNaPrimci.DodajStrojNaPrimku(odabraniStroj, kolicina, odabranaPrimka);
+            Close();
         }
     }
 }

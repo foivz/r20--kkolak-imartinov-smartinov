@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,23 @@ namespace e_Agro
                     dobavljac_id = dobavljac.dobavljac_id
                 };
                 context.katalog_strojeva.Add(noviStroj);
+                context.SaveChanges();
+            }
+        }
+
+        public void AzurirajStroj(katalog_strojeva odabraniStroj, string naziv, string vrsta, string model, string opis, double cijena, dobavljac dobavljac)
+        {
+            using (var context = new PI20_024_DBEntities())
+            {
+                context.Entry(odabraniStroj).State = EntityState.Modified;
+
+                odabraniStroj.naziv = naziv;
+                odabraniStroj.vrsta = vrsta;
+                odabraniStroj.model = model;
+                odabraniStroj.opis = opis;
+                odabraniStroj.cijena = cijena;
+                odabraniStroj.dobavljac_id = dobavljac.dobavljac_id;
+
                 context.SaveChanges();
             }
         }
