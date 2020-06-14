@@ -115,6 +115,7 @@
             this.lblRegistracija.Size = new System.Drawing.Size(171, 17);
             this.lblRegistracija.TabIndex = 7;
             this.lblRegistracija.Text = "Nemate korisnički račun?";
+            this.lblRegistracija.Click += new System.EventHandler(this.lblRegistracija_Click);
             // 
             // pictureBox1
             // 
