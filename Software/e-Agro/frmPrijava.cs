@@ -77,5 +77,15 @@ namespace e_Agro
         {
             txtLozinka.Clear();
         }
+
+        private void lblRegistracija_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmSlanjeEmaila())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }
