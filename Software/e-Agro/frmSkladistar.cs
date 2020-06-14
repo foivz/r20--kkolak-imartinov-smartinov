@@ -30,5 +30,25 @@ namespace e_Agro
             var popisPrimki = new frmPopisPrimki();
             popisPrimki.ShowDialog();
         }
+
+        private void btnIzvjestaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma =new frmSkladistarIzvjestaj())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
+
+        private void btnStojeviNaSkladistu_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma= new frmPopisStrojevaNaSkladistu())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }

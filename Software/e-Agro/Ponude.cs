@@ -11,7 +11,7 @@ namespace e_Agro
     {
         public List<ponuda> DohvatiPonude()
         {
-            using (var context =new PI20_024_DBEntities())
+            using (var context = new PI20_024_DBEntities())
             {
                 var query = from p in context.ponudas.Include("korisnik").Include("klijent")
                             select p;
