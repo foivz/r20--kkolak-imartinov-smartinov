@@ -28,29 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.chartProdaja = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
+            this.chartProdaja = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.chartProdaja)).BeginInit();
             this.SuspendLayout();
-            // 
-            // chartProdaja
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chartProdaja.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartProdaja.Legends.Add(legend2);
-            this.chartProdaja.Location = new System.Drawing.Point(16, 123);
-            this.chartProdaja.Name = "chartProdaja";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartProdaja.Series.Add(series2);
-            this.chartProdaja.Size = new System.Drawing.Size(827, 300);
-            this.chartProdaja.TabIndex = 0;
-            this.chartProdaja.Text = "chart1";
             // 
             // label1
             // 
@@ -63,14 +47,31 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Graf uspješnosti";
             // 
+            // chartProdaja
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartProdaja.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartProdaja.Legends.Add(legend1);
+            this.chartProdaja.Location = new System.Drawing.Point(12, 108);
+            this.chartProdaja.Name = "chartProdaja";
+            this.chartProdaja.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Vrsta stroja";
+            this.chartProdaja.Series.Add(series1);
+            this.chartProdaja.Size = new System.Drawing.Size(827, 334);
+            this.chartProdaja.TabIndex = 3;
+            this.chartProdaja.Text = "chart1";
+            // 
             // frmProdajniReferentGraf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(855, 454);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.chartProdaja);
+            this.Controls.Add(this.label1);
             this.Name = "frmProdajniReferentGraf";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Graf profita i prodaje";
@@ -82,8 +83,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartProdaja;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartProdaja;
     }
 }
