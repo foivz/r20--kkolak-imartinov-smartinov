@@ -173,6 +173,12 @@
     <Compile Include="frmDodavanjeStrojaNaPrimku.Designer.cs">
       <DependentUpon>frmDodavanjeStrojaNaPrimku.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDodavanjeStrojaNaSkladiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeStrojaNaSkladiste.Designer.cs">
+      <DependentUpon>frmDodavanjeStrojaNaSkladiste.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodavanjeUreda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,12 @@
     </Compile>
     <Compile Include="frmPopisPonuda.Designer.cs">
       <DependentUpon>frmPopisPonuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisStrojevaNaSkladistu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisStrojevaNaSkladistu.Designer.cs">
+      <DependentUpon>frmPopisStrojevaNaSkladistu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrijava.cs">
       <SubType>Form</SubType>
@@ -281,6 +293,12 @@
     <Compile Include="frmSkladistar.Designer.cs">
       <DependentUpon>frmSkladistar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrikazIzvjestajaSkladistar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaSkladistar.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestajaSkladistar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSkladistarIzvjestaj.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,6 +347,7 @@
     <Compile Include="skladiste.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="skladiste.Ext.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StavkeNaNarudzbi.cs" />
     <Compile Include="StavkeNaOtpremnici.cs" />
@@ -348,6 +367,7 @@
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Strojevi.cs" />
+    <Compile Include="StrojeviNaSkladistu.cs" />
     <Compile Include="stroj_na_skladistu.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
@@ -399,6 +419,9 @@
     <EmbeddedResource Include="frmDodavanjeStrojaNaPrimku.resx">
       <DependentUpon>frmDodavanjeStrojaNaPrimku.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeStrojaNaSkladiste.resx">
+      <DependentUpon>frmDodavanjeStrojaNaSkladiste.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodavanjeUreda.resx">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
     </EmbeddedResource>
@@ -419,6 +442,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPopisPonuda.resx">
       <DependentUpon>frmPopisPonuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisStrojevaNaSkladistu.resx">
+      <DependentUpon>frmPopisStrojevaNaSkladistu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrijava.resx">
       <DependentUpon>frmPrijava.cs</DependentUpon>
@@ -452,6 +478,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSkladistar.resx">
       <DependentUpon>frmSkladistar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestajaSkladistar.resx">
+      <DependentUpon>frmPrikazIzvjestajaSkladistar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSkladistarIzvjestaj.resx">
       <DependentUpon>frmSkladistarIzvjestaj.cs</DependentUpon>

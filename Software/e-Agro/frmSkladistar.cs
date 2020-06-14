@@ -40,5 +40,15 @@ namespace e_Agro
             }
             Show();
         }
+
+        private void btnStojeviNaSkladistu_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma= new frmPopisStrojevaNaSkladistu())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }
