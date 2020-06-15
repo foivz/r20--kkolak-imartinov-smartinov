@@ -32,8 +32,8 @@
             this.panelZaposlenik = new System.Windows.Forms.Panel();
             this.btnSkladiste = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnKorisnik = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnUred = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.odjavaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,18 +78,6 @@
             this.panel2.Size = new System.Drawing.Size(217, 101);
             this.panel2.TabIndex = 1;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnUred);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panelZaposlenik);
-            this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(640, 125);
-            this.panel1.TabIndex = 4;
-            // 
             // btnKorisnik
             // 
             this.btnKorisnik.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -106,6 +94,18 @@
             this.btnKorisnik.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnKorisnik.UseVisualStyleBackColor = false;
             this.btnKorisnik.Click += new System.EventHandler(this.btnKorisnik_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnUred);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panelZaposlenik);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(640, 125);
+            this.panel1.TabIndex = 4;
             // 
             // btnUred
             // 
@@ -147,6 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(640, 126);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
