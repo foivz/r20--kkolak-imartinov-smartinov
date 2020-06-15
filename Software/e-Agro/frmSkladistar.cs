@@ -53,11 +53,16 @@ namespace e_Agro
 
         private void odjavaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (Form fm in Application.OpenForms)
+            DialogResult odjavaDialog = MessageBox.Show("Jeste li sigurni da se želite odjaviti?", "eAgro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (odjavaDialog == DialogResult.Yes)
             {
-                if (fm.Name != "frmPrijava")
+                foreach (Form fm in Application.OpenForms)
                 {
-                    fm.Close();
+                    if (fm.Name != "frmPrijava")
+                    {
+                        fm.Close();
+                    }
                 }
             }
         }
