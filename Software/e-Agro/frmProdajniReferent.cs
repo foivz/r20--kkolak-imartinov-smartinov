@@ -78,5 +78,16 @@ namespace e_Agro
             }
             Show();
         }
+
+        private void odjavaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form fm in Application.OpenForms)
+            {
+                if (fm.Name != "frmPrijava")
+                {
+                    fm.Close();
+                }
+            }
+        }
     }
 }
