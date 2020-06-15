@@ -113,6 +113,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvKorisnici);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPopisKorisnika";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis korisnika";

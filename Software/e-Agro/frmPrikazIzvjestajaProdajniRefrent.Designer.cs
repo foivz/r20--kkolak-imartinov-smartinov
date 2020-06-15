@@ -31,12 +31,20 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.rpvDobavljacStrojeva = new Microsoft.Reporting.WinForms.ReportViewer();
             this.dobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.katalog_strojevaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rpvDobavljacStrojeva = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.katalog_strojevaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dobavljacBindingSource
+            // 
+            this.dobavljacBindingSource.DataSource = typeof(e_Agro.dobavljac);
+            // 
+            // katalog_strojevaBindingSource
+            // 
+            this.katalog_strojevaBindingSource.DataSource = typeof(e_Agro.katalog_strojeva);
             // 
             // rpvDobavljacStrojeva
             // 
@@ -54,22 +62,15 @@
             this.rpvDobavljacStrojeva.Size = new System.Drawing.Size(800, 450);
             this.rpvDobavljacStrojeva.TabIndex = 0;
             // 
-            // dobavljacBindingSource
-            // 
-            this.dobavljacBindingSource.DataSource = typeof(e_Agro.dobavljac);
-            // 
-            // katalog_strojevaBindingSource
-            // 
-            this.katalog_strojevaBindingSource.DataSource = typeof(e_Agro.katalog_strojeva);
-            // 
             // frmPrikazIzvjestajaProdajniRefrent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.rpvDobavljacStrojeva);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPrikazIzvjestajaProdajniRefrent";
-            this.Text = "frmPrikazIzvjestajaProdajniRefrent";
+            this.Text = "Prikaz izvještaja prodaje";
             this.Load += new System.EventHandler(this.frmPrikazIzvjestajaProdajniRefrent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.katalog_strojevaBindingSource)).EndInit();

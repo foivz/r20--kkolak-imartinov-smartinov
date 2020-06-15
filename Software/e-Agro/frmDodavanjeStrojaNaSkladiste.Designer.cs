@@ -143,6 +143,7 @@
             this.Controls.Add(this.lblKolicina);
             this.Controls.Add(this.lblSkladiste);
             this.Controls.Add(this.lblStroj);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDodavanjeStrojaNaSkladiste";
             this.Text = "frmDodavanjeStrojaNaSkladiste";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaSkladiste_Load);

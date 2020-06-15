@@ -112,8 +112,9 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvStrojeviNaSkladistu);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPopisStrojevaNaSkladistu";
-            this.Text = "frmPopisStrojevaNaSkladistu";
+            this.Text = "Popis strojeva na skladištu";
             this.Load += new System.EventHandler(this.frmPopisStrojevaNaSkladistu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStrojeviNaSkladistu)).EndInit();
             this.ResumeLayout(false);

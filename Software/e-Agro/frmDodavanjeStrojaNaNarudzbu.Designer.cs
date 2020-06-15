@@ -120,6 +120,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.lblKolicina);
             this.Controls.Add(this.lblStroj);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDodavanjeStrojaNaNarudzbu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje stavke na narudžbu";

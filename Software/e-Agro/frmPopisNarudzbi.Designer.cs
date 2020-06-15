@@ -150,6 +150,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvNarudzbe);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPopisNarudzbi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis narudžbi";

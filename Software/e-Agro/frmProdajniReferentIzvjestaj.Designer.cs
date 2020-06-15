@@ -85,9 +85,10 @@
             this.Controls.Add(this.btnPrikaz);
             this.Controls.Add(this.lblDobavljac);
             this.Controls.Add(this.cmbDobavljac);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmProdajniReferentIzvjestaj";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmProdajniReferentIzvjestaj";
+            this.Text = "Prikaz dobavljača strojeva";
             this.Load += new System.EventHandler(this.frmProdajniReferentIzvjestaj_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

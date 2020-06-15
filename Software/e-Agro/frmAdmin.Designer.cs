@@ -147,7 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(640, 126);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

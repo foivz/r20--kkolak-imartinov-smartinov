@@ -275,6 +275,7 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDodavanjeKorisnika";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje korisnika";
