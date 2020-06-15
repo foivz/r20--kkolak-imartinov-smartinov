@@ -32,12 +32,20 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.katalog_strojevaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.skladisteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.katalog_strojevaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladisteBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // katalog_strojevaBindingSource
+            // 
+            this.katalog_strojevaBindingSource.DataSource = typeof(e_Agro.katalog_strojeva);
+            // 
+            // skladisteBindingSource
+            // 
+            this.skladisteBindingSource.DataSource = typeof(e_Agro.skladiste);
             // 
             // reportViewer1
             // 
@@ -58,22 +66,15 @@
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
             // 
-            // katalog_strojevaBindingSource
-            // 
-            this.katalog_strojevaBindingSource.DataSource = typeof(e_Agro.katalog_strojeva);
-            // 
-            // skladisteBindingSource
-            // 
-            this.skladisteBindingSource.DataSource = typeof(e_Agro.skladiste);
-            // 
-            // frmSkladistarIzvjestaj
+            // frmPrikazIzvjestajaSkladistar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "frmSkladistarIzvjestaj";
-            this.Text = "frmSkladistarIzvjestaj";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "frmPrikazIzvjestajaSkladistar";
+            this.Text = "Prikaz strojeva na skladištu";
             this.Load += new System.EventHandler(this.frmSkladistarIzvjestaj_Load);
             ((System.ComponentModel.ISupportInitialize)(this.katalog_strojevaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladisteBindingSource)).EndInit();

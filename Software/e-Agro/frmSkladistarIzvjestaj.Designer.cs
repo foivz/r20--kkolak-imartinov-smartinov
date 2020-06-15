@@ -86,8 +86,9 @@
             this.Controls.Add(this.btnPrikaz);
             this.Controls.Add(this.lblSkladiste);
             this.Controls.Add(this.cmbSkladiste);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmSkladistarIzvjestaj";
-            this.Text = "frmSkladistarIzvjestaj";
+            this.Text = "Prikaz strojeva na skladištu";
             this.Load += new System.EventHandler(this.frmSkladistarIzvjestaj_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

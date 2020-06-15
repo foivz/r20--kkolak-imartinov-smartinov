@@ -150,6 +150,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvOtpremnice);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPopisOtpremnica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis otpremnica";
