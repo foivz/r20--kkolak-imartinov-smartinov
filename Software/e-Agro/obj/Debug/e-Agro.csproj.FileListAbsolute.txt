@@ -661,3 +661,8 @@ C:\Users\Ivan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\D
 C:\Users\Ivan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmSkladistarIzvjestaj.resources
 C:\Users\Ivan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmSlanjeEmaila.resources
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmSlanjeEmaila.resources
+C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeStrojaNaSkladiste.resources
+C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPopisStrojevaNaSkladistu.resources
+C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrikazIzvjestajaSkladistar.resources
+C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmSkladistarIzvjestaj.resources
+C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmSlanjeEmaila.resources
