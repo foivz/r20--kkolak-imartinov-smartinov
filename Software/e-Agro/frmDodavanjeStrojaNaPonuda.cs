@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,12 @@ namespace e_Agro
             katalog_strojeva odabraniStroj = cmbStrojevi.SelectedItem as katalog_strojeva;
             int kolicina = int.Parse(txtKolicina.Text);
             stavkeNaPonudi.DodajStrojNaPonudu(odabraniStroj, kolicina, odabranaPonuda);
+            using (var context = new PI20_024_DBEntities())
+            {
+                context.Entry(odabranaPonuda).State = EntityState.Modified;
+                odabranaPonuda.cijena += (odabraniStroj.cijena * kolicina);
+                context.SaveChanges();
+            }
             Close();
         }
 

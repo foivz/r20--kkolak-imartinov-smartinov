@@ -55,6 +55,16 @@ namespace e_Agro
             {
                 context.ponudas.Attach(ponuda);
                 context.ponudas.Remove(ponuda);
+                var query = from s in ponuda.stavke_na_ponudi
+                            where s.ponuda_id == ponuda.ponuda_id
+                            select s;
+
+                List<stavke_na_ponudi> popisStavki = query.ToList();
+                foreach (var stavka in popisStavki)
+                {
+                    context.stavke_na_ponudi.Attach(stavka);
+                    context.stavke_na_ponudi.Remove(stavka);
+                }
                 context.SaveChanges();
             }
         }
