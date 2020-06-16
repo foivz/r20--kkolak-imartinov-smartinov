@@ -47,6 +47,7 @@ namespace e_Agro
                 txtZupanija.Text = odabraniUred.zupanija;
                 this.Text = "Ažuriranje ureda";
                 btnDodaj.Text = "Ažuriraj ured";
+                lblNaslov.Text = "Ažuriraj ured";
             }
         }
 

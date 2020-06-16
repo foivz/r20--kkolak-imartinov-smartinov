@@ -36,7 +36,7 @@
             this.lblOdjel = new System.Windows.Forms.Label();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtZupanija
@@ -115,16 +115,16 @@
             this.btnDodaj.UseVisualStyleBackColor = true;
             this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
-            // label1
+            // lblNaslov
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(70, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 22);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Dodaj novi ured";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(70, 22);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(157, 22);
+            this.lblNaslov.TabIndex = 26;
+            this.lblNaslov.Text = "Dodaj novi ured";
             // 
             // frmDodavanjeUreda
             // 
@@ -132,7 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(587, 285);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.txtZupanija);
             this.Controls.Add(this.lblZupanija);
             this.Controls.Add(this.txtAdresa);
@@ -160,6 +160,6 @@
         private System.Windows.Forms.Label lblOdjel;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }

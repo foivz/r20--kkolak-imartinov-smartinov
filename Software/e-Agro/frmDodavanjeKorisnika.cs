@@ -45,6 +45,7 @@ namespace e_Agro
             {
                 btnDodaj.Text = "Ažuriraj korisnika";
                 this.Text = "Ažuriranje korisnika";
+                lblNaslov.Text = "Ažuriranje korisnika";
                 txtEmail.Text = odabraniKorisnik.email;
                 txtKorisnickoIme.Text = odabraniKorisnik.korisnicko_ime;
                 txtLozinka.Text = odabraniKorisnik.lozinka;

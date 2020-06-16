@@ -36,7 +36,7 @@
             this.dtpDatumIsporuke = new System.Windows.Forms.DateTimePicker();
             this.lblDatumIsporuke = new System.Windows.Forms.Label();
             this.cmbKreirao = new System.Windows.Forms.ComboBox();
-            this.lblNaslovOtpremnica = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblKreirao
@@ -116,16 +116,16 @@
             this.cmbKreirao.Size = new System.Drawing.Size(121, 21);
             this.cmbKreirao.TabIndex = 38;
             // 
-            // lblNaslovOtpremnica
+            // lblNaslov
             // 
-            this.lblNaslovOtpremnica.AutoSize = true;
-            this.lblNaslovOtpremnica.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaslovOtpremnica.ForeColor = System.Drawing.Color.White;
-            this.lblNaslovOtpremnica.Location = new System.Drawing.Point(46, 23);
-            this.lblNaslovOtpremnica.Name = "lblNaslovOtpremnica";
-            this.lblNaslovOtpremnica.Size = new System.Drawing.Size(230, 22);
-            this.lblNaslovOtpremnica.TabIndex = 39;
-            this.lblNaslovOtpremnica.Text = "Dodaj novu otpremnicu";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(46, 23);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(230, 22);
+            this.lblNaslov.TabIndex = 39;
+            this.lblNaslov.Text = "Dodaj novu otpremnicu";
             // 
             // frmDodavanjeOtpremnice
             // 
@@ -133,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(370, 337);
-            this.Controls.Add(this.lblNaslovOtpremnica);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbKreirao);
             this.Controls.Add(this.lblDatumIsporuke);
             this.Controls.Add(this.dtpDatumIsporuke);
@@ -161,6 +161,6 @@
         private System.Windows.Forms.DateTimePicker dtpDatumIsporuke;
         private System.Windows.Forms.Label lblDatumIsporuke;
         private System.Windows.Forms.ComboBox cmbKreirao;
-        private System.Windows.Forms.Label lblNaslovOtpremnica;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }
