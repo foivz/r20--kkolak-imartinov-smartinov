@@ -77,5 +77,7 @@ namespace e_Agro
         {
             dgvStavkeNaPrimci.DataSource = stavkeNaPrimci.DohvatiStavkeZaPrimku(DohvatiOdabranu());
         }
+
+
     }
 }

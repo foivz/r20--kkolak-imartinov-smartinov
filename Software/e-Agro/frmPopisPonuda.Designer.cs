@@ -32,7 +32,6 @@
             this.btnAzuriraj = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvPonude = new System.Windows.Forms.DataGridView();
             this.dgvStavkeNaPonudi = new System.Windows.Forms.DataGridView();
             this.btnDodajStroj = new System.Windows.Forms.Button();
@@ -84,17 +83,6 @@
             this.btnDodaj.Text = "Dodaj ponudu";
             this.btnDodaj.UseVisualStyleBackColor = true;
             this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(683, 75);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(172, 21);
-            this.txtSearch.TabIndex = 15;
-            this.txtSearch.Text = "Unesite riječ za pretragu...";
-            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
             // 
             // dgvPonude
             // 
@@ -148,7 +136,6 @@
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnDodaj);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvPonude);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPopisPonuda";
@@ -168,7 +155,6 @@
         private System.Windows.Forms.Button btnAzuriraj;
         private System.Windows.Forms.Button btnObrisi;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvPonude;
         private System.Windows.Forms.DataGridView dgvStavkeNaPonudi;
         private System.Windows.Forms.Button btnDodajStroj;

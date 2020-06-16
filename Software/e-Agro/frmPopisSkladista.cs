@@ -40,15 +40,10 @@ namespace e_Agro
             OsvjeziTablicu();
         }
 
-        private void txtSearch_Click(object sender, EventArgs e)
-        {
-            txtSearch.Clear();
-        }
-
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             Hide();
-            using(var forma = new frmDodavanjeSkladista())
+            using (var forma = new frmDodavanjeSkladista())
             {
                 forma.ShowDialog();
             }
