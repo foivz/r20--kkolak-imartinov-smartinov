@@ -71,5 +71,23 @@ namespace e_Agro
             Show();
             OsvjeziTablicu();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "")
+                OsvjeziTablicu();
+            else
+            {
+                using (var context = new PI20_024_DBEntities())
+                {
+                    var query = from k in context.katalog_strojeva.Include("dobavljac")
+                                where k.naziv.Contains(txtSearch.Text) || k.vrsta.Contains(txtSearch.Text) || k.model.Contains(txtSearch.Text)
+                                || k.opis.Contains(txtSearch.Text)
+                                select k;
+
+                    dgvStrojevi.DataSource = query.ToList();
+                }
+            }
+        }
     }
 }
