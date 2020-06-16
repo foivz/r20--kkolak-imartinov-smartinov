@@ -42,7 +42,7 @@
             this.lblCijena = new System.Windows.Forms.Label();
             this.lblDobavljac = new System.Windows.Forms.Label();
             this.cmbDobavljac = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNaslovStroj = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblOpis
@@ -177,16 +177,16 @@
             this.cmbDobavljac.Size = new System.Drawing.Size(121, 21);
             this.cmbDobavljac.TabIndex = 54;
             // 
-            // label1
+            // lblNaslovStroj
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(63, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 22);
-            this.label1.TabIndex = 55;
-            this.label1.Text = "Dodaj novi stroj";
+            this.lblNaslovStroj.AutoSize = true;
+            this.lblNaslovStroj.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslovStroj.ForeColor = System.Drawing.Color.White;
+            this.lblNaslovStroj.Location = new System.Drawing.Point(63, 32);
+            this.lblNaslovStroj.Name = "lblNaslovStroj";
+            this.lblNaslovStroj.Size = new System.Drawing.Size(152, 22);
+            this.lblNaslovStroj.TabIndex = 55;
+            this.lblNaslovStroj.Text = "Dodaj novi stroj";
             // 
             // frmDodavanjeStroja
             // 
@@ -194,7 +194,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(567, 519);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNaslovStroj);
             this.Controls.Add(this.cmbDobavljac);
             this.Controls.Add(this.lblDobavljac);
             this.Controls.Add(this.txtCijena);
@@ -234,6 +234,6 @@
         private System.Windows.Forms.Label lblCijena;
         private System.Windows.Forms.Label lblDobavljac;
         private System.Windows.Forms.ComboBox cmbDobavljac;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNaslovStroj;
     }
 }

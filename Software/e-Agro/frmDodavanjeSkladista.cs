@@ -46,6 +46,7 @@ namespace e_Agro
                 txtNaziv.Text = odabranoSkladiste.naziv;
                 this.Text = "Ažuriranje skladišta";
                 btnDodaj.Text = "Ažuriraj skladište";
+                lblNaslovSkladiste.Text = "Ažuriraj skladište";
             }
         }
 

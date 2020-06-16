@@ -47,6 +47,7 @@ namespace e_Agro
                 cmbDobavljac.SelectedItem = odabraniStroj.dobavljac;
                 this.Text = "Ažuriranje kataloga strojeva";
                 btnDodaj.Text = "Ažuriraj katalog strojeva";
+                lblNaslovStroj.Text = "Ažuriraj stroj";
             }
             UcitajCombo();
         }

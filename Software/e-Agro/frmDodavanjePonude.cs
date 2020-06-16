@@ -51,6 +51,7 @@ namespace e_Agro
                 cmbKlijent.SelectedItem = odabranaPonuda.klijent;
                 btnDodaj.Text = "Ažuriraj ponudu";
                 this.Text = "Ažuriranje ponude";
+                lblNaslovPonuda.Text = "Ažuriraj ponudu";
             }
             UcitajCombo();
         }

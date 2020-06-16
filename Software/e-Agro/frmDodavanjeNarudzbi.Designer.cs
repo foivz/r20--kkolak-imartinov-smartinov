@@ -34,7 +34,7 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.cmbDobavljac = new System.Windows.Forms.ComboBox();
             this.lblDobavljac = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNaslovNarudzba = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCijena
@@ -96,16 +96,16 @@
             this.lblDobavljac.TabIndex = 53;
             this.lblDobavljac.Text = "Dobavljač:";
             // 
-            // label1
+            // lblNaslovNarudzba
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(30, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 22);
-            this.label1.TabIndex = 55;
-            this.label1.Text = "Dodaj novu narudžbu";
+            this.lblNaslovNarudzba.AutoSize = true;
+            this.lblNaslovNarudzba.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslovNarudzba.ForeColor = System.Drawing.Color.White;
+            this.lblNaslovNarudzba.Location = new System.Drawing.Point(30, 33);
+            this.lblNaslovNarudzba.Name = "lblNaslovNarudzba";
+            this.lblNaslovNarudzba.Size = new System.Drawing.Size(209, 22);
+            this.lblNaslovNarudzba.TabIndex = 55;
+            this.lblNaslovNarudzba.Text = "Dodaj novu narudžbu";
             // 
             // frmDodavanjeNarudzbi
             // 
@@ -113,7 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(311, 267);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNaslovNarudzba);
             this.Controls.Add(this.cmbDobavljac);
             this.Controls.Add(this.lblDobavljac);
             this.Controls.Add(this.txtCijena);
@@ -138,6 +138,6 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.ComboBox cmbDobavljac;
         private System.Windows.Forms.Label lblDobavljac;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNaslovNarudzba;
     }
 }
