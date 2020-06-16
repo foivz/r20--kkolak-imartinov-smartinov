@@ -34,7 +34,7 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.lblAdresa = new System.Windows.Forms.Label();
             this.txtAdresa = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNaziv
@@ -95,16 +95,16 @@
             this.txtAdresa.Size = new System.Drawing.Size(160, 20);
             this.txtAdresa.TabIndex = 16;
             // 
-            // label1
+            // lblNaslov
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(60, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 22);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Dodaj novo skladište";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(60, 24);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(201, 22);
+            this.lblNaslov.TabIndex = 26;
+            this.lblNaslov.Text = "Dodaj novo skladište";
             // 
             // frmDodavanjeSkladista
             // 
@@ -112,7 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(378, 251);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.txtAdresa);
             this.Controls.Add(this.lblAdresa);
             this.Controls.Add(this.txtNaziv);
@@ -136,6 +136,6 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.Label lblAdresa;
         private System.Windows.Forms.TextBox txtAdresa;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }

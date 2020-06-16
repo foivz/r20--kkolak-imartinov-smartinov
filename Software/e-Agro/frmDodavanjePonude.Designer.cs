@@ -40,7 +40,7 @@
             this.lblKlijent = new System.Windows.Forms.Label();
             this.cmbKlijent = new System.Windows.Forms.ComboBox();
             this.cmbKreirao = new System.Windows.Forms.ComboBox();
-            this.lblNaslovPonuda = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblDatumKreiranja
@@ -157,16 +157,16 @@
             this.cmbKreirao.Size = new System.Drawing.Size(121, 21);
             this.cmbKreirao.TabIndex = 55;
             // 
-            // lblNaslovPonuda
+            // lblNaslov
             // 
-            this.lblNaslovPonuda.AutoSize = true;
-            this.lblNaslovPonuda.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaslovPonuda.ForeColor = System.Drawing.Color.White;
-            this.lblNaslovPonuda.Location = new System.Drawing.Point(36, 23);
-            this.lblNaslovPonuda.Name = "lblNaslovPonuda";
-            this.lblNaslovPonuda.Size = new System.Drawing.Size(194, 22);
-            this.lblNaslovPonuda.TabIndex = 56;
-            this.lblNaslovPonuda.Text = "Dodaj novu ponudu";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(36, 23);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(194, 22);
+            this.lblNaslov.TabIndex = 56;
+            this.lblNaslov.Text = "Dodaj novu ponudu";
             // 
             // frmDodavanjePonude
             // 
@@ -174,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(482, 428);
-            this.Controls.Add(this.lblNaslovPonuda);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbKreirao);
             this.Controls.Add(this.cmbKlijent);
             this.Controls.Add(this.lblKlijent);
@@ -211,6 +211,6 @@
         private System.Windows.Forms.Label lblKlijent;
         private System.Windows.Forms.ComboBox cmbKlijent;
         private System.Windows.Forms.ComboBox cmbKreirao;
-        private System.Windows.Forms.Label lblNaslovPonuda;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }

@@ -40,7 +40,7 @@
             this.lblAdresa = new System.Windows.Forms.Label();
             this.txtTekuciRacun = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -155,16 +155,16 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "Tekući račun:";
             // 
-            // label2
+            // lblNaslov
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(42, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 22);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Dodaj novog klijenta";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(42, 13);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(203, 22);
+            this.lblNaslov.TabIndex = 38;
+            this.lblNaslov.Text = "Dodaj novog klijenta";
             // 
             // frmDodavanjeKlijenta
             // 
@@ -172,7 +172,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(317, 333);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.txtTekuciRacun);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAdresa);
@@ -209,6 +209,6 @@
         private System.Windows.Forms.Label lblAdresa;
         private System.Windows.Forms.TextBox txtTekuciRacun;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }
