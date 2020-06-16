@@ -48,6 +48,16 @@ namespace e_Agro
             {
                 context.primkas.Attach(primka);
                 context.primkas.Remove(primka);
+                var query = from s in primka.stavke_na_primci
+                            where s.primka_id == primka.primka_id
+                            select s;
+
+                List<stavke_na_primci> popisStavki = query.ToList();
+                foreach (var stavka in popisStavki)
+                {
+                    context.stavke_na_primci.Attach(stavka);
+                    context.stavke_na_primci.Remove(stavka);
+                }
                 context.SaveChanges();
             }
         }

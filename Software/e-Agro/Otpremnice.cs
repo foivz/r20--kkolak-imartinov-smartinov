@@ -50,6 +50,16 @@ namespace e_Agro
             using(var context =new PI20_024_DBEntities())
             {
                 context.otpremnicas.Attach(otpremnica);
+                var query = from o in otpremnica.stavke_na_otpremnici
+                            where o.otpremnica_id == otpremnica.otpremnica_id
+                            select o;
+
+                List<stavke_na_otpremnici> popisStavki = query.ToList();
+                foreach (var stavka in popisStavki)
+                {
+                    context.stavke_na_otpremnici.Attach(stavka);
+                    context.stavke_na_otpremnici.Remove(stavka);
+                }
                 context.otpremnicas.Remove(otpremnica);
                 context.SaveChanges();
             }
