@@ -72,6 +72,7 @@
             this.ClientSize = new System.Drawing.Size(855, 454);
             this.Controls.Add(this.chartProdaja);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmProdajniReferentGraf";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Graf profita i prodaje";

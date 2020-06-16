@@ -111,6 +111,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvKlijenti);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPopisKlijenata";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis klijenata";

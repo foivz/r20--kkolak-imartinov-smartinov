@@ -187,6 +187,7 @@
             this.Controls.Add(this.lblKreirao);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDodavanjePonude";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje ponude";

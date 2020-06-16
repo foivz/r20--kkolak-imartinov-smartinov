@@ -120,6 +120,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbStrojevi);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDodavanjeStrojaNaOtpremnicu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje stavke na otpremnicu";

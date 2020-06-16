@@ -172,6 +172,7 @@
             this.Controls.Add(this.btnStojeviNaSkladistu);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmSkladistar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
