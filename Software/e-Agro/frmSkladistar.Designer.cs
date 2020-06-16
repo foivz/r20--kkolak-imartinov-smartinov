@@ -39,18 +39,20 @@
             this.btnStojeviNaSkladistu = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.odjavaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnOtpremnica);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(600, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 102);
             this.panel2.TabIndex = 0;
@@ -74,8 +76,8 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.btnPrimka);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(200, 0);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(400, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 102);
             this.panel3.TabIndex = 1;
@@ -100,7 +102,7 @@
             // 
             this.panel4.Controls.Add(this.btnIzvjestaj);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(400, 0);
+            this.panel4.Location = new System.Drawing.Point(200, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 102);
             this.panel4.TabIndex = 2;
@@ -123,25 +125,29 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 102);
+            this.panel1.Size = new System.Drawing.Size(800, 102);
             this.panel1.TabIndex = 3;
             // 
             // btnStojeviNaSkladistu
             // 
             this.btnStojeviNaSkladistu.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnStojeviNaSkladistu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStojeviNaSkladistu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnStojeviNaSkladistu.ForeColor = System.Drawing.Color.White;
-            this.btnStojeviNaSkladistu.Location = new System.Drawing.Point(200, 126);
+            this.btnStojeviNaSkladistu.Image = ((System.Drawing.Image)(resources.GetObject("btnStojeviNaSkladistu.Image")));
+            this.btnStojeviNaSkladistu.Location = new System.Drawing.Point(0, 0);
             this.btnStojeviNaSkladistu.Name = "btnStojeviNaSkladistu";
-            this.btnStojeviNaSkladistu.Size = new System.Drawing.Size(200, 86);
+            this.btnStojeviNaSkladistu.Size = new System.Drawing.Size(200, 102);
             this.btnStojeviNaSkladistu.TabIndex = 4;
             this.btnStojeviNaSkladistu.Text = "Strojevi na skladištu";
+            this.btnStojeviNaSkladistu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnStojeviNaSkladistu.UseVisualStyleBackColor = false;
             this.btnStojeviNaSkladistu.Click += new System.EventHandler(this.btnStojeviNaSkladistu_Click);
             // 
@@ -151,7 +157,7 @@
             this.odjavaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(600, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -163,13 +169,21 @@
             this.odjavaToolStripMenuItem.Text = "Odjava";
             this.odjavaToolStripMenuItem.Click += new System.EventHandler(this.odjavaToolStripMenuItem_Click);
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btnStojeviNaSkladistu);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 102);
+            this.panel5.TabIndex = 3;
+            // 
             // frmSkladistar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(600, 215);
-            this.Controls.Add(this.btnStojeviNaSkladistu);
+            this.ClientSize = new System.Drawing.Size(800, 128);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -183,6 +197,7 @@
             this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +215,6 @@
         private System.Windows.Forms.Button btnIzvjestaj;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem odjavaToolStripMenuItem;
+        private System.Windows.Forms.Panel panel5;
     }
 }
