@@ -44,7 +44,7 @@ namespace e_Agro
                 txtCijena.Text = odabranaNarudzba.cijena.ToString();
                 btnDodaj.Text = "Ažuriraj narudžbu";
                 this.Text = "Ažuriranje narudžbe";
-                lblNaslovNarudzba.Text = "Ažuriraj narudžbu";
+                lblNaslov.Text = "Ažuriranje narudžbe";
             }
             UcitajCombo();
         }

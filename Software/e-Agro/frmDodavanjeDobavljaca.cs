@@ -58,6 +58,7 @@ namespace e_Agro
                 txtTekuciRacun.Text = odabraniDobavljac.tekuci_racun;
                 btnDodaj.Text = "Ažuriraj dobavljača";
                 this.Text = "Ažuriranje dobavljača";
+                lblNaslov.Text = "Ažuriranje dobavljača";
             }
         }
     }

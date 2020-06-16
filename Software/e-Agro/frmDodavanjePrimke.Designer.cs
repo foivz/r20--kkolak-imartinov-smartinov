@@ -36,7 +36,7 @@
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
             this.cmbKreirao = new System.Windows.Forms.ComboBox();
-            this.lblNaslovPrimka = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCijena
@@ -116,16 +116,16 @@
             this.cmbKreirao.Size = new System.Drawing.Size(121, 21);
             this.cmbKreirao.TabIndex = 48;
             // 
-            // lblNaslovPrimka
+            // lblNaslov
             // 
-            this.lblNaslovPrimka.AutoSize = true;
-            this.lblNaslovPrimka.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaslovPrimka.ForeColor = System.Drawing.Color.White;
-            this.lblNaslovPrimka.Location = new System.Drawing.Point(38, 24);
-            this.lblNaslovPrimka.Name = "lblNaslovPrimka";
-            this.lblNaslovPrimka.Size = new System.Drawing.Size(184, 22);
-            this.lblNaslovPrimka.TabIndex = 49;
-            this.lblNaslovPrimka.Text = "Dodaj novu primku";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(38, 24);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(184, 22);
+            this.lblNaslov.TabIndex = 49;
+            this.lblNaslov.Text = "Dodaj novu primku";
             // 
             // frmDodavanjePrimke
             // 
@@ -133,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(304, 408);
-            this.Controls.Add(this.lblNaslovPrimka);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbKreirao);
             this.Controls.Add(this.txtCijena);
             this.Controls.Add(this.lblCijena);
@@ -161,6 +161,6 @@
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.ComboBox cmbKreirao;
-        private System.Windows.Forms.Label lblNaslovPrimka;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }

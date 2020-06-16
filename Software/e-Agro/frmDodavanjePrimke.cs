@@ -45,7 +45,7 @@ namespace e_Agro
                 txtCijena.Text = odabranaPrimka.cijena.ToString();
                 btnDodaj.Text = "Ažuriraj primku";
                 this.Text = "Ažuriranje primke";
-                lblNaslovPrimka.Text = "Ažuriraj primku";
+                lblNaslov.Text = "Ažuriranje primke";
             }
             UcitajCombo();
         }

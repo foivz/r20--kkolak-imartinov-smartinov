@@ -50,7 +50,7 @@ namespace e_Agro
                 dtpDatumIsporuke.Value = odabranaOtpremnica.datum_isporuke;
                 btnDodaj.Text = "Ažuriraj otpremnicu";
                 this.Text = "Ažuriranje otpremnice";
-                lblNaslovOtpremnica.Text = "Ažuriraj otpremnicu";
+                lblNaslov.Text = "Ažuriranje otpremnice";
             }
             UcitajCombo();
         }

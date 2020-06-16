@@ -48,7 +48,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbRadnoMjesto = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblNaslovKorisnik = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTip
@@ -237,16 +237,16 @@
             this.label5.TabIndex = 66;
             this.label5.Text = "Radno mjesto:";
             // 
-            // lblNaslovKorisnik
+            // lblNaslov
             // 
-            this.lblNaslovKorisnik.AutoSize = true;
-            this.lblNaslovKorisnik.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaslovKorisnik.ForeColor = System.Drawing.Color.White;
-            this.lblNaslovKorisnik.Location = new System.Drawing.Point(47, 36);
-            this.lblNaslovKorisnik.Name = "lblNaslovKorisnik";
-            this.lblNaslovKorisnik.Size = new System.Drawing.Size(214, 22);
-            this.lblNaslovKorisnik.TabIndex = 68;
-            this.lblNaslovKorisnik.Text = "Dodaj novog korisnika";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(47, 36);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(214, 22);
+            this.lblNaslov.TabIndex = 68;
+            this.lblNaslov.Text = "Dodaj novog korisnika";
             // 
             // frmDodavanjeKorisnika
             // 
@@ -254,7 +254,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(379, 545);
-            this.Controls.Add(this.lblNaslovKorisnik);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbRadnoMjesto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtAdresa);
@@ -306,6 +306,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbRadnoMjesto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblNaslovKorisnik;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }
