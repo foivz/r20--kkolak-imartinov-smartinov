@@ -13,8 +13,8 @@ namespace e_Agro
             List<StavkeView> listaStavki = new List<StavkeView>();
             using (var context = new PI20_024_DBEntities())
             {
-                var query = from s in context.stavke_na_primci
-                            where s.primka_id == odabranaNarudzba.narudzba_id
+                var query = from s in context.stavke_na_narudzbi
+                            where s.narudzba_id == odabranaNarudzba.narudzba_id
                             select s;
 
                 foreach (var stavka in query)
