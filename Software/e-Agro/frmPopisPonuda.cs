@@ -40,11 +40,6 @@ namespace e_Agro
             OsvjeziTablicu();
         }
 
-        private void txtSearch_Click(object sender, EventArgs e)
-        {
-            txtSearch.Clear();
-        }
-
         private void dgvPonude_SelectionChanged(object sender, EventArgs e)
         {
             dgvStavkeNaPonudi.DataSource = stavkeNaPonudi.DohvatiStavkeZaPonudu(DohvatiOdabranu());
