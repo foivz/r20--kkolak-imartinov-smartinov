@@ -90,6 +90,7 @@
             this.txtSearch.Size = new System.Drawing.Size(172, 21);
             this.txtSearch.TabIndex = 32;
             this.txtSearch.Text = "Unesite riječ za pretragu...";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // dgvStrojeviNaSkladistu
             // 

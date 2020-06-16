@@ -59,5 +59,24 @@ namespace e_Agro
             Show();
             OsvjeziTablicu();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "")
+                OsvjeziTablicu();
+            else
+            {
+                using(var context = new PI20_024_DBEntities())
+                {
+                    var query = from s in context.stroj_na_skladistu
+                                where s.katalog_strojeva.naziv.Contains(txtSearch.Text) || s.katalog_strojeva.vrsta.Contains(txtSearch.Text)
+                                || s.katalog_strojeva.model.Contains(txtSearch.Text) || s.katalog_strojeva.opis.Contains(txtSearch.Text)
+                                || s.skladiste.naziv.Contains(txtSearch.Text)
+                                select s;
+
+                    dgvStrojeviNaSkladistu.DataSource = query.ToList();
+                }
+            }
+        }
     }
 }

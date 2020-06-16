@@ -91,6 +91,7 @@
             this.txtSearch.TabIndex = 15;
             this.txtSearch.Text = "Unesite riječ za pretragu...";
             this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // dgvUredi
             // 

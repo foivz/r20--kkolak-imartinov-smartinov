@@ -66,5 +66,22 @@ namespace e_Agro
             Show();
             OsvjeziTablicu();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "")
+                OsvjeziTablicu();
+            else
+            {
+                using(var context = new PI20_024_DBEntities())
+                {
+                    var query = from u in context.ureds
+                                where u.odjel.Contains(txtSearch.Text) || u.zupanija.Contains(txtSearch.Text)
+                                select u;
+
+                    dgvUredi.DataSource = query.ToList();
+                }
+            }
+        }
     }
 }
