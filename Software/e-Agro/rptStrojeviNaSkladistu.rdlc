@@ -540,7 +540,9 @@
               <TextRuns>
                 <TextRun>
                   <Value>="Datum kreiranja: " &amp; Globals!ExecutionTime</Value>
-                  <Style />
+                  <Style>
+                    <Format>d</Format>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
