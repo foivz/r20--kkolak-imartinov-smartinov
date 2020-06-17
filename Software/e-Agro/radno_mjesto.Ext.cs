@@ -14,9 +14,9 @@ namespace e_Agro
             {
                 context.radno_mjesto.Attach(this);
                 if (this.ured != null)
-                    return this.ured.odjel;
+                    return "Ured: " + this.ured.odjel;
                 else
-                    return this.skladiste.naziv;
+                    return "Skladište: " + this.skladiste.naziv;
             }
             
         }

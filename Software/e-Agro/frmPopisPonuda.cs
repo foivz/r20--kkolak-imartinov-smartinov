@@ -80,5 +80,15 @@ namespace e_Agro
             Show();
             OsvjeziTablicu();
         }
+
+        private void btnPosalji_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmSlanjeEmaila())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }
