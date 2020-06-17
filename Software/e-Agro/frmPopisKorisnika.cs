@@ -28,6 +28,9 @@ namespace e_Agro
             dgvKorisnici.Columns["otpremnicas"].Visible = false;
             dgvKorisnici.Columns["ponudas"].Visible = false;
             dgvKorisnici.Columns["primkas"].Visible = false;
+            dgvKorisnici.Columns["korisnik_id"].Visible = false;
+            dgvKorisnici.Columns["tip_id"].Visible = false;
+            dgvKorisnici.Columns["radno_mjesto_id"].Visible = false;
         }
 
         private void frmPopisKorisnika_Load(object sender, EventArgs e)

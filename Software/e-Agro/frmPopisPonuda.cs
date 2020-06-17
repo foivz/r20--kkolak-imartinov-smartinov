@@ -28,6 +28,9 @@ namespace e_Agro
         {
             dgvPonude.DataSource = ponude.DohvatiPonude();
             dgvPonude.Columns["stavke_na_ponudi"].Visible = false;
+            dgvPonude.Columns["ponuda_id"].Visible = false;
+            dgvPonude.Columns["klijent_id"].Visible = false;
+            dgvPonude.Columns["korisnik_id"].Visible = false;
         }
         private void frmPopisPonuda_Load(object sender, EventArgs e)
         {

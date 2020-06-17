@@ -24,6 +24,7 @@ namespace e_Agro
             dgvDobavljaci.DataSource = dobavljaci.DohvatiDobavljace();
             dgvDobavljaci.Columns["narudzbas"].Visible = false;
             dgvDobavljaci.Columns["katalog_strojeva"].Visible = false;
+            dgvDobavljaci.Columns["dobavljac_id"].Visible = false;
         }
 
         private dobavljac DohvatiOdabranog()

@@ -28,6 +28,8 @@ namespace e_Agro
         {
             dgvNarudzbe.DataSource = narudzbe.DohvatiNarudzbe();
             dgvNarudzbe.Columns["stavke_na_narudzbi"].Visible = false;
+            dgvNarudzbe.Columns["narudzba_id"].Visible = false;
+            dgvNarudzbe.Columns["dobavljac_id"].Visible = false;
         }
 
         private void frmPopisNarudzbi_Load_1(object sender, EventArgs e)
