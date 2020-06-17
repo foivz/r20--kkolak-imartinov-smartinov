@@ -79,6 +79,7 @@ namespace e_Agro
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
             }
+
             if(odabranaPonuda != null)
             {
                 ponude.AzurirajPonudu(odabranaPonuda, korisnik, naziv, cijena, datumKreiranja, klijent);
