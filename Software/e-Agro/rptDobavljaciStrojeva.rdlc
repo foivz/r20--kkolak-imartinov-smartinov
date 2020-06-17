@@ -334,19 +334,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.3539in</Width>
+              <Width>1.30598in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.3539in</Width>
+              <Width>1.30598in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.28879in</Width>
+              <Width>1.24087in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.28879in</Width>
+              <Width>1.24087in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.22108in</Width>
+              <Width>1.17316in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -698,8 +698,9 @@
         </TablixRowHierarchy>
         <DataSetName>dsStrojevi</DataSetName>
         <Top>4.22792in</Top>
+        <Left>0.11458in</Left>
         <Height>0.5in</Height>
-        <Width>6.50646in</Width>
+        <Width>6.26688in</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
