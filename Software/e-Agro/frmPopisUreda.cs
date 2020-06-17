@@ -26,6 +26,7 @@ namespace e_Agro
         {
             dgvUredi.DataSource = uredi.DohvatiUrede();
             dgvUredi.Columns["radno_mjesto"].Visible = false;
+            dgvUredi.Columns["ured_id"].Visible = false;
         }
 
         private void frmPopisUreda_Load(object sender, EventArgs e)

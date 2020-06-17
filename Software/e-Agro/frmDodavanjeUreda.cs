@@ -63,7 +63,6 @@ namespace e_Agro
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
-            bool vecPostoji = false;
             string adresa = txtAdresa.Text;
             string zupanija = txtZupanija.Text;
             string odjel = txtOdjel.Text;

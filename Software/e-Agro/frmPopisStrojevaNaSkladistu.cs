@@ -26,6 +26,8 @@ namespace e_Agro
         private void OsvjeziTablicu()
         {
             dgvStrojeviNaSkladistu.DataSource = strojeviNaSkladistu.DohvatiStrojeveNaSkladistu();
+            dgvStrojeviNaSkladistu.Columns["stroj_id"].Visible = false;
+            dgvStrojeviNaSkladistu.Columns["skladiste_id"].Visible = false;
         }
         private void btnDodaj_Click(object sender, EventArgs e)
         {
