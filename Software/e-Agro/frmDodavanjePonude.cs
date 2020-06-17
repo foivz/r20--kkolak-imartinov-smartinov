@@ -74,6 +74,11 @@ namespace e_Agro
             DateTime datumKreiranja = dtpDatumKreiranja.Value;
             klijent klijent = cmbKlijent.SelectedItem as klijent;
 
+            if (string.IsNullOrEmpty(cmbKreirao.Text) || naziv=="" || txtCijena.Text=="" || string.IsNullOrEmpty(cmbKlijent.Text))
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
             if(odabranaPonuda != null)
             {
                 ponude.AzurirajPonudu(odabranaPonuda, korisnik, naziv, cijena, datumKreiranja, klijent);

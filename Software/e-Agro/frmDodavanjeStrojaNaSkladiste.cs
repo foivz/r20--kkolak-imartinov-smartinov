@@ -66,7 +66,13 @@ namespace e_Agro
             katalog_strojeva odabraniStroj = cmbStrojevi.SelectedItem as katalog_strojeva;
             skladiste odabranoSkladiste = cmbSkladiste.SelectedItem as skladiste;
             int kolicina = int.Parse(txtKolicina.Text);
-            if(odabraniStrojNaSkladistu!= null)
+
+            if(txtKolicina.Text == "" || string.IsNullOrEmpty(cmbSkladiste.Text) || string.IsNullOrEmpty(cmbStrojevi.Text))
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
+                if (odabraniStrojNaSkladistu!= null)
             {
                 strojeviNaSkladistu.AzurirajStrojNaSKladistu(odabraniStrojNaSkladistu, odabraniStroj, odabranoSkladiste, kolicina);
             }
