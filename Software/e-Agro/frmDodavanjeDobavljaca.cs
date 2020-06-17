@@ -34,9 +34,16 @@ namespace e_Agro
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
+            bool vecPostoji = false;
             string naziv = txtNaziv.Text;
             string adresa = txtAdresa.Text;
             string tekuciRacun = txtTekuciRacun.Text;
+
+            if(naziv == "" || adresa == "" || tekuciRacun == "")
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
 
             if (odabraniDobavljac != null)
             {
@@ -44,7 +51,19 @@ namespace e_Agro
             }
             else
             {
-                dobavljaci.DodajDobavljaca(naziv, adresa, tekuciRacun);
+                List<dobavljac> postojeciDobavljaci = dobavljaci.DohvatiDobavljace();
+                foreach (var dobavljac in postojeciDobavljaci)
+                {
+                    if (dobavljac.naziv == naziv)
+                    {
+                        vecPostoji = true;
+                        break;
+                    }
+                }
+                if(vecPostoji)
+                    MessageBox.Show("Dobavljač s nazivom " + naziv + " već postoji!");
+                else
+                    dobavljaci.DodajDobavljaca(naziv, adresa, tekuciRacun);
             }
             Close();
         }
