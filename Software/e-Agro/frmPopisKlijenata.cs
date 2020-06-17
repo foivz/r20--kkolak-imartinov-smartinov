@@ -27,6 +27,7 @@ namespace e_Agro
         {
             dgvKlijenti.DataSource = klijenti.DohvatiKlijente();
             dgvKlijenti.Columns["ponudas"].Visible = false;
+            dgvKlijenti.Columns["klijent_id"].Visible = false;
         }
 
         private void frmPopisKlijenata_Load_1(object sender, EventArgs e)

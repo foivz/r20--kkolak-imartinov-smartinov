@@ -28,6 +28,10 @@ namespace e_Agro
         {
             dgvOtpremnice.DataSource = otpremnice.DohvatiOtpremnice();
             dgvOtpremnice.Columns["stavke_na_otpremnici"].Visible = false;
+            dgvOtpremnice.Columns["otpremnica_id"].Visible = false;
+            dgvOtpremnice.Columns["korisnik_id"].Visible = false;
+
+
         }
         private void frmPopisOtpremnica_Load_1(object sender, EventArgs e)
         {
