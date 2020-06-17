@@ -28,6 +28,8 @@ namespace e_Agro
         {
             dgvPrimke.DataSource = primke.DohvatiPrimke();
             dgvPrimke.Columns["stavke_na_primci"].Visible = false;
+            dgvPrimke.Columns["primka_id"].Visible = false;
+            dgvPrimke.Columns["korisnik_id"].Visible = false;
         }
         private void frmPopisPrimki_Load(object sender, EventArgs e)
         {

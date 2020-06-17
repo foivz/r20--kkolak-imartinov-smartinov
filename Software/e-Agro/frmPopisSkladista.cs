@@ -27,6 +27,8 @@ namespace e_Agro
             dgvSkladista.DataSource = skladista.DohvatiSkladista();
             dgvSkladista.Columns["radno_mjesto"].Visible = false;
             dgvSkladista.Columns["stroj_na_skladistu"].Visible = false;
+            dgvSkladista.Columns["skladiste_id"].Visible = false;
+
         }
 
         private void frmPopisSkladista_Load(object sender, EventArgs e)
