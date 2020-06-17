@@ -28,32 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCijena = new System.Windows.Forms.TextBox();
-            this.lblKolicina = new System.Windows.Forms.Label();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
             this.cmbDobavljac = new System.Windows.Forms.ComboBox();
             this.lblDobavljac = new System.Windows.Forms.Label();
             this.lblNaslov = new System.Windows.Forms.Label();
+            this.lblKolicina = new System.Windows.Forms.Label();
+            this.txtCijena = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // txtCijena
-            // 
-            this.txtCijena.Location = new System.Drawing.Point(36, 165);
-            this.txtCijena.Name = "txtCijena";
-            this.txtCijena.Size = new System.Drawing.Size(121, 20);
-            this.txtCijena.TabIndex = 49;
-            // 
-            // lblKolicina
-            // 
-            this.lblKolicina.AutoSize = true;
-            this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKolicina.ForeColor = System.Drawing.Color.White;
-            this.lblKolicina.Location = new System.Drawing.Point(33, 145);
-            this.lblKolicina.Name = "lblKolicina";
-            this.lblKolicina.Size = new System.Drawing.Size(54, 17);
-            this.lblKolicina.TabIndex = 48;
-            this.lblKolicina.Text = "Cijena:";
             // 
             // btnOdustani
             // 
@@ -107,6 +89,24 @@
             this.lblNaslov.TabIndex = 55;
             this.lblNaslov.Text = "Dodaj novu narudžbu";
             // 
+            // lblKolicina
+            // 
+            this.lblKolicina.AutoSize = true;
+            this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKolicina.ForeColor = System.Drawing.Color.White;
+            this.lblKolicina.Location = new System.Drawing.Point(33, 145);
+            this.lblKolicina.Name = "lblKolicina";
+            this.lblKolicina.Size = new System.Drawing.Size(54, 17);
+            this.lblKolicina.TabIndex = 48;
+            this.lblKolicina.Text = "Cijena:";
+            // 
+            // txtCijena
+            // 
+            this.txtCijena.Location = new System.Drawing.Point(36, 165);
+            this.txtCijena.Name = "txtCijena";
+            this.txtCijena.Size = new System.Drawing.Size(121, 20);
+            this.txtCijena.TabIndex = 49;
+            // 
             // frmDodavanjeNarudzbi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,13 +131,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtCijena;
-        private System.Windows.Forms.Label lblKolicina;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.ComboBox cmbDobavljac;
         private System.Windows.Forms.Label lblDobavljac;
         private System.Windows.Forms.Label lblNaslov;
+        private System.Windows.Forms.Label lblKolicina;
+        private System.Windows.Forms.TextBox txtCijena;
     }
 }

@@ -48,6 +48,16 @@ namespace e_Agro
             using(var context=new PI20_024_DBEntities())
             {
                 context.narudzbas.Attach(narudzba);
+                var query = from s in narudzba.stavke_na_narudzbi
+                            where s.narudzba_id == narudzba.narudzba_id
+                            select s;
+
+                List<stavke_na_narudzbi> popisStavki = query.ToList();
+                foreach (var stavka in popisStavki)
+                {
+                    context.stavke_na_narudzbi.Attach(stavka);
+                    context.stavke_na_narudzbi.Remove(stavka);
+                }
                 context.narudzbas.Remove(narudzba);
                 context.SaveChanges();
             }

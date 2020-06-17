@@ -43,6 +43,7 @@ namespace e_Agro
                 txtCijena.Text = odabraniStroj.cijena.ToString();
                 txtModel.Text = odabraniStroj.model;
                 txtNaziv.Text = odabraniStroj.naziv;
+                rtxtOpis.Text = odabraniStroj.opis;
                 txtVrsta.Text = odabraniStroj.vrsta;
                 cmbDobavljac.SelectedItem = odabraniStroj.dobavljac;
                 this.Text = "Ažuriranje kataloga strojeva";
