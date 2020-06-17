@@ -39,7 +39,14 @@ namespace e_Agro
             katalog_strojeva odabraniStroj = cmbStrojevi.SelectedItem as katalog_strojeva;
             int kolicina = int.Parse(txtKolicina.Text);
             stavkeNaPrimci.DodajStrojNaPrimku(odabraniStroj, kolicina, odabranaPrimka);
-            using (var context = new PI20_024_DBEntities())
+
+            if(txtKolicina.Text == "" || string.IsNullOrEmpty(cmbStrojevi.Text))
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
+
+                using (var context = new PI20_024_DBEntities())
             {
                 context.Entry(odabranaPrimka).State = EntityState.Modified;
                 odabranaPrimka.cijena += (odabraniStroj.cijena * kolicina);
