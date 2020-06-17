@@ -34,11 +34,18 @@ namespace e_Agro
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
+            bool vecPostoji = false;
             string email = txtEmail.Text;
             string ime = txtIme.Text;
             string prezime = txtPrezime.Text;
             string adresa = txtAdresa.Text;
             string tekuciRacun = txtTekuciRacun.Text;
+
+            if (ime =="" || prezime=="" || adresa=="" || email=="" || tekuciRacun== "")
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
 
             if (odabraniKlijent != null)
             {
@@ -46,7 +53,19 @@ namespace e_Agro
             }
             else
             {
-                klijenti.DodajKlijenta(ime, prezime, email, adresa, tekuciRacun);
+                List<klijent> postojeciKlijenti = klijenti.DohvatiKlijente();
+                foreach (var klijent in postojeciKlijenti)
+                {
+                    if (klijent.email == email)
+                    {
+                        vecPostoji = true;
+                        break;
+                    }
+                }
+                if(vecPostoji)
+                    MessageBox.Show("Klijent s email-om " + email + " već postoji!");
+                else
+                    klijenti.DodajKlijenta(ime, prezime, email, adresa, tekuciRacun);
             }
             Close();
         }

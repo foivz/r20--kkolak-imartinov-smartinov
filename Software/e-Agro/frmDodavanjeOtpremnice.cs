@@ -64,6 +64,12 @@ namespace e_Agro
             korisnik korisnik = cmbKreirao.SelectedItem as korisnik;
             double cijena = double.Parse(txtCijena.Text);
             DateTime datumIsporuke = dtpDatumIsporuke.Value;
+
+            if(string.IsNullOrEmpty(cmbKreirao.Text) || txtCijena.Text == "")
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
             if (odabranaOtpremnica != null)
             {
                 otpremnice.AzurirajOtpremnicu(odabranaOtpremnica, korisnik, cijena, datumIsporuke);

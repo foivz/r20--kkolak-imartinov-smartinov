@@ -62,6 +62,12 @@ namespace e_Agro
         {
             dobavljac dobavljac = cmbDobavljac.SelectedItem as dobavljac;
             double cijena = double.Parse(txtCijena.Text);
+
+            if (string.IsNullOrEmpty(cmbDobavljac.Text) || txtCijena.Text == "")
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
             if (odabranaNarudzba != null)
             {
                 narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, cijena);
