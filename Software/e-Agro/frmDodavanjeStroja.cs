@@ -65,6 +65,7 @@ namespace e_Agro
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
+            bool vecPostoji = false;
             string naziv = txtNaziv.Text;
             string vrsta = txtVrsta.Text;
             string model = txtModel.Text;
@@ -72,13 +73,31 @@ namespace e_Agro
             double cijena = double.Parse(txtCijena.Text);
             dobavljac dobavljac = cmbDobavljac.SelectedItem as dobavljac;
 
+            if(naziv == "" || vrsta == "" || model == "" || opis == "" || string.IsNullOrEmpty(cmbDobavljac.Text))
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
+
             if(odabraniStroj != null)
             {
                 strojevi.AzurirajStroj(odabraniStroj, naziv, vrsta, model, opis, cijena, dobavljac);
             }
             else
             {
-                strojevi.DodajStroj(naziv, vrsta, model, opis, cijena, dobavljac);
+                List<katalog_strojeva> postojeciStrojevi = strojevi.DohvatiStrojeve();
+                foreach (var stroj in postojeciStrojevi)
+                {
+                    if(stroj.naziv == naziv && stroj.vrsta == vrsta && stroj.model == model)
+                    {
+                        vecPostoji = true;
+                        break;
+                    }
+                }
+                if(vecPostoji)
+                    MessageBox.Show("Stroj " + naziv + " " + vrsta + " " + model + " već postoji!");
+                else
+                    strojevi.DodajStroj(naziv, vrsta, model, opis, cijena, dobavljac);
             }
 
             Close();
