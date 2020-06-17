@@ -71,6 +71,8 @@ namespace e_Agro
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
+            bool vecPostojiKorisnickoIme = false;
+            bool vecPostojiEmail = false;
             string email = txtEmail.Text;
             string korisnickoIme = txtKorisnickoIme.Text;
             string lozinka = txtLozinka.Text;
@@ -80,14 +82,35 @@ namespace e_Agro
             string tekuciRacun = txtTekuciRacun.Text;
             string adresa = txtAdresa.Text;
             radno_mjesto radnoMjesto = cmbRadnoMjesto.SelectedItem as radno_mjesto;
+
+            if(email == "" || korisnickoIme == "" || lozinka == "" || string.IsNullOrEmpty(cmbTipKorisnika.Text) || ime == "" || prezime == "" || tekuciRacun == "" || adresa == "" || string.IsNullOrEmpty(cmbRadnoMjesto.Text))
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
+
             if (odabraniKorisnik != null)
             {
-              
                 korisnici.AzurirajKorisnika(odabraniKorisnik, email, korisnickoIme, lozinka, tipKorisnika, ime, prezime, tekuciRacun, adresa, radnoMjesto);
             }
             else
             {
-                korisnici.DodajKorisnika(email, korisnickoIme, lozinka, tipKorisnika, ime, prezime, tekuciRacun, adresa, radnoMjesto);
+                List<korisnik> postojeciKorisnici = korisnici.DohvatiKorisnike();
+                foreach (var korisnik in postojeciKorisnici)
+                {
+                    if(korisnik.korisnicko_ime == korisnickoIme)
+                        vecPostojiKorisnickoIme = true;
+                    if (korisnik.email == email)
+                        vecPostojiEmail = true;
+                }
+                if(vecPostojiEmail && vecPostojiKorisnickoIme)
+                    MessageBox.Show("Korisničko ime " + korisnickoIme + " je već zauzeto i e-mail adresa " + email + " je već zauzeta!");
+                else if(vecPostojiEmail && !vecPostojiKorisnickoIme)
+                    MessageBox.Show("E-mail " + email + " je već zauzet!");
+                else if(!vecPostojiEmail && vecPostojiKorisnickoIme)
+                    MessageBox.Show("Korisničko ime " + korisnickoIme + " je već zauzeto!");
+                else
+                    korisnici.DodajKorisnika(email, korisnickoIme, lozinka, tipKorisnika, ime, prezime, tekuciRacun, adresa, radnoMjesto);
             }
             Close();
         }
