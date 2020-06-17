@@ -63,6 +63,13 @@ namespace e_Agro
         {
             string naziv = txtNaziv.Text;
             string adresa = txtAdresa.Text;
+
+            if(naziv == "" || adresa == "")
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
+
             if(odabranoSkladiste != null)
             {
                 skladista.AzurirajSkladiste(odabranoSkladiste, naziv, adresa);

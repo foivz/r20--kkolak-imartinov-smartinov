@@ -39,7 +39,7 @@
             // 
             // txtNaziv
             // 
-            this.txtNaziv.Location = new System.Drawing.Point(64, 113);
+            this.txtNaziv.Location = new System.Drawing.Point(53, 111);
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.Size = new System.Drawing.Size(100, 20);
             this.txtNaziv.TabIndex = 14;
@@ -49,7 +49,7 @@
             this.lblNaziv.AutoSize = true;
             this.lblNaziv.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaziv.ForeColor = System.Drawing.Color.White;
-            this.lblNaziv.Location = new System.Drawing.Point(61, 93);
+            this.lblNaziv.Location = new System.Drawing.Point(50, 91);
             this.lblNaziv.Name = "lblNaziv";
             this.lblNaziv.Size = new System.Drawing.Size(48, 17);
             this.lblNaziv.TabIndex = 13;
@@ -82,7 +82,7 @@
             this.lblAdresa.AutoSize = true;
             this.lblAdresa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdresa.ForeColor = System.Drawing.Color.White;
-            this.lblAdresa.Location = new System.Drawing.Point(204, 93);
+            this.lblAdresa.Location = new System.Drawing.Point(193, 91);
             this.lblAdresa.Name = "lblAdresa";
             this.lblAdresa.Size = new System.Drawing.Size(56, 17);
             this.lblAdresa.TabIndex = 15;
@@ -90,7 +90,7 @@
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Location = new System.Drawing.Point(207, 113);
+            this.txtAdresa.Location = new System.Drawing.Point(196, 111);
             this.txtAdresa.Name = "txtAdresa";
             this.txtAdresa.Size = new System.Drawing.Size(160, 20);
             this.txtAdresa.TabIndex = 16;
