@@ -43,7 +43,7 @@ namespace e_Agro
         {
             if(odabraniKorisnik != null)
             {
-                lblNaslovKorisnik.Text = "Ažuriraj korisnika";
+                lblNaslov.Text = "Ažuriraj korisnika";
                 btnDodaj.Text = "Ažuriraj korisnika";
                 this.Text = "Ažuriranje korisnika";
                 lblNaslov.Text = "Ažuriranje korisnika";
