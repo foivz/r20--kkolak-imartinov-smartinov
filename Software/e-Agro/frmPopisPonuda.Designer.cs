@@ -35,7 +35,7 @@
             this.dgvPonude = new System.Windows.Forms.DataGridView();
             this.dgvStavkeNaPonudi = new System.Windows.Forms.DataGridView();
             this.btnDodajStroj = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNaslovStavke = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPonude)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPonudi)).BeginInit();
             this.SuspendLayout();
@@ -112,16 +112,16 @@
             this.btnDodajStroj.UseVisualStyleBackColor = true;
             this.btnDodajStroj.Click += new System.EventHandler(this.btnDodajStroj_Click);
             // 
-            // label1
+            // lblNaslovStavke
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(331, 402);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 23);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Stavke na ponudi";
+            this.lblNaslovStavke.AutoSize = true;
+            this.lblNaslovStavke.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslovStavke.ForeColor = System.Drawing.Color.White;
+            this.lblNaslovStavke.Location = new System.Drawing.Point(331, 402);
+            this.lblNaslovStavke.Name = "lblNaslovStavke";
+            this.lblNaslovStavke.Size = new System.Drawing.Size(172, 23);
+            this.lblNaslovStavke.TabIndex = 23;
+            this.lblNaslovStavke.Text = "Stavke na ponudi";
             // 
             // frmPopisPonuda
             // 
@@ -129,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(864, 751);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNaslovStavke);
             this.Controls.Add(this.btnDodajStroj);
             this.Controls.Add(this.dgvStavkeNaPonudi);
             this.Controls.Add(this.lblNaslov);
@@ -158,6 +158,6 @@
         private System.Windows.Forms.DataGridView dgvPonude;
         private System.Windows.Forms.DataGridView dgvStavkeNaPonudi;
         private System.Windows.Forms.Button btnDodajStroj;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNaslovStavke;
     }
 }
