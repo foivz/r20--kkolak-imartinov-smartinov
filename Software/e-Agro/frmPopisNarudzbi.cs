@@ -32,7 +32,7 @@ namespace e_Agro
             dgvNarudzbe.Columns["dobavljac_id"].Visible = false;
         }
 
-        private void frmPopisNarudzbi_Load_1(object sender, EventArgs e)
+        private void frmPopisNarudzbi_Load(object sender, EventArgs e)
         {
             OsvjeziTablicu();
         }
@@ -81,5 +81,7 @@ namespace e_Agro
             Show();
             OsvjeziTablicu();
         }
+
+        
     }
 }

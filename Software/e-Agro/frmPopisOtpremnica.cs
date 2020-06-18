@@ -30,17 +30,16 @@ namespace e_Agro
             dgvOtpremnice.Columns["stavke_na_otpremnici"].Visible = false;
             dgvOtpremnice.Columns["otpremnica_id"].Visible = false;
             dgvOtpremnice.Columns["korisnik_id"].Visible = false;
-
-
-        }
-        private void frmPopisOtpremnica_Load_1(object sender, EventArgs e)
-        {
-            OsvjeziTablicu();
         }
 
         private void btnObrisi_Click(object sender, EventArgs e)
         {
             otpremnice.ObrisiOtpremnicu(DohvatiOdabranu());
+            OsvjeziTablicu();
+        }
+
+        private void frmPopisOtpremnica_Load(object sender, EventArgs e)
+        {
             OsvjeziTablicu();
         }
 

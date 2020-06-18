@@ -116,7 +116,7 @@
             this.Name = "frmPopisDobavljaca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis dobavljača";
-            this.Load += new System.EventHandler(this.frmPopisDobavljaca_Load_1);
+            this.Load += new System.EventHandler(this.frmPopisDobavljaca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDobavljaci)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

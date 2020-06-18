@@ -45,7 +45,7 @@ namespace e_Agro
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             Hide();
-            using(var forma=new frmDodavanjePrimke())
+            using (var forma = new frmDodavanjePrimke())
             {
                 forma.ShowDialog();
             }
@@ -64,10 +64,10 @@ namespace e_Agro
             OsvjeziTablicu();
         }
 
-        private void btnDodajStrojNaPrimku_Click(object sender, EventArgs e)
+        private void btnDodajStroj_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma=new frmDodavanjeStrojaNaPrimku(DohvatiOdabranu()))
+            using (var forma = new frmDodavanjeStrojaNaPrimku(DohvatiOdabranu()))
             {
                 forma.ShowDialog();
             }
@@ -79,7 +79,5 @@ namespace e_Agro
         {
             dgvStavkeNaPrimci.DataSource = stavkeNaPrimci.DohvatiStavkeZaPrimku(DohvatiOdabranu());
         }
-
-
     }
 }

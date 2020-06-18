@@ -65,7 +65,7 @@ namespace e_Agro
             korisnik korisnik = cmbKreirao.SelectedItem as korisnik;
             int cijena = int.Parse(txtCijena.Text);
 
-            if (string.IsNullOrEmpty(cmbKreirao.Text) || txtKolicina.Text=="" || txtCijena.Text== "")
+            if (string.IsNullOrEmpty(cmbKreirao.Text) || txtCijena.Text== "")
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;

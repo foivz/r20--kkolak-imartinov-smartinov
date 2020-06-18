@@ -32,7 +32,7 @@ namespace e_Agro
             return dgvDobavljaci.CurrentRow.DataBoundItem as dobavljac;
         }
 
-        private void frmPopisDobavljaca_Load_1(object sender, EventArgs e)
+        private void frmPopisDobavljaca_Load(object sender, EventArgs e)
         {
             OsvjeziTablicu();
         }
@@ -74,5 +74,7 @@ namespace e_Agro
             }
             Show();
         }
+
+        
     }
 }

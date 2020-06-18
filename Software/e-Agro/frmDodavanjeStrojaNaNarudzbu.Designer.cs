@@ -34,7 +34,7 @@
             this.cmbStrojevi = new System.Windows.Forms.ComboBox();
             this.txtKolicina = new System.Windows.Forms.TextBox();
             this.btnOdustani = new System.Windows.Forms.Button();
-            this.lblNaslovStrojNarudzba = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblStroj
@@ -96,16 +96,16 @@
             this.btnOdustani.UseVisualStyleBackColor = true;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
-            // lblNaslovStrojNarudzba
+            // lblNaslov
             // 
-            this.lblNaslovStrojNarudzba.AutoSize = true;
-            this.lblNaslovStrojNarudzba.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaslovStrojNarudzba.ForeColor = System.Drawing.Color.White;
-            this.lblNaslovStrojNarudzba.Location = new System.Drawing.Point(26, 23);
-            this.lblNaslovStrojNarudzba.Name = "lblNaslovStrojNarudzba";
-            this.lblNaslovStrojNarudzba.Size = new System.Drawing.Size(230, 22);
-            this.lblNaslovStrojNarudzba.TabIndex = 29;
-            this.lblNaslovStrojNarudzba.Text = "Dodaj stroj na narudžbu";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(26, 23);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(230, 22);
+            this.lblNaslov.TabIndex = 29;
+            this.lblNaslov.Text = "Dodaj stroj na narudžbu";
             // 
             // frmDodavanjeStrojaNaNarudzbu
             // 
@@ -113,7 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(343, 236);
-            this.Controls.Add(this.lblNaslovStrojNarudzba);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.txtKolicina);
             this.Controls.Add(this.cmbStrojevi);
@@ -138,6 +138,6 @@
         private System.Windows.Forms.ComboBox cmbStrojevi;
         private System.Windows.Forms.TextBox txtKolicina;
         private System.Windows.Forms.Button btnOdustani;
-        private System.Windows.Forms.Label lblNaslovStrojNarudzba;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }
