@@ -34,7 +34,7 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.katalog_strojevaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.skladisteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rpvSkladisteStrojevi = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.katalog_strojevaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladisteBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -47,31 +47,31 @@
             // 
             this.skladisteBindingSource.DataSource = typeof(e_Agro.skladiste);
             // 
-            // reportViewer1
+            // rpvSkladisteStrojevi
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rpvSkladisteStrojevi.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "dsStroj";
             reportDataSource1.Value = this.katalog_strojevaBindingSource;
             reportDataSource2.Name = "dsSkladiste";
             reportDataSource2.Value = this.skladisteBindingSource;
             reportDataSource3.Name = "dsStrojNaSkladistu";
             reportDataSource3.Value = this.katalog_strojevaBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "e_Agro.rptStrojeviNaSkladistu.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
-            this.reportViewer1.TabIndex = 0;
+            this.rpvSkladisteStrojevi.LocalReport.DataSources.Add(reportDataSource1);
+            this.rpvSkladisteStrojevi.LocalReport.DataSources.Add(reportDataSource2);
+            this.rpvSkladisteStrojevi.LocalReport.DataSources.Add(reportDataSource3);
+            this.rpvSkladisteStrojevi.LocalReport.ReportEmbeddedResource = "e_Agro.rptStrojeviNaSkladistu.rdlc";
+            this.rpvSkladisteStrojevi.Location = new System.Drawing.Point(0, 0);
+            this.rpvSkladisteStrojevi.Name = "rpvSkladisteStrojevi";
+            this.rpvSkladisteStrojevi.ServerReport.BearerToken = null;
+            this.rpvSkladisteStrojevi.Size = new System.Drawing.Size(800, 450);
+            this.rpvSkladisteStrojevi.TabIndex = 0;
             // 
             // frmPrikazIzvjestajaSkladistar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.rpvSkladisteStrojevi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPrikazIzvjestajaSkladistar";
             this.Text = "Prikaz strojeva na skladištu";
@@ -84,7 +84,7 @@
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer rpvSkladisteStrojevi;
         private System.Windows.Forms.BindingSource katalog_strojevaBindingSource;
         private System.Windows.Forms.BindingSource skladisteBindingSource;
     }

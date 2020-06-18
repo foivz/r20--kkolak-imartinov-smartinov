@@ -30,8 +30,6 @@
         {
             this.txtCijena = new System.Windows.Forms.TextBox();
             this.lblCijena = new System.Windows.Forms.Label();
-            this.txtKolicina = new System.Windows.Forms.TextBox();
-            this.lblKolicina = new System.Windows.Forms.Label();
             this.lblKreirao = new System.Windows.Forms.Label();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
@@ -41,7 +39,7 @@
             // 
             // txtCijena
             // 
-            this.txtCijena.Location = new System.Drawing.Point(42, 271);
+            this.txtCijena.Location = new System.Drawing.Point(42, 176);
             this.txtCijena.Name = "txtCijena";
             this.txtCijena.Size = new System.Drawing.Size(121, 20);
             this.txtCijena.TabIndex = 47;
@@ -51,29 +49,11 @@
             this.lblCijena.AutoSize = true;
             this.lblCijena.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCijena.ForeColor = System.Drawing.Color.White;
-            this.lblCijena.Location = new System.Drawing.Point(39, 251);
+            this.lblCijena.Location = new System.Drawing.Point(39, 156);
             this.lblCijena.Name = "lblCijena";
             this.lblCijena.Size = new System.Drawing.Size(54, 17);
             this.lblCijena.TabIndex = 46;
             this.lblCijena.Text = "Cijena:";
-            // 
-            // txtKolicina
-            // 
-            this.txtKolicina.Location = new System.Drawing.Point(42, 188);
-            this.txtKolicina.Name = "txtKolicina";
-            this.txtKolicina.Size = new System.Drawing.Size(121, 20);
-            this.txtKolicina.TabIndex = 45;
-            // 
-            // lblKolicina
-            // 
-            this.lblKolicina.AutoSize = true;
-            this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKolicina.ForeColor = System.Drawing.Color.White;
-            this.lblKolicina.Location = new System.Drawing.Point(39, 168);
-            this.lblKolicina.Name = "lblKolicina";
-            this.lblKolicina.Size = new System.Drawing.Size(63, 17);
-            this.lblKolicina.TabIndex = 44;
-            this.lblKolicina.Text = "Količina:";
             // 
             // lblKreirao
             // 
@@ -89,7 +69,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(181, 338);
+            this.btnOdustani.Location = new System.Drawing.Point(181, 232);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 43;
@@ -100,7 +80,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(42, 338);
+            this.btnDodaj.Location = new System.Drawing.Point(42, 232);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(120, 34);
             this.btnDodaj.TabIndex = 42;
@@ -132,13 +112,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(304, 408);
+            this.ClientSize = new System.Drawing.Size(304, 296);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbKreirao);
             this.Controls.Add(this.txtCijena);
             this.Controls.Add(this.lblCijena);
-            this.Controls.Add(this.txtKolicina);
-            this.Controls.Add(this.lblKolicina);
             this.Controls.Add(this.lblKreirao);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
@@ -155,8 +133,6 @@
         #endregion
         private System.Windows.Forms.TextBox txtCijena;
         private System.Windows.Forms.Label lblCijena;
-        private System.Windows.Forms.TextBox txtKolicina;
-        private System.Windows.Forms.Label lblKolicina;
         private System.Windows.Forms.Label lblKreirao;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;

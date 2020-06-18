@@ -37,7 +37,7 @@
             this.btnIzvjestaj = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnStojeviNaSkladistu = new System.Windows.Forms.Button();
+            this.btnStrojeviNaSkladistu = new System.Windows.Forms.Button();
             this.msIzbornik = new System.Windows.Forms.MenuStrip();
             this.odjavaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
@@ -137,28 +137,28 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btnStojeviNaSkladistu);
+            this.panel5.Controls.Add(this.btnStrojeviNaSkladistu);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 102);
             this.panel5.TabIndex = 3;
             // 
-            // btnStojeviNaSkladistu
+            // btnStrojeviNaSkladistu
             // 
-            this.btnStojeviNaSkladistu.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnStojeviNaSkladistu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnStojeviNaSkladistu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnStojeviNaSkladistu.ForeColor = System.Drawing.Color.White;
-            this.btnStojeviNaSkladistu.Image = ((System.Drawing.Image)(resources.GetObject("btnStojeviNaSkladistu.Image")));
-            this.btnStojeviNaSkladistu.Location = new System.Drawing.Point(0, 0);
-            this.btnStojeviNaSkladistu.Name = "btnStojeviNaSkladistu";
-            this.btnStojeviNaSkladistu.Size = new System.Drawing.Size(200, 102);
-            this.btnStojeviNaSkladistu.TabIndex = 4;
-            this.btnStojeviNaSkladistu.Text = "Strojevi na skladištu";
-            this.btnStojeviNaSkladistu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnStojeviNaSkladistu.UseVisualStyleBackColor = false;
-            this.btnStojeviNaSkladistu.Click += new System.EventHandler(this.btnStojeviNaSkladistu_Click);
+            this.btnStrojeviNaSkladistu.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnStrojeviNaSkladistu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStrojeviNaSkladistu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnStrojeviNaSkladistu.ForeColor = System.Drawing.Color.White;
+            this.btnStrojeviNaSkladistu.Image = ((System.Drawing.Image)(resources.GetObject("btnStrojeviNaSkladistu.Image")));
+            this.btnStrojeviNaSkladistu.Location = new System.Drawing.Point(0, 0);
+            this.btnStrojeviNaSkladistu.Name = "btnStrojeviNaSkladistu";
+            this.btnStrojeviNaSkladistu.Size = new System.Drawing.Size(200, 102);
+            this.btnStrojeviNaSkladistu.TabIndex = 4;
+            this.btnStrojeviNaSkladistu.Text = "Strojevi na skladištu";
+            this.btnStrojeviNaSkladistu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnStrojeviNaSkladistu.UseVisualStyleBackColor = false;
+            this.btnStrojeviNaSkladistu.Click += new System.EventHandler(this.btnStrojeviNaSkladistu_Click);
             // 
             // msIzbornik
             // 
@@ -211,7 +211,7 @@
         private System.Windows.Forms.Button btnPrimka;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnStojeviNaSkladistu;
+        private System.Windows.Forms.Button btnStrojeviNaSkladistu;
         private System.Windows.Forms.Button btnIzvjestaj;
         private System.Windows.Forms.MenuStrip msIzbornik;
         private System.Windows.Forms.ToolStripMenuItem odjavaToolStripMenuItem;

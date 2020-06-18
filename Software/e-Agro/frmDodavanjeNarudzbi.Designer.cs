@@ -33,7 +33,7 @@
             this.cmbDobavljac = new System.Windows.Forms.ComboBox();
             this.lblDobavljac = new System.Windows.Forms.Label();
             this.lblNaslov = new System.Windows.Forms.Label();
-            this.lblKolicina = new System.Windows.Forms.Label();
+            this.lblCijena = new System.Windows.Forms.Label();
             this.txtCijena = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -89,16 +89,16 @@
             this.lblNaslov.TabIndex = 55;
             this.lblNaslov.Text = "Dodaj novu narudžbu";
             // 
-            // lblKolicina
+            // lblCijena
             // 
-            this.lblKolicina.AutoSize = true;
-            this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKolicina.ForeColor = System.Drawing.Color.White;
-            this.lblKolicina.Location = new System.Drawing.Point(33, 145);
-            this.lblKolicina.Name = "lblKolicina";
-            this.lblKolicina.Size = new System.Drawing.Size(54, 17);
-            this.lblKolicina.TabIndex = 48;
-            this.lblKolicina.Text = "Cijena:";
+            this.lblCijena.AutoSize = true;
+            this.lblCijena.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCijena.ForeColor = System.Drawing.Color.White;
+            this.lblCijena.Location = new System.Drawing.Point(33, 145);
+            this.lblCijena.Name = "lblCijena";
+            this.lblCijena.Size = new System.Drawing.Size(54, 17);
+            this.lblCijena.TabIndex = 48;
+            this.lblCijena.Text = "Cijena:";
             // 
             // txtCijena
             // 
@@ -117,7 +117,7 @@
             this.Controls.Add(this.cmbDobavljac);
             this.Controls.Add(this.lblDobavljac);
             this.Controls.Add(this.txtCijena);
-            this.Controls.Add(this.lblKolicina);
+            this.Controls.Add(this.lblCijena);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -136,7 +136,7 @@
         private System.Windows.Forms.ComboBox cmbDobavljac;
         private System.Windows.Forms.Label lblDobavljac;
         private System.Windows.Forms.Label lblNaslov;
-        private System.Windows.Forms.Label lblKolicina;
+        private System.Windows.Forms.Label lblCijena;
         private System.Windows.Forms.TextBox txtCijena;
     }
 }
