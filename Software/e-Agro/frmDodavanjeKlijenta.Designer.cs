@@ -39,7 +39,7 @@
             this.txtAdresa = new System.Windows.Forms.TextBox();
             this.lblAdresa = new System.Windows.Forms.Label();
             this.txtTekuciRacun = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTekuciRacun = new System.Windows.Forms.Label();
             this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -144,16 +144,16 @@
             this.txtTekuciRacun.Size = new System.Drawing.Size(160, 20);
             this.txtTekuciRacun.TabIndex = 37;
             // 
-            // label1
+            // lblTekuciRacun
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 231);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 17);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Tekući račun:";
+            this.lblTekuciRacun.AutoSize = true;
+            this.lblTekuciRacun.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTekuciRacun.ForeColor = System.Drawing.Color.White;
+            this.lblTekuciRacun.Location = new System.Drawing.Point(39, 231);
+            this.lblTekuciRacun.Name = "lblTekuciRacun";
+            this.lblTekuciRacun.Size = new System.Drawing.Size(92, 17);
+            this.lblTekuciRacun.TabIndex = 36;
+            this.lblTekuciRacun.Text = "Tekući račun:";
             // 
             // lblNaslov
             // 
@@ -174,7 +174,7 @@
             this.ClientSize = new System.Drawing.Size(317, 333);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.txtTekuciRacun);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTekuciRacun);
             this.Controls.Add(this.txtAdresa);
             this.Controls.Add(this.lblAdresa);
             this.Controls.Add(this.txtEmail);
@@ -208,7 +208,7 @@
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.Label lblAdresa;
         private System.Windows.Forms.TextBox txtTekuciRacun;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTekuciRacun;
         private System.Windows.Forms.Label lblNaslov;
     }
 }

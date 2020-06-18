@@ -34,8 +34,8 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.dgvPrimke = new System.Windows.Forms.DataGridView();
             this.dgvStavkeNaPrimci = new System.Windows.Forms.DataGridView();
-            this.btnDodajStrojNaPrimku = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnDodajStroj = new System.Windows.Forms.Button();
+            this.lblNaslovStavke = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrimke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPrimci)).BeginInit();
             this.SuspendLayout();
@@ -101,27 +101,27 @@
             this.dgvStavkeNaPrimci.Size = new System.Drawing.Size(776, 258);
             this.dgvStavkeNaPrimci.TabIndex = 28;
             // 
-            // btnDodajStrojNaPrimku
+            // btnDodajStroj
             // 
-            this.btnDodajStrojNaPrimku.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodajStrojNaPrimku.Location = new System.Drawing.Point(12, 693);
-            this.btnDodajStrojNaPrimku.Name = "btnDodajStrojNaPrimku";
-            this.btnDodajStrojNaPrimku.Size = new System.Drawing.Size(140, 54);
-            this.btnDodajStrojNaPrimku.TabIndex = 29;
-            this.btnDodajStrojNaPrimku.Text = "Dodaj stroj na primku";
-            this.btnDodajStrojNaPrimku.UseVisualStyleBackColor = true;
-            this.btnDodajStrojNaPrimku.Click += new System.EventHandler(this.btnDodajStrojNaPrimku_Click);
+            this.btnDodajStroj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodajStroj.Location = new System.Drawing.Point(12, 693);
+            this.btnDodajStroj.Name = "btnDodajStroj";
+            this.btnDodajStroj.Size = new System.Drawing.Size(140, 54);
+            this.btnDodajStroj.TabIndex = 29;
+            this.btnDodajStroj.Text = "Dodaj stroj na primku";
+            this.btnDodajStroj.UseVisualStyleBackColor = true;
+            this.btnDodajStroj.Click += new System.EventHandler(this.btnDodajStroj_Click);
             // 
-            // label1
+            // lblNaslovStavke
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(291, 403);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 23);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Stavke na primci";
+            this.lblNaslovStavke.AutoSize = true;
+            this.lblNaslovStavke.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslovStavke.ForeColor = System.Drawing.Color.White;
+            this.lblNaslovStavke.Location = new System.Drawing.Point(291, 403);
+            this.lblNaslovStavke.Name = "lblNaslovStavke";
+            this.lblNaslovStavke.Size = new System.Drawing.Size(166, 23);
+            this.lblNaslovStavke.TabIndex = 30;
+            this.lblNaslovStavke.Text = "Stavke na primci";
             // 
             // frmPopisPrimki
             // 
@@ -129,8 +129,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(795, 759);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnDodajStrojNaPrimku);
+            this.Controls.Add(this.lblNaslovStavke);
+            this.Controls.Add(this.btnDodajStroj);
             this.Controls.Add(this.dgvStavkeNaPrimci);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);
@@ -157,7 +157,7 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.DataGridView dgvPrimke;
         private System.Windows.Forms.DataGridView dgvStavkeNaPrimci;
-        private System.Windows.Forms.Button btnDodajStrojNaPrimku;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDodajStroj;
+        private System.Windows.Forms.Label lblNaslovStavke;
     }
 }

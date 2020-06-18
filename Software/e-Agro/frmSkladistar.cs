@@ -34,17 +34,17 @@ namespace e_Agro
         private void btnIzvjestaj_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma =new frmSkladistarIzvjestaj())
+            using (var forma = new frmSkladistarIzvjestaj())
             {
                 forma.ShowDialog();
             }
             Show();
         }
 
-        private void btnStojeviNaSkladistu_Click(object sender, EventArgs e)
+        private void btnStrojeviNaSkladistu_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma= new frmPopisStrojevaNaSkladistu())
+            using (var forma = new frmPopisStrojevaNaSkladistu())
             {
                 forma.ShowDialog();
             }

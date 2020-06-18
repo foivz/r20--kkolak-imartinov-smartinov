@@ -35,7 +35,7 @@
             this.dgvOtpremnice = new System.Windows.Forms.DataGridView();
             this.dgvStavkeNaOtpremnici = new System.Windows.Forms.DataGridView();
             this.btnDodajStroj = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNaslovStavke = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOtpremnice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaOtpremnici)).BeginInit();
             this.SuspendLayout();
@@ -112,16 +112,16 @@
             this.btnDodajStroj.UseVisualStyleBackColor = true;
             this.btnDodajStroj.Click += new System.EventHandler(this.btnDodajStroj_Click);
             // 
-            // label1
+            // lblNaslovStavke
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(267, 401);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 23);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Stavke na otpremnici";
+            this.lblNaslovStavke.AutoSize = true;
+            this.lblNaslovStavke.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslovStavke.ForeColor = System.Drawing.Color.White;
+            this.lblNaslovStavke.Location = new System.Drawing.Point(267, 401);
+            this.lblNaslovStavke.Name = "lblNaslovStavke";
+            this.lblNaslovStavke.Size = new System.Drawing.Size(207, 23);
+            this.lblNaslovStavke.TabIndex = 30;
+            this.lblNaslovStavke.Text = "Stavke na otpremnici";
             // 
             // frmPopisOtpremnica
             // 
@@ -129,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(801, 689);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNaslovStavke);
             this.Controls.Add(this.btnDodajStroj);
             this.Controls.Add(this.dgvStavkeNaOtpremnici);
             this.Controls.Add(this.lblNaslov);
@@ -141,7 +141,7 @@
             this.Name = "frmPopisOtpremnica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis otpremnica";
-            this.Load += new System.EventHandler(this.frmPopisOtpremnica_Load_1);
+            this.Load += new System.EventHandler(this.frmPopisOtpremnica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOtpremnice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaOtpremnici)).EndInit();
             this.ResumeLayout(false);
@@ -158,6 +158,6 @@
         private System.Windows.Forms.DataGridView dgvOtpremnice;
         private System.Windows.Forms.DataGridView dgvStavkeNaOtpremnici;
         private System.Windows.Forms.Button btnDodajStroj;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNaslovStavke;
     }
 }

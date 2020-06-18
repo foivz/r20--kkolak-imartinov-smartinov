@@ -9,11 +9,6 @@ namespace e_Agro
 {
     public class Klijenti
     {
-        public Klijenti()
-        {
-
-        }
-
         public List<klijent> DohvatiKlijente()
         {
             using (var context = new PI20_024_DBEntities())

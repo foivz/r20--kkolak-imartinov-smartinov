@@ -38,7 +38,6 @@ namespace e_Agro
         {
             katalog_strojeva odabraniStroj = cmbStrojevi.SelectedItem as katalog_strojeva;
             int kolicina = int.Parse(txtKolicina.Text);
-            stavkeNaNarudzbi.DodajStrojNaNarudzbu(odabraniStroj, kolicina, odabranaNarudzba);
 
             if(txtKolicina.Text == "" || string.IsNullOrEmpty(cmbStrojevi.Text))
             {
@@ -46,7 +45,10 @@ namespace e_Agro
                 return;
             }
 
-                using (var context = new PI20_024_DBEntities())
+            stavkeNaNarudzbi.DodajStrojNaNarudzbu(odabraniStroj, kolicina, odabranaNarudzba);
+
+
+            using (var context = new PI20_024_DBEntities())
             {
                 context.Entry(odabranaNarudzba).State = EntityState.Modified;
                 odabranaNarudzba.cijena += (odabraniStroj.cijena * kolicina);

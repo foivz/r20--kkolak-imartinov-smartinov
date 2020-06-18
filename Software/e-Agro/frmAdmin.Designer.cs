@@ -35,12 +35,12 @@
             this.btnKorisnik = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUred = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.msIzbornik = new System.Windows.Forms.MenuStrip();
             this.odjavaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelZaposlenik.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.msIzbornik.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelZaposlenik
@@ -100,7 +100,7 @@
             this.panel1.Controls.Add(this.btnUred);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panelZaposlenik);
-            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Controls.Add(this.msIzbornik);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -124,15 +124,15 @@
             this.btnUred.UseVisualStyleBackColor = false;
             this.btnUred.Click += new System.EventHandler(this.btnUred_Click);
             // 
-            // menuStrip1
+            // msIzbornik
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msIzbornik.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.odjavaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(640, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
+            this.msIzbornik.Location = new System.Drawing.Point(0, 0);
+            this.msIzbornik.Name = "msIzbornik";
+            this.msIzbornik.Size = new System.Drawing.Size(640, 24);
+            this.msIzbornik.TabIndex = 2;
+            this.msIzbornik.Text = "menuStrip1";
             // 
             // odjavaToolStripMenuItem
             // 
@@ -148,7 +148,7 @@
             this.ClientSize = new System.Drawing.Size(640, 126);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.msIzbornik;
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -156,8 +156,8 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.msIzbornik.ResumeLayout(false);
+            this.msIzbornik.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -170,7 +170,7 @@
         private System.Windows.Forms.Button btnKorisnik;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnUred;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip msIzbornik;
         private System.Windows.Forms.ToolStripMenuItem odjavaToolStripMenuItem;
     }
 }

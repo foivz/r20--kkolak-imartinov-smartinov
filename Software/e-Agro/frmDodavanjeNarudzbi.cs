@@ -68,6 +68,7 @@ namespace e_Agro
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
             }
+
             if (odabranaNarudzba != null)
             {
                 narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, cijena);

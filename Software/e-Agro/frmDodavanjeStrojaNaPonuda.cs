@@ -33,13 +33,16 @@ namespace e_Agro
         {
             katalog_strojeva odabraniStroj = cmbStrojevi.SelectedItem as katalog_strojeva;
             int kolicina = int.Parse(txtKolicina.Text);
-            stavkeNaPonudi.DodajStrojNaPonudu(odabraniStroj, kolicina, odabranaPonuda);
+
             if(txtKolicina.Text == "" || string.IsNullOrEmpty(cmbStrojevi.Text))
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
             }
-                using (var context = new PI20_024_DBEntities())
+
+            stavkeNaPonudi.DodajStrojNaPonudu(odabraniStroj, kolicina, odabranaPonuda);
+
+            using (var context = new PI20_024_DBEntities())
             {
                 context.Entry(odabranaPonuda).State = EntityState.Modified;
                 odabranaPonuda.cijena += (odabraniStroj.cijena * kolicina);

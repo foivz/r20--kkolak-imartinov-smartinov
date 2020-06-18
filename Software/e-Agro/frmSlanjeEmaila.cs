@@ -32,7 +32,6 @@ namespace e_Agro
         {
             poruka = new MailMessage();
             poruka.To.Add(txtZa.Text);
-            poruka.CC.Add(txtCC.Text);
             poruka.Subject = txtNaslov.Text;
             poruka.From = new MailAddress("aperic119@gmail.com");
             poruka.Body = rtxtSadrzaj.Text;

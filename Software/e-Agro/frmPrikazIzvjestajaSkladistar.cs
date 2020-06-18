@@ -32,7 +32,7 @@ namespace e_Agro
             }
             skladisteBindingSource.DataSource = odabranoSkladiste;
             katalog_strojevaBindingSource.DataSource = popisStrojeva;
-           this.reportViewer1.RefreshReport();
+           this.rpvSkladisteStrojevi.RefreshReport();
         }
     }
 }
