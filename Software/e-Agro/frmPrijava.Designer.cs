@@ -34,15 +34,15 @@
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.txtLozinka = new System.Windows.Forms.TextBox();
             this.btnPrijava = new System.Windows.Forms.Button();
-            this.lblRegistracija = new System.Windows.Forms.Label();
-            this.pbLozinka = new System.Windows.Forms.PictureBox();
-            this.pbKorisnik = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblRegistracija = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLozinka)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbKorisnik)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtKorisnickoIme
@@ -105,35 +105,23 @@
             this.btnPrijava.UseVisualStyleBackColor = false;
             this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
             // 
-            // lblRegistracija
+            // pictureBox1
             // 
-            this.lblRegistracija.AutoSize = true;
-            this.lblRegistracija.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistracija.ForeColor = System.Drawing.Color.White;
-            this.lblRegistracija.Location = new System.Drawing.Point(148, 308);
-            this.lblRegistracija.Name = "lblRegistracija";
-            this.lblRegistracija.Size = new System.Drawing.Size(171, 17);
-            this.lblRegistracija.TabIndex = 7;
-            this.lblRegistracija.Text = "Nemate korisnički račun?";
-            this.lblRegistracija.Click += new System.EventHandler(this.lblRegistracija_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(112, 182);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
-            // pbLozinka
+            // pictureBox2
             // 
-            this.pbLozinka.Image = ((System.Drawing.Image)(resources.GetObject("pbLozinka.Image")));
-            this.pbLozinka.Location = new System.Drawing.Point(112, 182);
-            this.pbLozinka.Name = "pbLozinka";
-            this.pbLozinka.Size = new System.Drawing.Size(32, 32);
-            this.pbLozinka.TabIndex = 8;
-            this.pbLozinka.TabStop = false;
-            // 
-            // pbKorisnik
-            // 
-            this.pbKorisnik.Image = ((System.Drawing.Image)(resources.GetObject("pbKorisnik.Image")));
-            this.pbKorisnik.Location = new System.Drawing.Point(112, 126);
-            this.pbKorisnik.Name = "pbKorisnik";
-            this.pbKorisnik.Size = new System.Drawing.Size(32, 32);
-            this.pbKorisnik.TabIndex = 9;
-            this.pbKorisnik.TabStop = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(112, 126);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -162,18 +150,31 @@
             this.panel2.Size = new System.Drawing.Size(246, 1);
             this.panel2.TabIndex = 12;
             // 
+            // lblRegistracija
+            // 
+            this.lblRegistracija.AutoSize = true;
+            this.lblRegistracija.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.lblRegistracija.LinkColor = System.Drawing.Color.White;
+            this.lblRegistracija.Location = new System.Drawing.Point(148, 310);
+            this.lblRegistracija.Name = "lblRegistracija";
+            this.lblRegistracija.Size = new System.Drawing.Size(171, 17);
+            this.lblRegistracija.TabIndex = 13;
+            this.lblRegistracija.TabStop = true;
+            this.lblRegistracija.Text = "Nemate korisnički račun?";
+            this.lblRegistracija.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblRegistracija_LinkClicked);
+            // 
             // frmPrijava
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(484, 361);
+            this.Controls.Add(this.lblRegistracija);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pbKorisnik);
-            this.Controls.Add(this.pbLozinka);
-            this.Controls.Add(this.lblRegistracija);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.txtLozinka);
             this.Controls.Add(this.pbLogo);
@@ -184,8 +185,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava";
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLozinka)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbKorisnik)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,12 +199,12 @@
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.TextBox txtLozinka;
         private System.Windows.Forms.Button btnPrijava;
-        private System.Windows.Forms.Label lblRegistracija;
-        private System.Windows.Forms.PictureBox pbLozinka;
-        private System.Windows.Forms.PictureBox pbKorisnik;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.LinkLabel lblRegistracija;
     }
 }
 
