@@ -39,15 +39,15 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.cmbTipKorisnika = new System.Windows.Forms.ComboBox();
             this.txtIme = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblIme = new System.Windows.Forms.Label();
             this.txtPrezime = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblPrezime = new System.Windows.Forms.Label();
             this.txtTekuciRacun = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTekuciRacun = new System.Windows.Forms.Label();
             this.txtAdresa = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblAdresa = new System.Windows.Forms.Label();
             this.cmbRadnoMjesto = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblRadnoMjesto = new System.Windows.Forms.Label();
             this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -153,16 +153,16 @@
             this.txtIme.Size = new System.Drawing.Size(121, 20);
             this.txtIme.TabIndex = 59;
             // 
-            // label1
+            // lblIme
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(48, 91);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 17);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "Ime:";
+            this.lblIme.AutoSize = true;
+            this.lblIme.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIme.ForeColor = System.Drawing.Color.White;
+            this.lblIme.Location = new System.Drawing.Point(48, 91);
+            this.lblIme.Name = "lblIme";
+            this.lblIme.Size = new System.Drawing.Size(36, 17);
+            this.lblIme.TabIndex = 58;
+            this.lblIme.Text = "Ime:";
             // 
             // txtPrezime
             // 
@@ -171,16 +171,16 @@
             this.txtPrezime.Size = new System.Drawing.Size(121, 20);
             this.txtPrezime.TabIndex = 61;
             // 
-            // label2
+            // lblPrezime
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(209, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
-            this.label2.TabIndex = 60;
-            this.label2.Text = "Prezime:";
+            this.lblPrezime.AutoSize = true;
+            this.lblPrezime.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrezime.ForeColor = System.Drawing.Color.White;
+            this.lblPrezime.Location = new System.Drawing.Point(209, 91);
+            this.lblPrezime.Name = "lblPrezime";
+            this.lblPrezime.Size = new System.Drawing.Size(62, 17);
+            this.lblPrezime.TabIndex = 60;
+            this.lblPrezime.Text = "Prezime:";
             // 
             // txtTekuciRacun
             // 
@@ -189,16 +189,16 @@
             this.txtTekuciRacun.Size = new System.Drawing.Size(121, 20);
             this.txtTekuciRacun.TabIndex = 63;
             // 
-            // label3
+            // lblTekuciRacun
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(48, 356);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 17);
-            this.label3.TabIndex = 62;
-            this.label3.Text = "Tekući račun:";
+            this.lblTekuciRacun.AutoSize = true;
+            this.lblTekuciRacun.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTekuciRacun.ForeColor = System.Drawing.Color.White;
+            this.lblTekuciRacun.Location = new System.Drawing.Point(48, 356);
+            this.lblTekuciRacun.Name = "lblTekuciRacun";
+            this.lblTekuciRacun.Size = new System.Drawing.Size(92, 17);
+            this.lblTekuciRacun.TabIndex = 62;
+            this.lblTekuciRacun.Text = "Tekući račun:";
             // 
             // txtAdresa
             // 
@@ -207,16 +207,16 @@
             this.txtAdresa.Size = new System.Drawing.Size(121, 20);
             this.txtAdresa.TabIndex = 65;
             // 
-            // label4
+            // lblAdresa
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(48, 414);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 17);
-            this.label4.TabIndex = 64;
-            this.label4.Text = "Adresa:";
+            this.lblAdresa.AutoSize = true;
+            this.lblAdresa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdresa.ForeColor = System.Drawing.Color.White;
+            this.lblAdresa.Location = new System.Drawing.Point(48, 414);
+            this.lblAdresa.Name = "lblAdresa";
+            this.lblAdresa.Size = new System.Drawing.Size(56, 17);
+            this.lblAdresa.TabIndex = 64;
+            this.lblAdresa.Text = "Adresa:";
             // 
             // cmbRadnoMjesto
             // 
@@ -226,16 +226,16 @@
             this.cmbRadnoMjesto.Size = new System.Drawing.Size(121, 21);
             this.cmbRadnoMjesto.TabIndex = 67;
             // 
-            // label5
+            // lblRadnoMjesto
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(209, 289);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 17);
-            this.label5.TabIndex = 66;
-            this.label5.Text = "Radno mjesto:";
+            this.lblRadnoMjesto.AutoSize = true;
+            this.lblRadnoMjesto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRadnoMjesto.ForeColor = System.Drawing.Color.White;
+            this.lblRadnoMjesto.Location = new System.Drawing.Point(209, 289);
+            this.lblRadnoMjesto.Name = "lblRadnoMjesto";
+            this.lblRadnoMjesto.Size = new System.Drawing.Size(102, 17);
+            this.lblRadnoMjesto.TabIndex = 66;
+            this.lblRadnoMjesto.Text = "Radno mjesto:";
             // 
             // lblNaslov
             // 
@@ -256,15 +256,15 @@
             this.ClientSize = new System.Drawing.Size(379, 545);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbRadnoMjesto);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblRadnoMjesto);
             this.Controls.Add(this.txtAdresa);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblAdresa);
             this.Controls.Add(this.txtTekuciRacun);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblTekuciRacun);
             this.Controls.Add(this.txtPrezime);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblPrezime);
             this.Controls.Add(this.txtIme);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblIme);
             this.Controls.Add(this.cmbTipKorisnika);
             this.Controls.Add(this.lblTip);
             this.Controls.Add(this.txtLozinka);
@@ -297,15 +297,15 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.ComboBox cmbTipKorisnika;
         private System.Windows.Forms.TextBox txtIme;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblIme;
         private System.Windows.Forms.TextBox txtPrezime;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPrezime;
         private System.Windows.Forms.TextBox txtTekuciRacun;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTekuciRacun;
         private System.Windows.Forms.TextBox txtAdresa;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblAdresa;
         private System.Windows.Forms.ComboBox cmbRadnoMjesto;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblRadnoMjesto;
         private System.Windows.Forms.Label lblNaslov;
     }
 }

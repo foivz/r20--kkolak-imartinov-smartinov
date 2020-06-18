@@ -10,7 +10,7 @@ namespace e_Agro
     {
         public override string ToString()
         {
-            return naziv;
+            return  "Skladište: " + naziv;
         }
     }
 }
