@@ -185,6 +185,12 @@
     <Compile Include="frmDodavanjeUreda.Designer.cs">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPonudaIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPonudaIzvjestaj.Designer.cs">
+      <DependentUpon>frmPonudaIzvjestaj.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPopisDobavljaca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,6 +440,9 @@
     <EmbeddedResource Include="frmKatalogStrojeva.resx">
       <DependentUpon>frmKatalogStrojeva.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPonudaIzvjestaj.resx">
+      <DependentUpon>frmPonudaIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPopisDobavljaca.resx">
       <DependentUpon>frmPopisDobavljaca.cs</DependentUpon>
     </EmbeddedResource>
@@ -505,6 +514,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rptDobavljaciStrojeva.rdlc" />
+    <EmbeddedResource Include="rptPonuda.rdlc" />
     <EmbeddedResource Include="rptStrojeviNaSkladistu.rdlc" />
     <EntityDeploy Include="AgroModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -517,7 +527,11 @@
     <None Include="Properties\DataSources\dobavljac.datasource" />
     <None Include="Properties\DataSources\frmPopisNarudzbi.datasource" />
     <None Include="Properties\DataSources\katalog_strojeva.datasource" />
+    <None Include="Properties\DataSources\korisnik.datasource" />
+    <None Include="Properties\DataSources\ponuda.datasource" />
     <None Include="Properties\DataSources\skladiste.datasource" />
+    <None Include="Properties\DataSources\stavke_na_ponudi.datasource" />
+    <None Include="Properties\DataSources\stavke_na_primci.datasource" />
     <None Include="Properties\DataSources\stroj_na_skladistu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
