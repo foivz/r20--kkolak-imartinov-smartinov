@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.Odbc;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,7 +13,6 @@ namespace e_Agro
     public partial class frmPrimkaIzvjestaj : Form
     {
         private primka odabranaPrimka;
-
         public frmPrimkaIzvjestaj(primka primka)
         {
             odabranaPrimka = primka;
@@ -23,9 +21,10 @@ namespace e_Agro
 
         private void frmPrimkaIzvjestaj_Load(object sender, EventArgs e)
         {
-            List<katalog_strojeva> popisStrojeva = new List<katalog_strojeva>();
             List<stavke_na_primci> popisStavki = new List<stavke_na_primci>();
+            List<katalog_strojeva> popisStrojeva = new List<katalog_strojeva>();
             var korisnik = new korisnik();
+
             using (var context = new PI20_024_DBEntities())
             {
                 var query = from p in context.stavke_na_primci
@@ -44,6 +43,7 @@ namespace e_Agro
                     popisStrojeva.Add(stavka.katalog_strojeva);
                 }
             }
+
             stavke_na_primciBindingSource.DataSource = popisStavki;
             primkaBindingSource.DataSource = odabranaPrimka;
             korisnikBindingSource.DataSource = korisnik;
