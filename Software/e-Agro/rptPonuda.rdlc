@@ -37,7 +37,7 @@
       <Line Name="Line1">
         <Top>1in</Top>
         <Height>0in</Height>
-        <Width>6.5in</Width>
+        <Width>7.30084in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -321,7 +321,7 @@
       <Line Name="Line2">
         <Top>3.82708in</Top>
         <Height>0in</Height>
-        <Width>6.5in</Width>
+        <Width>7.30084in</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -891,7 +891,7 @@
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
           <Top>0.75in</Top>
-          <Left>5.5in</Left>
+          <Left>6.30084in</Left>
           <Height>0.25in</Height>
           <Width>1in</Width>
           <ZIndex>1</ZIndex>
