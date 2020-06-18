@@ -37,6 +37,7 @@
             this.btnDodajStroj = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPosalji = new System.Windows.Forms.Button();
+            this.btnIspisi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPonude)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPonudi)).BeginInit();
             this.SuspendLayout();
@@ -135,12 +136,24 @@
             this.btnPosalji.UseVisualStyleBackColor = true;
             this.btnPosalji.Click += new System.EventHandler(this.btnPosalji_Click);
             // 
+            // btnIspisi
+            // 
+            this.btnIspisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIspisi.Location = new System.Drawing.Point(596, 59);
+            this.btnIspisi.Name = "btnIspisi";
+            this.btnIspisi.Size = new System.Drawing.Size(175, 37);
+            this.btnIspisi.TabIndex = 25;
+            this.btnIspisi.Text = "Ispiši odabranu ponudu";
+            this.btnIspisi.UseVisualStyleBackColor = true;
+            this.btnIspisi.Click += new System.EventHandler(this.btnIspisi_Click);
+            // 
             // frmPopisPonuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(864, 751);
+            this.Controls.Add(this.btnIspisi);
             this.Controls.Add(this.btnPosalji);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDodajStroj);
@@ -173,5 +186,6 @@
         private System.Windows.Forms.Button btnDodajStroj;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPosalji;
+        private System.Windows.Forms.Button btnIspisi;
     }
 }

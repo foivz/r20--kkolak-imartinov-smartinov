@@ -611,6 +611,7 @@ C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e-Agro.csprojAssemblyReference.cache
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeStrojaNaNarudzbu.resources
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeStrojaNaOtpremnicu.resources
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmDodavanjeDobavljaca.resources
@@ -665,4 +666,4 @@ C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrikazIzvjestajaSkladistar.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmSkladistarIzvjestaj.resources
 C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmSlanjeEmaila.resources
-C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrimkaIzvjestaj.resources
+C:\Users\Ivan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPonudaIzvjestaj.resources
