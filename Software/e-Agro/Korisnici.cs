@@ -56,6 +56,7 @@ namespace e_Agro
                 odabraniKorisnik.ime = ime;
                 odabraniKorisnik.prezime = prezime;
                 odabraniKorisnik.adresa = adresa;
+                odabraniKorisnik.tekuci_racun = tekuciRacun;
                 odabraniKorisnik.radno_mjesto_id = radnoMjesto.radno_mjesto_id;
 
                 context.SaveChanges();
