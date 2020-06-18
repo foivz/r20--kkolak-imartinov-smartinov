@@ -80,5 +80,15 @@ namespace e_Agro
             Show();
             OsvjeziTablicu();
         }
+
+        private void btnIspisi_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmOtpremnicaIzvjestaj(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }

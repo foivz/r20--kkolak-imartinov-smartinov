@@ -36,6 +36,7 @@
             this.dgvStavkeNaOtpremnici = new System.Windows.Forms.DataGridView();
             this.btnDodajStroj = new System.Windows.Forms.Button();
             this.lblNaslovStavke = new System.Windows.Forms.Label();
+            this.btnIspisi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOtpremnice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaOtpremnici)).BeginInit();
             this.SuspendLayout();
@@ -123,12 +124,24 @@
             this.lblNaslovStavke.TabIndex = 30;
             this.lblNaslovStavke.Text = "Stavke na otpremnici";
             // 
+            // btnIspisi
+            // 
+            this.btnIspisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIspisi.Location = new System.Drawing.Point(480, 65);
+            this.btnIspisi.Name = "btnIspisi";
+            this.btnIspisi.Size = new System.Drawing.Size(194, 37);
+            this.btnIspisi.TabIndex = 31;
+            this.btnIspisi.Text = "Ispiši odabranu otpremnicu";
+            this.btnIspisi.UseVisualStyleBackColor = true;
+            this.btnIspisi.Click += new System.EventHandler(this.btnIspisi_Click);
+            // 
             // frmPopisOtpremnica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(801, 689);
+            this.Controls.Add(this.btnIspisi);
             this.Controls.Add(this.lblNaslovStavke);
             this.Controls.Add(this.btnDodajStroj);
             this.Controls.Add(this.dgvStavkeNaOtpremnici);
@@ -159,5 +172,6 @@
         private System.Windows.Forms.DataGridView dgvStavkeNaOtpremnici;
         private System.Windows.Forms.Button btnDodajStroj;
         private System.Windows.Forms.Label lblNaslovStavke;
+        private System.Windows.Forms.Button btnIspisi;
     }
 }
