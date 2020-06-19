@@ -90,5 +90,15 @@ namespace e_Agro
             }
             Show();
         }
+
+        private void btnIspisi_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using(var forma = new frmPonudaIzvjestaj(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }

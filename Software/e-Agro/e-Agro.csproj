@@ -185,6 +185,18 @@
     <Compile Include="frmDodavanjeUreda.Designer.cs">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOtpremnicaIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtpremnicaIzvjestaj.Designer.cs">
+      <DependentUpon>frmOtpremnicaIzvjestaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPonudaIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPonudaIzvjestaj.Designer.cs">
+      <DependentUpon>frmPonudaIzvjestaj.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPopisDobavljaca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +280,12 @@
     </Compile>
     <Compile Include="frmPrikazIzvjestajaProdajniRefrent.Designer.cs">
       <DependentUpon>frmPrikazIzvjestajaProdajniRefrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrimkaIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrimkaIzvjestaj.Designer.cs">
+      <DependentUpon>frmPrimkaIzvjestaj.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProdajniReferent.cs">
       <SubType>Form</SubType>
@@ -434,6 +452,12 @@
     <EmbeddedResource Include="frmKatalogStrojeva.resx">
       <DependentUpon>frmKatalogStrojeva.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOtpremnicaIzvjestaj.resx">
+      <DependentUpon>frmOtpremnicaIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPonudaIzvjestaj.resx">
+      <DependentUpon>frmPonudaIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPopisDobavljaca.resx">
       <DependentUpon>frmPopisDobavljaca.cs</DependentUpon>
     </EmbeddedResource>
@@ -473,6 +497,9 @@
     <EmbeddedResource Include="frmPrikazIzvjestajaProdajniRefrent.resx">
       <DependentUpon>frmPrikazIzvjestajaProdajniRefrent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrimkaIzvjestaj.resx">
+      <DependentUpon>frmPrimkaIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProdajniReferent.resx">
       <DependentUpon>frmProdajniReferent.cs</DependentUpon>
     </EmbeddedResource>
@@ -505,6 +532,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rptDobavljaciStrojeva.rdlc" />
+    <EmbeddedResource Include="rptOtpremnica.rdlc" />
+    <EmbeddedResource Include="rptPonuda.rdlc" />
+    <EmbeddedResource Include="rptPrimka.rdlc" />
     <EmbeddedResource Include="rptStrojeviNaSkladistu.rdlc" />
     <EntityDeploy Include="AgroModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -517,7 +547,14 @@
     <None Include="Properties\DataSources\dobavljac.datasource" />
     <None Include="Properties\DataSources\frmPopisNarudzbi.datasource" />
     <None Include="Properties\DataSources\katalog_strojeva.datasource" />
+    <None Include="Properties\DataSources\korisnik.datasource" />
+    <None Include="Properties\DataSources\otpremnica.datasource" />
+    <None Include="Properties\DataSources\ponuda.datasource" />
+    <None Include="Properties\DataSources\primka1.datasource" />
     <None Include="Properties\DataSources\skladiste.datasource" />
+    <None Include="Properties\DataSources\stavke_na_otpremnici.datasource" />
+    <None Include="Properties\DataSources\stavke_na_ponudi.datasource" />
+    <None Include="Properties\DataSources\stavke_na_primci.datasource" />
     <None Include="Properties\DataSources\stroj_na_skladistu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

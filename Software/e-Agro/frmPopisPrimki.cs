@@ -79,5 +79,15 @@ namespace e_Agro
         {
             dgvStavkeNaPrimci.DataSource = stavkeNaPrimci.DohvatiStavkeZaPrimku(DohvatiOdabranu());
         }
+
+        private void btnIspisi_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma= new frmPrimkaIzvjestaj(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }
