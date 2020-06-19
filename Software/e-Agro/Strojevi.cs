@@ -60,7 +60,12 @@ namespace e_Agro
             using (var context=new PI20_024_DBEntities())
             {
                 context.katalog_strojeva.Attach(stroj);
-                context.katalog_strojeva.Remove(stroj);
+                if(stroj.stavke_na_narudzbi.Count > 0 || stroj.stavke_na_otpremnici.Count > 0 || stroj.stavke_na_ponudi.Count > 0 || stroj.stavke_na_primci.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati stroj koji se nalazi kao stavka!");
+                else if(stroj.stroj_na_skladistu.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati stroj koji se nalazi na skladištu!");
+                else
+                    context.katalog_strojeva.Remove(stroj);
                 context.SaveChanges();
             }
         }

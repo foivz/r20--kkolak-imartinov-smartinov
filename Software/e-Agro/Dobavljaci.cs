@@ -52,7 +52,12 @@ namespace e_Agro
             using (var context = new PI20_024_DBEntities())
             {
                 context.dobavljacs.Attach(dobavljac);
-                context.dobavljacs.Remove(dobavljac);
+                if(dobavljac.katalog_strojeva.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati dobavljača koji dobavlja strojeve!");
+                else if(dobavljac.narudzbas.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati dobavljača koji ima narudžbe!");
+                else
+                    context.dobavljacs.Remove(dobavljac);
                 context.SaveChanges();
             }
 
