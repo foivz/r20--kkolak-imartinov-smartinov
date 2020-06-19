@@ -58,7 +58,10 @@ namespace e_Agro
             using (var context = new PI20_024_DBEntities())
             {
                 context.klijents.Attach(klijent);
-                context.klijents.Remove(klijent);
+                if(klijent.ponudas.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete izbrisati klijenta koji ima ponude!");
+                else
+                    context.klijents.Remove(klijent);
                 context.SaveChanges();
             }
         }

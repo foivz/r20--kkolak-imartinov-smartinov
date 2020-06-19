@@ -61,7 +61,10 @@ namespace e_Agro
             using (var context=new PI20_024_DBEntities())
             {
                 context.skladistes.Attach(skladiste);
-                context.skladistes.Remove(skladiste);
+                if(skladiste.radno_mjesto.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati skladište koje ima radna mjesta!");
+                else
+                    context.skladistes.Remove(skladiste);
                 context.SaveChanges();
             }
         }

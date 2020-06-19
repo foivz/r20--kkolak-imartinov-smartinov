@@ -68,7 +68,10 @@ namespace e_Agro
             using(var context = new PI20_024_DBEntities())
             {
                 context.korisniks.Attach(korisnik);
-                context.korisniks.Remove(korisnik);
+                if(korisnik.otpremnicas.Count > 0 || korisnik.ponudas.Count > 0 || korisnik.primkas.Count > 0 || korisnik.ponudas.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati korisnika koji ima kreirane dokumente!");
+                else
+                    context.korisniks.Remove(korisnik);
                 context.SaveChanges();
             }
         }
