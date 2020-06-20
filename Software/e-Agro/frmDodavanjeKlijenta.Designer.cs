@@ -190,6 +190,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje klijenta";
             this.Load += new System.EventHandler(this.frmDodavanjeKlijenta_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeKlijenta_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

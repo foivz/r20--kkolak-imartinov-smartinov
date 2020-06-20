@@ -56,6 +56,7 @@ namespace e_Agro
         }
         private void frmDodavanjeOtpremnice_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             UcitajGUI();
         }
 
@@ -79,6 +80,14 @@ namespace e_Agro
                 otpremnice.DodajOtpremnicu(korisnik, cijena,datumIsporuke);
             }
             Close();
+        }
+
+        private void frmDodavanjeOtpremnice_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#323-upravljanje-narud%C5%BEbama");
+            }
         }
     }
 }

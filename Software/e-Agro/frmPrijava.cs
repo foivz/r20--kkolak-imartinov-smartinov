@@ -94,5 +94,10 @@ namespace e_Agro
                 System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija");
             }
         }
+
+        private void frmPrijava_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+        }
     }
 }

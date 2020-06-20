@@ -192,6 +192,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje ponude";
             this.Load += new System.EventHandler(this.frmDodavanjePonude_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjePonude_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -147,6 +147,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje otpremnice";
             this.Load += new System.EventHandler(this.frmDodavanjeOtpremnice_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeOtpremnice_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

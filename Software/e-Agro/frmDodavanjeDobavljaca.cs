@@ -70,6 +70,7 @@ namespace e_Agro
 
         private void frmDodavanjeDobavljaca_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             if (odabraniDobavljac != null)
             {
                 txtNaziv.Text = odabraniDobavljac.naziv;
@@ -78,6 +79,14 @@ namespace e_Agro
                 btnDodaj.Text = "Ažuriraj dobavljača";
                 this.Text = "Ažuriranje dobavljača";
                 lblNaslov.Text = "Ažuriranje dobavljača";
+            }
+        }
+
+        private void frmDodavanjeDobavljaca_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#325-upravljanje-dobavlja%C4%8Dima");
             }
         }
     }

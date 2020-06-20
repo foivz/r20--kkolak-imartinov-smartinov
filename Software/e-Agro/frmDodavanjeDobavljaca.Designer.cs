@@ -146,6 +146,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje dobavljača";
             this.Load += new System.EventHandler(this.frmDodavanjeDobavljaca_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeDobavljaca_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

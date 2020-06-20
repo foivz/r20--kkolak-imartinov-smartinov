@@ -69,8 +69,13 @@ namespace e_Agro
         {
             if (e.KeyCode == Keys.F1)
             {
-                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#2-prijava-u-sustav");
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#31-admin");
             }
+        }
+
+        private void frmAdmin_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
         }
     }
 }

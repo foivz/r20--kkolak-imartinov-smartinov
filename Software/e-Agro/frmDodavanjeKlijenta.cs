@@ -72,6 +72,7 @@ namespace e_Agro
 
         private void frmDodavanjeKlijenta_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             if(odabraniKlijent != null)
             {
                 txtEmail.Text = odabraniKlijent.email;
@@ -82,6 +83,14 @@ namespace e_Agro
                 btnDodaj.Text = "Ažuriraj klijenta";
                 this.Text = "Ažuriranje klijenta";
                 lblNaslov.Text = "Ažuriranje klijenta";
+            }
+        }
+
+        private void frmDodavanjeKlijenta_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#324-upravljanje-klijentima");
             }
         }
     }

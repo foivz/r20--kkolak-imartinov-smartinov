@@ -125,6 +125,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje narudžbi";
             this.Load += new System.EventHandler(this.frmDodavanjeNarudzbi_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeNarudzbi_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

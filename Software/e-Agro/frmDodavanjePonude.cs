@@ -63,6 +63,7 @@ namespace e_Agro
 
         private void frmDodavanjePonude_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             UcitajGUI();
         }
 
@@ -89,6 +90,14 @@ namespace e_Agro
                 ponude.DodajPonudu(korisnik, naziv, cijena, datumKreiranja, klijent);
             }
             Close();
+        }
+
+        private void frmDodavanjePonude_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#322-upravljanje-ponudama");
+            }
         }
     }
 }
