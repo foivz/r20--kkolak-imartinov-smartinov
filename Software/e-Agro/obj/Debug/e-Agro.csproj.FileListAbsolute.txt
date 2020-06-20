@@ -669,6 +669,5 @@ C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\
 C:\Users\Ivan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPonudaIzvjestaj.resources
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPonudaIzvjestaj.resources
 C:\Users\Karolina\Desktop\PI-projekt\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrimkaIzvjestaj.resources
-C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmOtpremnicaIzvjestaj.resources
-C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPonudaIzvjestaj.resources
-C:\Users\Sara\Desktop\foivz\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrimkaIzvjestaj.resources
+C:\Users\Ivan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmOtpremnicaIzvjestaj.resources
+C:\Users\Ivan\source\repos\r20--kkolak-imartinov-smartinov\Software\e-Agro\obj\Debug\e_Agro.frmPrimkaIzvjestaj.resources

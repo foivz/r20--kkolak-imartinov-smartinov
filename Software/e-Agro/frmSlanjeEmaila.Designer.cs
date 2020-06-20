@@ -145,7 +145,9 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmSlanjeEmaila";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Slanje e-maila";
+            this.Load += new System.EventHandler(this.frmSlanjeEmaila_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

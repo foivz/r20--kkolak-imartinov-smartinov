@@ -24,8 +24,8 @@ namespace e_Agro
 
         private void btnOdustani_Click(object sender, EventArgs e)
         {
-            smtp.SendAsyncCancel();
             MessageBox.Show("Slanje e-maila otkazano");
+            Close();
         }
 
         private void btnPosalji_Click(object sender, EventArgs e)
@@ -65,6 +65,7 @@ namespace e_Agro
             {
                 MessageBox.Show("Uspješno slanje e-maila");
             }
+            Close();
         }
 
         private void lnkDodajPrivitak_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -75,6 +76,11 @@ namespace e_Agro
                 lblPrivitak.Visible = true;
                 lnkDodajPrivitak.Visible = false;
             }
+        }
+
+        private void frmSlanjeEmaila_Load(object sender, EventArgs e)
+        {
+            rtxtSadrzaj.Text = "Ime:\nPrezime:\nE-mail:\nKorisničko ime:\nLozinka:";
         }
     }
 }

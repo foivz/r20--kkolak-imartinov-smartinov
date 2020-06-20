@@ -64,7 +64,10 @@ namespace e_Agro
             using(var context=new PI20_024_DBEntities())
             {
                 context.ureds.Attach(ured);
-                context.ureds.Remove(ured);
+                if(ured.radno_mjesto.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati ured koji ima radna mjesta!");
+                else
+                    context.ureds.Remove(ured);
                 context.SaveChanges();
             }
         }
