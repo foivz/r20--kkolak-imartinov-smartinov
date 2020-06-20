@@ -4,8 +4,9 @@
     "\\Documentation",
     "\\Documentation\\Dijagrami",
     "\\Documentation\\Dijagrami\\Dijagram aktivnosti",
+    "\\Software",
     "\\Software\\e-Agro"
   ],
-  "SelectedNode": "\\Documentation\\Dijagrami\\Dijagram slijeda",
+  "SelectedNode": "\\Software\\e-Agro\\frmPrijava.cs",
   "PreviewInSolutionExplorer": false
 }
