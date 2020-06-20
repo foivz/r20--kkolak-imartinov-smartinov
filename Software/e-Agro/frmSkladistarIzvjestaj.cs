@@ -25,6 +25,7 @@ namespace e_Agro
         }
         private void frmSkladistarIzvjestaj_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             cmbSkladiste.DataSource = skladista.DohvatiSkladista();
         }
 
@@ -36,6 +37,14 @@ namespace e_Agro
                 forma.ShowDialog();
             }
             Show();
+        }
+
+        private void frmSkladistarIzvjestaj_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#334-izvje%C5%A1taj-stanja-na-skladi%C5%A1tu");
+            }
         }
     }
 }

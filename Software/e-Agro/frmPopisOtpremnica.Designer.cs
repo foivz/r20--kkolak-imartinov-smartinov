@@ -155,6 +155,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis otpremnica";
             this.Load += new System.EventHandler(this.frmPopisOtpremnica_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisOtpremnica_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOtpremnice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaOtpremnici)).EndInit();
             this.ResumeLayout(false);

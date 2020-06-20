@@ -104,6 +104,7 @@
             this.Name = "frmPopisStrojevaNaSkladistu";
             this.Text = "Popis strojeva na skladištu";
             this.Load += new System.EventHandler(this.frmPopisStrojevaNaSkladistu_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisStrojevaNaSkladistu_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStrojeviNaSkladistu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

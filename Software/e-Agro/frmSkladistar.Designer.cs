@@ -191,6 +191,8 @@
             this.Name = "frmSkladistar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSkladistar";
+            this.Load += new System.EventHandler(this.frmSkladistar_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSkladistar_KeyDown);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

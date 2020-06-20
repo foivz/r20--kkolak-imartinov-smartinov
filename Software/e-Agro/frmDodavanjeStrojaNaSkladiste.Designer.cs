@@ -147,6 +147,7 @@
             this.Name = "frmDodavanjeStrojaNaSkladiste";
             this.Text = "frmDodavanjeStrojaNaSkladiste";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaSkladiste_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeStrojaNaSkladiste_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

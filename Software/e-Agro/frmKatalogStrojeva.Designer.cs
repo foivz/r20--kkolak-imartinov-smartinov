@@ -118,6 +118,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Katalog strojeva";
             this.Load += new System.EventHandler(this.frmKatalogStrojeva_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmKatalogStrojeva_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStrojevi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

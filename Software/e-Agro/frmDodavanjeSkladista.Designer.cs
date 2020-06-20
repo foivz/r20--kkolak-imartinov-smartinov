@@ -124,6 +124,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje skladišta";
             this.Load += new System.EventHandler(this.frmDodavanjeSkladista_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeSkladista_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

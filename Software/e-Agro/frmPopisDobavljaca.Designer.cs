@@ -117,6 +117,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis dobavljača";
             this.Load += new System.EventHandler(this.frmPopisDobavljaca_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisDobavljaca_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDobavljaci)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

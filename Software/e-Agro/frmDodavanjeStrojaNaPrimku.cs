@@ -31,6 +31,7 @@ namespace e_Agro
 
         private void frmDodavanjeStrojaNaPrimku_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             cmbStrojevi.DataSource = strojevi.DohvatiStrojeve();
         }
 
@@ -54,6 +55,14 @@ namespace e_Agro
                 context.SaveChanges();
             }
             Close();
+        }
+
+        private void frmDodavanjeStrojaNaPrimku_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#332-upravljanje-primkama");
+            }
         }
     }
 }

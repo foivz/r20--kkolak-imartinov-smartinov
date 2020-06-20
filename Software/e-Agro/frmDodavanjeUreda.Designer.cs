@@ -146,6 +146,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje ureda";
             this.Load += new System.EventHandler(this.frmDodavanjeUreda_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeUreda_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

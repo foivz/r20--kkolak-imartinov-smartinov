@@ -34,6 +34,7 @@ namespace e_Agro
 
         private void frmPopisDobavljaca_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             OsvjeziTablicu();
         }
 
@@ -75,6 +76,12 @@ namespace e_Agro
             Show();
         }
 
-        
+        private void frmPopisDobavljaca_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#325-upravljanje-dobavlja%C4%8Dima");
+            }
+        }
     }
 }

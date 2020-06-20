@@ -66,5 +66,18 @@ namespace e_Agro
                 }
             }
         }
+
+        private void frmSkladistar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#33-skladi%C5%A1tar");
+            }
+        }
+
+        private void frmSkladistar_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+        }
     }
 }

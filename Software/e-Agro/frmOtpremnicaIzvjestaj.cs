@@ -21,6 +21,7 @@ namespace e_Agro
 
         private void frmOtpremnicaIzvjestaj_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             List<stavke_na_otpremnici> popisStavki = new List<stavke_na_otpremnici>();
             List<katalog_strojeva> popisStrojeva = new List<katalog_strojeva>();
             var korisnik = new korisnik();
@@ -49,6 +50,14 @@ namespace e_Agro
             korisnikBindingSource.DataSource = korisnik;
             katalog_strojevaBindingSource.DataSource = popisStrojeva;
             this.rvOtpremnica.RefreshReport();
+        }
+
+        private void frmOtpremnicaIzvjestaj_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#331-upravljanje-otpremnicama");
+            }
         }
     }
 }

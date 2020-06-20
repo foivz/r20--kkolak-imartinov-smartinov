@@ -104,6 +104,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis skladišta";
             this.Load += new System.EventHandler(this.frmPopisSkladista_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisSkladista_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkladista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

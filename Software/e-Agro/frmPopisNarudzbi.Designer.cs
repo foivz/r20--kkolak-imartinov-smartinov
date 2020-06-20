@@ -142,6 +142,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis narudžbi";
             this.Load += new System.EventHandler(this.frmPopisNarudzbi_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisNarudzbi_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNarudzbe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaNarudzbi)).EndInit();
             this.ResumeLayout(false);

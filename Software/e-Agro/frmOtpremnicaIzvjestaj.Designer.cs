@@ -33,16 +33,32 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.rvOtpremnica = new Microsoft.Reporting.WinForms.ReportViewer();
             this.otpremnicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stavke_na_otpremniciBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.korisnikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.katalog_strojevaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rvOtpremnica = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.otpremnicaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavke_na_otpremniciBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.katalog_strojevaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // otpremnicaBindingSource
+            // 
+            this.otpremnicaBindingSource.DataSource = typeof(e_Agro.otpremnica);
+            // 
+            // stavke_na_otpremniciBindingSource
+            // 
+            this.stavke_na_otpremniciBindingSource.DataSource = typeof(e_Agro.stavke_na_otpremnici);
+            // 
+            // korisnikBindingSource
+            // 
+            this.korisnikBindingSource.DataSource = typeof(e_Agro.korisnik);
+            // 
+            // katalog_strojevaBindingSource
+            // 
+            this.katalog_strojevaBindingSource.DataSource = typeof(e_Agro.katalog_strojeva);
             // 
             // rvOtpremnica
             // 
@@ -66,22 +82,6 @@
             this.rvOtpremnica.Size = new System.Drawing.Size(800, 450);
             this.rvOtpremnica.TabIndex = 0;
             // 
-            // otpremnicaBindingSource
-            // 
-            this.otpremnicaBindingSource.DataSource = typeof(e_Agro.otpremnica);
-            // 
-            // stavke_na_otpremniciBindingSource
-            // 
-            this.stavke_na_otpremniciBindingSource.DataSource = typeof(e_Agro.stavke_na_otpremnici);
-            // 
-            // korisnikBindingSource
-            // 
-            this.korisnikBindingSource.DataSource = typeof(e_Agro.korisnik);
-            // 
-            // katalog_strojevaBindingSource
-            // 
-            this.katalog_strojevaBindingSource.DataSource = typeof(e_Agro.katalog_strojeva);
-            // 
             // frmOtpremnicaIzvjestaj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +91,7 @@
             this.Name = "frmOtpremnicaIzvjestaj";
             this.Text = "frmOtpremnicaIzvjestaj";
             this.Load += new System.EventHandler(this.frmOtpremnicaIzvjestaj_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmOtpremnicaIzvjestaj_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.otpremnicaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavke_na_otpremniciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).EndInit();

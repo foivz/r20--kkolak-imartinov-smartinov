@@ -35,9 +35,9 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ponudaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stavke_na_ponudiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rvPonuda = new Microsoft.Reporting.WinForms.ReportViewer();
             this.korisnikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.katalog_strojevaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rvPonuda = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.ponudaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavke_na_ponudiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).BeginInit();
@@ -51,6 +51,14 @@
             // stavke_na_ponudiBindingSource
             // 
             this.stavke_na_ponudiBindingSource.DataSource = typeof(e_Agro.stavke_na_ponudi);
+            // 
+            // korisnikBindingSource
+            // 
+            this.korisnikBindingSource.DataSource = typeof(e_Agro.korisnik);
+            // 
+            // katalog_strojevaBindingSource
+            // 
+            this.katalog_strojevaBindingSource.DataSource = typeof(e_Agro.katalog_strojeva);
             // 
             // rvPonuda
             // 
@@ -74,14 +82,6 @@
             this.rvPonuda.Size = new System.Drawing.Size(800, 450);
             this.rvPonuda.TabIndex = 0;
             // 
-            // korisnikBindingSource
-            // 
-            this.korisnikBindingSource.DataSource = typeof(e_Agro.korisnik);
-            // 
-            // katalog_strojevaBindingSource
-            // 
-            this.katalog_strojevaBindingSource.DataSource = typeof(e_Agro.katalog_strojeva);
-            // 
             // frmPonudaIzvjestaj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +91,7 @@
             this.Name = "frmPonudaIzvjestaj";
             this.Text = "frmPonudaIzvjestaj";
             this.Load += new System.EventHandler(this.frmPonudaIzvjestaj_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPonudaIzvjestaj_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.ponudaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavke_na_ponudiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).EndInit();

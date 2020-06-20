@@ -104,6 +104,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis klijenata";
             this.Load += new System.EventHandler(this.frmPopisKlijenata_Load_1);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisKlijenata_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKlijenti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
