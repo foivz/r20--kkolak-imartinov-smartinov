@@ -84,7 +84,7 @@ namespace e_Agro
         private void btnPosalji_Click(object sender, EventArgs e)
         {
             Hide();
-            using(var forma = new frmSlanjeEmaila())
+            using(var forma = new frmSlanjeEmaila("Ponuda"))
             {
                 forma.ShowDialog();
             }
