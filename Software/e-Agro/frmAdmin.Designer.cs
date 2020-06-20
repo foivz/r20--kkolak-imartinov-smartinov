@@ -152,6 +152,7 @@
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmAdmin_KeyDown);
             this.panelZaposlenik.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

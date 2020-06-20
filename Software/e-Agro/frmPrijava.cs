@@ -86,5 +86,14 @@ namespace e_Agro
             }
             Show();
         }
+
+        private void frmPrijava_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                MessageBox.Show("F1");
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#2-prijava-u-sustav");
+            }
+        }
     }
 }
