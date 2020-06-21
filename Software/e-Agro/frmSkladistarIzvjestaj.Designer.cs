@@ -73,7 +73,7 @@
             this.cmbSkladiste.FormattingEnabled = true;
             this.cmbSkladiste.Location = new System.Drawing.Point(16, 85);
             this.cmbSkladiste.Name = "cmbSkladiste";
-            this.cmbSkladiste.Size = new System.Drawing.Size(121, 21);
+            this.cmbSkladiste.Size = new System.Drawing.Size(207, 21);
             this.cmbSkladiste.TabIndex = 12;
             // 
             // frmSkladistarIzvjestaj

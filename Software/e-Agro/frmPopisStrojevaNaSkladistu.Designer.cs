@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblNaslov = new System.Windows.Forms.Label();
             this.btnAzuriraj = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
@@ -41,7 +43,7 @@
             this.lblNaslov.AutoSize = true;
             this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslov.ForeColor = System.Drawing.Color.White;
-            this.lblNaslov.Location = new System.Drawing.Point(344, 9);
+            this.lblNaslov.Location = new System.Drawing.Point(156, 9);
             this.lblNaslov.Name = "lblNaslov";
             this.lblNaslov.Size = new System.Drawing.Size(191, 23);
             this.lblNaslov.TabIndex = 36;
@@ -50,7 +52,7 @@
             // btnAzuriraj
             // 
             this.btnAzuriraj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAzuriraj.Location = new System.Drawing.Point(362, 57);
+            this.btnAzuriraj.Location = new System.Drawing.Point(327, 57);
             this.btnAzuriraj.Name = "btnAzuriraj";
             this.btnAzuriraj.Size = new System.Drawing.Size(150, 44);
             this.btnAzuriraj.TabIndex = 35;
@@ -61,7 +63,7 @@
             // btnObrisi
             // 
             this.btnObrisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnObrisi.Location = new System.Drawing.Point(206, 57);
+            this.btnObrisi.Location = new System.Drawing.Point(171, 57);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(150, 44);
             this.btnObrisi.TabIndex = 34;
@@ -72,7 +74,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(50, 57);
+            this.btnDodaj.Location = new System.Drawing.Point(15, 57);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(150, 44);
             this.btnDodaj.TabIndex = 33;
@@ -82,10 +84,20 @@
             // 
             // dgvStrojeviNaSkladistu
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStrojeviNaSkladistu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStrojeviNaSkladistu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStrojeviNaSkladistu.Location = new System.Drawing.Point(50, 108);
+            this.dgvStrojeviNaSkladistu.Location = new System.Drawing.Point(57, 107);
             this.dgvStrojeviNaSkladistu.Name = "dgvStrojeviNaSkladistu";
-            this.dgvStrojeviNaSkladistu.Size = new System.Drawing.Size(679, 266);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvStrojeviNaSkladistu.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvStrojeviNaSkladistu.Size = new System.Drawing.Size(357, 266);
             this.dgvStrojeviNaSkladistu.TabIndex = 31;
             // 
             // frmPopisStrojevaNaSkladistu
@@ -93,7 +105,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(866, 404);
+            this.ClientSize = new System.Drawing.Size(489, 404);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);

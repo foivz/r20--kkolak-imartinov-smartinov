@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblNaslov = new System.Windows.Forms.Label();
             this.btnAzuriraj = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
@@ -46,7 +50,7 @@
             this.lblNaslov.AutoSize = true;
             this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslov.ForeColor = System.Drawing.Color.White;
-            this.lblNaslov.Location = new System.Drawing.Point(306, 9);
+            this.lblNaslov.Location = new System.Drawing.Point(257, 9);
             this.lblNaslov.Name = "lblNaslov";
             this.lblNaslov.Size = new System.Drawing.Size(121, 23);
             this.lblNaslov.TabIndex = 27;
@@ -55,9 +59,9 @@
             // btnAzuriraj
             // 
             this.btnAzuriraj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAzuriraj.Location = new System.Drawing.Point(324, 65);
+            this.btnAzuriraj.Location = new System.Drawing.Point(368, 232);
             this.btnAzuriraj.Name = "btnAzuriraj";
-            this.btnAzuriraj.Size = new System.Drawing.Size(150, 37);
+            this.btnAzuriraj.Size = new System.Drawing.Size(194, 37);
             this.btnAzuriraj.TabIndex = 26;
             this.btnAzuriraj.Text = "Ažuriraj otpremnicu";
             this.btnAzuriraj.UseVisualStyleBackColor = true;
@@ -66,9 +70,9 @@
             // btnObrisi
             // 
             this.btnObrisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnObrisi.Location = new System.Drawing.Point(168, 65);
+            this.btnObrisi.Location = new System.Drawing.Point(368, 155);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(150, 37);
+            this.btnObrisi.Size = new System.Drawing.Size(194, 37);
             this.btnObrisi.TabIndex = 25;
             this.btnObrisi.Text = "Obriši otpremnicu";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -77,9 +81,9 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(12, 65);
+            this.btnDodaj.Location = new System.Drawing.Point(368, 81);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(150, 37);
+            this.btnDodaj.Size = new System.Drawing.Size(194, 37);
             this.btnDodaj.TabIndex = 24;
             this.btnDodaj.Text = "Dodaj otpremnicu";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -87,19 +91,39 @@
             // 
             // dgvOtpremnice
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvOtpremnice.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvOtpremnice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOtpremnice.Location = new System.Drawing.Point(12, 108);
+            this.dgvOtpremnice.Location = new System.Drawing.Point(12, 81);
             this.dgvOtpremnice.Name = "dgvOtpremnice";
-            this.dgvOtpremnice.Size = new System.Drawing.Size(679, 267);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvOtpremnice.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvOtpremnice.Size = new System.Drawing.Size(343, 267);
             this.dgvOtpremnice.TabIndex = 21;
             this.dgvOtpremnice.SelectionChanged += new System.EventHandler(this.dgvOtpremnice_SelectionChanged);
             // 
             // dgvStavkeNaOtpremnici
             // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStavkeNaOtpremnici.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStavkeNaOtpremnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStavkeNaOtpremnici.Location = new System.Drawing.Point(12, 427);
             this.dgvStavkeNaOtpremnici.Name = "dgvStavkeNaOtpremnici";
-            this.dgvStavkeNaOtpremnici.Size = new System.Drawing.Size(679, 201);
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvStavkeNaOtpremnici.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvStavkeNaOtpremnici.Size = new System.Drawing.Size(544, 201);
             this.dgvStavkeNaOtpremnici.TabIndex = 28;
             // 
             // btnDodajStroj
@@ -118,7 +142,7 @@
             this.lblNaslovStavke.AutoSize = true;
             this.lblNaslovStavke.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslovStavke.ForeColor = System.Drawing.Color.White;
-            this.lblNaslovStavke.Location = new System.Drawing.Point(267, 401);
+            this.lblNaslovStavke.Location = new System.Drawing.Point(189, 401);
             this.lblNaslovStavke.Name = "lblNaslovStavke";
             this.lblNaslovStavke.Size = new System.Drawing.Size(207, 23);
             this.lblNaslovStavke.TabIndex = 30;
@@ -127,7 +151,7 @@
             // btnIspisi
             // 
             this.btnIspisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIspisi.Location = new System.Drawing.Point(480, 65);
+            this.btnIspisi.Location = new System.Drawing.Point(368, 311);
             this.btnIspisi.Name = "btnIspisi";
             this.btnIspisi.Size = new System.Drawing.Size(194, 37);
             this.btnIspisi.TabIndex = 31;
@@ -140,7 +164,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(801, 689);
+            this.ClientSize = new System.Drawing.Size(578, 689);
             this.Controls.Add(this.btnIspisi);
             this.Controls.Add(this.lblNaslovStavke);
             this.Controls.Add(this.btnDodajStroj);
