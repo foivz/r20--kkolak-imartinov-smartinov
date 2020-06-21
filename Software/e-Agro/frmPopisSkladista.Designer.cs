@@ -84,6 +84,7 @@
             // 
             // dgvSkladista
             // 
+            this.dgvSkladista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -93,11 +94,11 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvSkladista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSkladista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSkladista.Location = new System.Drawing.Point(59, 102);
+            this.dgvSkladista.Location = new System.Drawing.Point(12, 102);
             this.dgvSkladista.Name = "dgvSkladista";
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvSkladista.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvSkladista.Size = new System.Drawing.Size(145, 258);
+            this.dgvSkladista.Size = new System.Drawing.Size(232, 258);
             this.dgvSkladista.TabIndex = 7;
             // 
             // frmPopisSkladista

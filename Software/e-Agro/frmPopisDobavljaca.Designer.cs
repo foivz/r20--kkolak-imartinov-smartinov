@@ -45,7 +45,7 @@
             this.lblNaslov.AutoSize = true;
             this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslov.ForeColor = System.Drawing.Color.White;
-            this.lblNaslov.Location = new System.Drawing.Point(118, 9);
+            this.lblNaslov.Location = new System.Drawing.Point(222, 9);
             this.lblNaslov.Name = "lblNaslov";
             this.lblNaslov.Size = new System.Drawing.Size(112, 23);
             this.lblNaslov.TabIndex = 27;
@@ -67,7 +67,7 @@
             this.btnObrisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnObrisi.Location = new System.Drawing.Point(176, 366);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(140, 37);
+            this.btnObrisi.Size = new System.Drawing.Size(158, 37);
             this.btnObrisi.TabIndex = 25;
             this.btnObrisi.Text = "Obriši dobavljača";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -86,6 +86,7 @@
             // 
             // dgvDobavljaci
             // 
+            this.dgvDobavljaci.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,7 +108,7 @@
             this.dgvDobavljaci.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDobavljaci.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvDobavljaci.Size = new System.Drawing.Size(344, 258);
+            this.dgvDobavljaci.Size = new System.Drawing.Size(531, 258);
             this.dgvDobavljaci.TabIndex = 21;
             // 
             // btnIzvjestaj
@@ -126,7 +127,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(368, 491);
+            this.ClientSize = new System.Drawing.Size(561, 491);
             this.Controls.Add(this.btnIzvjestaj);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);

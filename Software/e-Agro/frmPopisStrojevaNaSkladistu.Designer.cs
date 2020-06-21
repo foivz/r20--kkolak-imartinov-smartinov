@@ -84,6 +84,7 @@
             // 
             // dgvStrojeviNaSkladistu
             // 
+            this.dgvStrojeviNaSkladistu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -93,11 +94,11 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvStrojeviNaSkladistu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStrojeviNaSkladistu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStrojeviNaSkladistu.Location = new System.Drawing.Point(57, 107);
+            this.dgvStrojeviNaSkladistu.Location = new System.Drawing.Point(15, 117);
             this.dgvStrojeviNaSkladistu.Name = "dgvStrojeviNaSkladistu";
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvStrojeviNaSkladistu.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvStrojeviNaSkladistu.Size = new System.Drawing.Size(357, 266);
+            this.dgvStrojeviNaSkladistu.Size = new System.Drawing.Size(462, 266);
             this.dgvStrojeviNaSkladistu.TabIndex = 31;
             // 
             // frmPopisStrojevaNaSkladistu

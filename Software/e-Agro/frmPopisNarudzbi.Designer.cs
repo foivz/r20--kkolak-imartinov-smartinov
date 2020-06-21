@@ -90,6 +90,7 @@
             // 
             // dgvNarudzbe
             // 
+            this.dgvNarudzbe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -103,7 +104,7 @@
             this.dgvNarudzbe.Name = "dgvNarudzbe";
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvNarudzbe.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvNarudzbe.Size = new System.Drawing.Size(243, 258);
+            this.dgvNarudzbe.Size = new System.Drawing.Size(545, 258);
             this.dgvNarudzbe.TabIndex = 21;
             this.dgvNarudzbe.SelectionChanged += new System.EventHandler(this.dgvNarudzbe_SelectionChanged);
             // 
