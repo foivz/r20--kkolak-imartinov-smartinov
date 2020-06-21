@@ -44,7 +44,7 @@ namespace e_Agro
             }
         }
 
-        public void AzurirajStrojNaSKladistu(stroj_na_skladistu odabraniStrojNaSKladistu, katalog_strojeva stroj, skladiste skladiste, int kolicina)
+        public void AzurirajStrojNaSKladistu(stroj_na_skladistu odabraniStrojNaSKladistu, int kolicina)
         {
             using (var context = new PI20_024_DBEntities())
             {

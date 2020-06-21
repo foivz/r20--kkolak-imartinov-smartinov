@@ -78,7 +78,7 @@ namespace e_Agro
             }
                 if (odabraniStrojNaSkladistu!= null)
             {
-                strojeviNaSkladistu.AzurirajStrojNaSKladistu(odabraniStrojNaSkladistu, odabraniStroj, odabranoSkladiste, kolicina);
+                strojeviNaSkladistu.AzurirajStrojNaSKladistu(odabraniStrojNaSkladistu, kolicina);
             }
             else
             {
