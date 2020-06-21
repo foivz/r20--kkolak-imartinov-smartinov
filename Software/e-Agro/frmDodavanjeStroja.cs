@@ -48,13 +48,14 @@ namespace e_Agro
                 cmbDobavljac.SelectedItem = odabraniStroj.dobavljac;
                 this.Text = "Ažuriranje kataloga strojeva";
                 btnDodaj.Text = "Ažuriraj katalog strojeva";
-                lblNaslov.Text = "Ažuriranje kataloga strojeva";
+                lblNaslov.Text = "Ažuriraj katalog strojeva";
             }
             UcitajCombo();
         }
 
         private void frmDodavanjeStroja_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             UcitajGUI();
         }
 
@@ -101,6 +102,14 @@ namespace e_Agro
             }
 
             Close();
+        }
+
+        private void frmDodavanjeStroja_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#321-katalog-strojeva");
+            }
         }
     }
 }

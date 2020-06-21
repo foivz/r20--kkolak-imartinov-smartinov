@@ -132,7 +132,7 @@
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodaj.Location = new System.Drawing.Point(51, 475);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(120, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(155, 34);
             this.btnDodaj.TabIndex = 52;
             this.btnDodaj.Text = "Dodaj korisnika";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -280,6 +280,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje korisnika";
             this.Load += new System.EventHandler(this.frmDodavanjeKorisnika_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeKorisnika_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -69,9 +69,9 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(64, 179);
+            this.btnDodaj.Location = new System.Drawing.Point(53, 179);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(120, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(148, 34);
             this.btnDodaj.TabIndex = 24;
             this.btnDodaj.Text = "Dodaj skladište";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -124,6 +124,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje skladišta";
             this.Load += new System.EventHandler(this.frmDodavanjeSkladista_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeSkladista_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,14 +33,12 @@
             this.cmbDobavljac = new System.Windows.Forms.ComboBox();
             this.lblDobavljac = new System.Windows.Forms.Label();
             this.lblNaslov = new System.Windows.Forms.Label();
-            this.lblCijena = new System.Windows.Forms.Label();
-            this.txtCijena = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(190, 221);
+            this.btnOdustani.Location = new System.Drawing.Point(190, 159);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 51;
@@ -51,7 +49,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(36, 221);
+            this.btnDodaj.Location = new System.Drawing.Point(36, 159);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(130, 34);
             this.btnDodaj.TabIndex = 50;
@@ -89,35 +87,15 @@
             this.lblNaslov.TabIndex = 55;
             this.lblNaslov.Text = "Dodaj novu narudžbu";
             // 
-            // lblCijena
-            // 
-            this.lblCijena.AutoSize = true;
-            this.lblCijena.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCijena.ForeColor = System.Drawing.Color.White;
-            this.lblCijena.Location = new System.Drawing.Point(33, 145);
-            this.lblCijena.Name = "lblCijena";
-            this.lblCijena.Size = new System.Drawing.Size(54, 17);
-            this.lblCijena.TabIndex = 48;
-            this.lblCijena.Text = "Cijena:";
-            // 
-            // txtCijena
-            // 
-            this.txtCijena.Location = new System.Drawing.Point(36, 165);
-            this.txtCijena.Name = "txtCijena";
-            this.txtCijena.Size = new System.Drawing.Size(121, 20);
-            this.txtCijena.TabIndex = 49;
-            // 
             // frmDodavanjeNarudzbi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(311, 267);
+            this.ClientSize = new System.Drawing.Size(311, 213);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbDobavljac);
             this.Controls.Add(this.lblDobavljac);
-            this.Controls.Add(this.txtCijena);
-            this.Controls.Add(this.lblCijena);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -125,6 +103,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje narudžbi";
             this.Load += new System.EventHandler(this.frmDodavanjeNarudzbi_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeNarudzbi_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,7 +115,5 @@
         private System.Windows.Forms.ComboBox cmbDobavljac;
         private System.Windows.Forms.Label lblDobavljac;
         private System.Windows.Forms.Label lblNaslov;
-        private System.Windows.Forms.Label lblCijena;
-        private System.Windows.Forms.TextBox txtCijena;
     }
 }

@@ -60,14 +60,6 @@ namespace e_Agro
                 MessageBox.Show("Ne postoji korisnik za unesene podatke!");
         }
 
-        private void txtLozinka_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnPrijava.PerformClick();
-            }
-        }
-
         private void txtKorisnickoIme_Click(object sender, EventArgs e)
         {
             txtKorisnickoIme.Clear();
@@ -93,6 +85,12 @@ namespace e_Agro
             {
                 System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija");
             }
+        }
+
+        private void frmPrijava_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.AcceptButton = this.btnPrijava;
         }
     }
 }

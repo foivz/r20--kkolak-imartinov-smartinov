@@ -77,6 +77,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Graf profita i prodaje";
             this.Load += new System.EventHandler(this.frmProdajniReferentGraf_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmProdajniReferentGraf_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.chartProdaja)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -41,10 +41,9 @@ namespace e_Agro
             if (odabranaNarudzba != null)
             {
                 cmbDobavljac.SelectedItem = odabranaNarudzba.dobavljac;
-                txtCijena.Text = odabranaNarudzba.cijena.ToString();
-                btnDodaj.Text = "Ažuriraj narudžbu";
-                this.Text = "Ažuriranje narudžbe";
-                lblNaslov.Text = "Ažuriranje narudžbe";
+                btnDodaj.Text = "Ažuriraj";
+                this.Text = "Ažuriranje narudžbu";
+                lblNaslov.Text = "Ažuriraj narudžbu";
             }
             UcitajCombo();
         }
@@ -55,15 +54,15 @@ namespace e_Agro
 
         private void frmDodavanjeNarudzbi_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             UcitajGUI();
         }
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             dobavljac dobavljac = cmbDobavljac.SelectedItem as dobavljac;
-            double cijena = double.Parse(txtCijena.Text);
 
-            if (string.IsNullOrEmpty(cmbDobavljac.Text) || txtCijena.Text == "")
+            if (string.IsNullOrEmpty(cmbDobavljac.Text))
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
@@ -71,13 +70,21 @@ namespace e_Agro
 
             if (odabranaNarudzba != null)
             {
-                narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, cijena);
+                narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, odabranaNarudzba.cijena);
             }
             else
             {
-                narudzbe.DodajNarudzbu(dobavljac, cijena);
+                narudzbe.DodajNarudzbu(dobavljac, 0);
             }
             Close();
+        }
+
+        private void frmDodavanjeNarudzbi_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#323-upravljanje-narud%C5%BEbama");
+            }
         }
     }
 }

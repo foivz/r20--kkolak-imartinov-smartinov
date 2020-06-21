@@ -30,8 +30,6 @@
         {
             this.lblDatumKreiranja = new System.Windows.Forms.Label();
             this.dtpDatumKreiranja = new System.Windows.Forms.DateTimePicker();
-            this.txtCijena = new System.Windows.Forms.TextBox();
-            this.lblCijena = new System.Windows.Forms.Label();
             this.lblKreirao = new System.Windows.Forms.Label();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
@@ -61,24 +59,6 @@
             this.dtpDatumKreiranja.Size = new System.Drawing.Size(200, 20);
             this.dtpDatumKreiranja.TabIndex = 48;
             // 
-            // txtCijena
-            // 
-            this.txtCijena.Location = new System.Drawing.Point(185, 163);
-            this.txtCijena.Name = "txtCijena";
-            this.txtCijena.Size = new System.Drawing.Size(121, 20);
-            this.txtCijena.TabIndex = 47;
-            // 
-            // lblCijena
-            // 
-            this.lblCijena.AutoSize = true;
-            this.lblCijena.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCijena.ForeColor = System.Drawing.Color.White;
-            this.lblCijena.Location = new System.Drawing.Point(182, 143);
-            this.lblCijena.Name = "lblCijena";
-            this.lblCijena.Size = new System.Drawing.Size(54, 17);
-            this.lblCijena.TabIndex = 46;
-            this.lblCijena.Text = "Cijena:";
-            // 
             // lblKreirao
             // 
             this.lblKreirao.AutoSize = true;
@@ -93,7 +73,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(174, 366);
+            this.btnOdustani.Location = new System.Drawing.Point(214, 366);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 43;
@@ -106,7 +86,7 @@
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodaj.Location = new System.Drawing.Point(40, 366);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(120, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(168, 34);
             this.btnDodaj.TabIndex = 42;
             this.btnDodaj.Text = "Dodaj ponudu";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -182,8 +162,6 @@
             this.Controls.Add(this.lblNaziv);
             this.Controls.Add(this.lblDatumKreiranja);
             this.Controls.Add(this.dtpDatumKreiranja);
-            this.Controls.Add(this.txtCijena);
-            this.Controls.Add(this.lblCijena);
             this.Controls.Add(this.lblKreirao);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
@@ -192,6 +170,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje ponude";
             this.Load += new System.EventHandler(this.frmDodavanjePonude_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjePonude_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,8 +180,6 @@
 
         private System.Windows.Forms.Label lblDatumKreiranja;
         private System.Windows.Forms.DateTimePicker dtpDatumKreiranja;
-        private System.Windows.Forms.TextBox txtCijena;
-        private System.Windows.Forms.Label lblCijena;
         private System.Windows.Forms.Label lblKreirao;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;

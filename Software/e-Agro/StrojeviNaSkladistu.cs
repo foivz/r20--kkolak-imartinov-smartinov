@@ -44,13 +44,11 @@ namespace e_Agro
             }
         }
 
-        public void AzurirajStrojNaSKladistu(stroj_na_skladistu odabraniStrojNaSKladistu, katalog_strojeva stroj, skladiste skladiste, int kolicina)
+        public void AzurirajStrojNaSKladistu(stroj_na_skladistu odabraniStrojNaSKladistu, int kolicina)
         {
             using (var context = new PI20_024_DBEntities())
             {
                 context.Entry(odabraniStrojNaSKladistu).State = EntityState.Modified;
-                odabraniStrojNaSKladistu.stroj_id = stroj.stroj_id;
-                odabraniStrojNaSKladistu.skladiste_id = skladiste.skladiste_id;
                 odabraniStrojNaSKladistu.kolicina = kolicina;
                 context.SaveChanges();
             }

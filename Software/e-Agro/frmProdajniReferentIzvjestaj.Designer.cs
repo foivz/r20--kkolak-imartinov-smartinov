@@ -72,7 +72,7 @@
             this.cmbDobavljac.FormattingEnabled = true;
             this.cmbDobavljac.Location = new System.Drawing.Point(41, 85);
             this.cmbDobavljac.Name = "cmbDobavljac";
-            this.cmbDobavljac.Size = new System.Drawing.Size(121, 21);
+            this.cmbDobavljac.Size = new System.Drawing.Size(195, 21);
             this.cmbDobavljac.TabIndex = 8;
             // 
             // frmProdajniReferentIzvjestaj
@@ -90,6 +90,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prikaz dobavljača strojeva";
             this.Load += new System.EventHandler(this.frmProdajniReferentIzvjestaj_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmProdajniReferentIzvjestaj_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

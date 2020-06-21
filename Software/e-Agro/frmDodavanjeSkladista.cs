@@ -46,7 +46,7 @@ namespace e_Agro
                 txtNaziv.Text = odabranoSkladiste.naziv;
                 this.Text = "Ažuriranje skladišta";
                 btnDodaj.Text = "Ažuriraj skladište";
-                lblNaslov.Text = "Ažuriranje skladišta";
+                lblNaslov.Text = "Ažuriraj skladište";
             }
         }
 
@@ -56,6 +56,7 @@ namespace e_Agro
         }
         private void frmDodavanjeSkladista_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             UcitajGUI();
         }
 
@@ -79,6 +80,14 @@ namespace e_Agro
                 skladista.DodajSkladiste(naziv, adresa);
             }
             Close();
+        }
+
+        private void frmDodavanjeSkladista_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#311-upravljanje-skladi%C5%A1tem");
+            }
         }
     }
 }

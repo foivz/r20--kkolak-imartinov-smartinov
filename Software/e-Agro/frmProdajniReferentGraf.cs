@@ -23,7 +23,7 @@ namespace e_Agro
 
         private void frmProdajniReferentGraf_Load(object sender, EventArgs e)
         {
-
+            this.KeyPreview = true;
             chartProdaja.Titles.Add("Prodaja po vrsti strojeva");
 
             var popisPonuda = new List<ponuda>();
@@ -46,6 +46,14 @@ namespace e_Agro
                 {
                     chartProdaja.Series[0].Points.AddXY(stavka.katalog_strojeva.vrsta, stavka.katalog_strojeva.cijena);
                 }
+            }
+        }
+
+        private void frmProdajniReferentGraf_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#326-pregled-uspje%C5%A1nosti");
             }
         }
     }

@@ -53,7 +53,7 @@
             this.cmbStrojevi.FormattingEnabled = true;
             this.cmbStrojevi.Location = new System.Drawing.Point(29, 83);
             this.cmbStrojevi.Name = "cmbStrojevi";
-            this.cmbStrojevi.Size = new System.Drawing.Size(121, 21);
+            this.cmbStrojevi.Size = new System.Drawing.Size(245, 21);
             this.cmbStrojevi.TabIndex = 1;
             // 
             // label2
@@ -61,7 +61,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(211, 63);
+            this.label2.Location = new System.Drawing.Point(24, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 17);
             this.label2.TabIndex = 3;
@@ -70,7 +70,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(214, 139);
+            this.btnOdustani.Location = new System.Drawing.Point(156, 216);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(120, 34);
             this.btnOdustani.TabIndex = 27;
@@ -81,7 +81,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(30, 139);
+            this.btnDodaj.Location = new System.Drawing.Point(30, 216);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(120, 34);
             this.btnDodaj.TabIndex = 26;
@@ -91,7 +91,7 @@
             // 
             // txtKolicina
             // 
-            this.txtKolicina.Location = new System.Drawing.Point(214, 84);
+            this.txtKolicina.Location = new System.Drawing.Point(27, 160);
             this.txtKolicina.Name = "txtKolicina";
             this.txtKolicina.Size = new System.Drawing.Size(100, 20);
             this.txtKolicina.TabIndex = 28;
@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(361, 202);
+            this.ClientSize = new System.Drawing.Size(309, 282);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtKolicina);
             this.Controls.Add(this.btnOdustani);
@@ -125,6 +125,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje stavke na otpremnicu";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaOtpremnicu_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeStrojaNaOtpremnicu_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

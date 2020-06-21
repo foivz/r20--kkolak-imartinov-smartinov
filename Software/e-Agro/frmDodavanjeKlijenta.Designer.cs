@@ -100,7 +100,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(184, 287);
+            this.btnOdustani.Location = new System.Drawing.Point(222, 287);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 33;
@@ -113,7 +113,7 @@
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodaj.Location = new System.Drawing.Point(42, 287);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(110, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(160, 34);
             this.btnDodaj.TabIndex = 32;
             this.btnDodaj.Text = "Dodaj klijenta";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -171,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(317, 333);
+            this.ClientSize = new System.Drawing.Size(362, 333);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.txtTekuciRacun);
             this.Controls.Add(this.lblTekuciRacun);
@@ -190,6 +190,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje klijenta";
             this.Load += new System.EventHandler(this.frmDodavanjeKlijenta_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeKlijenta_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

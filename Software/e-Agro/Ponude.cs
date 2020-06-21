@@ -54,7 +54,6 @@ namespace e_Agro
             using(var context = new PI20_024_DBEntities())
             {
                 context.ponudas.Attach(ponuda);
-                context.ponudas.Remove(ponuda);
                 var query = from s in ponuda.stavke_na_ponudi
                             where s.ponuda_id == ponuda.ponuda_id
                             select s;
@@ -65,6 +64,7 @@ namespace e_Agro
                     context.stavke_na_ponudi.Attach(stavka);
                     context.stavke_na_ponudi.Remove(stavka);
                 }
+                context.ponudas.Remove(ponuda);
                 context.SaveChanges();
             }
         }

@@ -21,8 +21,9 @@ namespace e_Agro
 
         private void frmPrikazIzvjestajaProdajniRefrent_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             List<katalog_strojeva> popisStrojeva = new List<katalog_strojeva>();
-            using(var context = new PI20_024_DBEntities())
+            using (var context = new PI20_024_DBEntities())
             {
                 var query = from k in context.katalog_strojeva
                             where k.dobavljac_id == odabraniDobavljac.dobavljac_id
@@ -35,6 +36,14 @@ namespace e_Agro
             dobavljacBindingSource.DataSource = odabraniDobavljac;
 
             this.rpvDobavljacStrojeva.RefreshReport();
+        }
+
+        private void frmPrikazIzvjestajaProdajniRefrent_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#325-upravljanje-dobavlja%C4%8Dima");
+            }
         }
     }
 }

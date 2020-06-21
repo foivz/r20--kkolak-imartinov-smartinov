@@ -45,15 +45,19 @@ namespace e_Agro
             {
                 cmbStrojevi.SelectedItem = odabraniStrojNaSkladistu.katalog_strojeva;
                 cmbSkladiste.SelectedItem = odabraniStrojNaSkladistu.skladiste;
+                cmbStrojevi.Enabled = false;
+                cmbSkladiste.Enabled = false;
                 txtKolicina.Text = odabraniStrojNaSkladistu.kolicina.ToString();
-                btnDodaj.Text = "Ažuriraj stroj na skladištu";
+                btnDodaj.Text = "Ažuriraj";
                 this.Text = "Ažuriranje stroja na skladištu";
+                lblNaslov.Text = "Ažuriraj stroj na skladištu";
             }
             UcitajCombo();
         }
         private void frmDodavanjeStrojaNaSkladiste_Load(object sender, EventArgs e)
         {
-            UcitajGUI();  
+            this.KeyPreview = true;
+            UcitajGUI();
         }
 
         private void btnOdustani_Click(object sender, EventArgs e)
@@ -74,13 +78,21 @@ namespace e_Agro
             }
                 if (odabraniStrojNaSkladistu!= null)
             {
-                strojeviNaSkladistu.AzurirajStrojNaSKladistu(odabraniStrojNaSkladistu, odabraniStroj, odabranoSkladiste, kolicina);
+                strojeviNaSkladistu.AzurirajStrojNaSKladistu(odabraniStrojNaSkladistu, kolicina);
             }
             else
             {
                 strojeviNaSkladistu.DodajStrojNaSkladiste(odabraniStroj, odabranoSkladiste, kolicina);
             }
             Close();
+        }
+
+        private void frmDodavanjeStrojaNaSkladiste_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#333-dodavanje-strojeva-na-skladi%C5%A1te");
+            }
         }
     }
 }

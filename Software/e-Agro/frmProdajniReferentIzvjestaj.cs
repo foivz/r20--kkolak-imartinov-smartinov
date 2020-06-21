@@ -21,6 +21,7 @@ namespace e_Agro
 
         private void frmProdajniReferentIzvjestaj_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             cmbDobavljac.DataSource = dobavljaci.DohvatiDobavljace();
         }
 
@@ -38,6 +39,14 @@ namespace e_Agro
                 forma.ShowDialog();
             }
             Show();
+        }
+
+        private void frmProdajniReferentIzvjestaj_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#325-upravljanje-dobavlja%C4%8Dima");
+            }
         }
     }
 }

@@ -53,7 +53,18 @@ namespace e_Agro
 
         private void frmDodavanjeStrojaNaPonuda_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             cmbStrojevi.DataSource = strojevi.DohvatiStrojeve();
         }
+
+        private void frmDodavanjeStrojaNaPonuda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#322-upravljanje-ponudama");
+            }
+        }
+
+   
     }
 }

@@ -83,6 +83,7 @@ namespace e_Agro
 
         private void frmSlanjeEmaila_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             if(dolaznaForma == "Prijava")
             {
                 rtxtSadrzaj.Text = "Ime:\nPrezime:\nE-mail:\nKorisničko ime:\nLozinka:";
@@ -93,6 +94,14 @@ namespace e_Agro
                 lblUputa.Visible = true;
             }
 
+        }
+
+        private void frmSlanjeEmaila_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#2-prijava-u-sustav");
+            }
         }
     }
 }

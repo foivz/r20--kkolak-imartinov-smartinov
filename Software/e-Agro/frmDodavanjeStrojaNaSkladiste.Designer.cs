@@ -66,7 +66,7 @@
             this.cmbStrojevi.FormattingEnabled = true;
             this.cmbStrojevi.Location = new System.Drawing.Point(27, 104);
             this.cmbStrojevi.Name = "cmbStrojevi";
-            this.cmbStrojevi.Size = new System.Drawing.Size(121, 21);
+            this.cmbStrojevi.Size = new System.Drawing.Size(198, 21);
             this.cmbStrojevi.TabIndex = 33;
             // 
             // btnDodaj
@@ -85,7 +85,7 @@
             this.lblSkladiste.AutoSize = true;
             this.lblSkladiste.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSkladiste.ForeColor = System.Drawing.Color.White;
-            this.lblSkladiste.Location = new System.Drawing.Point(179, 84);
+            this.lblSkladiste.Location = new System.Drawing.Point(240, 84);
             this.lblSkladiste.Name = "lblSkladiste";
             this.lblSkladiste.Size = new System.Drawing.Size(67, 17);
             this.lblSkladiste.TabIndex = 31;
@@ -105,9 +105,9 @@
             // cmbSkladiste
             // 
             this.cmbSkladiste.FormattingEnabled = true;
-            this.cmbSkladiste.Location = new System.Drawing.Point(181, 104);
+            this.cmbSkladiste.Location = new System.Drawing.Point(242, 104);
             this.cmbSkladiste.Name = "cmbSkladiste";
-            this.cmbSkladiste.Size = new System.Drawing.Size(121, 21);
+            this.cmbSkladiste.Size = new System.Drawing.Size(160, 21);
             this.cmbSkladiste.TabIndex = 33;
             // 
             // lblKolicina
@@ -115,7 +115,7 @@
             this.lblKolicina.AutoSize = true;
             this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKolicina.ForeColor = System.Drawing.Color.White;
-            this.lblKolicina.Location = new System.Drawing.Point(331, 84);
+            this.lblKolicina.Location = new System.Drawing.Point(414, 84);
             this.lblKolicina.Name = "lblKolicina";
             this.lblKolicina.Size = new System.Drawing.Size(63, 17);
             this.lblKolicina.TabIndex = 31;
@@ -123,7 +123,7 @@
             // 
             // txtKolicina
             // 
-            this.txtKolicina.Location = new System.Drawing.Point(334, 104);
+            this.txtKolicina.Location = new System.Drawing.Point(417, 104);
             this.txtKolicina.Name = "txtKolicina";
             this.txtKolicina.Size = new System.Drawing.Size(100, 20);
             this.txtKolicina.TabIndex = 37;
@@ -147,6 +147,7 @@
             this.Name = "frmDodavanjeStrojaNaSkladiste";
             this.Text = "frmDodavanjeStrojaNaSkladiste";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaSkladiste_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeStrojaNaSkladiste_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

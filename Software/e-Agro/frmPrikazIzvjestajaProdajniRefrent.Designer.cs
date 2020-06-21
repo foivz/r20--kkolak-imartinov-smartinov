@@ -72,6 +72,7 @@
             this.Name = "frmPrikazIzvjestajaProdajniRefrent";
             this.Text = "Prikaz izvještaja prodaje";
             this.Load += new System.EventHandler(this.frmPrikazIzvjestajaProdajniRefrent_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPrikazIzvjestajaProdajniRefrent_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.katalog_strojevaBindingSource)).EndInit();
             this.ResumeLayout(false);

@@ -46,12 +46,11 @@ namespace e_Agro
             {
                 cmbKreirao.SelectedItem = odabranaPonuda.korisnik;
                 txtNaziv.Text = odabranaPonuda.naziv;
-                txtCijena.Text = odabranaPonuda.cijena.ToString();
                 dtpDatumKreiranja.Value = odabranaPonuda.datum_kreiranja;
                 cmbKlijent.SelectedItem = odabranaPonuda.klijent;
                 btnDodaj.Text = "Ažuriraj ponudu";
                 this.Text = "Ažuriranje ponude";
-                lblNaslov.Text = "Ažuriranje ponude";
+                lblNaslov.Text = "Ažuriraj ponudu";
             }
             UcitajCombo();
         }
@@ -63,6 +62,7 @@ namespace e_Agro
 
         private void frmDodavanjePonude_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             UcitajGUI();
         }
 
@@ -70,11 +70,10 @@ namespace e_Agro
         {
             korisnik korisnik = cmbKreirao.SelectedItem as korisnik;
             string naziv = txtNaziv.Text;
-            double cijena = double.Parse(txtCijena.Text);
             DateTime datumKreiranja = dtpDatumKreiranja.Value;
             klijent klijent = cmbKlijent.SelectedItem as klijent;
 
-            if (string.IsNullOrEmpty(cmbKreirao.Text) || naziv=="" || txtCijena.Text=="" || string.IsNullOrEmpty(cmbKlijent.Text))
+            if (string.IsNullOrEmpty(cmbKreirao.Text) || naziv=="" || string.IsNullOrEmpty(cmbKlijent.Text))
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
@@ -82,13 +81,21 @@ namespace e_Agro
 
             if(odabranaPonuda != null)
             {
-                ponude.AzurirajPonudu(odabranaPonuda, korisnik, naziv, cijena, datumKreiranja, klijent);
+                ponude.AzurirajPonudu(odabranaPonuda, korisnik, naziv, odabranaPonuda.cijena, datumKreiranja, klijent);
             }
             else
             {
-                ponude.DodajPonudu(korisnik, naziv, cijena, datumKreiranja, klijent);
+                ponude.DodajPonudu(korisnik, naziv, 0, datumKreiranja, klijent);
             }
             Close();
+        }
+
+        private void frmDodavanjePonude_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#322-upravljanje-ponudama");
+            }
         }
     }
 }
