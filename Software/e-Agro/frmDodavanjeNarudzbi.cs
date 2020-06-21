@@ -41,7 +41,6 @@ namespace e_Agro
             if (odabranaNarudzba != null)
             {
                 cmbDobavljac.SelectedItem = odabranaNarudzba.dobavljac;
-                txtCijena.Text = odabranaNarudzba.cijena.ToString();
                 btnDodaj.Text = "Ažuriraj narudžbu";
                 this.Text = "Ažuriranje narudžbe";
                 lblNaslov.Text = "Ažuriranje narudžbe";
@@ -62,9 +61,8 @@ namespace e_Agro
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             dobavljac dobavljac = cmbDobavljac.SelectedItem as dobavljac;
-            double cijena = double.Parse(txtCijena.Text);
 
-            if (string.IsNullOrEmpty(cmbDobavljac.Text) || txtCijena.Text == "")
+            if (string.IsNullOrEmpty(cmbDobavljac.Text))
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
@@ -72,11 +70,11 @@ namespace e_Agro
 
             if (odabranaNarudzba != null)
             {
-                narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, cijena);
+                narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, odabranaNarudzba.cijena);
             }
             else
             {
-                narudzbe.DodajNarudzbu(dobavljac, cijena);
+                narudzbe.DodajNarudzbu(dobavljac, 0);
             }
             Close();
         }
