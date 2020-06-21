@@ -9,6 +9,10 @@ namespace e_Agro
 {
     public class Dobavljaci
     {
+        /// <summary>
+        /// Dohvaćanje svih dobavljača iz baze
+        /// </summary>
+        /// <returns>Vraća listu u kojoj se nalaze svi dobavljači iz baze podataka</returns>
         public List<dobavljac> DohvatiDobavljace()
         {
             using (var context = new PI20_024_DBEntities())
@@ -19,6 +23,12 @@ namespace e_Agro
             }
         }
 
+        /// <summary>
+        /// Kreira novog dobavljača gdje se kao parametar predaju podaci o dobavljaču
+        /// </summary>
+        /// <param name="naziv">String koji predstavlja naziv dobavljača</param>
+        /// <param name="adresa">String koji predstavlja adresu dobavljača</param>
+        /// <param name="tekuciRacun">String koji predstavlja tekući račun dobavljača</param>
         public void DodajDobavljaca(string naziv, string adresa, string tekuciRacun)
         {
             using (var context =new PI20_024_DBEntities())
@@ -34,6 +44,13 @@ namespace e_Agro
             }
         }
 
+        /// <summary>
+        /// Ažuriranje podataka za predanog dobavljača
+        /// </summary>
+        /// <param name="odabraniDobavljac">Dobavljač za kojeg se ažuriraju podaci</param>
+        /// <param name="naziv">String koji predstavlja naziv dobavljača</param>
+        /// <param name="adresa">String koji predstavlja adresu dobavljača</param>
+        /// <param name="tekuciRacun">String koji predstavlja tekući račun dobavljača</param>
         public void AzurirajDobavljaca(dobavljac odabraniDobavljac,string naziv, string adresa, string tekuciRacun)
         {
             using (var context=new PI20_024_DBEntities())
@@ -47,6 +64,11 @@ namespace e_Agro
                 context.SaveChanges();
             }
         }
+
+        /// <summary>
+        /// Brisanje dobavljača predanog u parametru
+        /// </summary>
+        /// <param name="dobavljac">Odabrani dobavljač koji se briše iz baze podataka</param>
         public void ObrisiDobavljaca(dobavljac dobavljac)
         {
             using (var context = new PI20_024_DBEntities())

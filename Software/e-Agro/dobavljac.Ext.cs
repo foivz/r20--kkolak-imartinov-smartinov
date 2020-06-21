@@ -8,6 +8,10 @@ namespace e_Agro
 {
     public partial class dobavljac
     {
+        /// <summary>
+        /// Promjena prikaza podataka za dobavljača kada je vanjski ključ
+        /// </summary>
+        /// <returns>Vraća naziv dobavljača</returns>
         public override string ToString()
         {
             return naziv;

@@ -90,7 +90,6 @@
             this.txtLozinka.Text = "Lozinka";
             this.txtLozinka.UseSystemPasswordChar = true;
             this.txtLozinka.Click += new System.EventHandler(this.txtLozinka_Click);
-            this.txtLozinka.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLozinka_KeyDown);
             // 
             // btnPrijava
             // 
