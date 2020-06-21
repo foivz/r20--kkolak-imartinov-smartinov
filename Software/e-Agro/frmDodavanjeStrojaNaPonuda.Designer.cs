@@ -40,7 +40,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(171, 153);
+            this.btnOdustani.Location = new System.Drawing.Point(171, 215);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(120, 34);
             this.btnOdustani.TabIndex = 20;
@@ -51,7 +51,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(41, 153);
+            this.btnDodaj.Location = new System.Drawing.Point(41, 215);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(120, 34);
             this.btnDodaj.TabIndex = 19;
@@ -68,7 +68,7 @@
             this.lblStroj.Name = "lblStroj";
             this.lblStroj.Size = new System.Drawing.Size(39, 17);
             this.lblStroj.TabIndex = 21;
-            this.lblStroj.Text = "Stroj;";
+            this.lblStroj.Text = "Stroj:";
             // 
             // cmbStrojevi
             // 
@@ -80,7 +80,7 @@
             // 
             // txtKolicina
             // 
-            this.txtKolicina.Location = new System.Drawing.Point(356, 99);
+            this.txtKolicina.Location = new System.Drawing.Point(41, 166);
             this.txtKolicina.Name = "txtKolicina";
             this.txtKolicina.Size = new System.Drawing.Size(100, 20);
             this.txtKolicina.TabIndex = 23;
@@ -90,7 +90,7 @@
             this.lblKolicina.AutoSize = true;
             this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKolicina.ForeColor = System.Drawing.Color.White;
-            this.lblKolicina.Location = new System.Drawing.Point(353, 79);
+            this.lblKolicina.Location = new System.Drawing.Point(38, 146);
             this.lblKolicina.Name = "lblKolicina";
             this.lblKolicina.Size = new System.Drawing.Size(63, 17);
             this.lblKolicina.TabIndex = 24;
@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(499, 219);
+            this.ClientSize = new System.Drawing.Size(499, 309);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblKolicina);
             this.Controls.Add(this.txtKolicina);

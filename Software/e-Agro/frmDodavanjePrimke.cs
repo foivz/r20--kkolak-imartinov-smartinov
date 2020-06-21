@@ -44,7 +44,7 @@ namespace e_Agro
                 cmbKreirao.SelectedItem = odabranaPrimka.korisnik;
                 btnDodaj.Text = "Ažuriraj primku";
                 this.Text = "Ažuriranje primke";
-                lblNaslov.Text = "Ažuriranje primke";
+                lblNaslov.Text = "Ažuriraj primku";
             }
             UcitajCombo();
         }

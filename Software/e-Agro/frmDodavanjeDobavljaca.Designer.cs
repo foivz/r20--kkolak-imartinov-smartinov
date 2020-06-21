@@ -96,7 +96,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(236, 125);
+            this.btnOdustani.Location = new System.Drawing.Point(212, 125);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 43;
@@ -107,9 +107,9 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(90, 125);
+            this.btnDodaj.Location = new System.Drawing.Point(45, 125);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(140, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(161, 34);
             this.btnDodaj.TabIndex = 42;
             this.btnDodaj.Text = "Dodaj dobavljača";
             this.btnDodaj.UseVisualStyleBackColor = true;

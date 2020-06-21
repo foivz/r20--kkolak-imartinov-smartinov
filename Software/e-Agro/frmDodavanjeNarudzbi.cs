@@ -41,9 +41,9 @@ namespace e_Agro
             if (odabranaNarudzba != null)
             {
                 cmbDobavljac.SelectedItem = odabranaNarudzba.dobavljac;
-                btnDodaj.Text = "Ažuriraj narudžbu";
-                this.Text = "Ažuriranje narudžbe";
-                lblNaslov.Text = "Ažuriranje narudžbe";
+                btnDodaj.Text = "Ažuriraj";
+                this.Text = "Ažuriranje narudžbu";
+                lblNaslov.Text = "Ažuriraj narudžbu";
             }
             UcitajCombo();
         }

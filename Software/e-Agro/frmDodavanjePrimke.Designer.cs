@@ -73,7 +73,7 @@
             this.cmbKreirao.FormattingEnabled = true;
             this.cmbKreirao.Location = new System.Drawing.Point(42, 107);
             this.cmbKreirao.Name = "cmbKreirao";
-            this.cmbKreirao.Size = new System.Drawing.Size(121, 21);
+            this.cmbKreirao.Size = new System.Drawing.Size(138, 21);
             this.cmbKreirao.TabIndex = 48;
             // 
             // lblNaslov
