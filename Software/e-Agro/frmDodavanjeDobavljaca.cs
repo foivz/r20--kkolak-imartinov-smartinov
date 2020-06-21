@@ -60,17 +60,17 @@ namespace e_Agro
             string adresa = txtAdresa.Text;
             string tekuciRacun = txtTekuciRacun.Text;
 
-            if(naziv == "" || adresa == "" || tekuciRacun == "") //Ako su uneseni prazni podaci ispiše se poruka
+            if(naziv == "" || adresa == "" || tekuciRacun == "") // Ako su uneseni prazni podaci ispiše se poruka
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
             }
 
-            if (odabraniDobavljac != null) //Ažuriranje postojećeg dobavljača
+            if (odabraniDobavljac != null) // Ažuriranje postojećeg dobavljača
             {
                 dobavljaci.AzurirajDobavljaca(odabraniDobavljac, naziv, adresa, tekuciRacun);
             }
-            else //Dodavanje novog dobavljača
+            else // Dodavanje novog dobavljača
             {
                 List<dobavljac> postojeciDobavljaci = dobavljaci.DohvatiDobavljace();
                 foreach (var dobavljac in postojeciDobavljaci) // Provjera postoji li već dobavljač s unesenim nazivom
