@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace e_Agro
 {
+    /// <summary>
+    /// Dodavanje i ažuriranje dobavljača
+    /// </summary>
     public partial class frmDodavanjeDobavljaca : Form
     {
         Dobavljaci dobavljaci; // Referenca na klasu Dobavljaci koja upravlja dobavljačima iz baze podataka

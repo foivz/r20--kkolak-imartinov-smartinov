@@ -49,8 +49,6 @@ namespace e_Agro
             using (var context = new PI20_024_DBEntities())
             {
                 context.Entry(odabraniStrojNaSKladistu).State = EntityState.Modified;
-                odabraniStrojNaSKladistu.stroj_id = stroj.stroj_id;
-                odabraniStrojNaSKladistu.skladiste_id = skladiste.skladiste_id;
                 odabraniStrojNaSKladistu.kolicina = kolicina;
                 context.SaveChanges();
             }

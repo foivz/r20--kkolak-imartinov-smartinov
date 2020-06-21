@@ -20,7 +20,7 @@ namespace e_Agro
         /// <summary>
         /// Konstruktor forme koji služi za spremanje prijavljenog korisnika
         /// </summary>
-        /// <param name="korisnik">Korisnik predan formi preko frmPrijava</param>
+        /// <param name="korisnik">Korisnik predan formi preko forme za prijavu</param>
         public frmAdmin(korisnik korisnik)
         {
             InitializeComponent();
@@ -113,7 +113,7 @@ namespace e_Agro
         /// <param name="e"></param>
         private void frmAdmin_Load(object sender, EventArgs e)
         {
-            this.KeyPreview = true;
+            this.KeyPreview = true; // Mora se dodati kako bi radila F1 pomoć
         }
     }
 }
