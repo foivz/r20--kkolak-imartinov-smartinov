@@ -31,8 +31,6 @@
             this.lblKreirao = new System.Windows.Forms.Label();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
-            this.txtCijena = new System.Windows.Forms.TextBox();
-            this.lblCijena = new System.Windows.Forms.Label();
             this.dtpDatumIsporuke = new System.Windows.Forms.DateTimePicker();
             this.lblDatumIsporuke = new System.Windows.Forms.Label();
             this.cmbKreirao = new System.Windows.Forms.ComboBox();
@@ -53,7 +51,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(196, 279);
+            this.btnOdustani.Location = new System.Drawing.Point(196, 210);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 31;
@@ -64,7 +62,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(50, 280);
+            this.btnDodaj.Location = new System.Drawing.Point(50, 211);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(140, 34);
             this.btnDodaj.TabIndex = 30;
@@ -72,27 +70,9 @@
             this.btnDodaj.UseVisualStyleBackColor = true;
             this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
-            // txtCijena
-            // 
-            this.txtCijena.Location = new System.Drawing.Point(50, 169);
-            this.txtCijena.Name = "txtCijena";
-            this.txtCijena.Size = new System.Drawing.Size(121, 20);
-            this.txtCijena.TabIndex = 35;
-            // 
-            // lblCijena
-            // 
-            this.lblCijena.AutoSize = true;
-            this.lblCijena.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCijena.ForeColor = System.Drawing.Color.White;
-            this.lblCijena.Location = new System.Drawing.Point(47, 149);
-            this.lblCijena.Name = "lblCijena";
-            this.lblCijena.Size = new System.Drawing.Size(54, 17);
-            this.lblCijena.TabIndex = 34;
-            this.lblCijena.Text = "Cijena:";
-            // 
             // dtpDatumIsporuke
             // 
-            this.dtpDatumIsporuke.Location = new System.Drawing.Point(50, 233);
+            this.dtpDatumIsporuke.Location = new System.Drawing.Point(50, 164);
             this.dtpDatumIsporuke.Name = "dtpDatumIsporuke";
             this.dtpDatumIsporuke.Size = new System.Drawing.Size(200, 20);
             this.dtpDatumIsporuke.TabIndex = 36;
@@ -102,7 +82,7 @@
             this.lblDatumIsporuke.AutoSize = true;
             this.lblDatumIsporuke.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatumIsporuke.ForeColor = System.Drawing.Color.White;
-            this.lblDatumIsporuke.Location = new System.Drawing.Point(47, 213);
+            this.lblDatumIsporuke.Location = new System.Drawing.Point(47, 144);
             this.lblDatumIsporuke.Name = "lblDatumIsporuke";
             this.lblDatumIsporuke.Size = new System.Drawing.Size(114, 17);
             this.lblDatumIsporuke.TabIndex = 37;
@@ -132,13 +112,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(370, 337);
+            this.ClientSize = new System.Drawing.Size(370, 262);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbKreirao);
             this.Controls.Add(this.lblDatumIsporuke);
             this.Controls.Add(this.dtpDatumIsporuke);
-            this.Controls.Add(this.txtCijena);
-            this.Controls.Add(this.lblCijena);
             this.Controls.Add(this.lblKreirao);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
@@ -157,8 +135,6 @@
         private System.Windows.Forms.Label lblKreirao;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.TextBox txtCijena;
-        private System.Windows.Forms.Label lblCijena;
         private System.Windows.Forms.DateTimePicker dtpDatumIsporuke;
         private System.Windows.Forms.Label lblDatumIsporuke;
         private System.Windows.Forms.ComboBox cmbKreirao;

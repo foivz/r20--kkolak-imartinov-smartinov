@@ -46,7 +46,6 @@ namespace e_Agro
             if (odabranaOtpremnica != null)
             {
                 cmbKreirao.SelectedItem = odabranaOtpremnica.korisnik;
-                txtCijena.Text = odabranaOtpremnica.cijena.ToString();
                 dtpDatumIsporuke.Value = odabranaOtpremnica.datum_isporuke;
                 btnDodaj.Text = "Ažuriraj otpremnicu";
                 this.Text = "Ažuriranje otpremnice";
@@ -63,21 +62,20 @@ namespace e_Agro
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             korisnik korisnik = cmbKreirao.SelectedItem as korisnik;
-            double cijena = double.Parse(txtCijena.Text);
             DateTime datumIsporuke = dtpDatumIsporuke.Value;
 
-            if(string.IsNullOrEmpty(cmbKreirao.Text) || txtCijena.Text == "")
+            if(string.IsNullOrEmpty(cmbKreirao.Text))
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
             }
             if (odabranaOtpremnica != null)
             {
-                otpremnice.AzurirajOtpremnicu(odabranaOtpremnica, korisnik, cijena, datumIsporuke);
+                otpremnice.AzurirajOtpremnicu(odabranaOtpremnica, korisnik, odabranaOtpremnica.cijena, datumIsporuke);
             }
             else
             {
-                otpremnice.DodajOtpremnicu(korisnik, cijena,datumIsporuke);
+                otpremnice.DodajOtpremnicu(korisnik, 0, datumIsporuke);
             }
             Close();
         }
