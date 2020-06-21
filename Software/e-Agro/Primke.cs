@@ -47,7 +47,6 @@ namespace e_Agro
             using(var context=new PI20_024_DBEntities())
             {
                 context.primkas.Attach(primka);
-                context.primkas.Remove(primka);
                 var query = from s in primka.stavke_na_primci
                             where s.primka_id == primka.primka_id
                             select s;
@@ -58,6 +57,9 @@ namespace e_Agro
                     context.stavke_na_primci.Attach(stavka);
                     context.stavke_na_primci.Remove(stavka);
                 }
+
+                context.primkas.Remove(primka);
+                
                 context.SaveChanges();
             }
         }
