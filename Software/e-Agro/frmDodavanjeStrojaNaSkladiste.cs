@@ -48,7 +48,7 @@ namespace e_Agro
                 cmbStrojevi.Enabled = false;
                 cmbSkladiste.Enabled = false;
                 txtKolicina.Text = odabraniStrojNaSkladistu.kolicina.ToString();
-                btnDodaj.Text = "Ažuriraj stroj na skladištu";
+                btnDodaj.Text = "Ažuriraj";
                 this.Text = "Ažuriranje stroja na skladištu";
                 lblNaslov.Text = "Ažuriraj stroj na skladištu";
             }
