@@ -43,7 +43,7 @@
             this.lblNaslov.AutoSize = true;
             this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslov.ForeColor = System.Drawing.Color.White;
-            this.lblNaslov.Location = new System.Drawing.Point(156, 9);
+            this.lblNaslov.Location = new System.Drawing.Point(251, 9);
             this.lblNaslov.Name = "lblNaslov";
             this.lblNaslov.Size = new System.Drawing.Size(191, 23);
             this.lblNaslov.TabIndex = 36;
@@ -98,7 +98,7 @@
             this.dgvStrojeviNaSkladistu.Name = "dgvStrojeviNaSkladistu";
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvStrojeviNaSkladistu.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvStrojeviNaSkladistu.Size = new System.Drawing.Size(462, 266);
+            this.dgvStrojeviNaSkladistu.Size = new System.Drawing.Size(610, 266);
             this.dgvStrojeviNaSkladistu.TabIndex = 31;
             // 
             // frmPopisStrojevaNaSkladistu
@@ -106,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(489, 404);
+            this.ClientSize = new System.Drawing.Size(637, 404);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);
