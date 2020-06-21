@@ -40,7 +40,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(201, 153);
+            this.btnOdustani.Location = new System.Drawing.Point(171, 153);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(120, 34);
             this.btnOdustani.TabIndex = 20;
@@ -75,12 +75,12 @@
             this.cmbStrojevi.FormattingEnabled = true;
             this.cmbStrojevi.Location = new System.Drawing.Point(41, 98);
             this.cmbStrojevi.Name = "cmbStrojevi";
-            this.cmbStrojevi.Size = new System.Drawing.Size(121, 21);
+            this.cmbStrojevi.Size = new System.Drawing.Size(250, 21);
             this.cmbStrojevi.TabIndex = 22;
             // 
             // txtKolicina
             // 
-            this.txtKolicina.Location = new System.Drawing.Point(201, 99);
+            this.txtKolicina.Location = new System.Drawing.Point(356, 99);
             this.txtKolicina.Name = "txtKolicina";
             this.txtKolicina.Size = new System.Drawing.Size(100, 20);
             this.txtKolicina.TabIndex = 23;
@@ -90,7 +90,7 @@
             this.lblKolicina.AutoSize = true;
             this.lblKolicina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKolicina.ForeColor = System.Drawing.Color.White;
-            this.lblKolicina.Location = new System.Drawing.Point(198, 79);
+            this.lblKolicina.Location = new System.Drawing.Point(353, 79);
             this.lblKolicina.Name = "lblKolicina";
             this.lblKolicina.Size = new System.Drawing.Size(63, 17);
             this.lblKolicina.TabIndex = 24;
@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(370, 219);
+            this.ClientSize = new System.Drawing.Size(499, 219);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblKolicina);
             this.Controls.Add(this.txtKolicina);
