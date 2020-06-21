@@ -125,6 +125,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje stavke na ponudu";
             this.Load += new System.EventHandler(this.frmDodavanjeStrojaNaPonuda_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeStrojaNaPonuda_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

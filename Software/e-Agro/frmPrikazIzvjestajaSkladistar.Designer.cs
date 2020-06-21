@@ -76,6 +76,7 @@
             this.Name = "frmPrikazIzvjestajaSkladistar";
             this.Text = "Prikaz strojeva na skladištu";
             this.Load += new System.EventHandler(this.frmSkladistarIzvjestaj_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPrikazIzvjestajaSkladistar_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.katalog_strojevaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladisteBindingSource)).EndInit();
             this.ResumeLayout(false);

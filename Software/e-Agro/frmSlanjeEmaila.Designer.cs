@@ -38,6 +38,7 @@
             this.btnPosalji = new System.Windows.Forms.Button();
             this.lnkDodajPrivitak = new System.Windows.Forms.LinkLabel();
             this.fdPrivitak = new System.Windows.Forms.OpenFileDialog();
+            this.lblUputa = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblZa
@@ -65,7 +66,7 @@
             this.lblPrivitak.Name = "lblPrivitak";
             this.lblPrivitak.Size = new System.Drawing.Size(45, 13);
             this.lblPrivitak.TabIndex = 3;
-            this.lblPrivitak.Text = "Privitak;";
+            this.lblPrivitak.Text = "Privitak:";
             // 
             // rtxtSadrzaj
             // 
@@ -127,12 +128,24 @@
             // 
             this.fdPrivitak.FileName = "openFileDialog1";
             // 
+            // lblUputa
+            // 
+            this.lblUputa.AutoSize = true;
+            this.lblUputa.ForeColor = System.Drawing.Color.Orange;
+            this.lblUputa.Location = new System.Drawing.Point(219, 143);
+            this.lblUputa.Name = "lblUputa";
+            this.lblUputa.Size = new System.Drawing.Size(296, 13);
+            this.lblUputa.TabIndex = 11;
+            this.lblUputa.Text = "Prije slanja poruke preuzmite ponudu koju ćete poslati klijentu";
+            this.lblUputa.Visible = false;
+            // 
             // frmSlanjeEmaila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(685, 610);
+            this.Controls.Add(this.lblUputa);
             this.Controls.Add(this.lnkDodajPrivitak);
             this.Controls.Add(this.btnPosalji);
             this.Controls.Add(this.btnOdustani);
@@ -148,6 +161,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Slanje e-maila";
             this.Load += new System.EventHandler(this.frmSlanjeEmaila_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSlanjeEmaila_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,5 +179,6 @@
         private System.Windows.Forms.Button btnPosalji;
         private System.Windows.Forms.LinkLabel lnkDodajPrivitak;
         private System.Windows.Forms.OpenFileDialog fdPrivitak;
+        private System.Windows.Forms.Label lblUputa;
     }
 }

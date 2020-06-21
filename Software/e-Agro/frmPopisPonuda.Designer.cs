@@ -168,6 +168,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis ponuda";
             this.Load += new System.EventHandler(this.frmPopisPonuda_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisPonuda_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPonude)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPonudi)).EndInit();
             this.ResumeLayout(false);

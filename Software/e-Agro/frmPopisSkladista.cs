@@ -33,6 +33,7 @@ namespace e_Agro
 
         private void frmPopisSkladista_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             OsvjeziTablicu();
         }
 
@@ -62,6 +63,14 @@ namespace e_Agro
             }
             Show();
             OsvjeziTablicu();
+        }
+
+        private void frmPopisSkladista_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#311-upravljanje-skladi%C5%A1tem");
+            }
         }
     }
 }

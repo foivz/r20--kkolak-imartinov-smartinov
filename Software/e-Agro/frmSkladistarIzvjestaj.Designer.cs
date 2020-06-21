@@ -90,6 +90,7 @@
             this.Name = "frmSkladistarIzvjestaj";
             this.Text = "Prikaz strojeva na skladištu";
             this.Load += new System.EventHandler(this.frmSkladistarIzvjestaj_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSkladistarIzvjestaj_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -36,6 +36,7 @@ namespace e_Agro
 
         private void frmKatalogStrojeva_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             OsvjeziTablicu();
         }
 
@@ -87,6 +88,14 @@ namespace e_Agro
 
                     dgvStrojevi.DataSource = query.ToList();
                 }
+            }
+        }
+
+        private void frmKatalogStrojeva_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#321-katalog-strojeva");
             }
         }
     }

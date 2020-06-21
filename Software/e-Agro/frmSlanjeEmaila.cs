@@ -17,9 +17,12 @@ namespace e_Agro
     {
         MailMessage poruka;
         SmtpClient smtp;
-        public frmSlanjeEmaila()
+
+        private string dolaznaForma;
+        public frmSlanjeEmaila(string dolazna)
         {
             InitializeComponent();
+            dolaznaForma = dolazna;
         }
 
         private void btnOdustani_Click(object sender, EventArgs e)
@@ -80,7 +83,25 @@ namespace e_Agro
 
         private void frmSlanjeEmaila_Load(object sender, EventArgs e)
         {
-            rtxtSadrzaj.Text = "Ime:\nPrezime:\nE-mail:\nKorisničko ime:\nLozinka:";
+            this.KeyPreview = true;
+            if(dolaznaForma == "Prijava")
+            {
+                rtxtSadrzaj.Text = "Ime:\nPrezime:\nE-mail:\nKorisničko ime:\nLozinka:";
+                txtZa.Text = "aperic119@gmail.com";
+            }
+            else if(dolaznaForma == "Ponuda")
+            {
+                lblUputa.Visible = true;
+            }
+
+        }
+
+        private void frmSlanjeEmaila_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#2-prijava-u-sustav");
+            }
         }
     }
 }

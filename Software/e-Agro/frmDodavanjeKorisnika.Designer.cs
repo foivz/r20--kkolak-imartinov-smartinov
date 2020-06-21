@@ -280,6 +280,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje korisnika";
             this.Load += new System.EventHandler(this.frmDodavanjeKorisnika_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeKorisnika_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

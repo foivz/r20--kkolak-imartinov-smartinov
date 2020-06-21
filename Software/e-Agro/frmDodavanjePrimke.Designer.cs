@@ -125,6 +125,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje primke";
             this.Load += new System.EventHandler(this.frmDodavanjePrimke_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjePrimke_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -90,6 +90,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prikaz dobavljača strojeva";
             this.Load += new System.EventHandler(this.frmProdajniReferentIzvjestaj_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmProdajniReferentIzvjestaj_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -66,6 +66,7 @@ namespace e_Agro
 
         private void frmDodavanjeKorisnika_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             UcitajGUI();
         }
 
@@ -113,6 +114,14 @@ namespace e_Agro
                     korisnici.DodajKorisnika(email, korisnickoIme, lozinka, tipKorisnika, ime, prezime, tekuciRacun, adresa, radnoMjesto);
             }
             Close();
+        }
+
+        private void frmDodavanjeKorisnika_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#313-upravljanje-korisnicima");
+            }
         }
     }
 }

@@ -34,6 +34,7 @@ namespace e_Agro
         }
         private void frmPopisPonuda_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             OsvjeziTablicu();
         }
 
@@ -84,7 +85,7 @@ namespace e_Agro
         private void btnPosalji_Click(object sender, EventArgs e)
         {
             Hide();
-            using(var forma = new frmSlanjeEmaila())
+            using(var forma = new frmSlanjeEmaila("Ponuda"))
             {
                 forma.ShowDialog();
             }
@@ -99,6 +100,14 @@ namespace e_Agro
                 forma.ShowDialog();
             }
             Show();
+        }
+
+        private void frmPopisPonuda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#322-upravljanje-ponudama");
+            }
         }
     }
 }

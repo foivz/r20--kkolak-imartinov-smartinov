@@ -155,6 +155,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popis primki";
             this.Load += new System.EventHandler(this.frmPopisPrimki_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisPrimki_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrimke)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeNaPrimci)).EndInit();
             this.ResumeLayout(false);
