@@ -42,7 +42,7 @@ namespace e_Agro
         {
             if (e.KeyCode == Keys.F1)
             {
-                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#32-prodajni-referent");
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#325-upravljanje-dobavlja%C4%8Dima");
             }
         }
     }
