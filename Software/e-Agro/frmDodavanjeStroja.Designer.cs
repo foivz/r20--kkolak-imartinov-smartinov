@@ -126,7 +126,7 @@
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodaj.Location = new System.Drawing.Point(79, 446);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(100, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(133, 34);
             this.btnDodaj.TabIndex = 42;
             this.btnDodaj.Text = "Dodaj stroj";
             this.btnDodaj.UseVisualStyleBackColor = true;

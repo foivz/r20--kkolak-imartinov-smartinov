@@ -53,7 +53,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(192, 77);
+            this.label2.Location = new System.Drawing.Point(36, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 17);
             this.label2.TabIndex = 1;
@@ -64,12 +64,12 @@
             this.cmbStrojevi.FormattingEnabled = true;
             this.cmbStrojevi.Location = new System.Drawing.Point(39, 97);
             this.cmbStrojevi.Name = "cmbStrojevi";
-            this.cmbStrojevi.Size = new System.Drawing.Size(121, 21);
+            this.cmbStrojevi.Size = new System.Drawing.Size(237, 21);
             this.cmbStrojevi.TabIndex = 2;
             // 
             // txtKolicina
             // 
-            this.txtKolicina.Location = new System.Drawing.Point(195, 97);
+            this.txtKolicina.Location = new System.Drawing.Point(39, 169);
             this.txtKolicina.Name = "txtKolicina";
             this.txtKolicina.Size = new System.Drawing.Size(100, 20);
             this.txtKolicina.TabIndex = 3;
@@ -77,7 +77,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(39, 147);
+            this.btnDodaj.Location = new System.Drawing.Point(39, 221);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(120, 34);
             this.btnDodaj.TabIndex = 25;
@@ -88,7 +88,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(195, 147);
+            this.btnOdustani.Location = new System.Drawing.Point(195, 221);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(120, 34);
             this.btnOdustani.TabIndex = 26;
@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(359, 204);
+            this.ClientSize = new System.Drawing.Size(366, 296);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);

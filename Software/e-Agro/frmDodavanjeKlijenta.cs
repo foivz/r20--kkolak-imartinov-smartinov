@@ -108,7 +108,7 @@ namespace e_Agro
                 txtTekuciRacun.Text = odabraniKlijent.tekuci_racun;
                 btnDodaj.Text = "Ažuriraj klijenta";
                 this.Text = "Ažuriranje klijenta";
-                lblNaslov.Text = "Ažuriranje klijenta";
+                lblNaslov.Text = "Ažuriraj klijenta";
             }
         }
 

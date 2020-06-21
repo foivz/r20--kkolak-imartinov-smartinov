@@ -64,5 +64,7 @@ namespace e_Agro
                 System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#322-upravljanje-ponudama");
             }
         }
+
+   
     }
 }
