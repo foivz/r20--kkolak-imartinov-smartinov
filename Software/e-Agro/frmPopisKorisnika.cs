@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace e_Agro
 {
+    /// <summary>
+    /// Prikaz popisa korisnika te daljnji rad s korisnicima iz baze
+    /// </summary>
     public partial class frmPopisKorisnika : Form
     {
         Korisnici korisnici;

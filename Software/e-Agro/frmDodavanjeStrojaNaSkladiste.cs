@@ -45,9 +45,12 @@ namespace e_Agro
             {
                 cmbStrojevi.SelectedItem = odabraniStrojNaSkladistu.katalog_strojeva;
                 cmbSkladiste.SelectedItem = odabraniStrojNaSkladistu.skladiste;
+                cmbStrojevi.Enabled = false;
+                cmbSkladiste.Enabled = false;
                 txtKolicina.Text = odabraniStrojNaSkladistu.kolicina.ToString();
                 btnDodaj.Text = "Ažuriraj stroj na skladištu";
                 this.Text = "Ažuriranje stroja na skladištu";
+                lblNaslov.Text = "Ažuriraj stroj na skladištu";
             }
             UcitajCombo();
         }
@@ -75,7 +78,7 @@ namespace e_Agro
             }
                 if (odabraniStrojNaSkladistu!= null)
             {
-                strojeviNaSkladistu.AzurirajStrojNaSKladistu(odabraniStrojNaSkladistu, odabraniStroj, odabranoSkladiste, kolicina);
+                strojeviNaSkladistu.AzurirajStrojNaSKladistu(odabraniStrojNaSkladistu, kolicina);
             }
             else
             {

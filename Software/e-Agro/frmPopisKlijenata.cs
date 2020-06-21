@@ -10,9 +10,12 @@ using System.Windows.Forms;
 
 namespace e_Agro
 {
+    /// <summary>
+    /// Prikaz popisa klijenata te daljnji rad s klijentima iz baze
+    /// </summary>
     public partial class frmPopisKlijenata : Form
     {
-        Klijenti klijenti;
+        Klijenti klijenti; //
         public frmPopisKlijenata()
         {
             klijenti = new Klijenti();
