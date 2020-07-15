@@ -53,5 +53,10 @@ namespace e_Agro
         {
             txtSearch.Clear();
         }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

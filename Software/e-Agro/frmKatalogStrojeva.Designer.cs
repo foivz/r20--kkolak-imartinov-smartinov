@@ -57,6 +57,7 @@
             this.btnAzuriraj.TabIndex = 19;
             this.btnAzuriraj.Text = "Ažuriraj stroj";
             this.btnAzuriraj.UseVisualStyleBackColor = true;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click);
             // 
             // btnObrisi
             // 
