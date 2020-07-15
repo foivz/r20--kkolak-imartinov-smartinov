@@ -15,17 +15,13 @@ namespace e_Agro
 
     public partial class stroj_na_skladistu
     {
-        [DisplayName("ID stroja")]
         public int stroj_id { get; set; }
-        [DisplayName("ID skladišta")]
         public int skladiste_id { get; set; }
         [DisplayName("Količina")]
         public int kolicina { get; set; }
-
-        [DisplayName("Katalog strojeva")]
+        [DisplayName("Naziv stroja")]
         public virtual katalog_strojeva katalog_strojeva { get; set; }
-
-        [DisplayName("Skladište")]
+        [DisplayName("Naziv skladišta")]
         public virtual skladiste skladiste { get; set; }
     }
 }

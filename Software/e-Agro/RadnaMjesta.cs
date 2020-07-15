@@ -17,5 +17,18 @@ namespace e_Agro
                 return query.ToList();
             }
         }
+
+        public void ObrisiRadnoMjesto(radno_mjesto radnoMjesto)
+        {
+            using (var context = new PI20_024_DBEntities())
+            {
+                context.radno_mjesto.Attach(radnoMjesto);
+                if(radnoMjesto.korisniks.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati radno mjesto koje ima zaposlenike!");
+                else
+                    context.radno_mjesto.Remove(radnoMjesto);
+                context.SaveChanges();
+            }
+        }
     }
 }

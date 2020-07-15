@@ -15,17 +15,12 @@ namespace e_Agro
 
     public partial class stavke_na_narudzbi
     {
-        [DisplayName("ID narudžbe")]
         public int narudzba_id { get; set; }
-        [DisplayName("ID stroja")]
         public int stroj_id { get; set; }
         [DisplayName("Količina")]
         public int kolicina { get; set; }
-
-        [DisplayName("Katalog strojeva")]
+    
         public virtual katalog_strojeva katalog_strojeva { get; set; }
-
-        [DisplayName("Narudžba")]
         public virtual narudzba narudzba { get; set; }
     }
 }

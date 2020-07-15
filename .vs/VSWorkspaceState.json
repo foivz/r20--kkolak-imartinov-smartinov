@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Documentation",
+    "\\Documentation\\Dijagrami",
+    "\\Documentation\\Dijagrami\\Dijagram aktivnosti",
     "\\Software",
     "\\Software\\e-Agro"
   ],
-  "SelectedNode": "\\Software\\e-Agro\\frmProdajniReferentGraf.resx",
+  "SelectedNode": "\\Software\\e-Agro\\frmPrijava.cs",
   "PreviewInSolutionExplorer": false
 }

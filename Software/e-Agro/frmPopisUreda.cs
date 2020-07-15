@@ -26,10 +26,12 @@ namespace e_Agro
         {
             dgvUredi.DataSource = uredi.DohvatiUrede();
             dgvUredi.Columns["radno_mjesto"].Visible = false;
+            dgvUredi.Columns["ured_id"].Visible = false;
         }
 
         private void frmPopisUreda_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             OsvjeziTablicu();
 
         }
@@ -40,9 +42,34 @@ namespace e_Agro
             OsvjeziTablicu();
         }
 
-        private void txtSearch_Click(object sender, EventArgs e)
+        private void btnDodaj_Click(object sender, EventArgs e)
         {
-            txtSearch.Clear();
+            Hide();
+            using(var forma = new frmDodavanjeUreda())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeUreda(DohvatiOdabranog()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void frmPopisUreda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#312-upravljanje-uredom");
+            }
         }
     }
 }

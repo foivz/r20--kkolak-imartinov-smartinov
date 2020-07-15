@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblNaslov = new System.Windows.Forms.Label();
             this.btnAzuriraj = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvUredi = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUredi)).BeginInit();
             this.SuspendLayout();
@@ -51,17 +52,18 @@
             // btnAzuriraj
             // 
             this.btnAzuriraj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAzuriraj.Location = new System.Drawing.Point(396, 310);
+            this.btnAzuriraj.Location = new System.Drawing.Point(427, 310);
             this.btnAzuriraj.Name = "btnAzuriraj";
             this.btnAzuriraj.Size = new System.Drawing.Size(100, 50);
             this.btnAzuriraj.TabIndex = 19;
             this.btnAzuriraj.Text = "Ažuriraj ured";
             this.btnAzuriraj.UseVisualStyleBackColor = true;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click);
             // 
             // btnObrisi
             // 
             this.btnObrisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnObrisi.Location = new System.Drawing.Point(396, 205);
+            this.btnObrisi.Location = new System.Drawing.Point(427, 205);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(100, 50);
             this.btnObrisi.TabIndex = 18;
@@ -72,30 +74,31 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(396, 102);
+            this.btnDodaj.Location = new System.Drawing.Point(427, 102);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(100, 50);
             this.btnDodaj.TabIndex = 17;
             this.btnDodaj.Text = "Dodaj ured";
             this.btnDodaj.UseVisualStyleBackColor = true;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.Black;
-            this.txtSearch.Location = new System.Drawing.Point(218, 75);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(172, 21);
-            this.txtSearch.TabIndex = 15;
-            this.txtSearch.Text = "Unesite riječ za pretragu...";
-            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // dgvUredi
             // 
+            this.dgvUredi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUredi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvUredi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUredi.Location = new System.Drawing.Point(12, 102);
             this.dgvUredi.Name = "dgvUredi";
-            this.dgvUredi.Size = new System.Drawing.Size(378, 258);
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvUredi.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvUredi.Size = new System.Drawing.Size(359, 258);
             this.dgvUredi.TabIndex = 14;
             // 
             // frmPopisUreda
@@ -103,16 +106,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(517, 386);
+            this.ClientSize = new System.Drawing.Size(543, 386);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnDodaj);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvUredi);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPopisUreda";
-            this.Text = "frmPopisUreda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Popis ureda";
             this.Load += new System.EventHandler(this.frmPopisUreda_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisUreda_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUredi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,7 +130,6 @@
         private System.Windows.Forms.Button btnAzuriraj;
         private System.Windows.Forms.Button btnObrisi;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvUredi;
     }
 }

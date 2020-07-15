@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblNaslov = new System.Windows.Forms.Label();
             this.btnAzuriraj = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvSkladista = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkladista)).BeginInit();
             this.SuspendLayout();
@@ -42,7 +43,7 @@
             this.lblNaslov.AutoSize = true;
             this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslov.ForeColor = System.Drawing.Color.White;
-            this.lblNaslov.Location = new System.Drawing.Point(80, 9);
+            this.lblNaslov.Location = new System.Drawing.Point(150, 9);
             this.lblNaslov.Name = "lblNaslov";
             this.lblNaslov.Size = new System.Drawing.Size(94, 23);
             this.lblNaslov.TabIndex = 13;
@@ -51,17 +52,18 @@
             // btnAzuriraj
             // 
             this.btnAzuriraj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAzuriraj.Location = new System.Drawing.Point(290, 302);
+            this.btnAzuriraj.Location = new System.Drawing.Point(259, 310);
             this.btnAzuriraj.Name = "btnAzuriraj";
             this.btnAzuriraj.Size = new System.Drawing.Size(100, 50);
             this.btnAzuriraj.TabIndex = 12;
             this.btnAzuriraj.Text = "Ažuriraj skladište";
             this.btnAzuriraj.UseVisualStyleBackColor = true;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click);
             // 
             // btnObrisi
             // 
             this.btnObrisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnObrisi.Location = new System.Drawing.Point(290, 198);
+            this.btnObrisi.Location = new System.Drawing.Point(259, 206);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(100, 50);
             this.btnObrisi.TabIndex = 11;
@@ -72,30 +74,31 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(290, 102);
+            this.btnDodaj.Location = new System.Drawing.Point(259, 110);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(100, 50);
             this.btnDodaj.TabIndex = 10;
             this.btnDodaj.Text = "Dodaj skladište";
             this.btnDodaj.UseVisualStyleBackColor = true;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(84, 73);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(172, 21);
-            this.txtSearch.TabIndex = 8;
-            this.txtSearch.Text = "Unesite riječ za pretragu...";
-            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // dgvSkladista
             // 
+            this.dgvSkladista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSkladista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSkladista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSkladista.Location = new System.Drawing.Point(12, 102);
             this.dgvSkladista.Name = "dgvSkladista";
-            this.dgvSkladista.Size = new System.Drawing.Size(244, 258);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSkladista.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvSkladista.Size = new System.Drawing.Size(232, 258);
             this.dgvSkladista.TabIndex = 7;
             // 
             // frmPopisSkladista
@@ -108,11 +111,13 @@
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnDodaj);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvSkladista);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPopisSkladista";
-            this.Text = "frmPopisSkladista";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Popis skladišta";
             this.Load += new System.EventHandler(this.frmPopisSkladista_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPopisSkladista_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkladista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,7 +130,6 @@
         private System.Windows.Forms.Button btnAzuriraj;
         private System.Windows.Forms.Button btnObrisi;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvSkladista;
     }
 }

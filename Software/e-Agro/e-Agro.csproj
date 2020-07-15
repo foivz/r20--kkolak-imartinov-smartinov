@@ -12,6 +12,23 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -25,12 +42,24 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8B767E32853D3C4D4A216F6BAEA1205B8BDE61AB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>e-Agro_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -173,11 +202,29 @@
     <Compile Include="frmDodavanjeStrojaNaPrimku.Designer.cs">
       <DependentUpon>frmDodavanjeStrojaNaPrimku.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDodavanjeStrojaNaSkladiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodavanjeStrojaNaSkladiste.Designer.cs">
+      <DependentUpon>frmDodavanjeStrojaNaSkladiste.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodavanjeUreda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDodavanjeUreda.Designer.cs">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOtpremnicaIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtpremnicaIzvjestaj.Designer.cs">
+      <DependentUpon>frmOtpremnicaIzvjestaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPonudaIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPonudaIzvjestaj.Designer.cs">
+      <DependentUpon>frmPonudaIzvjestaj.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPopisDobavljaca.cs">
       <SubType>Form</SubType>
@@ -208,6 +255,12 @@
     </Compile>
     <Compile Include="frmPopisPonuda.Designer.cs">
       <DependentUpon>frmPopisPonuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopisStrojevaNaSkladistu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopisStrojevaNaSkladistu.Designer.cs">
+      <DependentUpon>frmPopisStrojevaNaSkladistu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrijava.cs">
       <SubType>Form</SubType>
@@ -251,6 +304,18 @@
     <Compile Include="frmPopisPrimki.Designer.cs">
       <DependentUpon>frmPopisPrimki.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrikazIzvjestajaProdajniRefrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaProdajniRefrent.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestajaProdajniRefrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrimkaIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrimkaIzvjestaj.Designer.cs">
+      <DependentUpon>frmPrimkaIzvjestaj.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProdajniReferent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +339,24 @@
     </Compile>
     <Compile Include="frmSkladistar.Designer.cs">
       <DependentUpon>frmSkladistar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaSkladistar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaSkladistar.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestajaSkladistar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSkladistarIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSkladistarIzvjestaj.Designer.cs">
+      <DependentUpon>frmSkladistarIzvjestaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSlanjeEmaila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSlanjeEmaila.Designer.cs">
+      <DependentUpon>frmSlanjeEmaila.cs</DependentUpon>
     </Compile>
     <Compile Include="katalog_strojeva.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
@@ -317,6 +400,7 @@
     <Compile Include="skladiste.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="skladiste.Ext.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StavkeNaNarudzbi.cs" />
     <Compile Include="StavkeNaOtpremnici.cs" />
@@ -336,6 +420,7 @@
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Strojevi.cs" />
+    <Compile Include="StrojeviNaSkladistu.cs" />
     <Compile Include="stroj_na_skladistu.cs">
       <DependentUpon>AgroModel.tt</DependentUpon>
     </Compile>
@@ -387,11 +472,20 @@
     <EmbeddedResource Include="frmDodavanjeStrojaNaPrimku.resx">
       <DependentUpon>frmDodavanjeStrojaNaPrimku.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDodavanjeStrojaNaSkladiste.resx">
+      <DependentUpon>frmDodavanjeStrojaNaSkladiste.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodavanjeUreda.resx">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKatalogStrojeva.resx">
       <DependentUpon>frmKatalogStrojeva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtpremnicaIzvjestaj.resx">
+      <DependentUpon>frmOtpremnicaIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPonudaIzvjestaj.resx">
+      <DependentUpon>frmPonudaIzvjestaj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPopisDobavljaca.resx">
       <DependentUpon>frmPopisDobavljaca.cs</DependentUpon>
@@ -407,6 +501,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPopisPonuda.resx">
       <DependentUpon>frmPopisPonuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopisStrojevaNaSkladistu.resx">
+      <DependentUpon>frmPopisStrojevaNaSkladistu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrijava.resx">
       <DependentUpon>frmPrijava.cs</DependentUpon>
@@ -426,6 +523,12 @@
     <EmbeddedResource Include="frmPopisPrimki.resx">
       <DependentUpon>frmPopisPrimki.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestajaProdajniRefrent.resx">
+      <DependentUpon>frmPrikazIzvjestajaProdajniRefrent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrimkaIzvjestaj.resx">
+      <DependentUpon>frmPrimkaIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProdajniReferent.resx">
       <DependentUpon>frmProdajniReferent.cs</DependentUpon>
     </EmbeddedResource>
@@ -438,6 +541,15 @@
     <EmbeddedResource Include="frmSkladistar.resx">
       <DependentUpon>frmSkladistar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestajaSkladistar.resx">
+      <DependentUpon>frmPrikazIzvjestajaSkladistar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSkladistarIzvjestaj.resx">
+      <DependentUpon>frmSkladistarIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSlanjeEmaila.resx">
+      <DependentUpon>frmSlanjeEmaila.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -448,6 +560,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rptDobavljaciStrojeva.rdlc" />
+    <EmbeddedResource Include="rptOtpremnica.rdlc" />
+    <EmbeddedResource Include="rptPonuda.rdlc" />
+    <EmbeddedResource Include="rptPrimka.rdlc" />
+    <EmbeddedResource Include="rptStrojeviNaSkladistu.rdlc" />
     <EntityDeploy Include="AgroModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AgroModel.Designer.cs</LastGenOutput>
@@ -455,8 +572,20 @@
     <None Include="AgroModel.edmx.diagram">
       <DependentUpon>AgroModel.edmx</DependentUpon>
     </None>
+    <None Include="e-Agro_TemporaryKey.pfx" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\dobavljac.datasource" />
     <None Include="Properties\DataSources\frmPopisNarudzbi.datasource" />
+    <None Include="Properties\DataSources\katalog_strojeva.datasource" />
+    <None Include="Properties\DataSources\korisnik.datasource" />
+    <None Include="Properties\DataSources\otpremnica.datasource" />
+    <None Include="Properties\DataSources\ponuda.datasource" />
+    <None Include="Properties\DataSources\primka1.datasource" />
+    <None Include="Properties\DataSources\skladiste.datasource" />
+    <None Include="Properties\DataSources\stavke_na_otpremnici.datasource" />
+    <None Include="Properties\DataSources\stavke_na_ponudi.datasource" />
+    <None Include="Properties\DataSources\stavke_na_primci.datasource" />
+    <None Include="Properties\DataSources\stroj_na_skladistu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -503,6 +632,18 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

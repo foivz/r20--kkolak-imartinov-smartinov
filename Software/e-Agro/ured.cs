@@ -20,7 +20,7 @@ namespace e_Agro
         {
             this.radno_mjesto = new HashSet<radno_mjesto>();
         }
-        [DisplayName("ID ureda")]
+    
         public int ured_id { get; set; }
         [DisplayName("Odjel")]
         public string odjel { get; set; }

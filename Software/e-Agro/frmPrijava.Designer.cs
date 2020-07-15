@@ -34,12 +34,12 @@
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.txtLozinka = new System.Windows.Forms.TextBox();
             this.btnPrijava = new System.Windows.Forms.Button();
-            this.lblRegistracija = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblRegistracija = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -90,7 +90,6 @@
             this.txtLozinka.Text = "Lozinka";
             this.txtLozinka.UseSystemPasswordChar = true;
             this.txtLozinka.Click += new System.EventHandler(this.txtLozinka_Click);
-            this.txtLozinka.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLozinka_KeyDown);
             // 
             // btnPrijava
             // 
@@ -105,21 +104,10 @@
             this.btnPrijava.UseVisualStyleBackColor = false;
             this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
             // 
-            // lblRegistracija
-            // 
-            this.lblRegistracija.AutoSize = true;
-            this.lblRegistracija.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistracija.ForeColor = System.Drawing.Color.White;
-            this.lblRegistracija.Location = new System.Drawing.Point(148, 313);
-            this.lblRegistracija.Name = "lblRegistracija";
-            this.lblRegistracija.Size = new System.Drawing.Size(171, 17);
-            this.lblRegistracija.TabIndex = 7;
-            this.lblRegistracija.Text = "Nemate korisnički račun?";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(112, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(112, 182);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.TabIndex = 8;
@@ -128,7 +116,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(112, 182);
+            this.pictureBox2.Location = new System.Drawing.Point(112, 126);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.TabIndex = 9;
@@ -161,25 +149,42 @@
             this.panel2.Size = new System.Drawing.Size(246, 1);
             this.panel2.TabIndex = 12;
             // 
+            // lblRegistracija
+            // 
+            this.lblRegistracija.AutoSize = true;
+            this.lblRegistracija.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.lblRegistracija.LinkColor = System.Drawing.Color.White;
+            this.lblRegistracija.Location = new System.Drawing.Point(148, 310);
+            this.lblRegistracija.Name = "lblRegistracija";
+            this.lblRegistracija.Size = new System.Drawing.Size(171, 17);
+            this.lblRegistracija.TabIndex = 13;
+            this.lblRegistracija.TabStop = true;
+            this.lblRegistracija.Text = "Nemate korisnički račun?";
+            this.lblRegistracija.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblRegistracija_LinkClicked);
+            // 
             // frmPrijava
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(484, 361);
+            this.Controls.Add(this.lblRegistracija);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblRegistracija);
             this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.txtLozinka);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtKorisnickoIme);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPrijava";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava";
+            this.Load += new System.EventHandler(this.frmPrijava_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPrijava_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -195,12 +200,12 @@
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.TextBox txtLozinka;
         private System.Windows.Forms.Button btnPrijava;
-        private System.Windows.Forms.Label lblRegistracija;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.LinkLabel lblRegistracija;
     }
 }
 

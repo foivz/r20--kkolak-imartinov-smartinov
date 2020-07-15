@@ -15,17 +15,12 @@ namespace e_Agro
 
     public partial class stavke_na_otpremnici
     {
-        [DisplayName("ID otpremnice")]
         public int otpremnica_id { get; set; }
-        [DisplayName("ID stroja")]
         public int stroj_id { get; set; }
         [DisplayName("Količina")]
         public int kolicina { get; set; }
-
-        [DisplayName("Katalog strojeva")]
+    
         public virtual katalog_strojeva katalog_strojeva { get; set; }
-
-        [DisplayName("Otpremnica")]
         public virtual otpremnica otpremnica { get; set; }
     }
 }

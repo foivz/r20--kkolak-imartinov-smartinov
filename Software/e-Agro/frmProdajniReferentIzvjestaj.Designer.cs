@@ -31,7 +31,7 @@
             this.lblNaslov = new System.Windows.Forms.Label();
             this.btnPrikaz = new System.Windows.Forms.Button();
             this.lblDobavljac = new System.Windows.Forms.Label();
-            this.cbDobavljac = new System.Windows.Forms.ComboBox();
+            this.cmbDobavljac = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblNaslov
@@ -54,6 +54,7 @@
             this.btnPrikaz.TabIndex = 10;
             this.btnPrikaz.Text = "Prikaz izvještaja";
             this.btnPrikaz.UseVisualStyleBackColor = true;
+            this.btnPrikaz.Click += new System.EventHandler(this.btnPrikaz_Click);
             // 
             // lblDobavljac
             // 
@@ -66,26 +67,30 @@
             this.lblDobavljac.TabIndex = 9;
             this.lblDobavljac.Text = "Izbor dobavljača:";
             // 
-            // cbDobavljac
+            // cmbDobavljac
             // 
-            this.cbDobavljac.FormattingEnabled = true;
-            this.cbDobavljac.Location = new System.Drawing.Point(41, 85);
-            this.cbDobavljac.Name = "cbDobavljac";
-            this.cbDobavljac.Size = new System.Drawing.Size(121, 21);
-            this.cbDobavljac.TabIndex = 8;
+            this.cmbDobavljac.FormattingEnabled = true;
+            this.cmbDobavljac.Location = new System.Drawing.Point(41, 85);
+            this.cmbDobavljac.Name = "cmbDobavljac";
+            this.cmbDobavljac.Size = new System.Drawing.Size(195, 21);
+            this.cmbDobavljac.TabIndex = 8;
             // 
             // frmProdajniReferentIzvjestaj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(610, 196);
+            this.ClientSize = new System.Drawing.Size(549, 196);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.btnPrikaz);
             this.Controls.Add(this.lblDobavljac);
-            this.Controls.Add(this.cbDobavljac);
+            this.Controls.Add(this.cmbDobavljac);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmProdajniReferentIzvjestaj";
-            this.Text = "frmProdajniReferentIzvjestaj";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Prikaz dobavljača strojeva";
+            this.Load += new System.EventHandler(this.frmProdajniReferentIzvjestaj_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmProdajniReferentIzvjestaj_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,6 +101,6 @@
         private System.Windows.Forms.Label lblNaslov;
         private System.Windows.Forms.Button btnPrikaz;
         private System.Windows.Forms.Label lblDobavljac;
-        private System.Windows.Forms.ComboBox cbDobavljac;
+        private System.Windows.Forms.ComboBox cmbDobavljac;
     }
 }

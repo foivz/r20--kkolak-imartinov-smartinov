@@ -20,7 +20,7 @@ namespace e_Agro
         {
             this.ponudas = new HashSet<ponuda>();
         }
-        [DisplayName("ID klijenta")]
+    
         public int klijent_id { get; set; }
         [DisplayName("Ime")]
         public string ime { get; set; }

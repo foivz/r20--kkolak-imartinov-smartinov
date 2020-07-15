@@ -21,7 +21,7 @@ namespace e_Agro
             this.radno_mjesto = new HashSet<radno_mjesto>();
             this.stroj_na_skladistu = new HashSet<stroj_na_skladistu>();
         }
-        [DisplayName("ID skladišta")]
+    
         public int skladiste_id { get; set; }
         [DisplayName("Naziv")]
         public string naziv { get; set; }

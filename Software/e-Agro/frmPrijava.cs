@@ -21,7 +21,7 @@ namespace e_Agro
         private void btnPrijava_Click(object sender, EventArgs e)
         {
             var provjera = new ProvjeraPrijave();
-            prijavljeniKorisnik = provjera.ProvjeraPodataka(txtKorisnickoIme.Text, txtLozinka.Text); //Provjera postoji li korisnik
+            prijavljeniKorisnik = provjera.ProvjeraPodataka(txtKorisnickoIme.Text, txtLozinka.Text);
 
             txtKorisnickoIme.Clear();
             txtLozinka.Clear();
@@ -60,14 +60,6 @@ namespace e_Agro
                 MessageBox.Show("Ne postoji korisnik za unesene podatke!");
         }
 
-        private void txtLozinka_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnPrijava.PerformClick();
-            }
-        }
-
         private void txtKorisnickoIme_Click(object sender, EventArgs e)
         {
             txtKorisnickoIme.Clear();
@@ -76,6 +68,29 @@ namespace e_Agro
         private void txtLozinka_Click(object sender, EventArgs e)
         {
             txtLozinka.Clear();
+        }
+        private void lblRegistracija_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Hide();
+            using (var forma = new frmSlanjeEmaila("Prijava"))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
+
+        private void frmPrijava_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija");
+            }
+        }
+
+        private void frmPrijava_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.AcceptButton = this.btnPrijava;
         }
     }
 }

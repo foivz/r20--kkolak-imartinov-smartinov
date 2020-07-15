@@ -21,7 +21,7 @@ namespace e_Agro
             this.katalog_strojeva = new HashSet<katalog_strojeva>();
             this.narudzbas = new HashSet<narudzba>();
         }
-        [DisplayName("ID dobavljača")]
+
         public int dobavljac_id { get; set; }
         [DisplayName("Naziv dobavljača")]
         public string naziv { get; set; }
@@ -31,6 +31,7 @@ namespace e_Agro
         public string tekuci_racun { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [DisplayName("Stroj")]
         public virtual ICollection<katalog_strojeva> katalog_strojeva { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<narudzba> narudzbas { get; set; }

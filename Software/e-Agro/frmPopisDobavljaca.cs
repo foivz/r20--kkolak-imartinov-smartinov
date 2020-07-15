@@ -24,6 +24,7 @@ namespace e_Agro
             dgvDobavljaci.DataSource = dobavljaci.DohvatiDobavljace();
             dgvDobavljaci.Columns["narudzbas"].Visible = false;
             dgvDobavljaci.Columns["katalog_strojeva"].Visible = false;
+            dgvDobavljaci.Columns["dobavljac_id"].Visible = false;
         }
 
         private dobavljac DohvatiOdabranog()
@@ -31,8 +32,9 @@ namespace e_Agro
             return dgvDobavljaci.CurrentRow.DataBoundItem as dobavljac;
         }
 
-        private void frmPopisDobavljaca_Load_1(object sender, EventArgs e)
+        private void frmPopisDobavljaca_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             OsvjeziTablicu();
         }
 
@@ -45,11 +47,12 @@ namespace e_Agro
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma =new frmDodavanjeDobavljaca())
+            using (var forma = new frmDodavanjeDobavljaca())
             {
                 forma.ShowDialog();
             }
             Show();
+            OsvjeziTablicu();
         }
 
         private void btnAzuriraj_Click(object sender, EventArgs e)
@@ -60,18 +63,25 @@ namespace e_Agro
                 forma.ShowDialog();
             }
             Show();
-
-        }
-
-        private void txtSearch_Click(object sender, EventArgs e)
-        {
-            txtSearch.Clear();
+            OsvjeziTablicu();
         }
 
         private void btnIzvjestaj_Click(object sender, EventArgs e)
         {
-            var izvjestaj = new frmProdajniReferentIzvjestaj();
-            izvjestaj.ShowDialog();
+            Hide();
+            using (var forma = new frmProdajniReferentIzvjestaj())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
+
+        private void frmPopisDobavljaca_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#325-upravljanje-dobavlja%C4%8Dima");
+            }
         }
     }
 }

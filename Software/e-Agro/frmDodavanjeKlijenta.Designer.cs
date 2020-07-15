@@ -39,8 +39,8 @@
             this.txtAdresa = new System.Windows.Forms.TextBox();
             this.lblAdresa = new System.Windows.Forms.Label();
             this.txtTekuciRacun = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTekuciRacun = new System.Windows.Forms.Label();
+            this.lblNaslov = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -100,7 +100,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(184, 287);
+            this.btnOdustani.Location = new System.Drawing.Point(222, 287);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 33;
@@ -113,7 +113,7 @@
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodaj.Location = new System.Drawing.Point(42, 287);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(110, 34);
+            this.btnDodaj.Size = new System.Drawing.Size(160, 34);
             this.btnDodaj.TabIndex = 32;
             this.btnDodaj.Text = "Dodaj klijenta";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -144,37 +144,37 @@
             this.txtTekuciRacun.Size = new System.Drawing.Size(160, 20);
             this.txtTekuciRacun.TabIndex = 37;
             // 
-            // label1
+            // lblTekuciRacun
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 231);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 17);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Tekući račun:";
+            this.lblTekuciRacun.AutoSize = true;
+            this.lblTekuciRacun.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTekuciRacun.ForeColor = System.Drawing.Color.White;
+            this.lblTekuciRacun.Location = new System.Drawing.Point(39, 231);
+            this.lblTekuciRacun.Name = "lblTekuciRacun";
+            this.lblTekuciRacun.Size = new System.Drawing.Size(92, 17);
+            this.lblTekuciRacun.TabIndex = 36;
+            this.lblTekuciRacun.Text = "Tekući račun:";
             // 
-            // label2
+            // lblNaslov
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(42, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 22);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Dodaj novog klijenta";
+            this.lblNaslov.AutoSize = true;
+            this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.ForeColor = System.Drawing.Color.White;
+            this.lblNaslov.Location = new System.Drawing.Point(42, 13);
+            this.lblNaslov.Name = "lblNaslov";
+            this.lblNaslov.Size = new System.Drawing.Size(203, 22);
+            this.lblNaslov.TabIndex = 38;
+            this.lblNaslov.Text = "Dodaj novog klijenta";
             // 
             // frmDodavanjeKlijenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(317, 333);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(362, 333);
+            this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.txtTekuciRacun);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTekuciRacun);
             this.Controls.Add(this.txtAdresa);
             this.Controls.Add(this.lblAdresa);
             this.Controls.Add(this.txtEmail);
@@ -185,9 +185,12 @@
             this.Controls.Add(this.lblIme);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDodavanjeKlijenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje klijenta";
             this.Load += new System.EventHandler(this.frmDodavanjeKlijenta_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDodavanjeKlijenta_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,7 +209,7 @@
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.Label lblAdresa;
         private System.Windows.Forms.TextBox txtTekuciRacun;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTekuciRacun;
+        private System.Windows.Forms.Label lblNaslov;
     }
 }

@@ -18,7 +18,7 @@ namespace e_Agro
                 return query.ToList();
             }
         }
-        public void DodajPrimku(korisnik korisnik, int cijena) //promijenit u double
+        public void DodajPrimku(korisnik korisnik, double cijena)
         {
             using(var context=new PI20_024_DBEntities())
             {
@@ -32,7 +32,7 @@ namespace e_Agro
             }
         }
 
-        public void AzurirajPrimku(primka odabranaPrimka, korisnik korisnik, int cijena)
+        public void AzurirajPrimku(primka odabranaPrimka, korisnik korisnik, double cijena)
         {
             using(var context=new PI20_024_DBEntities())
             {
@@ -47,7 +47,19 @@ namespace e_Agro
             using(var context=new PI20_024_DBEntities())
             {
                 context.primkas.Attach(primka);
+                var query = from s in primka.stavke_na_primci
+                            where s.primka_id == primka.primka_id
+                            select s;
+
+                List<stavke_na_primci> popisStavki = query.ToList();
+                foreach (var stavka in popisStavki)
+                {
+                    context.stavke_na_primci.Attach(stavka);
+                    context.stavke_na_primci.Remove(stavka);
+                }
+
                 context.primkas.Remove(primka);
+                
                 context.SaveChanges();
             }
         }

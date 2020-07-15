@@ -28,10 +28,13 @@ namespace e_Agro
         {
             dgvNarudzbe.DataSource = narudzbe.DohvatiNarudzbe();
             dgvNarudzbe.Columns["stavke_na_narudzbi"].Visible = false;
+            dgvNarudzbe.Columns["narudzba_id"].Visible = false;
+            dgvNarudzbe.Columns["dobavljac_id"].Visible = false;
         }
 
-        private void frmPopisNarudzbi_Load_1(object sender, EventArgs e)
+        private void frmPopisNarudzbi_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             OsvjeziTablicu();
         }
 
@@ -39,11 +42,6 @@ namespace e_Agro
         {
             narudzbe.ObrisiNarudzbu(DohvatiOdabranu());
             OsvjeziTablicu();
-        }
-
-        private void txtSearch_Click(object sender, EventArgs e)
-        {
-            txtSearch.Clear();
         }
 
         private void dgvNarudzbe_SelectionChanged(object sender, EventArgs e)
@@ -60,6 +58,37 @@ namespace e_Agro
             }
             Show();
             OsvjeziTablicu();
+        }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+
+            Hide();
+            using (var forma = new frmDodavanjeNarudzbi())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeNarudzbi(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void frmPopisNarudzbi_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#323-upravljanje-narud%C5%BEbama");
+            }
         }
     }
 }

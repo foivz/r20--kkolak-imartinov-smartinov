@@ -20,22 +20,15 @@ namespace e_Agro
         {
             this.korisniks = new HashSet<korisnik>();
         }
-        [DisplayName("ID radnog mjesta")]
+    
         public int radno_mjesto_id { get; set; }
-        [DisplayName("Adresa")]
         public string adresa { get; set; }
-        [DisplayName("ID ureda")]
         public Nullable<int> ured_id { get; set; }
-        [DisplayName("ID skladišta")]
         public Nullable<int> skladiste_id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<korisnik> korisniks { get; set; }
-
-        [DisplayName("Skladište")]
         public virtual skladiste skladiste { get; set; }
-
-        [DisplayName("Ured")]
         public virtual ured ured { get; set; }
     }
 }

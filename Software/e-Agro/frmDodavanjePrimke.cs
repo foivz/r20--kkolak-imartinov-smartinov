@@ -42,9 +42,9 @@ namespace e_Agro
             if (odabranaPrimka != null)
             {
                 cmbKreirao.SelectedItem = odabranaPrimka.korisnik;
-                txtCijena.Text = odabranaPrimka.cijena.ToString();
-                btnDodaj.Text = "Ažuriraj korisnika";
-                this.Text = "Ažuriranje korisnika";
+                btnDodaj.Text = "Ažuriraj primku";
+                this.Text = "Ažuriranje primke";
+                lblNaslov.Text = "Ažuriraj primku";
             }
             UcitajCombo();
         }
@@ -56,23 +56,36 @@ namespace e_Agro
 
         private void frmDodavanjePrimke_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             UcitajGUI();
         }
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             korisnik korisnik = cmbKreirao.SelectedItem as korisnik;
-            int cijena =int.Parse(txtCijena.Text);
+
+            if (string.IsNullOrEmpty(cmbKreirao.Text))
+            {
+                MessageBox.Show("Niste unijeli sve podatke!");
+                return;
+            }
             if (odabranaPrimka != null)
             {
-                primke.AzurirajPrimku(odabranaPrimka, korisnik, cijena);
+                primke.AzurirajPrimku(odabranaPrimka, korisnik, odabranaPrimka.cijena);
             }
             else
             {
-                primke.DodajPrimku(korisnik, cijena);
+                primke.DodajPrimku(korisnik, 0);
             }
             Close();
+        }
 
+        private void frmDodavanjePrimke_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#332-upravljanje-primkama");
+            }
         }
     }
 }

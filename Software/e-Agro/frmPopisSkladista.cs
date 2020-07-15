@@ -27,10 +27,13 @@ namespace e_Agro
             dgvSkladista.DataSource = skladista.DohvatiSkladista();
             dgvSkladista.Columns["radno_mjesto"].Visible = false;
             dgvSkladista.Columns["stroj_na_skladistu"].Visible = false;
+            dgvSkladista.Columns["skladiste_id"].Visible = false;
+
         }
 
         private void frmPopisSkladista_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             OsvjeziTablicu();
         }
 
@@ -40,9 +43,34 @@ namespace e_Agro
             OsvjeziTablicu();
         }
 
-        private void txtSearch_Click(object sender, EventArgs e)
+        private void btnDodaj_Click(object sender, EventArgs e)
         {
-            txtSearch.Clear();
+            Hide();
+            using (var forma = new frmDodavanjeSkladista())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmDodavanjeSkladista(DohvatiOdabrano()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+            OsvjeziTablicu();
+        }
+
+        private void frmPopisSkladista_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#311-upravljanje-skladi%C5%A1tem");
+            }
         }
     }
 }

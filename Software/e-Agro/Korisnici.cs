@@ -56,6 +56,7 @@ namespace e_Agro
                 odabraniKorisnik.ime = ime;
                 odabraniKorisnik.prezime = prezime;
                 odabraniKorisnik.adresa = adresa;
+                odabraniKorisnik.tekuci_racun = tekuciRacun;
                 odabraniKorisnik.radno_mjesto_id = radnoMjesto.radno_mjesto_id;
 
                 context.SaveChanges();
@@ -67,7 +68,10 @@ namespace e_Agro
             using(var context = new PI20_024_DBEntities())
             {
                 context.korisniks.Attach(korisnik);
-                context.korisniks.Remove(korisnik);
+                if(korisnik.otpremnicas.Count > 0 || korisnik.ponudas.Count > 0 || korisnik.primkas.Count > 0 || korisnik.ponudas.Count > 0)
+                    System.Windows.Forms.MessageBox.Show("Ne možete obrisati korisnika koji ima kreirane dokumente!");
+                else
+                    context.korisniks.Remove(korisnik);
                 context.SaveChanges();
             }
         }
