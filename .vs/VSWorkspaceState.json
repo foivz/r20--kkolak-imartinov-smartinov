@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Documentation",
     "\\Documentation\\Dijagrami",
     "\\Documentation\\Dijagrami\\Dijagram aktivnosti",
-    "\\Software",
-    "\\Software\\e-Agro"
+    "\\Software"
   ],
-  "SelectedNode": "\\Software\\e-Agro\\frmPrijava.cs",
+  "SelectedNode": "\\Software\\e-Agro",
   "PreviewInSolutionExplorer": false
 }
