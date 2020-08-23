@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Documentation\\Dijagrami",
-    "\\Documentation\\Dijagrami\\Dijagram aktivnosti",
-    "\\Software"
+    "\\Documentation",
+    "\\Documentation\\Software",
+    "\\Documentation\\Software\\e-Agro"
   ],
-  "SelectedNode": "\\Software\\e-Agro",
+  "SelectedNode": "\\Documentation\\Software\\e-Agro\\e-Agro.sln",
   "PreviewInSolutionExplorer": false
 }
