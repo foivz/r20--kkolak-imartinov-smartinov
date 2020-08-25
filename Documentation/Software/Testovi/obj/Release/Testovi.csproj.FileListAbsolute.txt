@@ -1,0 +1,14 @@
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Testovi.dll
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Testovi.pdb
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\obj\Release\Testovi.csprojAssemblyReference.cache
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\obj\Release\Testovi.csproj.CoreCompileInputs.cache
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\obj\Release\Testovi.csproj.CopyComplete
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\obj\Release\Testovi.dll
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\Testovi\obj\Release\Testovi.pdb
