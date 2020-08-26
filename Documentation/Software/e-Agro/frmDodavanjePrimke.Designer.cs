@@ -33,6 +33,12 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.cmbKreirao = new System.Windows.Forms.ComboBox();
             this.lblNaslov = new System.Windows.Forms.Label();
+            this.txtMjesto = new System.Windows.Forms.TextBox();
+            this.txtTecaj = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtpDatum = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblKreirao
@@ -49,7 +55,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(181, 178);
+            this.btnOdustani.Location = new System.Drawing.Point(427, 178);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 43;
@@ -60,7 +66,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(42, 178);
+            this.btnDodaj.Location = new System.Drawing.Point(301, 178);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(120, 34);
             this.btnDodaj.TabIndex = 42;
@@ -87,12 +93,72 @@
             this.lblNaslov.TabIndex = 49;
             this.lblNaslov.Text = "Dodaj novu primku";
             // 
+            // txtMjesto
+            // 
+            this.txtMjesto.Location = new System.Drawing.Point(195, 107);
+            this.txtMjesto.Name = "txtMjesto";
+            this.txtMjesto.Size = new System.Drawing.Size(100, 20);
+            this.txtMjesto.TabIndex = 50;
+            // 
+            // txtTecaj
+            // 
+            this.txtTecaj.Location = new System.Drawing.Point(301, 108);
+            this.txtTecaj.Name = "txtTecaj";
+            this.txtTecaj.Size = new System.Drawing.Size(100, 20);
+            this.txtTecaj.TabIndex = 51;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(199, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Mjesto:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(298, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 17);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Tečaj:";
+            // 
+            // dtpDatum
+            // 
+            this.dtpDatum.Location = new System.Drawing.Point(42, 178);
+            this.dtpDatum.Name = "dtpDatum";
+            this.dtpDatum.Size = new System.Drawing.Size(200, 20);
+            this.dtpDatum.TabIndex = 56;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(43, 158);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 17);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Datum:";
+            // 
             // frmDodavanjePrimke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(304, 229);
+            this.ClientSize = new System.Drawing.Size(565, 260);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dtpDatum);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTecaj);
+            this.Controls.Add(this.txtMjesto);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbKreirao);
             this.Controls.Add(this.lblKreirao);
@@ -115,5 +181,11 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.ComboBox cmbKreirao;
         private System.Windows.Forms.Label lblNaslov;
+        private System.Windows.Forms.TextBox txtMjesto;
+        private System.Windows.Forms.TextBox txtTecaj;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpDatum;
+        private System.Windows.Forms.Label label3;
     }
 }

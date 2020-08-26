@@ -102,9 +102,12 @@
     </Key>
     <Property Name="primka_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="korisnik_id" Type="Int32" Nullable="false" />
-    <Property Name="cijena" Type="Double" Nullable="false" />
+    <Property Name="cijena" Nullable="false" Type="Double" />
     <NavigationProperty Name="korisnik" Relationship="Self.FK_korisnik_primka" FromRole="primka" ToRole="korisnik" />
     <NavigationProperty Name="stavke_na_primci" Relationship="Self.FK_primka_stavke_na_primci" FromRole="primka" ToRole="stavke_na_primci" />
+    <Property Name="datum" Precision="3" Type="DateTime" />
+    <Property Name="mjesto" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="tecaj" Type="Double" />
   </EntityType>
   <EntityType Name="radno_mjesto">
     <Key>

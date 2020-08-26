@@ -11,8 +11,7 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class primka
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,9 +22,11 @@ namespace e_Agro
     
         public int primka_id { get; set; }
         public int korisnik_id { get; set; }
-        [DisplayName("Cijena")]
         public double cijena { get; set; }
-        [DisplayName("Skladištar")]
+        public Nullable<System.DateTime> datum { get; set; }
+        public string mjesto { get; set; }
+        public Nullable<double> tecaj { get; set; }
+    
         public virtual korisnik korisnik { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stavke_na_primci> stavke_na_primci { get; set; }

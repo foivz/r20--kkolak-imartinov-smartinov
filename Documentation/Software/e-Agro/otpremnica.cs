@@ -11,8 +11,7 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class otpremnica
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,11 +22,9 @@ namespace e_Agro
     
         public int otpremnica_id { get; set; }
         public int korisnik_id { get; set; }
-        [DisplayName("Cijena")]
         public double cijena { get; set; }
-        [DisplayName("Datum isporuke")]
         public System.DateTime datum_isporuke { get; set; }
-        [DisplayName("Skladištar")]
+    
         public virtual korisnik korisnik { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stavke_na_otpremnici> stavke_na_otpremnici { get; set; }

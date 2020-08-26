@@ -18,27 +18,35 @@ namespace e_Agro
                 return query.ToList();
             }
         }
-        public void DodajPrimku(korisnik korisnik, double cijena)
+        public void DodajPrimku(korisnik korisnik, double cijena, DateTime datum, string mjesto, double tecaj)
         {
             using(var context=new PI20_024_DBEntities())
             {
                 primka novaPrimka = new primka
                 {
                     korisnik_id=korisnik.korisnik_id,
-                    cijena=cijena
+                    cijena=cijena,
+                    datum=datum,
+                    mjesto=mjesto,
+                    tecaj=tecaj
+
                 };
                 context.primkas.Add(novaPrimka);
                 context.SaveChanges();
             }
         }
 
-        public void AzurirajPrimku(primka odabranaPrimka, korisnik korisnik, double cijena)
+        public void AzurirajPrimku(primka odabranaPrimka, korisnik korisnik, double cijena, DateTime datum, string mjesto, double tecaj)
         {
             using(var context=new PI20_024_DBEntities())
             {
                 context.Entry(odabranaPrimka).State = EntityState.Modified;
                 odabranaPrimka.korisnik_id = korisnik.korisnik_id;
                 odabranaPrimka.cijena = cijena;
+                odabranaPrimka.datum = datum;
+                odabranaPrimka.mjesto = mjesto;
+                odabranaPrimka.tecaj = tecaj;
+
                 context.SaveChanges();
             }
         }

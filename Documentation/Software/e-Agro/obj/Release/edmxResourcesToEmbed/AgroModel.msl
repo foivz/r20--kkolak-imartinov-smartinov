@@ -86,6 +86,9 @@
     <EntitySetMapping Name="primkas">
       <EntityTypeMapping TypeName="PI20_024_DBModel.primka">
         <MappingFragment StoreEntitySet="primka">
+          <ScalarProperty Name="tecaj" ColumnName="tecaj" />
+          <ScalarProperty Name="mjesto" ColumnName="mjesto" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
           <ScalarProperty Name="primka_id" ColumnName="primka_id" />
           <ScalarProperty Name="korisnik_id" ColumnName="korisnik_id" />
           <ScalarProperty Name="cijena" ColumnName="cijena" />

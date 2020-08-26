@@ -42,6 +42,9 @@ namespace e_Agro
             if (odabranaPrimka != null)
             {
                 cmbKreirao.SelectedItem = odabranaPrimka.korisnik;
+                txtMjesto.Text = odabranaPrimka.mjesto;
+                txtTecaj.Text = odabranaPrimka.tecaj.ToString();
+                dtpDatum.Value = odabranaPrimka.datum.Value;
                 btnDodaj.Text = "Ažuriraj primku";
                 this.Text = "Ažuriranje primke";
                 lblNaslov.Text = "Ažuriraj primku";
@@ -63,6 +66,9 @@ namespace e_Agro
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             korisnik korisnik = cmbKreirao.SelectedItem as korisnik;
+            string mjesto = txtMjesto.Text;
+            double tecaj = double.Parse(txtTecaj.Text);
+            DateTime datum = dtpDatum.Value;
 
             if (string.IsNullOrEmpty(cmbKreirao.Text))
             {
@@ -71,11 +77,11 @@ namespace e_Agro
             }
             if (odabranaPrimka != null)
             {
-                primke.AzurirajPrimku(odabranaPrimka, korisnik, odabranaPrimka.cijena);
+                primke.AzurirajPrimku(odabranaPrimka, korisnik, odabranaPrimka.cijena, datum, mjesto, tecaj);
             }
             else
             {
-                primke.DodajPrimku(korisnik, 0);
+                primke.DodajPrimku(korisnik, 0, datum,mjesto,tecaj);
             }
             Close();
         }

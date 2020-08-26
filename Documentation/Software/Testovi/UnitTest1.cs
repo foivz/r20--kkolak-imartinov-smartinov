@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using e_Agro;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -10,16 +12,17 @@ namespace Testovi
         [TestMethod]
         public void PrijavaKorisnika()
         {
-            dobavljac dobavljac = new dobavljac();
-
-           
-
             Dobavljaci dobavljaci = new Dobavljaci();
-           // dobavljaci.DodajDobavljaca();
+            List<dobavljac> popisDobavljaca = new List<dobavljac>();
+            dobavljac zadnjiDobavljac = new dobavljac();
 
-            //Assert.IsTrue(dobavljaci.)
-           
-
+            using (var context = new PI20_024_DBEntities())
+            {
+                dobavljaci.DodajDobavljaca("TestDobavljac", "Koprivnica19", "HR123424234234214213");
+                popisDobavljaca = dobavljaci.DohvatiDobavljace();
+                zadnjiDobavljac = popisDobavljaca.Last();
+            }
+            Assert.IsTrue(zadnjiDobavljac.naziv == "TestDobavljac");
         }
     }
 }

@@ -11,8 +11,7 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class ponuda
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,16 +22,12 @@ namespace e_Agro
     
         public int ponuda_id { get; set; }
         public int korisnik_id { get; set; }
-        [DisplayName("Naziv")]
         public string naziv { get; set; }
-        [DisplayName("Cijena")]
         public double cijena { get; set; }
-        [DisplayName("Datum kreiranja")]
         public System.DateTime datum_kreiranja { get; set; }
         public int klijent_id { get; set; }
-        [DisplayName("Klijent")]
+    
         public virtual klijent klijent { get; set; }
-        [DisplayName("Korisnik")]
         public virtual korisnik korisnik { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stavke_na_ponudi> stavke_na_ponudi { get; set; }
