@@ -43,10 +43,9 @@ namespace Testovi
         public void BrisanjeDobavljaca()
         {
             Dobavljaci dobavljaci = new Dobavljaci();
-            List<dobavljac> popisDobavljaca = new List<dobavljac>();
-            List<dobavljac> popisDobavljacaNakonBrisanja = new List<dobavljac>();
+            List<dobavljac> popisDobavljaca = new List<dobavljac>(); 
             dobavljac zadnjiDobavljac = new dobavljac();
-         
+          
 
             using (var context = new PI20_024_DBEntities())
             {
@@ -55,9 +54,12 @@ namespace Testovi
 
                 zadnjiDobavljac = popisDobavljaca.Last();
                 dobavljaci.ObrisiDobavljaca(zadnjiDobavljac);
-                
+
+                popisDobavljaca = dobavljaci.DohvatiDobavljace();
+                var rez = popisDobavljaca.Count(e => (e.naziv == "TestBrisanje" && e.adresa== "Koprivnica13" && e.tekuci_racun == "HR1111111111111111111"));
+                Assert.IsTrue(rez == 0);
             }
-            Assert.IsTrue(zadnjiDobavljac.naziv == "TestBrisanje" && zadnjiDobavljac.adresa == "Koprivnica13" && zadnjiDobavljac.tekuci_racun == "HR1111111111111111111");
+            
 
         }
     }
