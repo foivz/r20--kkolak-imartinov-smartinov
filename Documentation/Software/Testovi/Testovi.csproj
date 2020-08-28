@@ -56,8 +56,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Test.cs" />
+    <Compile Include="TestDobavljaci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestNarudzbe.cs" />
+    <Compile Include="TestKlijent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -7,10 +7,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Testovi
 {
     [TestClass]
-    public class Test
+    public class TestDobavljaci
     {
         [TestMethod]
-        public void DohvatiDobavljaca()
+        public void DohvatiDobavljaca_PostojeDobavljaci()
         {
             Dobavljaci dobavljaci = new Dobavljaci();
             List<dobavljac> popisDobavljaca = new List<dobavljac>();
@@ -24,7 +24,7 @@ namespace Testovi
         }
 
         [TestMethod]
-        public void DodajDobavljaca()
+        public void DodajDobavljaca_DodanDobavljacTestDobavljac_PostojiDobavljac()
         {
             Dobavljaci dobavljaci = new Dobavljaci();
             List<dobavljac> popisDobavljaca = new List<dobavljac>();
@@ -40,7 +40,7 @@ namespace Testovi
             }
 
         [TestMethod]
-        public void BrisanjeDobavljaca()
+        public void BrisanjeDobavljaca_BrisanjeDobavljacaTestBrisanje_ObrisanDobavljac()
         {
             Dobavljaci dobavljaci = new Dobavljaci();
             List<dobavljac> popisDobavljaca = new List<dobavljac>(); 
