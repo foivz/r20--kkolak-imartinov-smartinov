@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="e-Agro.exe" size="436696">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="e-Agro.exe" size="467928">
       <assemblyIdentity name="e-Agro" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+6/i37BTvWSPQu8gXBu6v78j16MyVSyKR7d00+uvih4=</dsig:DigestValue>
+        <dsig:DigestValue>b6Ztl4EwcHch+2RVtAM1o6eFcuMiDv72R1nAEYmID14=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

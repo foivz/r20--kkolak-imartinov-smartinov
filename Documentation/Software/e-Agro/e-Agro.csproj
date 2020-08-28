@@ -214,6 +214,12 @@
     <Compile Include="frmDodavanjeUreda.Designer.cs">
       <DependentUpon>frmDodavanjeUreda.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNarudzbaIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNarudzbaIzvjestaj.Designer.cs">
+      <DependentUpon>frmNarudzbaIzvjestaj.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOtpremnicaIzvjestaj.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -481,6 +487,9 @@
     <EmbeddedResource Include="frmKatalogStrojeva.resx">
       <DependentUpon>frmKatalogStrojeva.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNarudzbaIzvjestaj.resx">
+      <DependentUpon>frmNarudzbaIzvjestaj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOtpremnicaIzvjestaj.resx">
       <DependentUpon>frmOtpremnicaIzvjestaj.cs</DependentUpon>
     </EmbeddedResource>
@@ -561,6 +570,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rptDobavljaciStrojeva.rdlc" />
+    <EmbeddedResource Include="rptNarudzba.rdlc" />
     <EmbeddedResource Include="rptOtpremnica.rdlc" />
     <EmbeddedResource Include="rptPonuda.rdlc" />
     <EmbeddedResource Include="rptPrimka.rdlc" />
@@ -578,10 +588,12 @@
     <None Include="Properties\DataSources\frmPopisNarudzbi.datasource" />
     <None Include="Properties\DataSources\katalog_strojeva.datasource" />
     <None Include="Properties\DataSources\korisnik.datasource" />
+    <None Include="Properties\DataSources\narudzba.datasource" />
     <None Include="Properties\DataSources\otpremnica.datasource" />
     <None Include="Properties\DataSources\ponuda.datasource" />
     <None Include="Properties\DataSources\primka1.datasource" />
     <None Include="Properties\DataSources\skladiste.datasource" />
+    <None Include="Properties\DataSources\stavke_na_narudzbi.datasource" />
     <None Include="Properties\DataSources\stavke_na_otpremnici.datasource" />
     <None Include="Properties\DataSources\stavke_na_ponudi.datasource" />
     <None Include="Properties\DataSources\stavke_na_primci.datasource" />

@@ -90,5 +90,15 @@ namespace e_Agro
                 System.Diagnostics.Process.Start("https://github.com/foivz/r20--kkolak-imartinov-smartinov/wiki/Korisni%C4%8Dka-dokumentacija#323-upravljanje-narud%C5%BEbama");
             }
         }
+
+        private void btnPrikazIzvjestaja_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmNarudzbaIzvjestaj())
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
     }
 }
