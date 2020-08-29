@@ -229,3 +229,4 @@ C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Sof
 C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\e-Agro\obj\Release\e-Agro.csproj.CopyComplete
 C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\e-Agro\obj\Release\e-Agro.exe
 C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\e-Agro\obj\Release\e_Agro.frmNarudzbaIzvjestaj.resources
+C:\Users\Alen\Documents\GitHub\r20--kkolak-imartinov-smartinov\Documentation\Software\e-Agro\obj\Release\e_Agro.frmNarudzbaGraf.resources

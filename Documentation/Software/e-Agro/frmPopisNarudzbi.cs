@@ -94,7 +94,17 @@ namespace e_Agro
         private void btnPrikazIzvjestaja_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma = new frmNarudzbaIzvjestaj())
+            using (var forma = new frmNarudzbaIzvjestaj(DohvatiOdabranu()))
+            {
+                forma.ShowDialog();
+            }
+            Show();
+        }
+
+        private void btnGraf_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var forma = new frmNarudzbaGraf())
             {
                 forma.ShowDialog();
             }

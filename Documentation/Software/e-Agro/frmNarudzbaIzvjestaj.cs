@@ -12,16 +12,29 @@ namespace e_Agro
 {
     public partial class frmNarudzbaIzvjestaj : Form
     {
-        public frmNarudzbaIzvjestaj()
+        private narudzba odabranaNarudzba;
+        public frmNarudzbaIzvjestaj(narudzba narudzba)
         {
+            odabranaNarudzba = narudzba;
             InitializeComponent();
         }
 
         private void frmNarudzbaIzvjestaj_Load(object sender, EventArgs e)
         {
-            List<stavke_na_primci> popisStavki = new List<stavke_na_primci>();
+            List<stavke_na_narudzbi> popisStavki = new List<stavke_na_narudzbi>();
             this.reportViewer1.RefreshReport();
-           
+
+            using (var context = new PI20_024_DBEntities())
+            {
+                var query = from s in context.stavke_na_narudzbi
+                            where s.narudzba_id == odabranaNarudzba.narudzba_id
+                            select s;
+
+                popisStavki = query.ToList();
+                narudzbaBindingSource.DataSource = popisStavki;
+                katalog_strojevaBindingSource.DataSource = odabranaNarudzba;
+            }
+
         }
     }
 }

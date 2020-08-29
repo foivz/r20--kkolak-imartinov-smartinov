@@ -15,8 +15,8 @@ namespace e_Agro
     /// </summary>
     public partial class frmDodavanjeDobavljaca : Form
     {
-        Dobavljaci dobavljaci; // Referenca na klasu Dobavljaci koja upravlja dobavljačima iz baze podataka
-        private dobavljac odabraniDobavljac; // Referenca na postojećeg dobavljača ako se radi o ažuriranju
+        Dobavljaci dobavljaci; 
+        private dobavljac odabraniDobavljac; 
 
         /// <summary>
         /// Konstruktor forme
@@ -60,20 +60,20 @@ namespace e_Agro
             string adresa = txtAdresa.Text;
             string tekuciRacun = txtTekuciRacun.Text;
 
-            if(naziv == "" || adresa == "" || tekuciRacun == "") // Ako su uneseni prazni podaci ispiše se poruka
+            if(naziv == "" || adresa == "" || tekuciRacun == "") 
             {
                 MessageBox.Show("Niste unijeli sve podatke!");
                 return;
             }
 
-            if (odabraniDobavljac != null) // Ažuriranje postojećeg dobavljača
+            if (odabraniDobavljac != null) 
             {
                 dobavljaci.AzurirajDobavljaca(odabraniDobavljac, naziv, adresa, tekuciRacun);
             }
-            else // Dodavanje novog dobavljača
+            else 
             {
                 List<dobavljac> postojeciDobavljaci = dobavljaci.DohvatiDobavljace();
-                foreach (var dobavljac in postojeciDobavljaci) // Provjera postoji li već dobavljač s unesenim nazivom
+                foreach (var dobavljac in postojeciDobavljaci) 
                 {
                     if (dobavljac.naziv == naziv)
                     {
@@ -96,8 +96,8 @@ namespace e_Agro
         /// <param name="e"></param>
         private void frmDodavanjeDobavljaca_Load(object sender, EventArgs e)
         {
-            this.KeyPreview = true; // Mora se dodati kako bi radila F1 pomoć
-            if (odabraniDobavljac != null) //Ako se radi o ažuriranju prikažu se podaci za odabranog dobavljača
+            this.KeyPreview = true; 
+            if (odabraniDobavljac != null)
             {
                 txtNaziv.Text = odabraniDobavljac.naziv;
                 txtAdresa.Text = odabraniDobavljac.adresa;
