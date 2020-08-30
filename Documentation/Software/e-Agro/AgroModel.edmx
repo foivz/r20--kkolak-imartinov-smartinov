@@ -4,99 +4,103 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Alias="Self" Namespace="PI20_024_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012">
+    <Schema Namespace="PI20_024_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="dobavljac">
           <Key>
             <PropertyRef Name="dobavljac_id" />
           </Key>
-          <Property Name="dobavljac_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="naziv" Nullable="false" MaxLength="40" Type="varchar" />
-          <Property Name="adresa" Nullable="false" MaxLength="40" Type="varchar" />
-          <Property Name="tekuci_racun" Nullable="false" MaxLength="21" Type="varchar" />
+          <Property Name="dobavljac_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="naziv" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="adresa" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="tekuci_racun" Type="varchar" MaxLength="21" Nullable="false" />
         </EntityType>
         <EntityType Name="katalog_strojeva">
           <Key>
             <PropertyRef Name="stroj_id" />
           </Key>
-          <Property Name="stroj_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="naziv" Nullable="false" MaxLength="30" Type="varchar" />
-          <Property Name="vrsta" Nullable="false" MaxLength="20" Type="varchar" />
-          <Property Name="model" Nullable="false" MaxLength="15" Type="varchar" />
-          <Property Name="opis" Nullable="false" Type="text" />
-          <Property Name="cijena" Nullable="false" Type="float" />
-          <Property Name="dobavljac_id" Nullable="false" Type="int" />
+          <Property Name="stroj_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="naziv" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="vrsta" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="model" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="opis" Type="text" Nullable="false" />
+          <Property Name="cijena" Type="float" Nullable="false" />
+          <Property Name="dobavljac_id" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="klijent">
           <Key>
             <PropertyRef Name="klijent_id" />
           </Key>
-          <Property Name="klijent_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="ime" Nullable="false" MaxLength="25" Type="varchar" />
-          <Property Name="prezime" Nullable="false" MaxLength="35" Type="varchar" />
-          <Property Name="email" Nullable="false" MaxLength="40" Type="varchar" />
-          <Property Name="adresa" Nullable="false" MaxLength="40" Type="varchar" />
-          <Property Name="tekuci_racun" Nullable="false" MaxLength="21" Type="varchar" />
+          <Property Name="klijent_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ime" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="prezime" Type="varchar" MaxLength="35" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="adresa" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="tekuci_racun" Type="varchar" MaxLength="21" Nullable="false" />
         </EntityType>
         <EntityType Name="korisnik">
           <Key>
             <PropertyRef Name="korisnik_id" />
           </Key>
-          <Property Name="korisnik_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="email" Nullable="false" MaxLength="40" Type="varchar" />
-          <Property Name="korisnicko_ime" Nullable="false" MaxLength="40" Type="varchar" />
-          <Property Name="lozinka" Nullable="false" MaxLength="15" Type="varchar" />
-          <Property Name="tip_id" Nullable="false" Type="int" />
-          <Property Name="ime" Nullable="false" MaxLength="30" Type="varchar" />
-          <Property Name="prezime" Nullable="false" MaxLength="40" Type="varchar" />
-          <Property Name="tekuci_racun" Nullable="false" MaxLength="21" Type="varchar" />
-          <Property Name="adresa" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="radno_mjesto_id" Nullable="false" Type="int" />
+          <Property Name="korisnik_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="korisnicko_ime" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="lozinka" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="tip_id" Type="int" Nullable="false" />
+          <Property Name="ime" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="prezime" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="tekuci_racun" Type="varchar" MaxLength="21" Nullable="false" />
+          <Property Name="adresa" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="radno_mjesto_id" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="narudzba">
           <Key>
             <PropertyRef Name="narudzba_id" />
           </Key>
-          <Property Name="narudzba_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="dobavljac_id" Nullable="false" Type="int" />
-          <Property Name="cijena" Nullable="false" Type="float" />
+          <Property Name="narudzba_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dobavljac_id" Type="int" Nullable="false" />
+          <Property Name="cijena" Type="float" Nullable="false" />
+          <Property Name="korisnik_id" Type="int" Nullable="false" />
+          <Property Name="datum_izdavanja" Type="datetime" />
+          <Property Name="status" Type="varchar" MaxLength="20" />
+          <Property Name="napomena" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="otpremnica">
           <Key>
             <PropertyRef Name="otpremnica_id" />
           </Key>
-          <Property Name="otpremnica_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="korisnik_id" Nullable="false" Type="int" />
-          <Property Name="cijena" Nullable="false" Type="float" />
-          <Property Name="datum_isporuke" Nullable="false" Type="date" />
+          <Property Name="otpremnica_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="korisnik_id" Type="int" Nullable="false" />
+          <Property Name="cijena" Type="float" Nullable="false" />
+          <Property Name="datum_isporuke" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="ponuda">
           <Key>
             <PropertyRef Name="ponuda_id" />
           </Key>
-          <Property Name="ponuda_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="korisnik_id" Nullable="false" Type="int" />
-          <Property Name="naziv" Nullable="false" MaxLength="30" Type="varchar" />
-          <Property Name="cijena" Nullable="false" Type="float" />
-          <Property Name="datum_kreiranja" Nullable="false" Type="date" />
-          <Property Name="klijent_id" Nullable="false" Type="int" />
+          <Property Name="ponuda_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="korisnik_id" Type="int" Nullable="false" />
+          <Property Name="naziv" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="cijena" Type="float" Nullable="false" />
+          <Property Name="datum_kreiranja" Type="date" Nullable="false" />
+          <Property Name="klijent_id" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="primka">
           <Key>
             <PropertyRef Name="primka_id" />
           </Key>
-          <Property Name="primka_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="korisnik_id" Nullable="false" Type="int" />
-          <Property Name="cijena" Nullable="false" Type="float" />
+          <Property Name="primka_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="korisnik_id" Type="int" Nullable="false" />
+          <Property Name="cijena" Type="float" Nullable="false" />
           <Property Name="datum" Type="datetime" />
-          <Property Name="mjesto" MaxLength="30" Type="varchar" />
+          <Property Name="mjesto" Type="varchar" MaxLength="30" />
           <Property Name="tecaj" Type="float" />
         </EntityType>
         <EntityType Name="radno_mjesto">
           <Key>
             <PropertyRef Name="radno_mjesto_id" />
           </Key>
-          <Property Name="radno_mjesto_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="adresa" Nullable="false" MaxLength="40" Type="varchar" />
+          <Property Name="radno_mjesto_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="adresa" Type="varchar" MaxLength="40" Nullable="false" />
           <Property Name="ured_id" Type="int" />
           <Property Name="skladiste_id" Type="int" />
         </EntityType>
@@ -104,74 +108,74 @@
           <Key>
             <PropertyRef Name="skladiste_id" />
           </Key>
-          <Property Name="skladiste_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="naziv" Nullable="false" MaxLength="40" Type="varchar" />
+          <Property Name="skladiste_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="naziv" Type="varchar" MaxLength="40" Nullable="false" />
         </EntityType>
         <EntityType Name="stavke_na_narudzbi">
           <Key>
             <PropertyRef Name="narudzba_id" />
             <PropertyRef Name="stroj_id" />
           </Key>
-          <Property Name="narudzba_id" Nullable="false" Type="int" />
-          <Property Name="stroj_id" Nullable="false" Type="int" />
-          <Property Name="kolicina" Nullable="false" Type="int" />
+          <Property Name="narudzba_id" Type="int" Nullable="false" />
+          <Property Name="stroj_id" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="stavke_na_otpremnici">
           <Key>
             <PropertyRef Name="otpremnica_id" />
             <PropertyRef Name="stroj_id" />
           </Key>
-          <Property Name="otpremnica_id" Nullable="false" Type="int" />
-          <Property Name="stroj_id" Nullable="false" Type="int" />
-          <Property Name="kolicina" Nullable="false" Type="int" />
+          <Property Name="otpremnica_id" Type="int" Nullable="false" />
+          <Property Name="stroj_id" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="stavke_na_ponudi">
           <Key>
             <PropertyRef Name="ponuda_id" />
             <PropertyRef Name="stroj_id" />
           </Key>
-          <Property Name="ponuda_id" Nullable="false" Type="int" />
-          <Property Name="stroj_id" Nullable="false" Type="int" />
-          <Property Name="kolicina" Nullable="false" Type="int" />
+          <Property Name="ponuda_id" Type="int" Nullable="false" />
+          <Property Name="stroj_id" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="stavke_na_primci">
           <Key>
             <PropertyRef Name="primka_id" />
             <PropertyRef Name="stroj_id" />
           </Key>
-          <Property Name="primka_id" Nullable="false" Type="int" />
-          <Property Name="stroj_id" Nullable="false" Type="int" />
-          <Property Name="kolicina" Nullable="false" Type="int" />
+          <Property Name="primka_id" Type="int" Nullable="false" />
+          <Property Name="stroj_id" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="stroj_na_skladistu">
           <Key>
             <PropertyRef Name="stroj_id" />
             <PropertyRef Name="skladiste_id" />
           </Key>
-          <Property Name="stroj_id" Nullable="false" Type="int" />
-          <Property Name="skladiste_id" Nullable="false" Type="int" />
-          <Property Name="kolicina" Nullable="false" Type="int" />
+          <Property Name="stroj_id" Type="int" Nullable="false" />
+          <Property Name="skladiste_id" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="tip_korisnika">
           <Key>
             <PropertyRef Name="tip_id" />
           </Key>
-          <Property Name="tip_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="naziv" Nullable="false" MaxLength="40" Type="varchar" />
+          <Property Name="tip_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="naziv" Type="varchar" MaxLength="40" Nullable="false" />
         </EntityType>
         <EntityType Name="ured">
           <Key>
             <PropertyRef Name="ured_id" />
           </Key>
-          <Property Name="ured_id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="odjel" Nullable="false" MaxLength="20" Type="varchar" />
-          <Property Name="zupanija" Nullable="false" MaxLength="50" Type="varchar" />
+          <Property Name="ured_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="odjel" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="zupanija" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <Association Name="FK_dobavljac_katalog_strojeva">
-          <End Type="Self.dobavljac" Multiplicity="1" Role="dobavljac">
+          <End Role="dobavljac" Type="Self.dobavljac" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.katalog_strojeva" Multiplicity="*" Role="katalog_strojeva" />
+          <End Role="katalog_strojeva" Type="Self.katalog_strojeva" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="dobavljac">
               <PropertyRef Name="dobavljac_id" />
@@ -182,10 +186,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_dobavljac_narudzba">
-          <End Type="Self.dobavljac" Multiplicity="1" Role="dobavljac">
+          <End Role="dobavljac" Type="Self.dobavljac" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.narudzba" Multiplicity="*" Role="narudzba" />
+          <End Role="narudzba" Type="Self.narudzba" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="dobavljac">
               <PropertyRef Name="dobavljac_id" />
@@ -196,10 +200,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_klijent_ponuda">
-          <End Type="Self.klijent" Multiplicity="1" Role="klijent">
+          <End Role="klijent" Type="Self.klijent" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.ponuda" Multiplicity="*" Role="ponuda" />
+          <End Role="ponuda" Type="Self.ponuda" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="klijent">
               <PropertyRef Name="klijent_id" />
@@ -209,11 +213,23 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_korisnik_narudzba">
+          <End Role="korisnik" Type="Self.korisnik" Multiplicity="1" />
+          <End Role="narudzba" Type="Self.narudzba" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnik">
+              <PropertyRef Name="korisnik_id" />
+            </Principal>
+            <Dependent Role="narudzba">
+              <PropertyRef Name="korisnik_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_korisnik_otpremnica">
-          <End Type="Self.korisnik" Multiplicity="1" Role="korisnik">
+          <End Role="korisnik" Type="Self.korisnik" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.otpremnica" Multiplicity="*" Role="otpremnica" />
+          <End Role="otpremnica" Type="Self.otpremnica" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="korisnik">
               <PropertyRef Name="korisnik_id" />
@@ -224,10 +240,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_korisnik_ponuda">
-          <End Type="Self.korisnik" Multiplicity="1" Role="korisnik">
+          <End Role="korisnik" Type="Self.korisnik" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.ponuda" Multiplicity="*" Role="ponuda" />
+          <End Role="ponuda" Type="Self.ponuda" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="korisnik">
               <PropertyRef Name="korisnik_id" />
@@ -238,10 +254,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_korisnik_primka">
-          <End Type="Self.korisnik" Multiplicity="1" Role="korisnik">
+          <End Role="korisnik" Type="Self.korisnik" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.primka" Multiplicity="*" Role="primka" />
+          <End Role="primka" Type="Self.primka" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="korisnik">
               <PropertyRef Name="korisnik_id" />
@@ -252,8 +268,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_ponuda_stavke_na_ponudi">
-          <End Type="Self.ponuda" Multiplicity="1" Role="ponuda" />
-          <End Type="Self.stavke_na_ponudi" Multiplicity="*" Role="stavke_na_ponudi" />
+          <End Role="ponuda" Type="Self.ponuda" Multiplicity="1" />
+          <End Role="stavke_na_ponudi" Type="Self.stavke_na_ponudi" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ponuda">
               <PropertyRef Name="ponuda_id" />
@@ -264,8 +280,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_primka_stavke_na_otpremnici">
-          <End Type="Self.otpremnica" Multiplicity="1" Role="otpremnica" />
-          <End Type="Self.stavke_na_otpremnici" Multiplicity="*" Role="stavke_na_otpremnici" />
+          <End Role="otpremnica" Type="Self.otpremnica" Multiplicity="1" />
+          <End Role="stavke_na_otpremnici" Type="Self.stavke_na_otpremnici" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="otpremnica">
               <PropertyRef Name="otpremnica_id" />
@@ -276,8 +292,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_primka_stavke_na_primci">
-          <End Type="Self.primka" Multiplicity="1" Role="primka" />
-          <End Type="Self.stavke_na_primci" Multiplicity="*" Role="stavke_na_primci" />
+          <End Role="primka" Type="Self.primka" Multiplicity="1" />
+          <End Role="stavke_na_primci" Type="Self.stavke_na_primci" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="primka">
               <PropertyRef Name="primka_id" />
@@ -288,10 +304,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_radno_mjesto_korisnik">
-          <End Type="Self.radno_mjesto" Multiplicity="1" Role="radno_mjesto">
+          <End Role="radno_mjesto" Type="Self.radno_mjesto" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.korisnik" Multiplicity="*" Role="korisnik" />
+          <End Role="korisnik" Type="Self.korisnik" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="radno_mjesto">
               <PropertyRef Name="radno_mjesto_id" />
@@ -302,10 +318,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_skladiste_radno_mjesto">
-          <End Type="Self.skladiste" Multiplicity="0..1" Role="skladiste">
+          <End Role="skladiste" Type="Self.skladiste" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.radno_mjesto" Multiplicity="*" Role="radno_mjesto" />
+          <End Role="radno_mjesto" Type="Self.radno_mjesto" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="skladiste">
               <PropertyRef Name="skladiste_id" />
@@ -316,8 +332,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_skladiste_stroj_na_skladistu">
-          <End Type="Self.skladiste" Multiplicity="1" Role="skladiste" />
-          <End Type="Self.stroj_na_skladistu" Multiplicity="*" Role="stroj_na_skladistu" />
+          <End Role="skladiste" Type="Self.skladiste" Multiplicity="1" />
+          <End Role="stroj_na_skladistu" Type="Self.stroj_na_skladistu" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="skladiste">
               <PropertyRef Name="skladiste_id" />
@@ -328,8 +344,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_stroj_stavke_na_otpremnici">
-          <End Type="Self.katalog_strojeva" Multiplicity="1" Role="katalog_strojeva" />
-          <End Type="Self.stavke_na_otpremnici" Multiplicity="*" Role="stavke_na_otpremnici" />
+          <End Role="katalog_strojeva" Type="Self.katalog_strojeva" Multiplicity="1" />
+          <End Role="stavke_na_otpremnici" Type="Self.stavke_na_otpremnici" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="katalog_strojeva">
               <PropertyRef Name="stroj_id" />
@@ -340,8 +356,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_stroj_stavke_na_ponudi">
-          <End Type="Self.katalog_strojeva" Multiplicity="1" Role="katalog_strojeva" />
-          <End Type="Self.stavke_na_ponudi" Multiplicity="*" Role="stavke_na_ponudi" />
+          <End Role="katalog_strojeva" Type="Self.katalog_strojeva" Multiplicity="1" />
+          <End Role="stavke_na_ponudi" Type="Self.stavke_na_ponudi" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="katalog_strojeva">
               <PropertyRef Name="stroj_id" />
@@ -352,8 +368,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_stroj_stavke_na_primci">
-          <End Type="Self.katalog_strojeva" Multiplicity="1" Role="katalog_strojeva" />
-          <End Type="Self.stavke_na_primci" Multiplicity="*" Role="stavke_na_primci" />
+          <End Role="katalog_strojeva" Type="Self.katalog_strojeva" Multiplicity="1" />
+          <End Role="stavke_na_primci" Type="Self.stavke_na_primci" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="katalog_strojeva">
               <PropertyRef Name="stroj_id" />
@@ -364,8 +380,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_stroj_stroj_na_skladistu">
-          <End Type="Self.katalog_strojeva" Multiplicity="1" Role="katalog_strojeva" />
-          <End Type="Self.stroj_na_skladistu" Multiplicity="*" Role="stroj_na_skladistu" />
+          <End Role="katalog_strojeva" Type="Self.katalog_strojeva" Multiplicity="1" />
+          <End Role="stroj_na_skladistu" Type="Self.stroj_na_skladistu" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="katalog_strojeva">
               <PropertyRef Name="stroj_id" />
@@ -376,10 +392,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_tip_korisnika_korisnik">
-          <End Type="Self.tip_korisnika" Multiplicity="1" Role="tip_korisnika">
+          <End Role="tip_korisnika" Type="Self.tip_korisnika" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.korisnik" Multiplicity="*" Role="korisnik" />
+          <End Role="korisnik" Type="Self.korisnik" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tip_korisnika">
               <PropertyRef Name="tip_id" />
@@ -390,10 +406,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_ured_radno_mjesto">
-          <End Type="Self.ured" Multiplicity="0..1" Role="ured">
+          <End Role="ured" Type="Self.ured" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="Self.radno_mjesto" Multiplicity="*" Role="radno_mjesto" />
+          <End Role="radno_mjesto" Type="Self.radno_mjesto" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ured">
               <PropertyRef Name="ured_id" />
@@ -422,76 +438,80 @@
           <EntitySet Name="tip_korisnika" EntityType="Self.tip_korisnika" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ured" EntityType="Self.ured" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_dobavljac_katalog_strojeva" Association="Self.FK_dobavljac_katalog_strojeva">
-            <End EntitySet="dobavljac" Role="dobavljac" />
-            <End EntitySet="katalog_strojeva" Role="katalog_strojeva" />
+            <End Role="dobavljac" EntitySet="dobavljac" />
+            <End Role="katalog_strojeva" EntitySet="katalog_strojeva" />
           </AssociationSet>
           <AssociationSet Name="FK_dobavljac_narudzba" Association="Self.FK_dobavljac_narudzba">
-            <End EntitySet="dobavljac" Role="dobavljac" />
-            <End EntitySet="narudzba" Role="narudzba" />
+            <End Role="dobavljac" EntitySet="dobavljac" />
+            <End Role="narudzba" EntitySet="narudzba" />
           </AssociationSet>
           <AssociationSet Name="FK_klijent_ponuda" Association="Self.FK_klijent_ponuda">
-            <End EntitySet="klijent" Role="klijent" />
-            <End EntitySet="ponuda" Role="ponuda" />
+            <End Role="klijent" EntitySet="klijent" />
+            <End Role="ponuda" EntitySet="ponuda" />
+          </AssociationSet>
+          <AssociationSet Name="FK_korisnik_narudzba" Association="Self.FK_korisnik_narudzba">
+            <End Role="korisnik" EntitySet="korisnik" />
+            <End Role="narudzba" EntitySet="narudzba" />
           </AssociationSet>
           <AssociationSet Name="FK_korisnik_otpremnica" Association="Self.FK_korisnik_otpremnica">
-            <End EntitySet="korisnik" Role="korisnik" />
-            <End EntitySet="otpremnica" Role="otpremnica" />
+            <End Role="korisnik" EntitySet="korisnik" />
+            <End Role="otpremnica" EntitySet="otpremnica" />
           </AssociationSet>
           <AssociationSet Name="FK_korisnik_ponuda" Association="Self.FK_korisnik_ponuda">
-            <End EntitySet="korisnik" Role="korisnik" />
-            <End EntitySet="ponuda" Role="ponuda" />
+            <End Role="korisnik" EntitySet="korisnik" />
+            <End Role="ponuda" EntitySet="ponuda" />
           </AssociationSet>
           <AssociationSet Name="FK_korisnik_primka" Association="Self.FK_korisnik_primka">
-            <End EntitySet="korisnik" Role="korisnik" />
-            <End EntitySet="primka" Role="primka" />
+            <End Role="korisnik" EntitySet="korisnik" />
+            <End Role="primka" EntitySet="primka" />
           </AssociationSet>
           <AssociationSet Name="FK_ponuda_stavke_na_ponudi" Association="Self.FK_ponuda_stavke_na_ponudi">
-            <End EntitySet="ponuda" Role="ponuda" />
-            <End EntitySet="stavke_na_ponudi" Role="stavke_na_ponudi" />
+            <End Role="ponuda" EntitySet="ponuda" />
+            <End Role="stavke_na_ponudi" EntitySet="stavke_na_ponudi" />
           </AssociationSet>
           <AssociationSet Name="FK_primka_stavke_na_otpremnici" Association="Self.FK_primka_stavke_na_otpremnici">
-            <End EntitySet="otpremnica" Role="otpremnica" />
-            <End EntitySet="stavke_na_otpremnici" Role="stavke_na_otpremnici" />
+            <End Role="otpremnica" EntitySet="otpremnica" />
+            <End Role="stavke_na_otpremnici" EntitySet="stavke_na_otpremnici" />
           </AssociationSet>
           <AssociationSet Name="FK_primka_stavke_na_primci" Association="Self.FK_primka_stavke_na_primci">
-            <End EntitySet="primka" Role="primka" />
-            <End EntitySet="stavke_na_primci" Role="stavke_na_primci" />
+            <End Role="primka" EntitySet="primka" />
+            <End Role="stavke_na_primci" EntitySet="stavke_na_primci" />
           </AssociationSet>
           <AssociationSet Name="FK_radno_mjesto_korisnik" Association="Self.FK_radno_mjesto_korisnik">
-            <End EntitySet="radno_mjesto" Role="radno_mjesto" />
-            <End EntitySet="korisnik" Role="korisnik" />
+            <End Role="radno_mjesto" EntitySet="radno_mjesto" />
+            <End Role="korisnik" EntitySet="korisnik" />
           </AssociationSet>
           <AssociationSet Name="FK_skladiste_radno_mjesto" Association="Self.FK_skladiste_radno_mjesto">
-            <End EntitySet="skladiste" Role="skladiste" />
-            <End EntitySet="radno_mjesto" Role="radno_mjesto" />
+            <End Role="skladiste" EntitySet="skladiste" />
+            <End Role="radno_mjesto" EntitySet="radno_mjesto" />
           </AssociationSet>
           <AssociationSet Name="FK_skladiste_stroj_na_skladistu" Association="Self.FK_skladiste_stroj_na_skladistu">
-            <End EntitySet="skladiste" Role="skladiste" />
-            <End EntitySet="stroj_na_skladistu" Role="stroj_na_skladistu" />
+            <End Role="skladiste" EntitySet="skladiste" />
+            <End Role="stroj_na_skladistu" EntitySet="stroj_na_skladistu" />
           </AssociationSet>
           <AssociationSet Name="FK_stroj_stavke_na_otpremnici" Association="Self.FK_stroj_stavke_na_otpremnici">
-            <End EntitySet="katalog_strojeva" Role="katalog_strojeva" />
-            <End EntitySet="stavke_na_otpremnici" Role="stavke_na_otpremnici" />
+            <End Role="katalog_strojeva" EntitySet="katalog_strojeva" />
+            <End Role="stavke_na_otpremnici" EntitySet="stavke_na_otpremnici" />
           </AssociationSet>
           <AssociationSet Name="FK_stroj_stavke_na_ponudi" Association="Self.FK_stroj_stavke_na_ponudi">
-            <End EntitySet="katalog_strojeva" Role="katalog_strojeva" />
-            <End EntitySet="stavke_na_ponudi" Role="stavke_na_ponudi" />
+            <End Role="katalog_strojeva" EntitySet="katalog_strojeva" />
+            <End Role="stavke_na_ponudi" EntitySet="stavke_na_ponudi" />
           </AssociationSet>
           <AssociationSet Name="FK_stroj_stavke_na_primci" Association="Self.FK_stroj_stavke_na_primci">
-            <End EntitySet="katalog_strojeva" Role="katalog_strojeva" />
-            <End EntitySet="stavke_na_primci" Role="stavke_na_primci" />
+            <End Role="katalog_strojeva" EntitySet="katalog_strojeva" />
+            <End Role="stavke_na_primci" EntitySet="stavke_na_primci" />
           </AssociationSet>
           <AssociationSet Name="FK_stroj_stroj_na_skladistu" Association="Self.FK_stroj_stroj_na_skladistu">
-            <End EntitySet="katalog_strojeva" Role="katalog_strojeva" />
-            <End EntitySet="stroj_na_skladistu" Role="stroj_na_skladistu" />
+            <End Role="katalog_strojeva" EntitySet="katalog_strojeva" />
+            <End Role="stroj_na_skladistu" EntitySet="stroj_na_skladistu" />
           </AssociationSet>
           <AssociationSet Name="FK_tip_korisnika_korisnik" Association="Self.FK_tip_korisnika_korisnik">
-            <End EntitySet="tip_korisnika" Role="tip_korisnika" />
-            <End EntitySet="korisnik" Role="korisnik" />
+            <End Role="tip_korisnika" EntitySet="tip_korisnika" />
+            <End Role="korisnik" EntitySet="korisnik" />
           </AssociationSet>
           <AssociationSet Name="FK_ured_radno_mjesto" Association="Self.FK_ured_radno_mjesto">
-            <End EntitySet="ured" Role="ured" />
-            <End EntitySet="radno_mjesto" Role="radno_mjesto" />
+            <End Role="ured" EntitySet="ured" />
+            <End Role="radno_mjesto" EntitySet="radno_mjesto" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -558,6 +578,7 @@
           <NavigationProperty Name="primkas" Relationship="Self.FK_korisnik_primka" FromRole="korisnik" ToRole="primka" />
           <NavigationProperty Name="radno_mjesto" Relationship="Self.FK_radno_mjesto_korisnik" FromRole="korisnik" ToRole="radno_mjesto" />
           <NavigationProperty Name="tip_korisnika" Relationship="Self.FK_tip_korisnika_korisnik" FromRole="korisnik" ToRole="tip_korisnika" />
+          <NavigationProperty Name="narudzbas" Relationship="PI20_024_DBModel.FK_korisnik_narudzba" FromRole="korisnik" ToRole="narudzba" />
         </EntityType>
         <EntityType Name="narudzba">
           <Key>
@@ -568,6 +589,11 @@
           <Property Name="cijena" Type="Double" Nullable="false" />
           <NavigationProperty Name="dobavljac" Relationship="Self.FK_dobavljac_narudzba" FromRole="narudzba" ToRole="dobavljac" />
           <NavigationProperty Name="stavke_na_narudzbi" Relationship="Self.FK_narudzba_stavke_na_narudzbi" FromRole="narudzba" ToRole="stavke_na_narudzbi" />
+          <Property Name="korisnik_id" Type="Int32" Nullable="false" />
+          <Property Name="datum_izdavanja" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="napomena" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="korisnik" Relationship="PI20_024_DBModel.FK_korisnik_narudzba" FromRole="narudzba" ToRole="korisnik" />
         </EntityType>
         <EntityType Name="otpremnica">
           <Key>
@@ -1058,7 +1084,23 @@
             <End Role="skladiste" EntitySet="skladistes" />
             <End Role="stroj_na_skladistu" EntitySet="stroj_na_skladistu" />
           </AssociationSet>
+          <AssociationSet Name="FK_korisnik_narudzba" Association="PI20_024_DBModel.FK_korisnik_narudzba">
+            <End Role="korisnik" EntitySet="korisniks" />
+            <End Role="narudzba" EntitySet="narudzbas" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK_korisnik_narudzba">
+          <End Type="PI20_024_DBModel.korisnik" Role="korisnik" Multiplicity="1" />
+          <End Type="PI20_024_DBModel.narudzba" Role="narudzba" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnik">
+              <PropertyRef Name="korisnik_id" />
+            </Principal>
+            <Dependent Role="narudzba">
+              <PropertyRef Name="korisnik_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1119,6 +1161,10 @@
           <EntitySetMapping Name="narudzbas">
             <EntityTypeMapping TypeName="PI20_024_DBModel.narudzba">
               <MappingFragment StoreEntitySet="narudzba">
+                <ScalarProperty Name="napomena" ColumnName="napomena" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="datum_izdavanja" ColumnName="datum_izdavanja" />
+                <ScalarProperty Name="korisnik_id" ColumnName="korisnik_id" />
                 <ScalarProperty Name="narudzba_id" ColumnName="narudzba_id" />
                 <ScalarProperty Name="dobavljac_id" ColumnName="dobavljac_id" />
                 <ScalarProperty Name="cijena" ColumnName="cijena" />

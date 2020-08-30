@@ -55,6 +55,10 @@
     <EntitySetMapping Name="narudzbas">
       <EntityTypeMapping TypeName="PI20_024_DBModel.narudzba">
         <MappingFragment StoreEntitySet="narudzba">
+          <ScalarProperty Name="napomena" ColumnName="napomena" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="datum_izdavanja" ColumnName="datum_izdavanja" />
+          <ScalarProperty Name="korisnik_id" ColumnName="korisnik_id" />
           <ScalarProperty Name="narudzba_id" ColumnName="narudzba_id" />
           <ScalarProperty Name="dobavljac_id" ColumnName="dobavljac_id" />
           <ScalarProperty Name="cijena" ColumnName="cijena" />

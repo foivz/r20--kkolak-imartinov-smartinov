@@ -60,6 +60,7 @@
     <NavigationProperty Name="primkas" Relationship="Self.FK_korisnik_primka" FromRole="korisnik" ToRole="primka" />
     <NavigationProperty Name="radno_mjesto" Relationship="Self.FK_radno_mjesto_korisnik" FromRole="korisnik" ToRole="radno_mjesto" />
     <NavigationProperty Name="tip_korisnika" Relationship="Self.FK_tip_korisnika_korisnik" FromRole="korisnik" ToRole="tip_korisnika" />
+    <NavigationProperty Name="narudzbas" Relationship="PI20_024_DBModel.FK_korisnik_narudzba" FromRole="korisnik" ToRole="narudzba" />
   </EntityType>
   <EntityType Name="narudzba">
     <Key>
@@ -70,6 +71,11 @@
     <Property Name="cijena" Type="Double" Nullable="false" />
     <NavigationProperty Name="dobavljac" Relationship="Self.FK_dobavljac_narudzba" FromRole="narudzba" ToRole="dobavljac" />
     <NavigationProperty Name="stavke_na_narudzbi" Relationship="Self.FK_narudzba_stavke_na_narudzbi" FromRole="narudzba" ToRole="stavke_na_narudzbi" />
+    <Property Name="korisnik_id" Type="Int32" Nullable="false" />
+    <Property Name="datum_izdavanja" Type="DateTime" Precision="3" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="napomena" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="korisnik" Relationship="PI20_024_DBModel.FK_korisnik_narudzba" FromRole="narudzba" ToRole="korisnik" />
   </EntityType>
   <EntityType Name="otpremnica">
     <Key>
@@ -560,5 +566,21 @@
       <End Role="skladiste" EntitySet="skladistes" />
       <End Role="stroj_na_skladistu" EntitySet="stroj_na_skladistu" />
     </AssociationSet>
+    <AssociationSet Name="FK_korisnik_narudzba" Association="PI20_024_DBModel.FK_korisnik_narudzba">
+      <End Role="korisnik" EntitySet="korisniks" />
+      <End Role="narudzba" EntitySet="narudzbas" />
+    </AssociationSet>
   </EntityContainer>
+  <Association Name="FK_korisnik_narudzba">
+    <End Type="PI20_024_DBModel.korisnik" Role="korisnik" Multiplicity="1" />
+    <End Type="PI20_024_DBModel.narudzba" Role="narudzba" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="korisnik">
+        <PropertyRef Name="korisnik_id" />
+      </Principal>
+      <Dependent Role="narudzba">
+        <PropertyRef Name="korisnik_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

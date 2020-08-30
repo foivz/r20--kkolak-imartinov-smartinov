@@ -23,9 +23,14 @@ namespace e_Agro
         public int narudzba_id { get; set; }
         public int dobavljac_id { get; set; }
         public double cijena { get; set; }
+        public int korisnik_id { get; set; }
+        public Nullable<System.DateTime> datum_izdavanja { get; set; }
+        public string status { get; set; }
+        public string napomena { get; set; }
     
         public virtual dobavljac dobavljac { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stavke_na_narudzbi> stavke_na_narudzbi { get; set; }
+        public virtual korisnik korisnik { get; set; }
     }
 }

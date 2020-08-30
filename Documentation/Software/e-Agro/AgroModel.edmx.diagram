@@ -42,6 +42,7 @@
         <AssociationConnector Association="PI20_024_DBModel.FK_skladiste_radno_mjesto" ManuallyRouted="false" />
         <AssociationConnector Association="PI20_024_DBModel.FK_ured_radno_mjesto" ManuallyRouted="false" />
         <AssociationConnector Association="PI20_024_DBModel.FK_skladiste_stroj_na_skladistu" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_024_DBModel.FK_korisnik_narudzba" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

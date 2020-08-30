@@ -20,6 +20,7 @@ namespace e_Agro
             this.otpremnicas = new HashSet<otpremnica>();
             this.ponudas = new HashSet<ponuda>();
             this.primkas = new HashSet<primka>();
+            this.narudzbas = new HashSet<narudzba>();
         }
     
         public int korisnik_id { get; set; }
@@ -41,5 +42,7 @@ namespace e_Agro
         public virtual ICollection<primka> primkas { get; set; }
         public virtual radno_mjesto radno_mjesto { get; set; }
         public virtual tip_korisnika tip_korisnika { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<narudzba> narudzbas { get; set; }
     }
 }

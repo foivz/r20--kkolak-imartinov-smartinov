@@ -33,12 +33,20 @@
             this.cmbDobavljac = new System.Windows.Forms.ComboBox();
             this.lblDobavljac = new System.Windows.Forms.Label();
             this.lblNaslov = new System.Windows.Forms.Label();
+            this.txtNapomena = new System.Windows.Forms.TextBox();
+            this.lblModel = new System.Windows.Forms.Label();
+            this.txtStatus = new System.Windows.Forms.TextBox();
+            this.lblVrsta = new System.Windows.Forms.Label();
+            this.lblNaziv = new System.Windows.Forms.Label();
+            this.dtpDatum = new System.Windows.Forms.DateTimePicker();
+            this.cmbKorisnik = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdustani.Location = new System.Drawing.Point(190, 159);
+            this.btnOdustani.Location = new System.Drawing.Point(188, 223);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 34);
             this.btnOdustani.TabIndex = 51;
@@ -49,7 +57,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(36, 159);
+            this.btnDodaj.Location = new System.Drawing.Point(34, 223);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(130, 34);
             this.btnDodaj.TabIndex = 50;
@@ -87,12 +95,93 @@
             this.lblNaslov.TabIndex = 55;
             this.lblNaslov.Text = "Dodaj novu narudžbu";
             // 
+            // txtNapomena
+            // 
+            this.txtNapomena.Location = new System.Drawing.Point(496, 98);
+            this.txtNapomena.Name = "txtNapomena";
+            this.txtNapomena.Size = new System.Drawing.Size(121, 20);
+            this.txtNapomena.TabIndex = 61;
+            // 
+            // lblModel
+            // 
+            this.lblModel.AutoSize = true;
+            this.lblModel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModel.ForeColor = System.Drawing.Color.White;
+            this.lblModel.Location = new System.Drawing.Point(496, 79);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(87, 17);
+            this.lblModel.TabIndex = 60;
+            this.lblModel.Text = "Napomena:";
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.Location = new System.Drawing.Point(369, 98);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(121, 20);
+            this.txtStatus.TabIndex = 59;
+            // 
+            // lblVrsta
+            // 
+            this.lblVrsta.AutoSize = true;
+            this.lblVrsta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVrsta.ForeColor = System.Drawing.Color.White;
+            this.lblVrsta.Location = new System.Drawing.Point(366, 79);
+            this.lblVrsta.Name = "lblVrsta";
+            this.lblVrsta.Size = new System.Drawing.Size(50, 17);
+            this.lblVrsta.TabIndex = 58;
+            this.lblVrsta.Text = "Status:";
+            // 
+            // lblNaziv
+            // 
+            this.lblNaziv.AutoSize = true;
+            this.lblNaziv.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaziv.ForeColor = System.Drawing.Color.White;
+            this.lblNaziv.Location = new System.Drawing.Point(162, 79);
+            this.lblNaziv.Name = "lblNaziv";
+            this.lblNaziv.Size = new System.Drawing.Size(125, 17);
+            this.lblNaziv.TabIndex = 56;
+            this.lblNaziv.Text = "Datum izdavanja:";
+            // 
+            // dtpDatum
+            // 
+            this.dtpDatum.Location = new System.Drawing.Point(163, 98);
+            this.dtpDatum.Name = "dtpDatum";
+            this.dtpDatum.Size = new System.Drawing.Size(200, 20);
+            this.dtpDatum.TabIndex = 62;
+            // 
+            // cmbKorisnik
+            // 
+            this.cmbKorisnik.FormattingEnabled = true;
+            this.cmbKorisnik.Location = new System.Drawing.Point(34, 157);
+            this.cmbKorisnik.Name = "cmbKorisnik";
+            this.cmbKorisnik.Size = new System.Drawing.Size(121, 21);
+            this.cmbKorisnik.TabIndex = 63;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(33, 137);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.TabIndex = 64;
+            this.label1.Text = "Korisnik:";
+            // 
             // frmDodavanjeNarudzbi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(311, 213);
+            this.ClientSize = new System.Drawing.Size(676, 311);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbKorisnik);
+            this.Controls.Add(this.dtpDatum);
+            this.Controls.Add(this.txtNapomena);
+            this.Controls.Add(this.lblModel);
+            this.Controls.Add(this.txtStatus);
+            this.Controls.Add(this.lblVrsta);
+            this.Controls.Add(this.lblNaziv);
             this.Controls.Add(this.lblNaslov);
             this.Controls.Add(this.cmbDobavljac);
             this.Controls.Add(this.lblDobavljac);
@@ -115,5 +204,13 @@
         private System.Windows.Forms.ComboBox cmbDobavljac;
         private System.Windows.Forms.Label lblDobavljac;
         private System.Windows.Forms.Label lblNaslov;
+        private System.Windows.Forms.TextBox txtNapomena;
+        private System.Windows.Forms.Label lblModel;
+        private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.Label lblVrsta;
+        private System.Windows.Forms.Label lblNaziv;
+        private System.Windows.Forms.DateTimePicker dtpDatum;
+        private System.Windows.Forms.ComboBox cmbKorisnik;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -13,33 +13,42 @@ namespace e_Agro
         {
             using (var context = new PI20_024_DBEntities())
             {
-                var query = from n in context.narudzbas.Include("dobavljac")
+                var query = from n in context.narudzbas.Include("dobavljac").Include("korisnik")
                             select n;
                 return query.ToList();
             }
         }
 
-        public void DodajNarudzbu(dobavljac dobavljac, double cijena)
+        public void DodajNarudzbu(dobavljac dobavljac, double cijena, korisnik korisnik, DateTime datumIzdavanja, string status, string napomena)
         {
             using (var context = new PI20_024_DBEntities())
             {
                 narudzba novaNarudzba = new narudzba
                 {
                     dobavljac_id = dobavljac.dobavljac_id,
-                    cijena = cijena
+                    cijena = cijena,
+                    korisnik_id = korisnik.korisnik_id,
+                    datum_izdavanja = datumIzdavanja,
+                    status = status,
+                    napomena = napomena
                 };
                 context.narudzbas.Add(novaNarudzba);
                 context.SaveChanges();
             }
         }
 
-        public void AzurirajNarudzbu(narudzba odabranaNarudzba, dobavljac dobavljac, double cijena)
+        public void AzurirajNarudzbu(narudzba odabranaNarudzba, dobavljac dobavljac,korisnik korisnik, double cijena, DateTime datumIzdavanja, string status, string napomena)
         {
             using (var context = new PI20_024_DBEntities())
             {
                 context.Entry(odabranaNarudzba).State = EntityState.Modified;
                 odabranaNarudzba.dobavljac_id = dobavljac.dobavljac_id;
+                odabranaNarudzba.korisnik_id = korisnik.korisnik_id;
                 odabranaNarudzba.cijena = cijena;
+                odabranaNarudzba.datum_izdavanja = datumIzdavanja;
+                odabranaNarudzba.status = status;
+                odabranaNarudzba.napomena = napomena;
+
                 context.SaveChanges();
             }
         }

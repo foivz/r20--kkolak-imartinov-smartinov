@@ -22,7 +22,7 @@ namespace e_Agro
         private void frmNarudzbaIzvjestaj_Load(object sender, EventArgs e)
         {
             List<stavke_na_narudzbi> popisStavki = new List<stavke_na_narudzbi>();
-            this.reportViewer1.RefreshReport();
+            List<katalog_strojeva> popisStrojeva = new List<katalog_strojeva>();
 
             using (var context = new PI20_024_DBEntities())
             {
@@ -31,10 +31,17 @@ namespace e_Agro
                             select s;
 
                 popisStavki = query.ToList();
-                narudzbaBindingSource.DataSource = popisStavki;
-                katalog_strojevaBindingSource.DataSource = odabranaNarudzba;
-            }
 
+                foreach (var stavka in popisStavki)
+                {
+                    popisStrojeva.Add(stavka.katalog_strojeva);
+                }
+            }
+            narudzbaBindingSource.DataSource = odabranaNarudzba;
+            katalog_strojevaBindingSource.DataSource = popisStrojeva;
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
         }
     }
 }

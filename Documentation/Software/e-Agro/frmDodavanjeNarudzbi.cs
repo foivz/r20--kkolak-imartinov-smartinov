@@ -14,6 +14,7 @@ namespace e_Agro
     {
         Narudzbe narudzbe;
         Dobavljaci dobavljaci;
+        Korisnici korisnici;
 
         private narudzba odabranaNarudzba;
 
@@ -21,6 +22,7 @@ namespace e_Agro
         {
             narudzbe = new Narudzbe();
             dobavljaci = new Dobavljaci();
+            korisnici = new Korisnici();
             odabranaNarudzba = narudzba;
             InitializeComponent();
         }
@@ -29,11 +31,13 @@ namespace e_Agro
             InitializeComponent();
             dobavljaci = new Dobavljaci();
             narudzbe = new Narudzbe();
+            korisnici = new Korisnici();
         }
 
         private void UcitajCombo()
         {
             cmbDobavljac.DataSource = dobavljaci.DohvatiDobavljace();
+            cmbKorisnik.DataSource = korisnici.DohvatiKorisnike();
         }
 
         private void UcitajGUI()
@@ -41,6 +45,11 @@ namespace e_Agro
             if (odabranaNarudzba != null)
             {
                 cmbDobavljac.SelectedItem = odabranaNarudzba.dobavljac;
+                dtpDatum.Value = odabranaNarudzba.datum_izdavanja.Value;
+                txtStatus.Text = odabranaNarudzba.status;
+                txtNapomena.Text = odabranaNarudzba.napomena;
+                cmbKorisnik.SelectedItem = odabranaNarudzba.korisnik;
+
                 btnDodaj.Text = "Ažuriraj";
                 this.Text = "Ažuriranje narudžbu";
                 lblNaslov.Text = "Ažuriraj narudžbu";
@@ -61,6 +70,12 @@ namespace e_Agro
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             dobavljac dobavljac = cmbDobavljac.SelectedItem as dobavljac;
+            korisnik korisnik = cmbKorisnik.SelectedItem as korisnik;
+            DateTime datumIzdavanja = dtpDatum.Value;
+            string status = txtStatus.Text;
+            string napomena = txtNapomena.Text;
+            
+
 
             if (string.IsNullOrEmpty(cmbDobavljac.Text))
             {
@@ -70,11 +85,11 @@ namespace e_Agro
 
             if (odabranaNarudzba != null)
             {
-                narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, odabranaNarudzba.cijena);
+                narudzbe.AzurirajNarudzbu(odabranaNarudzba, dobavljac, korisnik, odabranaNarudzba.cijena, datumIzdavanja, status, napomena);
             }
             else
             {
-                narudzbe.DodajNarudzbu(dobavljac, 0);
+                narudzbe.DodajNarudzbu(dobavljac, 0, korisnik, datumIzdavanja, status, napomena);
             }
             Close();
         }
