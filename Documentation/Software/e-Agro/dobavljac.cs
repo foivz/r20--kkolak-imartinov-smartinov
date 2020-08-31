@@ -11,7 +11,8 @@ namespace e_Agro
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class dobavljac
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,8 +23,14 @@ namespace e_Agro
         }
     
         public int dobavljac_id { get; set; }
+
+        [DisplayName("Naziv dobavljaca")]
         public string naziv { get; set; }
+
+        [DisplayName("Adresa")]
         public string adresa { get; set; }
+
+        [DisplayName("Tekuci racun")]
         public string tekuci_racun { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

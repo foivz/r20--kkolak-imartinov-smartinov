@@ -51,7 +51,7 @@
             this.lblNaslov.AutoSize = true;
             this.lblNaslov.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslov.ForeColor = System.Drawing.Color.White;
-            this.lblNaslov.Location = new System.Drawing.Point(186, 9);
+            this.lblNaslov.Location = new System.Drawing.Point(301, 26);
             this.lblNaslov.Name = "lblNaslov";
             this.lblNaslov.Size = new System.Drawing.Size(101, 23);
             this.lblNaslov.TabIndex = 27;
@@ -60,7 +60,7 @@
             // btnAzuriraj
             // 
             this.btnAzuriraj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAzuriraj.Location = new System.Drawing.Point(320, 59);
+            this.btnAzuriraj.Location = new System.Drawing.Point(435, 76);
             this.btnAzuriraj.Name = "btnAzuriraj";
             this.btnAzuriraj.Size = new System.Drawing.Size(140, 37);
             this.btnAzuriraj.TabIndex = 26;
@@ -71,7 +71,7 @@
             // btnObrisi
             // 
             this.btnObrisi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnObrisi.Location = new System.Drawing.Point(169, 59);
+            this.btnObrisi.Location = new System.Drawing.Point(284, 76);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(140, 37);
             this.btnObrisi.TabIndex = 25;
@@ -82,7 +82,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(12, 59);
+            this.btnDodaj.Location = new System.Drawing.Point(127, 76);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(140, 37);
             this.btnDodaj.TabIndex = 24;
@@ -106,7 +106,7 @@
             this.dgvNarudzbe.Name = "dgvNarudzbe";
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvNarudzbe.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvNarudzbe.Size = new System.Drawing.Size(595, 258);
+            this.dgvNarudzbe.Size = new System.Drawing.Size(691, 258);
             this.dgvNarudzbe.TabIndex = 21;
             this.dgvNarudzbe.SelectionChanged += new System.EventHandler(this.dgvNarudzbe_SelectionChanged);
             // 
@@ -121,11 +121,11 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvStavkeNaNarudzbi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStavkeNaNarudzbi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStavkeNaNarudzbi.Location = new System.Drawing.Point(12, 448);
+            this.dgvStavkeNaNarudzbi.Location = new System.Drawing.Point(52, 448);
             this.dgvStavkeNaNarudzbi.Name = "dgvStavkeNaNarudzbi";
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvStavkeNaNarudzbi.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvStavkeNaNarudzbi.Size = new System.Drawing.Size(595, 258);
+            this.dgvStavkeNaNarudzbi.Size = new System.Drawing.Size(576, 258);
             this.dgvStavkeNaNarudzbi.TabIndex = 28;
             // 
             // btnDodajStroj
@@ -144,7 +144,7 @@
             this.lblNaslovStavke.AutoSize = true;
             this.lblNaslovStavke.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNaslovStavke.ForeColor = System.Drawing.Color.White;
-            this.lblNaslovStavke.Location = new System.Drawing.Point(165, 422);
+            this.lblNaslovStavke.Location = new System.Drawing.Point(250, 422);
             this.lblNaslovStavke.Name = "lblNaslovStavke";
             this.lblNaslovStavke.Size = new System.Drawing.Size(188, 23);
             this.lblNaslovStavke.TabIndex = 30;
@@ -153,7 +153,7 @@
             // btnPrikazIzvjestaja
             // 
             this.btnPrikazIzvjestaja.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrikazIzvjestaja.Location = new System.Drawing.Point(417, 718);
+            this.btnPrikazIzvjestaja.Location = new System.Drawing.Point(563, 718);
             this.btnPrikazIzvjestaja.Name = "btnPrikazIzvjestaja";
             this.btnPrikazIzvjestaja.Size = new System.Drawing.Size(140, 37);
             this.btnPrikazIzvjestaja.TabIndex = 31;
@@ -164,7 +164,7 @@
             // btnGraf
             // 
             this.btnGraf.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGraf.Location = new System.Drawing.Point(271, 718);
+            this.btnGraf.Location = new System.Drawing.Point(276, 718);
             this.btnGraf.Name = "btnGraf";
             this.btnGraf.Size = new System.Drawing.Size(140, 37);
             this.btnGraf.TabIndex = 32;
@@ -177,7 +177,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(632, 772);
+            this.ClientSize = new System.Drawing.Size(715, 772);
             this.Controls.Add(this.btnGraf);
             this.Controls.Add(this.btnPrikazIzvjestaja);
             this.Controls.Add(this.lblNaslovStavke);
