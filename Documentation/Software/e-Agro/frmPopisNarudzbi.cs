@@ -30,6 +30,7 @@ namespace e_Agro
             dgvNarudzbe.Columns["stavke_na_narudzbi"].Visible = false;
             dgvNarudzbe.Columns["narudzba_id"].Visible = false;
             dgvNarudzbe.Columns["dobavljac_id"].Visible = false;
+            dgvNarudzbe.Columns["korisnik_id"].Visible = false;
         }
 
         private void frmPopisNarudzbi_Load(object sender, EventArgs e)
@@ -104,7 +105,7 @@ namespace e_Agro
         private void btnGraf_Click(object sender, EventArgs e)
         {
             Hide();
-            using (var forma = new frmNarudzbaGraf())
+            using (var forma = new frmNarudzbaGraf(DohvatiOdabranu()))
             {
                 forma.ShowDialog();
             }

@@ -39,8 +39,7 @@ namespace e_Agro
             }
             narudzbaBindingSource.DataSource = odabranaNarudzba;
             katalog_strojevaBindingSource.DataSource = popisStrojeva;
-            this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
+
             this.reportViewer1.RefreshReport();
         }
     }

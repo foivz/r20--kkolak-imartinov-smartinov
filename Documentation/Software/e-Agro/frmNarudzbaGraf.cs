@@ -12,38 +12,49 @@ namespace e_Agro
 {
     public partial class frmNarudzbaGraf : Form
     {
-        public frmNarudzbaGraf()
+        private narudzba odabranaNarudzba;
+        public frmNarudzbaGraf(narudzba narudzba)
         {
+            odabranaNarudzba = narudzba;
             InitializeComponent();
         }
 
         private void frmNarudzbaGraf_Load(object sender, EventArgs e)
         {
 
-            var popisNarudzbi = new List<narudzba>();
-            var popisStavki = new List<stavke_na_narudzbi>();
+            var popisStrojeva = new List<katalog_strojeva>();
+
+            List<stavke_na_narudzbi> popisStavkiNaNarudzbi = new List<stavke_na_narudzbi>();
+            List<katalog_strojeva> popisStrojevaNaNarudzbi = new List<katalog_strojeva>();
+
 
             using (var context = new PI20_024_DBEntities())
             {
-
-                var query = from p in context.narudzbas
+                var query = from p in context.katalog_strojeva
                             select p;
+                popisStrojeva = query.ToList();
 
-                popisNarudzbi = query.ToList();
+                    foreach (var stroj in popisStrojeva)
+                    {
+                    chartDobavljac.Series["Stroj"].Points.AddXY(stroj.vrsta, stroj.cijena);
+                    }
 
-                foreach (var narudzba in popisNarudzbi)
+                var queryNarudzba = from s in context.stavke_na_narudzbi
+                            where s.narudzba_id == odabranaNarudzba.narudzba_id
+                            select s;
+
+                popisStavkiNaNarudzbi = queryNarudzba.ToList();
+
+                foreach (var stavka in popisStavkiNaNarudzbi)
                 {
-                    popisStavki.AddRange(narudzba.stavke_na_narudzbi);
-                }
+                    chartStrojNarudzbe.Series["StrojNarudzbe"].Points.AddXY(stavka.katalog_strojeva.naziv, stavka.katalog_strojeva.cijena);
 
-                foreach (var stavka in popisStavki)
-                {
-                    chartDobavljac.Series[0].Points.AddXY(stavka.narudzba.dobavljac_id, stavka.narudzba.cijena);
                 }
 
             }
+            }
 
-
-        }
+        
     }
-}
+    }
+
